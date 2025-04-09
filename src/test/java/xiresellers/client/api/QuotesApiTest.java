@@ -17,6 +17,9 @@ import xiresellers.client.ApiException;
 import xiresellers.client.model.ErrorResponse;
 import xiresellers.client.model.GetResellerV6ValidateQuote400Response;
 import xiresellers.client.model.PostCreateorderV7500Response;
+import xiresellers.client.model.QuoteCreateRequest;
+import xiresellers.client.model.QuoteCreateResponse;
+import xiresellers.client.model.QuoteCreateWebhookResponse;
 import xiresellers.client.model.QuoteDetailsResponse;
 import xiresellers.client.model.QuoteSearchResponse;
 import xiresellers.client.model.ValidateQuoteResponse;
@@ -99,6 +102,24 @@ public class QuotesApiTest {
         String quoteNumber = null;
         String imSenderID = null;
         QuoteDetailsResponse response = api.getResellersV6Quotes(imCustomerNumber, imCountryCode, imCorrelationID, quoteNumber, imSenderID);
+        // TODO: test validations
+    }
+
+    /**
+     * Quote Create
+     *
+     * The quote create endpoint will allow customers to create a quote using the Ingram Micro part number or Vendor Part number.  The customer can also create Configure to Order (CTO) quotes using the Special Bid number (Deal ID).  Upon successfully creating the quote with the product lines, the quote will be activated and placed in a &#39;Ready To Order&#39; status.&lt;ul&gt;&lt;li&gt;For CTO quote creation, we only support Cisco as a vendor at the moment.&lt;/li&gt;&lt;/ul&gt;   Once the quote is created and activated, you will receive an immediate &#39;confirmation&#39;.  A webhook will be sent with the details of the quote.  In the event, we have an error creating a quote, an error message will be notified via webhook as well. The quote create webhook will send the notifications for all the quotes created via the Xvantage platform, APIs, associates, etc.
+     *
+     * @throws ApiException if the Api call fails
+     */
+    @Test
+    public void quoteCreateTest() throws ApiException {
+        String imCustomerNumber = null;
+        String imCountryCode = null;
+        String imCorrelationID = null;
+        QuoteCreateRequest quoteCreateRequest = null;
+        String imSenderID = null;
+        QuoteCreateResponse response = api.quoteCreate(imCustomerNumber, imCountryCode, imCorrelationID, quoteCreateRequest, imSenderID);
         // TODO: test validations
     }
 

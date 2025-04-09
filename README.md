@@ -2,7 +2,7 @@
 
 XI Sdk Resellers
 - API version: 1.0.0
-  - Build date: 2025-04-09T06:05:54.174122696Z[Etc/UTC]
+  - Build date: 2025-04-09T06:25:58.100608330Z[Etc/UTC]
   - Generator version: 7.12.0
 
 For Resellers seeking to innovate with Ingram Micro's API solutions, automate your eCommerce experience with our array of API's and webhooks to craft a seamless journey for your customers.
@@ -137,6 +137,7 @@ Class | Method | HTTP request | Description
 *QuotesApi* | [**getQuotessearchV6**](docs/QuotesApi.md#getQuotessearchV6) | **GET** /resellers/v6/quotes/search | Quote Search
 *QuotesApi* | [**getResellerV6ValidateQuote**](docs/QuotesApi.md#getResellerV6ValidateQuote) | **GET** /resellers/v6/q2o/validatequote | Validate Quote
 *QuotesApi* | [**getResellersV6Quotes**](docs/QuotesApi.md#getResellersV6Quotes) | **GET** /resellers/v6/quotes/{quoteNumber} | Get Quote Details
+*QuotesApi* | [**quoteCreate**](docs/QuotesApi.md#quoteCreate) | **POST** /resellers/v6/quotes/create | Quote Create
 *RenewalsApi* | [**getResellersV6Renewalsdetails**](docs/RenewalsApi.md#getResellersV6Renewalsdetails) | **GET** /resellers/v6/renewals/{renewalId} | Renewals Details
 *RenewalsApi* | [**postRenewalssearch**](docs/RenewalsApi.md#postRenewalssearch) | **POST** /resellers/v6/renewals/search | Renewals Search
 *ReturnsApi* | [**getResellersV6Returnsdetails**](docs/ReturnsApi.md#getResellersV6Returnsdetails) | **GET** /resellers/v6/returns/{caseRequestNumber} | Returns Details
@@ -322,6 +323,15 @@ Class | Method | HTTP request | Description
  - [ProductSearchResponseSubscriptionCatalogInnerPlansInner](docs/ProductSearchResponseSubscriptionCatalogInnerPlansInner.md)
  - [ProductSearchResponseSubscriptionCatalogInnerPlansInnerLinksInner](docs/ProductSearchResponseSubscriptionCatalogInnerPlansInnerLinksInner.md)
  - [ProductSearchResponseSubscriptionCatalogInnerPlansInnerSubscriptionPeriodSummaryInner](docs/ProductSearchResponseSubscriptionCatalogInnerPlansInnerSubscriptionPeriodSummaryInner.md)
+ - [QuoteCreateRequest](docs/QuoteCreateRequest.md)
+ - [QuoteCreateRequestEndUserInfo](docs/QuoteCreateRequestEndUserInfo.md)
+ - [QuoteCreateRequestProductsInner](docs/QuoteCreateRequestProductsInner.md)
+ - [QuoteCreateResponse](docs/QuoteCreateResponse.md)
+ - [QuoteCreateWebhookResponse](docs/QuoteCreateWebhookResponse.md)
+ - [QuoteCreateWebhookResponseResource](docs/QuoteCreateWebhookResponseResource.md)
+ - [QuoteCreateWebhookResponseResourceAdditionalAttributesInner](docs/QuoteCreateWebhookResponseResourceAdditionalAttributesInner.md)
+ - [QuoteCreateWebhookResponseResourceProductsInner](docs/QuoteCreateWebhookResponseResourceProductsInner.md)
+ - [QuoteCreateWebhookResponseResourceProductsInnerPrice](docs/QuoteCreateWebhookResponseResourceProductsInnerPrice.md)
  - [QuoteDetailsResponse](docs/QuoteDetailsResponse.md)
  - [QuoteDetailsResponseAdditionalAttributesInner](docs/QuoteDetailsResponseAdditionalAttributesInner.md)
  - [QuoteDetailsResponseEndUserInfo](docs/QuoteDetailsResponseEndUserInfo.md)

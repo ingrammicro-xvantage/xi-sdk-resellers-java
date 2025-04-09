@@ -7,6 +7,7 @@ All URIs are relative to *https://api.ingrammicro.com:443*
 | [**getQuotessearchV6**](QuotesApi.md#getQuotessearchV6) | **GET** /resellers/v6/quotes/search | Quote Search |
 | [**getResellerV6ValidateQuote**](QuotesApi.md#getResellerV6ValidateQuote) | **GET** /resellers/v6/q2o/validatequote | Validate Quote |
 | [**getResellersV6Quotes**](QuotesApi.md#getResellersV6Quotes) | **GET** /resellers/v6/quotes/{quoteNumber} | Get Quote Details |
+| [**quoteCreate**](QuotesApi.md#quoteCreate) | **POST** /resellers/v6/quotes/create | Quote Create |
 
 
 <a id="getQuotessearchV6"></a>
@@ -265,4 +266,80 @@ public class Example {
 | **200** | OK |  -  |
 | **400** | Bad Request |  -  |
 | **500** | Internal Server Error |  -  |
+
+<a id="quoteCreate"></a>
+# **quoteCreate**
+> QuoteCreateResponse quoteCreate(imCustomerNumber, imCountryCode, imCorrelationID, quoteCreateRequest, imSenderID)
+
+Quote Create
+
+The quote create endpoint will allow customers to create a quote using the Ingram Micro part number or Vendor Part number.  The customer can also create Configure to Order (CTO) quotes using the Special Bid number (Deal ID).  Upon successfully creating the quote with the product lines, the quote will be activated and placed in a &#39;Ready To Order&#39; status.&lt;ul&gt;&lt;li&gt;For CTO quote creation, we only support Cisco as a vendor at the moment.&lt;/li&gt;&lt;/ul&gt;   Once the quote is created and activated, you will receive an immediate &#39;confirmation&#39;.  A webhook will be sent with the details of the quote.  In the event, we have an error creating a quote, an error message will be notified via webhook as well. The quote create webhook will send the notifications for all the quotes created via the Xvantage platform, APIs, associates, etc.
+
+### Example
+```java
+// Import classes:
+import xiresellers.client.ApiClient;
+import xiresellers.client.ApiException;
+import xiresellers.client.Configuration;
+import xiresellers.client.auth.*;
+import xiresellers.client.models.*;
+import xiresellers.client.api.QuotesApi;
+
+public class Example {
+  public static void main(String[] args) {
+    ApiClient defaultClient = Configuration.getDefaultApiClient();
+    defaultClient.setBasePath("https://api.ingrammicro.com:443");
+    
+    // Configure OAuth2 access token for authorization: application
+    OAuth application = (OAuth) defaultClient.getAuthentication("application");
+    application.setAccessToken("YOUR ACCESS TOKEN");
+
+    QuotesApi apiInstance = new QuotesApi(defaultClient);
+    String imCustomerNumber = "20-222222"; // String | Your unique Ingram Micro customer number.
+    String imCountryCode = "US"; // String | Two-character ISO country code.
+    String imCorrelationID = "fbac82ba-cf0a-4bcf-fc03-0c5084"; // String | Unique transaction number to identify each transaction across all the systems.
+    QuoteCreateRequest quoteCreateRequest = new QuoteCreateRequest(); // QuoteCreateRequest | 
+    String imSenderID = "MyCompany"; // String | Unique value used to identify the sender of the transaction. Example: MyCompany
+    try {
+      QuoteCreateResponse result = apiInstance.quoteCreate(imCustomerNumber, imCountryCode, imCorrelationID, quoteCreateRequest, imSenderID);
+      System.out.println(result);
+    } catch (ApiException e) {
+      System.err.println("Exception when calling QuotesApi#quoteCreate");
+      System.err.println("Status code: " + e.getCode());
+      System.err.println("Reason: " + e.getResponseBody());
+      System.err.println("Response headers: " + e.getResponseHeaders());
+      e.printStackTrace();
+    }
+  }
+}
+```
+
+### Parameters
+
+| Name | Type | Description  | Notes |
+|------------- | ------------- | ------------- | -------------|
+| **imCustomerNumber** | **String**| Your unique Ingram Micro customer number. | |
+| **imCountryCode** | **String**| Two-character ISO country code. | |
+| **imCorrelationID** | **String**| Unique transaction number to identify each transaction across all the systems. | |
+| **quoteCreateRequest** | [**QuoteCreateRequest**](QuoteCreateRequest.md)|  | |
+| **imSenderID** | **String**| Unique value used to identify the sender of the transaction. Example: MyCompany | [optional] |
+
+### Return type
+
+[**QuoteCreateResponse**](QuoteCreateResponse.md)
+
+### Authorization
+
+[application](../README.md#application)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json
+ - **Accept**: application/json
+
+### HTTP response details
+| Status code | Description | Response headers |
+|-------------|-------------|------------------|
+| **200** | Success |  -  |
+| **201** | Webhook Success Response |  -  |
 

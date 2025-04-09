@@ -30,6 +30,9 @@ import java.io.IOException;
 import xiresellers.client.model.ErrorResponse;
 import xiresellers.client.model.GetResellerV6ValidateQuote400Response;
 import xiresellers.client.model.PostCreateorderV7500Response;
+import xiresellers.client.model.QuoteCreateRequest;
+import xiresellers.client.model.QuoteCreateResponse;
+import xiresellers.client.model.QuoteCreateWebhookResponse;
 import xiresellers.client.model.QuoteDetailsResponse;
 import xiresellers.client.model.QuoteSearchResponse;
 import xiresellers.client.model.ValidateQuoteResponse;
@@ -743,6 +746,188 @@ public class QuotesApi {
 
         okhttp3.Call localVarCall = getResellersV6QuotesValidateBeforeCall(imCustomerNumber, imCountryCode, imCorrelationID, quoteNumber, imSenderID, _callback);
         Type localVarReturnType = new TypeToken<QuoteDetailsResponse>(){}.getType();
+        localVarApiClient.executeAsync(localVarCall, localVarReturnType, _callback);
+        return localVarCall;
+    }
+    /**
+     * Build call for quoteCreate
+     * @param imCustomerNumber Your unique Ingram Micro customer number. (required)
+     * @param imCountryCode Two-character ISO country code. (required)
+     * @param imCorrelationID Unique transaction number to identify each transaction across all the systems. (required)
+     * @param quoteCreateRequest  (required)
+     * @param imSenderID Unique value used to identify the sender of the transaction. Example: MyCompany (optional)
+     * @param _callback Callback for upload/download progress
+     * @return Call to execute
+     * @throws ApiException If fail to serialize the request body object
+     * @http.response.details
+     <table border="1">
+       <caption>Response Details</caption>
+        <tr><td> Status Code </td><td> Description </td><td> Response Headers </td></tr>
+        <tr><td> 200 </td><td> Success </td><td>  -  </td></tr>
+        <tr><td> 201 </td><td> Webhook Success Response </td><td>  -  </td></tr>
+     </table>
+     */
+    public okhttp3.Call quoteCreateCall(String imCustomerNumber, String imCountryCode, String imCorrelationID, QuoteCreateRequest quoteCreateRequest, String imSenderID, final ApiCallback _callback) throws ApiException {
+        String basePath = null;
+        // Operation Servers
+        String[] localBasePaths = new String[] {  };
+
+        // Determine Base Path to Use
+        if (localCustomBaseUrl != null){
+            basePath = localCustomBaseUrl;
+        } else if ( localBasePaths.length > 0 ) {
+            basePath = localBasePaths[localHostIndex];
+        } else {
+            basePath = null;
+        }
+
+        Object localVarPostBody = quoteCreateRequest;
+
+        // create path and map variables
+        String localVarPath = "/resellers/v6/quotes/create";
+
+        List<Pair> localVarQueryParams = new ArrayList<Pair>();
+        List<Pair> localVarCollectionQueryParams = new ArrayList<Pair>();
+        Map<String, String> localVarHeaderParams = new HashMap<String, String>();
+        Map<String, String> localVarCookieParams = new HashMap<String, String>();
+        Map<String, Object> localVarFormParams = new HashMap<String, Object>();
+
+        final String[] localVarAccepts = {
+            "application/json"
+        };
+        final String localVarAccept = localVarApiClient.selectHeaderAccept(localVarAccepts);
+        if (localVarAccept != null) {
+            localVarHeaderParams.put("Accept", localVarAccept);
+        }
+
+        final String[] localVarContentTypes = {
+            "application/json"
+        };
+        final String localVarContentType = localVarApiClient.selectHeaderContentType(localVarContentTypes);
+        if (localVarContentType != null) {
+            localVarHeaderParams.put("Content-Type", localVarContentType);
+        }
+
+        if (imCustomerNumber != null) {
+            localVarHeaderParams.put("IM-CustomerNumber", localVarApiClient.parameterToString(imCustomerNumber));
+        }
+
+
+        if (imCountryCode != null) {
+            localVarHeaderParams.put("IM-CountryCode", localVarApiClient.parameterToString(imCountryCode));
+        }
+
+
+        if (imCorrelationID != null) {
+            localVarHeaderParams.put("IM-CorrelationID", localVarApiClient.parameterToString(imCorrelationID));
+        }
+
+
+        if (imSenderID != null) {
+            localVarHeaderParams.put("IM-SenderID", localVarApiClient.parameterToString(imSenderID));
+        }
+
+
+        String[] localVarAuthNames = new String[] { "application" };
+        return localVarApiClient.buildCall(basePath, localVarPath, "POST", localVarQueryParams, localVarCollectionQueryParams, localVarPostBody, localVarHeaderParams, localVarCookieParams, localVarFormParams, localVarAuthNames, _callback);
+    }
+
+    @SuppressWarnings("rawtypes")
+    private okhttp3.Call quoteCreateValidateBeforeCall(String imCustomerNumber, String imCountryCode, String imCorrelationID, QuoteCreateRequest quoteCreateRequest, String imSenderID, final ApiCallback _callback) throws ApiException {
+        // verify the required parameter 'imCustomerNumber' is set
+        if (imCustomerNumber == null) {
+            throw new ApiException("Missing the required parameter 'imCustomerNumber' when calling quoteCreate(Async)");
+        }
+
+        // verify the required parameter 'imCountryCode' is set
+        if (imCountryCode == null) {
+            throw new ApiException("Missing the required parameter 'imCountryCode' when calling quoteCreate(Async)");
+        }
+
+        // verify the required parameter 'imCorrelationID' is set
+        if (imCorrelationID == null) {
+            throw new ApiException("Missing the required parameter 'imCorrelationID' when calling quoteCreate(Async)");
+        }
+
+        // verify the required parameter 'quoteCreateRequest' is set
+        if (quoteCreateRequest == null) {
+            throw new ApiException("Missing the required parameter 'quoteCreateRequest' when calling quoteCreate(Async)");
+        }
+
+        return quoteCreateCall(imCustomerNumber, imCountryCode, imCorrelationID, quoteCreateRequest, imSenderID, _callback);
+
+    }
+
+    /**
+     * Quote Create
+     * The quote create endpoint will allow customers to create a quote using the Ingram Micro part number or Vendor Part number.  The customer can also create Configure to Order (CTO) quotes using the Special Bid number (Deal ID).  Upon successfully creating the quote with the product lines, the quote will be activated and placed in a &#39;Ready To Order&#39; status.&lt;ul&gt;&lt;li&gt;For CTO quote creation, we only support Cisco as a vendor at the moment.&lt;/li&gt;&lt;/ul&gt;   Once the quote is created and activated, you will receive an immediate &#39;confirmation&#39;.  A webhook will be sent with the details of the quote.  In the event, we have an error creating a quote, an error message will be notified via webhook as well. The quote create webhook will send the notifications for all the quotes created via the Xvantage platform, APIs, associates, etc.
+     * @param imCustomerNumber Your unique Ingram Micro customer number. (required)
+     * @param imCountryCode Two-character ISO country code. (required)
+     * @param imCorrelationID Unique transaction number to identify each transaction across all the systems. (required)
+     * @param quoteCreateRequest  (required)
+     * @param imSenderID Unique value used to identify the sender of the transaction. Example: MyCompany (optional)
+     * @return QuoteCreateResponse
+     * @throws ApiException If fail to call the API, e.g. server error or cannot deserialize the response body
+     * @http.response.details
+     <table border="1">
+       <caption>Response Details</caption>
+        <tr><td> Status Code </td><td> Description </td><td> Response Headers </td></tr>
+        <tr><td> 200 </td><td> Success </td><td>  -  </td></tr>
+        <tr><td> 201 </td><td> Webhook Success Response </td><td>  -  </td></tr>
+     </table>
+     */
+    public QuoteCreateResponse quoteCreate(String imCustomerNumber, String imCountryCode, String imCorrelationID, QuoteCreateRequest quoteCreateRequest, String imSenderID) throws ApiException {
+        ApiResponse<QuoteCreateResponse> localVarResp = quoteCreateWithHttpInfo(imCustomerNumber, imCountryCode, imCorrelationID, quoteCreateRequest, imSenderID);
+        return localVarResp.getData();
+    }
+
+    /**
+     * Quote Create
+     * The quote create endpoint will allow customers to create a quote using the Ingram Micro part number or Vendor Part number.  The customer can also create Configure to Order (CTO) quotes using the Special Bid number (Deal ID).  Upon successfully creating the quote with the product lines, the quote will be activated and placed in a &#39;Ready To Order&#39; status.&lt;ul&gt;&lt;li&gt;For CTO quote creation, we only support Cisco as a vendor at the moment.&lt;/li&gt;&lt;/ul&gt;   Once the quote is created and activated, you will receive an immediate &#39;confirmation&#39;.  A webhook will be sent with the details of the quote.  In the event, we have an error creating a quote, an error message will be notified via webhook as well. The quote create webhook will send the notifications for all the quotes created via the Xvantage platform, APIs, associates, etc.
+     * @param imCustomerNumber Your unique Ingram Micro customer number. (required)
+     * @param imCountryCode Two-character ISO country code. (required)
+     * @param imCorrelationID Unique transaction number to identify each transaction across all the systems. (required)
+     * @param quoteCreateRequest  (required)
+     * @param imSenderID Unique value used to identify the sender of the transaction. Example: MyCompany (optional)
+     * @return ApiResponse&lt;QuoteCreateResponse&gt;
+     * @throws ApiException If fail to call the API, e.g. server error or cannot deserialize the response body
+     * @http.response.details
+     <table border="1">
+       <caption>Response Details</caption>
+        <tr><td> Status Code </td><td> Description </td><td> Response Headers </td></tr>
+        <tr><td> 200 </td><td> Success </td><td>  -  </td></tr>
+        <tr><td> 201 </td><td> Webhook Success Response </td><td>  -  </td></tr>
+     </table>
+     */
+    public ApiResponse<QuoteCreateResponse> quoteCreateWithHttpInfo(String imCustomerNumber, String imCountryCode, String imCorrelationID, QuoteCreateRequest quoteCreateRequest, String imSenderID) throws ApiException {
+        okhttp3.Call localVarCall = quoteCreateValidateBeforeCall(imCustomerNumber, imCountryCode, imCorrelationID, quoteCreateRequest, imSenderID, null);
+        Type localVarReturnType = new TypeToken<QuoteCreateResponse>(){}.getType();
+        return localVarApiClient.execute(localVarCall, localVarReturnType);
+    }
+
+    /**
+     * Quote Create (asynchronously)
+     * The quote create endpoint will allow customers to create a quote using the Ingram Micro part number or Vendor Part number.  The customer can also create Configure to Order (CTO) quotes using the Special Bid number (Deal ID).  Upon successfully creating the quote with the product lines, the quote will be activated and placed in a &#39;Ready To Order&#39; status.&lt;ul&gt;&lt;li&gt;For CTO quote creation, we only support Cisco as a vendor at the moment.&lt;/li&gt;&lt;/ul&gt;   Once the quote is created and activated, you will receive an immediate &#39;confirmation&#39;.  A webhook will be sent with the details of the quote.  In the event, we have an error creating a quote, an error message will be notified via webhook as well. The quote create webhook will send the notifications for all the quotes created via the Xvantage platform, APIs, associates, etc.
+     * @param imCustomerNumber Your unique Ingram Micro customer number. (required)
+     * @param imCountryCode Two-character ISO country code. (required)
+     * @param imCorrelationID Unique transaction number to identify each transaction across all the systems. (required)
+     * @param quoteCreateRequest  (required)
+     * @param imSenderID Unique value used to identify the sender of the transaction. Example: MyCompany (optional)
+     * @param _callback The callback to be executed when the API call finishes
+     * @return The request call
+     * @throws ApiException If fail to process the API call, e.g. serializing the request body object
+     * @http.response.details
+     <table border="1">
+       <caption>Response Details</caption>
+        <tr><td> Status Code </td><td> Description </td><td> Response Headers </td></tr>
+        <tr><td> 200 </td><td> Success </td><td>  -  </td></tr>
+        <tr><td> 201 </td><td> Webhook Success Response </td><td>  -  </td></tr>
+     </table>
+     */
+    public okhttp3.Call quoteCreateAsync(String imCustomerNumber, String imCountryCode, String imCorrelationID, QuoteCreateRequest quoteCreateRequest, String imSenderID, final ApiCallback<QuoteCreateResponse> _callback) throws ApiException {
+
+        okhttp3.Call localVarCall = quoteCreateValidateBeforeCall(imCustomerNumber, imCountryCode, imCorrelationID, quoteCreateRequest, imSenderID, _callback);
+        Type localVarReturnType = new TypeToken<QuoteCreateResponse>(){}.getType();
         localVarApiClient.executeAsync(localVarCall, localVarReturnType, _callback);
         return localVarCall;
     }

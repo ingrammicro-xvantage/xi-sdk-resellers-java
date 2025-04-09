@@ -13,7 +13,7 @@
 
 package xiresellers.client;
 
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2025-04-09T06:05:54.174122696Z[Etc/UTC]", comments = "Generator version: 7.12.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2025-04-09T06:25:58.100608330Z[Etc/UTC]", comments = "Generator version: 7.12.0")
 public class Pair {
     private String name = "";
     private String value = "";
