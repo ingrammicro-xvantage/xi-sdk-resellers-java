@@ -49,7 +49,7 @@ import xiresellers.client.JSON;
 /**
  * RenewalsDetailsResponseProductsInner
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2025-01-07T10:15:50.038455601Z[Etc/UTC]", comments = "Generator version: 7.10.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2025-04-09T06:05:54.174122696Z[Etc/UTC]", comments = "Generator version: 7.12.0")
 public class RenewalsDetailsResponseProductsInner {
   public static final String SERIALIZED_NAME_INGRAM_LINE_NUMBER = "ingramLineNumber";
   @SerializedName(SERIALIZED_NAME_INGRAM_LINE_NUMBER)
@@ -79,7 +79,7 @@ public class RenewalsDetailsResponseProductsInner {
   public static final String SERIALIZED_NAME_QUANTITY = "quantity";
   @SerializedName(SERIALIZED_NAME_QUANTITY)
   @javax.annotation.Nullable
-  private String quantity;
+  private Integer quantity;
 
   public static final String SERIALIZED_NAME_UNIT_PRICE = "unitPrice";
   @SerializedName(SERIALIZED_NAME_UNIT_PRICE)
@@ -189,7 +189,7 @@ public class RenewalsDetailsResponseProductsInner {
   }
 
 
-  public RenewalsDetailsResponseProductsInner quantity(@javax.annotation.Nullable String quantity) {
+  public RenewalsDetailsResponseProductsInner quantity(@javax.annotation.Nullable Integer quantity) {
     this.quantity = quantity;
     return this;
   }
@@ -199,11 +199,11 @@ public class RenewalsDetailsResponseProductsInner {
    * @return quantity
    */
   @javax.annotation.Nullable
-  public String getQuantity() {
+  public Integer getQuantity() {
     return quantity;
   }
 
-  public void setQuantity(@javax.annotation.Nullable String quantity) {
+  public void setQuantity(@javax.annotation.Nullable Integer quantity) {
     this.quantity = quantity;
   }
 
@@ -353,9 +353,6 @@ public class RenewalsDetailsResponseProductsInner {
       }
       if ((jsonObj.get("manufacturerPartNumber") != null && !jsonObj.get("manufacturerPartNumber").isJsonNull()) && !jsonObj.get("manufacturerPartNumber").isJsonPrimitive()) {
         throw new IllegalArgumentException(String.format("Expected the field `manufacturerPartNumber` to be a primitive type in the JSON string but got `%s`", jsonObj.get("manufacturerPartNumber").toString()));
-      }
-      if ((jsonObj.get("quantity") != null && !jsonObj.get("quantity").isJsonNull()) && !jsonObj.get("quantity").isJsonPrimitive()) {
-        throw new IllegalArgumentException(String.format("Expected the field `quantity` to be a primitive type in the JSON string but got `%s`", jsonObj.get("quantity").toString()));
       }
       if ((jsonObj.get("isConsolidated") != null && !jsonObj.get("isConsolidated").isJsonNull()) && !jsonObj.get("isConsolidated").isJsonPrimitive()) {
         throw new IllegalArgumentException(String.format("Expected the field `isConsolidated` to be a primitive type in the JSON string but got `%s`", jsonObj.get("isConsolidated").toString()));

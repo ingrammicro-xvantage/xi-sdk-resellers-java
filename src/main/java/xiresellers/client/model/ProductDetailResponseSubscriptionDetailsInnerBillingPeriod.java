@@ -48,7 +48,7 @@ import xiresellers.client.JSON;
 /**
  * Details of the subscription billing period. 
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2025-01-07T10:15:50.038455601Z[Etc/UTC]", comments = "Generator version: 7.10.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2025-04-09T06:05:54.174122696Z[Etc/UTC]", comments = "Generator version: 7.12.0")
 public class ProductDetailResponseSubscriptionDetailsInnerBillingPeriod {
   public static final String SERIALIZED_NAME_BILLING_PERIOD_UNIT = "billingPeriodUnit";
   @SerializedName(SERIALIZED_NAME_BILLING_PERIOD_UNIT)
@@ -58,7 +58,7 @@ public class ProductDetailResponseSubscriptionDetailsInnerBillingPeriod {
   public static final String SERIALIZED_NAME_BILLING_PERIOD = "billingPeriod";
   @SerializedName(SERIALIZED_NAME_BILLING_PERIOD)
   @javax.annotation.Nullable
-  private Integer billingPeriod;
+  private String billingPeriod;
 
   public ProductDetailResponseSubscriptionDetailsInnerBillingPeriod() {
   }
@@ -82,7 +82,7 @@ public class ProductDetailResponseSubscriptionDetailsInnerBillingPeriod {
   }
 
 
-  public ProductDetailResponseSubscriptionDetailsInnerBillingPeriod billingPeriod(@javax.annotation.Nullable Integer billingPeriod) {
+  public ProductDetailResponseSubscriptionDetailsInnerBillingPeriod billingPeriod(@javax.annotation.Nullable String billingPeriod) {
     this.billingPeriod = billingPeriod;
     return this;
   }
@@ -92,11 +92,11 @@ public class ProductDetailResponseSubscriptionDetailsInnerBillingPeriod {
    * @return billingPeriod
    */
   @javax.annotation.Nullable
-  public Integer getBillingPeriod() {
+  public String getBillingPeriod() {
     return billingPeriod;
   }
 
-  public void setBillingPeriod(@javax.annotation.Nullable Integer billingPeriod) {
+  public void setBillingPeriod(@javax.annotation.Nullable String billingPeriod) {
     this.billingPeriod = billingPeriod;
   }
 
@@ -178,6 +178,9 @@ public class ProductDetailResponseSubscriptionDetailsInnerBillingPeriod {
         JsonObject jsonObj = jsonElement.getAsJsonObject();
       if ((jsonObj.get("billingPeriodUnit") != null && !jsonObj.get("billingPeriodUnit").isJsonNull()) && !jsonObj.get("billingPeriodUnit").isJsonPrimitive()) {
         throw new IllegalArgumentException(String.format("Expected the field `billingPeriodUnit` to be a primitive type in the JSON string but got `%s`", jsonObj.get("billingPeriodUnit").toString()));
+      }
+      if ((jsonObj.get("billingPeriod") != null && !jsonObj.get("billingPeriod").isJsonNull()) && !jsonObj.get("billingPeriod").isJsonPrimitive()) {
+        throw new IllegalArgumentException(String.format("Expected the field `billingPeriod` to be a primitive type in the JSON string but got `%s`", jsonObj.get("billingPeriod").toString()));
       }
   }
 

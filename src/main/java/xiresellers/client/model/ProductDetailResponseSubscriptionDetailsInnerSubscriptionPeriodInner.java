@@ -48,7 +48,7 @@ import xiresellers.client.JSON;
 /**
  * ProductDetailResponseSubscriptionDetailsInnerSubscriptionPeriodInner
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2025-01-07T10:15:50.038455601Z[Etc/UTC]", comments = "Generator version: 7.10.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2025-04-09T06:05:54.174122696Z[Etc/UTC]", comments = "Generator version: 7.12.0")
 public class ProductDetailResponseSubscriptionDetailsInnerSubscriptionPeriodInner {
   public static final String SERIALIZED_NAME_SUBSCRIPTION_PERIOD_UNIT = "subscriptionPeriodUnit";
   @SerializedName(SERIALIZED_NAME_SUBSCRIPTION_PERIOD_UNIT)
@@ -58,7 +58,7 @@ public class ProductDetailResponseSubscriptionDetailsInnerSubscriptionPeriodInne
   public static final String SERIALIZED_NAME_SUBSCRIPTION_PERIOD = "subscriptionPeriod";
   @SerializedName(SERIALIZED_NAME_SUBSCRIPTION_PERIOD)
   @javax.annotation.Nullable
-  private Integer subscriptionPeriod;
+  private String subscriptionPeriod;
 
   public ProductDetailResponseSubscriptionDetailsInnerSubscriptionPeriodInner() {
   }
@@ -82,7 +82,7 @@ public class ProductDetailResponseSubscriptionDetailsInnerSubscriptionPeriodInne
   }
 
 
-  public ProductDetailResponseSubscriptionDetailsInnerSubscriptionPeriodInner subscriptionPeriod(@javax.annotation.Nullable Integer subscriptionPeriod) {
+  public ProductDetailResponseSubscriptionDetailsInnerSubscriptionPeriodInner subscriptionPeriod(@javax.annotation.Nullable String subscriptionPeriod) {
     this.subscriptionPeriod = subscriptionPeriod;
     return this;
   }
@@ -92,11 +92,11 @@ public class ProductDetailResponseSubscriptionDetailsInnerSubscriptionPeriodInne
    * @return subscriptionPeriod
    */
   @javax.annotation.Nullable
-  public Integer getSubscriptionPeriod() {
+  public String getSubscriptionPeriod() {
     return subscriptionPeriod;
   }
 
-  public void setSubscriptionPeriod(@javax.annotation.Nullable Integer subscriptionPeriod) {
+  public void setSubscriptionPeriod(@javax.annotation.Nullable String subscriptionPeriod) {
     this.subscriptionPeriod = subscriptionPeriod;
   }
 
@@ -178,6 +178,9 @@ public class ProductDetailResponseSubscriptionDetailsInnerSubscriptionPeriodInne
         JsonObject jsonObj = jsonElement.getAsJsonObject();
       if ((jsonObj.get("subscriptionPeriodUnit") != null && !jsonObj.get("subscriptionPeriodUnit").isJsonNull()) && !jsonObj.get("subscriptionPeriodUnit").isJsonPrimitive()) {
         throw new IllegalArgumentException(String.format("Expected the field `subscriptionPeriodUnit` to be a primitive type in the JSON string but got `%s`", jsonObj.get("subscriptionPeriodUnit").toString()));
+      }
+      if ((jsonObj.get("subscriptionPeriod") != null && !jsonObj.get("subscriptionPeriod").isJsonNull()) && !jsonObj.get("subscriptionPeriod").isJsonPrimitive()) {
+        throw new IllegalArgumentException(String.format("Expected the field `subscriptionPeriod` to be a primitive type in the JSON string but got `%s`", jsonObj.get("subscriptionPeriod").toString()));
       }
   }
 

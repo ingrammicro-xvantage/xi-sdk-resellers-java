@@ -55,7 +55,7 @@ import xiresellers.client.JSON;
 /**
  * ProductDetailResponse
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2025-01-07T10:15:50.038455601Z[Etc/UTC]", comments = "Generator version: 7.10.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2025-04-09T06:05:54.174122696Z[Etc/UTC]", comments = "Generator version: 7.12.0")
 public class ProductDetailResponse {
   public static final String SERIALIZED_NAME_INGRAM_PART_NUMBER = "ingramPartNumber";
   @SerializedName(SERIALIZED_NAME_INGRAM_PART_NUMBER)
@@ -70,7 +70,7 @@ public class ProductDetailResponse {
   public static final String SERIALIZED_NAME_PRODUCT_AUTHORIZED = "productAuthorized";
   @SerializedName(SERIALIZED_NAME_PRODUCT_AUTHORIZED)
   @javax.annotation.Nullable
-  private Boolean productAuthorized;
+  private String productAuthorized;
 
   public static final String SERIALIZED_NAME_DESCRIPTION = "description";
   @SerializedName(SERIALIZED_NAME_DESCRIPTION)
@@ -183,7 +183,7 @@ public class ProductDetailResponse {
   }
 
 
-  public ProductDetailResponse productAuthorized(@javax.annotation.Nullable Boolean productAuthorized) {
+  public ProductDetailResponse productAuthorized(@javax.annotation.Nullable String productAuthorized) {
     this.productAuthorized = productAuthorized;
     return this;
   }
@@ -193,11 +193,11 @@ public class ProductDetailResponse {
    * @return productAuthorized
    */
   @javax.annotation.Nullable
-  public Boolean getProductAuthorized() {
+  public String getProductAuthorized() {
     return productAuthorized;
   }
 
-  public void setProductAuthorized(@javax.annotation.Nullable Boolean productAuthorized) {
+  public void setProductAuthorized(@javax.annotation.Nullable String productAuthorized) {
     this.productAuthorized = productAuthorized;
   }
 
@@ -620,6 +620,9 @@ public class ProductDetailResponse {
       }
       if ((jsonObj.get("vendorPartNumber") != null && !jsonObj.get("vendorPartNumber").isJsonNull()) && !jsonObj.get("vendorPartNumber").isJsonPrimitive()) {
         throw new IllegalArgumentException(String.format("Expected the field `vendorPartNumber` to be a primitive type in the JSON string but got `%s`", jsonObj.get("vendorPartNumber").toString()));
+      }
+      if ((jsonObj.get("productAuthorized") != null && !jsonObj.get("productAuthorized").isJsonNull()) && !jsonObj.get("productAuthorized").isJsonPrimitive()) {
+        throw new IllegalArgumentException(String.format("Expected the field `productAuthorized` to be a primitive type in the JSON string but got `%s`", jsonObj.get("productAuthorized").toString()));
       }
       if ((jsonObj.get("description") != null && !jsonObj.get("description").isJsonNull()) && !jsonObj.get("description").isJsonPrimitive()) {
         throw new IllegalArgumentException(String.format("Expected the field `description` to be a primitive type in the JSON string but got `%s`", jsonObj.get("description").toString()));

@@ -48,7 +48,7 @@ import xiresellers.client.JSON;
 /**
  * ProductDetailResponseSubscriptionDetailsInnerOptionsInner
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2025-01-07T10:15:50.038455601Z[Etc/UTC]", comments = "Generator version: 7.10.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2025-04-09T06:05:54.174122696Z[Etc/UTC]", comments = "Generator version: 7.12.0")
 public class ProductDetailResponseSubscriptionDetailsInnerOptionsInner {
   public static final String SERIALIZED_NAME_RESOURCE_ID = "resourceId";
   @SerializedName(SERIALIZED_NAME_RESOURCE_ID)
@@ -68,12 +68,12 @@ public class ProductDetailResponseSubscriptionDetailsInnerOptionsInner {
   public static final String SERIALIZED_NAME_MIN_UNITS = "minUnits";
   @SerializedName(SERIALIZED_NAME_MIN_UNITS)
   @javax.annotation.Nullable
-  private Integer minUnits;
+  private String minUnits;
 
   public static final String SERIALIZED_NAME_MAX_UNITS = "maxUnits";
   @SerializedName(SERIALIZED_NAME_MAX_UNITS)
   @javax.annotation.Nullable
-  private Integer maxUnits;
+  private String maxUnits;
 
   public static final String SERIALIZED_NAME_DEPENDS_ON = "dependsOn";
   @SerializedName(SERIALIZED_NAME_DEPENDS_ON)
@@ -140,7 +140,7 @@ public class ProductDetailResponseSubscriptionDetailsInnerOptionsInner {
   }
 
 
-  public ProductDetailResponseSubscriptionDetailsInnerOptionsInner minUnits(@javax.annotation.Nullable Integer minUnits) {
+  public ProductDetailResponseSubscriptionDetailsInnerOptionsInner minUnits(@javax.annotation.Nullable String minUnits) {
     this.minUnits = minUnits;
     return this;
   }
@@ -150,16 +150,16 @@ public class ProductDetailResponseSubscriptionDetailsInnerOptionsInner {
    * @return minUnits
    */
   @javax.annotation.Nullable
-  public Integer getMinUnits() {
+  public String getMinUnits() {
     return minUnits;
   }
 
-  public void setMinUnits(@javax.annotation.Nullable Integer minUnits) {
+  public void setMinUnits(@javax.annotation.Nullable String minUnits) {
     this.minUnits = minUnits;
   }
 
 
-  public ProductDetailResponseSubscriptionDetailsInnerOptionsInner maxUnits(@javax.annotation.Nullable Integer maxUnits) {
+  public ProductDetailResponseSubscriptionDetailsInnerOptionsInner maxUnits(@javax.annotation.Nullable String maxUnits) {
     this.maxUnits = maxUnits;
     return this;
   }
@@ -169,11 +169,11 @@ public class ProductDetailResponseSubscriptionDetailsInnerOptionsInner {
    * @return maxUnits
    */
   @javax.annotation.Nullable
-  public Integer getMaxUnits() {
+  public String getMaxUnits() {
     return maxUnits;
   }
 
-  public void setMaxUnits(@javax.annotation.Nullable Integer maxUnits) {
+  public void setMaxUnits(@javax.annotation.Nullable String maxUnits) {
     this.maxUnits = maxUnits;
   }
 
@@ -292,6 +292,12 @@ public class ProductDetailResponseSubscriptionDetailsInnerOptionsInner {
       }
       if ((jsonObj.get("vendorPartNumber") != null && !jsonObj.get("vendorPartNumber").isJsonNull()) && !jsonObj.get("vendorPartNumber").isJsonPrimitive()) {
         throw new IllegalArgumentException(String.format("Expected the field `vendorPartNumber` to be a primitive type in the JSON string but got `%s`", jsonObj.get("vendorPartNumber").toString()));
+      }
+      if ((jsonObj.get("minUnits") != null && !jsonObj.get("minUnits").isJsonNull()) && !jsonObj.get("minUnits").isJsonPrimitive()) {
+        throw new IllegalArgumentException(String.format("Expected the field `minUnits` to be a primitive type in the JSON string but got `%s`", jsonObj.get("minUnits").toString()));
+      }
+      if ((jsonObj.get("maxUnits") != null && !jsonObj.get("maxUnits").isJsonNull()) && !jsonObj.get("maxUnits").isJsonPrimitive()) {
+        throw new IllegalArgumentException(String.format("Expected the field `maxUnits` to be a primitive type in the JSON string but got `%s`", jsonObj.get("maxUnits").toString()));
       }
       if ((jsonObj.get("dependsOn") != null && !jsonObj.get("dependsOn").isJsonNull()) && !jsonObj.get("dependsOn").isJsonPrimitive()) {
         throw new IllegalArgumentException(String.format("Expected the field `dependsOn` to be a primitive type in the JSON string but got `%s`", jsonObj.get("dependsOn").toString()));
