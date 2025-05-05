@@ -48,7 +48,7 @@ import xiresellers.client.JSON;
 /**
  * QuoteDetailsResponseProductsInnerBillDetailsInner
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2025-05-05T07:27:07.209261089Z[Etc/UTC]", comments = "Generator version: 7.13.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2025-05-05T10:02:09.276438400Z[Etc/UTC]", comments = "Generator version: 7.13.0")
 public class QuoteDetailsResponseProductsInnerBillDetailsInner {
   public static final String SERIALIZED_NAME_TYPE = "type";
   @SerializedName(SERIALIZED_NAME_TYPE)
