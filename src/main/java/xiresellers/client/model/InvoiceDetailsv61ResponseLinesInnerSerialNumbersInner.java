@@ -49,7 +49,7 @@ import xiresellers.client.JSON;
 /**
  * InvoiceDetailsv61ResponseLinesInnerSerialNumbersInner
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2025-05-05T10:15:42.466422080Z[Etc/UTC]", comments = "Generator version: 7.13.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2025-05-05T10:21:15.884442721Z[Etc/UTC]", comments = "Generator version: 7.13.0")
 public class InvoiceDetailsv61ResponseLinesInnerSerialNumbersInner {
   public static final String SERIALIZED_NAME_SERIAL_NUMBER = "serialNumber";
   @SerializedName(SERIALIZED_NAME_SERIAL_NUMBER)
