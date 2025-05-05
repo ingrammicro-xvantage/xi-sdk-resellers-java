@@ -54,7 +54,7 @@ import xiresellers.client.JSON;
 /**
  * RenewalsDetailsResponse
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2025-05-05T10:02:09.276438400Z[Etc/UTC]", comments = "Generator version: 7.13.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2025-05-05T10:15:42.466422080Z[Etc/UTC]", comments = "Generator version: 7.13.0")
 public class RenewalsDetailsResponse {
   public static final String SERIALIZED_NAME_RENEWAL_ID = "renewalId";
   @SerializedName(SERIALIZED_NAME_RENEWAL_ID)
