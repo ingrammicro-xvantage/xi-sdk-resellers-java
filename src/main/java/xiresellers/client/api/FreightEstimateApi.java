@@ -95,7 +95,7 @@ public class FreightEstimateApi {
         <tr><td> 500 </td><td> Internal Server Error </td><td>  -  </td></tr>
      </table>
      */
-    public okhttp3.Call postFreightestimateCall(String imCustomerNumber, String imCountryCode, String imCorrelationID, String imCustomerContact, String imSenderID, FreightRequest freightRequest, final ApiCallback _callback) throws ApiException {
+    public okhttp3.Call postFreightestimateCall(@javax.annotation.Nonnull String imCustomerNumber, @javax.annotation.Nonnull String imCountryCode, @javax.annotation.Nonnull String imCorrelationID, @javax.annotation.Nonnull String imCustomerContact, @javax.annotation.Nullable String imSenderID, @javax.annotation.Nullable FreightRequest freightRequest, final ApiCallback _callback) throws ApiException {
         String basePath = null;
         // Operation Servers
         String[] localBasePaths = new String[] {  };
@@ -166,7 +166,7 @@ public class FreightEstimateApi {
     }
 
     @SuppressWarnings("rawtypes")
-    private okhttp3.Call postFreightestimateValidateBeforeCall(String imCustomerNumber, String imCountryCode, String imCorrelationID, String imCustomerContact, String imSenderID, FreightRequest freightRequest, final ApiCallback _callback) throws ApiException {
+    private okhttp3.Call postFreightestimateValidateBeforeCall(@javax.annotation.Nonnull String imCustomerNumber, @javax.annotation.Nonnull String imCountryCode, @javax.annotation.Nonnull String imCorrelationID, @javax.annotation.Nonnull String imCustomerContact, @javax.annotation.Nullable String imSenderID, @javax.annotation.Nullable FreightRequest freightRequest, final ApiCallback _callback) throws ApiException {
         // verify the required parameter 'imCustomerNumber' is set
         if (imCustomerNumber == null) {
             throw new ApiException("Missing the required parameter 'imCustomerNumber' when calling postFreightestimate(Async)");
@@ -211,7 +211,7 @@ public class FreightEstimateApi {
         <tr><td> 500 </td><td> Internal Server Error </td><td>  -  </td></tr>
      </table>
      */
-    public FreightResponse postFreightestimate(String imCustomerNumber, String imCountryCode, String imCorrelationID, String imCustomerContact, String imSenderID, FreightRequest freightRequest) throws ApiException {
+    public FreightResponse postFreightestimate(@javax.annotation.Nonnull String imCustomerNumber, @javax.annotation.Nonnull String imCountryCode, @javax.annotation.Nonnull String imCorrelationID, @javax.annotation.Nonnull String imCustomerContact, @javax.annotation.Nullable String imSenderID, @javax.annotation.Nullable FreightRequest freightRequest) throws ApiException {
         ApiResponse<FreightResponse> localVarResp = postFreightestimateWithHttpInfo(imCustomerNumber, imCountryCode, imCorrelationID, imCustomerContact, imSenderID, freightRequest);
         return localVarResp.getData();
     }
@@ -236,7 +236,7 @@ public class FreightEstimateApi {
         <tr><td> 500 </td><td> Internal Server Error </td><td>  -  </td></tr>
      </table>
      */
-    public ApiResponse<FreightResponse> postFreightestimateWithHttpInfo(String imCustomerNumber, String imCountryCode, String imCorrelationID, String imCustomerContact, String imSenderID, FreightRequest freightRequest) throws ApiException {
+    public ApiResponse<FreightResponse> postFreightestimateWithHttpInfo(@javax.annotation.Nonnull String imCustomerNumber, @javax.annotation.Nonnull String imCountryCode, @javax.annotation.Nonnull String imCorrelationID, @javax.annotation.Nonnull String imCustomerContact, @javax.annotation.Nullable String imSenderID, @javax.annotation.Nullable FreightRequest freightRequest) throws ApiException {
         okhttp3.Call localVarCall = postFreightestimateValidateBeforeCall(imCustomerNumber, imCountryCode, imCorrelationID, imCustomerContact, imSenderID, freightRequest, null);
         Type localVarReturnType = new TypeToken<FreightResponse>(){}.getType();
         return localVarApiClient.execute(localVarCall, localVarReturnType);
@@ -263,7 +263,7 @@ public class FreightEstimateApi {
         <tr><td> 500 </td><td> Internal Server Error </td><td>  -  </td></tr>
      </table>
      */
-    public okhttp3.Call postFreightestimateAsync(String imCustomerNumber, String imCountryCode, String imCorrelationID, String imCustomerContact, String imSenderID, FreightRequest freightRequest, final ApiCallback<FreightResponse> _callback) throws ApiException {
+    public okhttp3.Call postFreightestimateAsync(@javax.annotation.Nonnull String imCustomerNumber, @javax.annotation.Nonnull String imCountryCode, @javax.annotation.Nonnull String imCorrelationID, @javax.annotation.Nonnull String imCustomerContact, @javax.annotation.Nullable String imSenderID, @javax.annotation.Nullable FreightRequest freightRequest, final ApiCallback<FreightResponse> _callback) throws ApiException {
 
         okhttp3.Call localVarCall = postFreightestimateValidateBeforeCall(imCustomerNumber, imCountryCode, imCorrelationID, imCustomerContact, imSenderID, freightRequest, _callback);
         Type localVarReturnType = new TypeToken<FreightResponse>(){}.getType();

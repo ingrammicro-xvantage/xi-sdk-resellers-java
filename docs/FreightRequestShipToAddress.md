@@ -1,7 +1,8 @@
 
 
-# FreightRequestShipToAddressInner
+# FreightRequestShipToAddress
 
+The shipping information.
 
 ## Properties
 

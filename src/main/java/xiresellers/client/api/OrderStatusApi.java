@@ -88,7 +88,7 @@ public class OrderStatusApi {
         <tr><td> 500 </td><td> Internal Server Error </td><td>  -  </td></tr>
      </table>
      */
-    public okhttp3.Call resellersV1WebhooksOrderstatuseventPostCall(String targeturl, String xHubSignature, OrderStatusAsyncNotificationRequest orderStatusAsyncNotificationRequest, final ApiCallback _callback) throws ApiException {
+    public okhttp3.Call resellersV1WebhooksOrderstatuseventPostCall(@javax.annotation.Nonnull String targeturl, @javax.annotation.Nonnull String xHubSignature, @javax.annotation.Nonnull OrderStatusAsyncNotificationRequest orderStatusAsyncNotificationRequest, final ApiCallback _callback) throws ApiException {
         String basePath = null;
         // Operation Servers
         String[] localBasePaths = new String[] {  };
@@ -143,7 +143,7 @@ public class OrderStatusApi {
     }
 
     @SuppressWarnings("rawtypes")
-    private okhttp3.Call resellersV1WebhooksOrderstatuseventPostValidateBeforeCall(String targeturl, String xHubSignature, OrderStatusAsyncNotificationRequest orderStatusAsyncNotificationRequest, final ApiCallback _callback) throws ApiException {
+    private okhttp3.Call resellersV1WebhooksOrderstatuseventPostValidateBeforeCall(@javax.annotation.Nonnull String targeturl, @javax.annotation.Nonnull String xHubSignature, @javax.annotation.Nonnull OrderStatusAsyncNotificationRequest orderStatusAsyncNotificationRequest, final ApiCallback _callback) throws ApiException {
         // verify the required parameter 'targeturl' is set
         if (targeturl == null) {
             throw new ApiException("Missing the required parameter 'targeturl' when calling resellersV1WebhooksOrderstatuseventPost(Async)");
@@ -178,7 +178,7 @@ public class OrderStatusApi {
         <tr><td> 500 </td><td> Internal Server Error </td><td>  -  </td></tr>
      </table>
      */
-    public void resellersV1WebhooksOrderstatuseventPost(String targeturl, String xHubSignature, OrderStatusAsyncNotificationRequest orderStatusAsyncNotificationRequest) throws ApiException {
+    public void resellersV1WebhooksOrderstatuseventPost(@javax.annotation.Nonnull String targeturl, @javax.annotation.Nonnull String xHubSignature, @javax.annotation.Nonnull OrderStatusAsyncNotificationRequest orderStatusAsyncNotificationRequest) throws ApiException {
         resellersV1WebhooksOrderstatuseventPostWithHttpInfo(targeturl, xHubSignature, orderStatusAsyncNotificationRequest);
     }
 
@@ -198,7 +198,7 @@ public class OrderStatusApi {
         <tr><td> 500 </td><td> Internal Server Error </td><td>  -  </td></tr>
      </table>
      */
-    public ApiResponse<Void> resellersV1WebhooksOrderstatuseventPostWithHttpInfo(String targeturl, String xHubSignature, OrderStatusAsyncNotificationRequest orderStatusAsyncNotificationRequest) throws ApiException {
+    public ApiResponse<Void> resellersV1WebhooksOrderstatuseventPostWithHttpInfo(@javax.annotation.Nonnull String targeturl, @javax.annotation.Nonnull String xHubSignature, @javax.annotation.Nonnull OrderStatusAsyncNotificationRequest orderStatusAsyncNotificationRequest) throws ApiException {
         okhttp3.Call localVarCall = resellersV1WebhooksOrderstatuseventPostValidateBeforeCall(targeturl, xHubSignature, orderStatusAsyncNotificationRequest, null);
         return localVarApiClient.execute(localVarCall);
     }
@@ -220,7 +220,7 @@ public class OrderStatusApi {
         <tr><td> 500 </td><td> Internal Server Error </td><td>  -  </td></tr>
      </table>
      */
-    public okhttp3.Call resellersV1WebhooksOrderstatuseventPostAsync(String targeturl, String xHubSignature, OrderStatusAsyncNotificationRequest orderStatusAsyncNotificationRequest, final ApiCallback<Void> _callback) throws ApiException {
+    public okhttp3.Call resellersV1WebhooksOrderstatuseventPostAsync(@javax.annotation.Nonnull String targeturl, @javax.annotation.Nonnull String xHubSignature, @javax.annotation.Nonnull OrderStatusAsyncNotificationRequest orderStatusAsyncNotificationRequest, final ApiCallback<Void> _callback) throws ApiException {
 
         okhttp3.Call localVarCall = resellersV1WebhooksOrderstatuseventPostValidateBeforeCall(targeturl, xHubSignature, orderStatusAsyncNotificationRequest, _callback);
         localVarApiClient.executeAsync(localVarCall, _callback);

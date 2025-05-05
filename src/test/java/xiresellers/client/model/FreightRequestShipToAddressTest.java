@@ -24,17 +24,17 @@ import org.junit.jupiter.api.Disabled;
 import org.junit.jupiter.api.Test;
 
 /**
- * Model tests for QuoteCreateRequestEndUserInfo
+ * Model tests for FreightRequestShipToAddress
  */
-public class QuoteCreateRequestEndUserInfoTest {
-    private final QuoteCreateRequestEndUserInfo model = new QuoteCreateRequestEndUserInfo();
+public class FreightRequestShipToAddressTest {
+    private final FreightRequestShipToAddress model = new FreightRequestShipToAddress();
 
     /**
-     * Model tests for QuoteCreateRequestEndUserInfo
+     * Model tests for FreightRequestShipToAddress
      */
     @Test
-    public void testQuoteCreateRequestEndUserInfo() {
-        // TODO: test QuoteCreateRequestEndUserInfo
+    public void testFreightRequestShipToAddress() {
+        // TODO: test FreightRequestShipToAddress
     }
 
     /**
@@ -43,14 +43,6 @@ public class QuoteCreateRequestEndUserInfoTest {
     @Test
     public void companyNameTest() {
         // TODO: test companyName
-    }
-
-    /**
-     * Test the property 'contact'
-     */
-    @Test
-    public void contactTest() {
-        // TODO: test contact
     }
 
     /**
@@ -67,6 +59,14 @@ public class QuoteCreateRequestEndUserInfoTest {
     @Test
     public void addressLine2Test() {
         // TODO: test addressLine2
+    }
+
+    /**
+     * Test the property 'addressLine3'
+     */
+    @Test
+    public void addressLine3Test() {
+        // TODO: test addressLine3
     }
 
     /**
@@ -99,22 +99,6 @@ public class QuoteCreateRequestEndUserInfoTest {
     @Test
     public void countryCodeTest() {
         // TODO: test countryCode
-    }
-
-    /**
-     * Test the property 'email'
-     */
-    @Test
-    public void emailTest() {
-        // TODO: test email
-    }
-
-    /**
-     * Test the property 'phoneNumber'
-     */
-    @Test
-    public void phoneNumberTest() {
-        // TODO: test phoneNumber
     }
 
 }

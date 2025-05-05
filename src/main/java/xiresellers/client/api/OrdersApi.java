@@ -107,7 +107,7 @@ public class OrdersApi {
         <tr><td> 500 </td><td> Internal Server Error </td><td>  * IM-CorrelationID - Unique transaction number to identify each transaction across all the systems. <br>  * IM-SenderID - Unique value used to identify the sender of the transaction. Example: MyCompany <br>  </td></tr>
      </table>
      */
-    public okhttp3.Call deleteOrdercancelCall(String orderNumber, String imCustomerNumber, String imCountryCode, String imCorrelationID, String regionCode, String imSenderID, final ApiCallback _callback) throws ApiException {
+    public okhttp3.Call deleteOrdercancelCall(@javax.annotation.Nonnull String orderNumber, @javax.annotation.Nonnull String imCustomerNumber, @javax.annotation.Nonnull String imCountryCode, @javax.annotation.Nonnull String imCorrelationID, @javax.annotation.Nullable String regionCode, @javax.annotation.Nullable String imSenderID, final ApiCallback _callback) throws ApiException {
         String basePath = null;
         // Operation Servers
         String[] localBasePaths = new String[] {  };
@@ -177,7 +177,7 @@ public class OrdersApi {
     }
 
     @SuppressWarnings("rawtypes")
-    private okhttp3.Call deleteOrdercancelValidateBeforeCall(String orderNumber, String imCustomerNumber, String imCountryCode, String imCorrelationID, String regionCode, String imSenderID, final ApiCallback _callback) throws ApiException {
+    private okhttp3.Call deleteOrdercancelValidateBeforeCall(@javax.annotation.Nonnull String orderNumber, @javax.annotation.Nonnull String imCustomerNumber, @javax.annotation.Nonnull String imCountryCode, @javax.annotation.Nonnull String imCorrelationID, @javax.annotation.Nullable String regionCode, @javax.annotation.Nullable String imSenderID, final ApiCallback _callback) throws ApiException {
         // verify the required parameter 'orderNumber' is set
         if (orderNumber == null) {
             throw new ApiException("Missing the required parameter 'orderNumber' when calling deleteOrdercancel(Async)");
@@ -223,7 +223,7 @@ public class OrdersApi {
         <tr><td> 500 </td><td> Internal Server Error </td><td>  * IM-CorrelationID - Unique transaction number to identify each transaction across all the systems. <br>  * IM-SenderID - Unique value used to identify the sender of the transaction. Example: MyCompany <br>  </td></tr>
      </table>
      */
-    public void deleteOrdercancel(String orderNumber, String imCustomerNumber, String imCountryCode, String imCorrelationID, String regionCode, String imSenderID) throws ApiException {
+    public void deleteOrdercancel(@javax.annotation.Nonnull String orderNumber, @javax.annotation.Nonnull String imCustomerNumber, @javax.annotation.Nonnull String imCountryCode, @javax.annotation.Nonnull String imCorrelationID, @javax.annotation.Nullable String regionCode, @javax.annotation.Nullable String imSenderID) throws ApiException {
         deleteOrdercancelWithHttpInfo(orderNumber, imCustomerNumber, imCountryCode, imCorrelationID, regionCode, imSenderID);
     }
 
@@ -249,7 +249,7 @@ public class OrdersApi {
         <tr><td> 500 </td><td> Internal Server Error </td><td>  * IM-CorrelationID - Unique transaction number to identify each transaction across all the systems. <br>  * IM-SenderID - Unique value used to identify the sender of the transaction. Example: MyCompany <br>  </td></tr>
      </table>
      */
-    public ApiResponse<Void> deleteOrdercancelWithHttpInfo(String orderNumber, String imCustomerNumber, String imCountryCode, String imCorrelationID, String regionCode, String imSenderID) throws ApiException {
+    public ApiResponse<Void> deleteOrdercancelWithHttpInfo(@javax.annotation.Nonnull String orderNumber, @javax.annotation.Nonnull String imCustomerNumber, @javax.annotation.Nonnull String imCountryCode, @javax.annotation.Nonnull String imCorrelationID, @javax.annotation.Nullable String regionCode, @javax.annotation.Nullable String imSenderID) throws ApiException {
         okhttp3.Call localVarCall = deleteOrdercancelValidateBeforeCall(orderNumber, imCustomerNumber, imCountryCode, imCorrelationID, regionCode, imSenderID, null);
         return localVarApiClient.execute(localVarCall);
     }
@@ -277,7 +277,7 @@ public class OrdersApi {
         <tr><td> 500 </td><td> Internal Server Error </td><td>  * IM-CorrelationID - Unique transaction number to identify each transaction across all the systems. <br>  * IM-SenderID - Unique value used to identify the sender of the transaction. Example: MyCompany <br>  </td></tr>
      </table>
      */
-    public okhttp3.Call deleteOrdercancelAsync(String orderNumber, String imCustomerNumber, String imCountryCode, String imCorrelationID, String regionCode, String imSenderID, final ApiCallback<Void> _callback) throws ApiException {
+    public okhttp3.Call deleteOrdercancelAsync(@javax.annotation.Nonnull String orderNumber, @javax.annotation.Nonnull String imCustomerNumber, @javax.annotation.Nonnull String imCountryCode, @javax.annotation.Nonnull String imCorrelationID, @javax.annotation.Nullable String regionCode, @javax.annotation.Nullable String imSenderID, final ApiCallback<Void> _callback) throws ApiException {
 
         okhttp3.Call localVarCall = deleteOrdercancelValidateBeforeCall(orderNumber, imCustomerNumber, imCountryCode, imCorrelationID, regionCode, imSenderID, _callback);
         localVarApiClient.executeAsync(localVarCall, _callback);
@@ -306,7 +306,7 @@ public class OrdersApi {
         <tr><td> 500 </td><td> Server Error </td><td>  -  </td></tr>
      </table>
      */
-    public okhttp3.Call getOrderdetailsV61Call(String ordernumber, String imCustomerNumber, String imCountryCode, String imCorrelationID, String imSenderID, LocalDate ingramOrderDate, String vendorNumber, String simulateStatus, Boolean isIml, String regionCode, final ApiCallback _callback) throws ApiException {
+    public okhttp3.Call getOrderdetailsV61Call(@javax.annotation.Nonnull String ordernumber, @javax.annotation.Nonnull String imCustomerNumber, @javax.annotation.Nonnull String imCountryCode, @javax.annotation.Nonnull String imCorrelationID, @javax.annotation.Nullable String imSenderID, @javax.annotation.Nullable LocalDate ingramOrderDate, @javax.annotation.Nullable String vendorNumber, @javax.annotation.Nullable String simulateStatus, @javax.annotation.Nullable Boolean isIml, @javax.annotation.Nullable String regionCode, final ApiCallback _callback) throws ApiException {
         String basePath = null;
         // Operation Servers
         String[] localBasePaths = new String[] {  };
@@ -392,7 +392,7 @@ public class OrdersApi {
     }
 
     @SuppressWarnings("rawtypes")
-    private okhttp3.Call getOrderdetailsV61ValidateBeforeCall(String ordernumber, String imCustomerNumber, String imCountryCode, String imCorrelationID, String imSenderID, LocalDate ingramOrderDate, String vendorNumber, String simulateStatus, Boolean isIml, String regionCode, final ApiCallback _callback) throws ApiException {
+    private okhttp3.Call getOrderdetailsV61ValidateBeforeCall(@javax.annotation.Nonnull String ordernumber, @javax.annotation.Nonnull String imCustomerNumber, @javax.annotation.Nonnull String imCountryCode, @javax.annotation.Nonnull String imCorrelationID, @javax.annotation.Nullable String imSenderID, @javax.annotation.Nullable LocalDate ingramOrderDate, @javax.annotation.Nullable String vendorNumber, @javax.annotation.Nullable String simulateStatus, @javax.annotation.Nullable Boolean isIml, @javax.annotation.Nullable String regionCode, final ApiCallback _callback) throws ApiException {
         // verify the required parameter 'ordernumber' is set
         if (ordernumber == null) {
             throw new ApiException("Missing the required parameter 'ordernumber' when calling getOrderdetailsV61(Async)");
@@ -440,7 +440,7 @@ public class OrdersApi {
         <tr><td> 500 </td><td> Server Error </td><td>  -  </td></tr>
      </table>
      */
-    public OrderDetailB2B getOrderdetailsV61(String ordernumber, String imCustomerNumber, String imCountryCode, String imCorrelationID, String imSenderID, LocalDate ingramOrderDate, String vendorNumber, String simulateStatus, Boolean isIml, String regionCode) throws ApiException {
+    public OrderDetailB2B getOrderdetailsV61(@javax.annotation.Nonnull String ordernumber, @javax.annotation.Nonnull String imCustomerNumber, @javax.annotation.Nonnull String imCountryCode, @javax.annotation.Nonnull String imCorrelationID, @javax.annotation.Nullable String imSenderID, @javax.annotation.Nullable LocalDate ingramOrderDate, @javax.annotation.Nullable String vendorNumber, @javax.annotation.Nullable String simulateStatus, @javax.annotation.Nullable Boolean isIml, @javax.annotation.Nullable String regionCode) throws ApiException {
         ApiResponse<OrderDetailB2B> localVarResp = getOrderdetailsV61WithHttpInfo(ordernumber, imCustomerNumber, imCountryCode, imCorrelationID, imSenderID, ingramOrderDate, vendorNumber, simulateStatus, isIml, regionCode);
         return localVarResp.getData();
     }
@@ -468,7 +468,7 @@ public class OrdersApi {
         <tr><td> 500 </td><td> Server Error </td><td>  -  </td></tr>
      </table>
      */
-    public ApiResponse<OrderDetailB2B> getOrderdetailsV61WithHttpInfo(String ordernumber, String imCustomerNumber, String imCountryCode, String imCorrelationID, String imSenderID, LocalDate ingramOrderDate, String vendorNumber, String simulateStatus, Boolean isIml, String regionCode) throws ApiException {
+    public ApiResponse<OrderDetailB2B> getOrderdetailsV61WithHttpInfo(@javax.annotation.Nonnull String ordernumber, @javax.annotation.Nonnull String imCustomerNumber, @javax.annotation.Nonnull String imCountryCode, @javax.annotation.Nonnull String imCorrelationID, @javax.annotation.Nullable String imSenderID, @javax.annotation.Nullable LocalDate ingramOrderDate, @javax.annotation.Nullable String vendorNumber, @javax.annotation.Nullable String simulateStatus, @javax.annotation.Nullable Boolean isIml, @javax.annotation.Nullable String regionCode) throws ApiException {
         okhttp3.Call localVarCall = getOrderdetailsV61ValidateBeforeCall(ordernumber, imCustomerNumber, imCountryCode, imCorrelationID, imSenderID, ingramOrderDate, vendorNumber, simulateStatus, isIml, regionCode, null);
         Type localVarReturnType = new TypeToken<OrderDetailB2B>(){}.getType();
         return localVarApiClient.execute(localVarCall, localVarReturnType);
@@ -498,7 +498,7 @@ public class OrdersApi {
         <tr><td> 500 </td><td> Server Error </td><td>  -  </td></tr>
      </table>
      */
-    public okhttp3.Call getOrderdetailsV61Async(String ordernumber, String imCustomerNumber, String imCountryCode, String imCorrelationID, String imSenderID, LocalDate ingramOrderDate, String vendorNumber, String simulateStatus, Boolean isIml, String regionCode, final ApiCallback<OrderDetailB2B> _callback) throws ApiException {
+    public okhttp3.Call getOrderdetailsV61Async(@javax.annotation.Nonnull String ordernumber, @javax.annotation.Nonnull String imCustomerNumber, @javax.annotation.Nonnull String imCountryCode, @javax.annotation.Nonnull String imCorrelationID, @javax.annotation.Nullable String imSenderID, @javax.annotation.Nullable LocalDate ingramOrderDate, @javax.annotation.Nullable String vendorNumber, @javax.annotation.Nullable String simulateStatus, @javax.annotation.Nullable Boolean isIml, @javax.annotation.Nullable String regionCode, final ApiCallback<OrderDetailB2B> _callback) throws ApiException {
 
         okhttp3.Call localVarCall = getOrderdetailsV61ValidateBeforeCall(ordernumber, imCustomerNumber, imCountryCode, imCorrelationID, imSenderID, ingramOrderDate, vendorNumber, simulateStatus, isIml, regionCode, _callback);
         Type localVarReturnType = new TypeToken<OrderDetailB2B>(){}.getType();
@@ -542,7 +542,7 @@ public class OrdersApi {
         <tr><td> 500 </td><td> Internal Server Error </td><td>  -  </td></tr>
      </table>
      */
-    public okhttp3.Call getResellersV6OrdersearchCall(String imCustomerNumber, String imCountryCode, String imCorrelationID, String ingramOrderNumber, String orderStatus, List<String> orderStatusIn, String ingramOrderDate, List<String> ingramOrderDateBt, String imSenderID, String customerOrderNumber, Integer pageSize, Integer pageNumber, String endCustomerOrderNumber, List<String> invoiceDateBt, List<String> shipDateBt, List<String> deliveryDateBt, String ingramPartNumber, String vendorPartNumber, String serialNumber, String trackingNumber, String vendorName, String specialBidNumber, final ApiCallback _callback) throws ApiException {
+    public okhttp3.Call getResellersV6OrdersearchCall(@javax.annotation.Nonnull String imCustomerNumber, @javax.annotation.Nonnull String imCountryCode, @javax.annotation.Nonnull String imCorrelationID, @javax.annotation.Nullable String ingramOrderNumber, @javax.annotation.Nullable String orderStatus, @javax.annotation.Nullable List<String> orderStatusIn, @javax.annotation.Nullable String ingramOrderDate, @javax.annotation.Nullable List<String> ingramOrderDateBt, @javax.annotation.Nullable String imSenderID, @javax.annotation.Nullable String customerOrderNumber, @javax.annotation.Nullable Integer pageSize, @javax.annotation.Nullable Integer pageNumber, @javax.annotation.Nullable String endCustomerOrderNumber, @javax.annotation.Nullable List<String> invoiceDateBt, @javax.annotation.Nullable List<String> shipDateBt, @javax.annotation.Nullable List<String> deliveryDateBt, @javax.annotation.Nullable String ingramPartNumber, @javax.annotation.Nullable String vendorPartNumber, @javax.annotation.Nullable String serialNumber, @javax.annotation.Nullable String trackingNumber, @javax.annotation.Nullable String vendorName, @javax.annotation.Nullable String specialBidNumber, final ApiCallback _callback) throws ApiException {
         String basePath = null;
         // Operation Servers
         String[] localBasePaths = new String[] {  };
@@ -679,7 +679,7 @@ public class OrdersApi {
     }
 
     @SuppressWarnings("rawtypes")
-    private okhttp3.Call getResellersV6OrdersearchValidateBeforeCall(String imCustomerNumber, String imCountryCode, String imCorrelationID, String ingramOrderNumber, String orderStatus, List<String> orderStatusIn, String ingramOrderDate, List<String> ingramOrderDateBt, String imSenderID, String customerOrderNumber, Integer pageSize, Integer pageNumber, String endCustomerOrderNumber, List<String> invoiceDateBt, List<String> shipDateBt, List<String> deliveryDateBt, String ingramPartNumber, String vendorPartNumber, String serialNumber, String trackingNumber, String vendorName, String specialBidNumber, final ApiCallback _callback) throws ApiException {
+    private okhttp3.Call getResellersV6OrdersearchValidateBeforeCall(@javax.annotation.Nonnull String imCustomerNumber, @javax.annotation.Nonnull String imCountryCode, @javax.annotation.Nonnull String imCorrelationID, @javax.annotation.Nullable String ingramOrderNumber, @javax.annotation.Nullable String orderStatus, @javax.annotation.Nullable List<String> orderStatusIn, @javax.annotation.Nullable String ingramOrderDate, @javax.annotation.Nullable List<String> ingramOrderDateBt, @javax.annotation.Nullable String imSenderID, @javax.annotation.Nullable String customerOrderNumber, @javax.annotation.Nullable Integer pageSize, @javax.annotation.Nullable Integer pageNumber, @javax.annotation.Nullable String endCustomerOrderNumber, @javax.annotation.Nullable List<String> invoiceDateBt, @javax.annotation.Nullable List<String> shipDateBt, @javax.annotation.Nullable List<String> deliveryDateBt, @javax.annotation.Nullable String ingramPartNumber, @javax.annotation.Nullable String vendorPartNumber, @javax.annotation.Nullable String serialNumber, @javax.annotation.Nullable String trackingNumber, @javax.annotation.Nullable String vendorName, @javax.annotation.Nullable String specialBidNumber, final ApiCallback _callback) throws ApiException {
         // verify the required parameter 'imCustomerNumber' is set
         if (imCustomerNumber == null) {
             throw new ApiException("Missing the required parameter 'imCustomerNumber' when calling getResellersV6Ordersearch(Async)");
@@ -736,7 +736,7 @@ public class OrdersApi {
         <tr><td> 500 </td><td> Internal Server Error </td><td>  -  </td></tr>
      </table>
      */
-    public OrderSearchResponse getResellersV6Ordersearch(String imCustomerNumber, String imCountryCode, String imCorrelationID, String ingramOrderNumber, String orderStatus, List<String> orderStatusIn, String ingramOrderDate, List<String> ingramOrderDateBt, String imSenderID, String customerOrderNumber, Integer pageSize, Integer pageNumber, String endCustomerOrderNumber, List<String> invoiceDateBt, List<String> shipDateBt, List<String> deliveryDateBt, String ingramPartNumber, String vendorPartNumber, String serialNumber, String trackingNumber, String vendorName, String specialBidNumber) throws ApiException {
+    public OrderSearchResponse getResellersV6Ordersearch(@javax.annotation.Nonnull String imCustomerNumber, @javax.annotation.Nonnull String imCountryCode, @javax.annotation.Nonnull String imCorrelationID, @javax.annotation.Nullable String ingramOrderNumber, @javax.annotation.Nullable String orderStatus, @javax.annotation.Nullable List<String> orderStatusIn, @javax.annotation.Nullable String ingramOrderDate, @javax.annotation.Nullable List<String> ingramOrderDateBt, @javax.annotation.Nullable String imSenderID, @javax.annotation.Nullable String customerOrderNumber, @javax.annotation.Nullable Integer pageSize, @javax.annotation.Nullable Integer pageNumber, @javax.annotation.Nullable String endCustomerOrderNumber, @javax.annotation.Nullable List<String> invoiceDateBt, @javax.annotation.Nullable List<String> shipDateBt, @javax.annotation.Nullable List<String> deliveryDateBt, @javax.annotation.Nullable String ingramPartNumber, @javax.annotation.Nullable String vendorPartNumber, @javax.annotation.Nullable String serialNumber, @javax.annotation.Nullable String trackingNumber, @javax.annotation.Nullable String vendorName, @javax.annotation.Nullable String specialBidNumber) throws ApiException {
         ApiResponse<OrderSearchResponse> localVarResp = getResellersV6OrdersearchWithHttpInfo(imCustomerNumber, imCountryCode, imCorrelationID, ingramOrderNumber, orderStatus, orderStatusIn, ingramOrderDate, ingramOrderDateBt, imSenderID, customerOrderNumber, pageSize, pageNumber, endCustomerOrderNumber, invoiceDateBt, shipDateBt, deliveryDateBt, ingramPartNumber, vendorPartNumber, serialNumber, trackingNumber, vendorName, specialBidNumber);
         return localVarResp.getData();
     }
@@ -778,7 +778,7 @@ public class OrdersApi {
         <tr><td> 500 </td><td> Internal Server Error </td><td>  -  </td></tr>
      </table>
      */
-    public ApiResponse<OrderSearchResponse> getResellersV6OrdersearchWithHttpInfo(String imCustomerNumber, String imCountryCode, String imCorrelationID, String ingramOrderNumber, String orderStatus, List<String> orderStatusIn, String ingramOrderDate, List<String> ingramOrderDateBt, String imSenderID, String customerOrderNumber, Integer pageSize, Integer pageNumber, String endCustomerOrderNumber, List<String> invoiceDateBt, List<String> shipDateBt, List<String> deliveryDateBt, String ingramPartNumber, String vendorPartNumber, String serialNumber, String trackingNumber, String vendorName, String specialBidNumber) throws ApiException {
+    public ApiResponse<OrderSearchResponse> getResellersV6OrdersearchWithHttpInfo(@javax.annotation.Nonnull String imCustomerNumber, @javax.annotation.Nonnull String imCountryCode, @javax.annotation.Nonnull String imCorrelationID, @javax.annotation.Nullable String ingramOrderNumber, @javax.annotation.Nullable String orderStatus, @javax.annotation.Nullable List<String> orderStatusIn, @javax.annotation.Nullable String ingramOrderDate, @javax.annotation.Nullable List<String> ingramOrderDateBt, @javax.annotation.Nullable String imSenderID, @javax.annotation.Nullable String customerOrderNumber, @javax.annotation.Nullable Integer pageSize, @javax.annotation.Nullable Integer pageNumber, @javax.annotation.Nullable String endCustomerOrderNumber, @javax.annotation.Nullable List<String> invoiceDateBt, @javax.annotation.Nullable List<String> shipDateBt, @javax.annotation.Nullable List<String> deliveryDateBt, @javax.annotation.Nullable String ingramPartNumber, @javax.annotation.Nullable String vendorPartNumber, @javax.annotation.Nullable String serialNumber, @javax.annotation.Nullable String trackingNumber, @javax.annotation.Nullable String vendorName, @javax.annotation.Nullable String specialBidNumber) throws ApiException {
         okhttp3.Call localVarCall = getResellersV6OrdersearchValidateBeforeCall(imCustomerNumber, imCountryCode, imCorrelationID, ingramOrderNumber, orderStatus, orderStatusIn, ingramOrderDate, ingramOrderDateBt, imSenderID, customerOrderNumber, pageSize, pageNumber, endCustomerOrderNumber, invoiceDateBt, shipDateBt, deliveryDateBt, ingramPartNumber, vendorPartNumber, serialNumber, trackingNumber, vendorName, specialBidNumber, null);
         Type localVarReturnType = new TypeToken<OrderSearchResponse>(){}.getType();
         return localVarApiClient.execute(localVarCall, localVarReturnType);
@@ -822,7 +822,7 @@ public class OrdersApi {
         <tr><td> 500 </td><td> Internal Server Error </td><td>  -  </td></tr>
      </table>
      */
-    public okhttp3.Call getResellersV6OrdersearchAsync(String imCustomerNumber, String imCountryCode, String imCorrelationID, String ingramOrderNumber, String orderStatus, List<String> orderStatusIn, String ingramOrderDate, List<String> ingramOrderDateBt, String imSenderID, String customerOrderNumber, Integer pageSize, Integer pageNumber, String endCustomerOrderNumber, List<String> invoiceDateBt, List<String> shipDateBt, List<String> deliveryDateBt, String ingramPartNumber, String vendorPartNumber, String serialNumber, String trackingNumber, String vendorName, String specialBidNumber, final ApiCallback<OrderSearchResponse> _callback) throws ApiException {
+    public okhttp3.Call getResellersV6OrdersearchAsync(@javax.annotation.Nonnull String imCustomerNumber, @javax.annotation.Nonnull String imCountryCode, @javax.annotation.Nonnull String imCorrelationID, @javax.annotation.Nullable String ingramOrderNumber, @javax.annotation.Nullable String orderStatus, @javax.annotation.Nullable List<String> orderStatusIn, @javax.annotation.Nullable String ingramOrderDate, @javax.annotation.Nullable List<String> ingramOrderDateBt, @javax.annotation.Nullable String imSenderID, @javax.annotation.Nullable String customerOrderNumber, @javax.annotation.Nullable Integer pageSize, @javax.annotation.Nullable Integer pageNumber, @javax.annotation.Nullable String endCustomerOrderNumber, @javax.annotation.Nullable List<String> invoiceDateBt, @javax.annotation.Nullable List<String> shipDateBt, @javax.annotation.Nullable List<String> deliveryDateBt, @javax.annotation.Nullable String ingramPartNumber, @javax.annotation.Nullable String vendorPartNumber, @javax.annotation.Nullable String serialNumber, @javax.annotation.Nullable String trackingNumber, @javax.annotation.Nullable String vendorName, @javax.annotation.Nullable String specialBidNumber, final ApiCallback<OrderSearchResponse> _callback) throws ApiException {
 
         okhttp3.Call localVarCall = getResellersV6OrdersearchValidateBeforeCall(imCustomerNumber, imCountryCode, imCorrelationID, ingramOrderNumber, orderStatus, orderStatusIn, ingramOrderDate, ingramOrderDateBt, imSenderID, customerOrderNumber, pageSize, pageNumber, endCustomerOrderNumber, invoiceDateBt, shipDateBt, deliveryDateBt, ingramPartNumber, vendorPartNumber, serialNumber, trackingNumber, vendorName, specialBidNumber, _callback);
         Type localVarReturnType = new TypeToken<OrderSearchResponse>(){}.getType();
@@ -849,7 +849,7 @@ public class OrdersApi {
         <tr><td> 500 </td><td> Internal Server Error </td><td>  * IM-CorrelationID - Unique transaction number to identify each transaction across all the systems. <br>  * IM-SenderID - Unique value used to identify the sender of the transaction. Example: MyCompany <br>  </td></tr>
      </table>
      */
-    public okhttp3.Call postCreateorderV6Call(String imCustomerNumber, String imCountryCode, String imCorrelationID, OrderCreateRequest orderCreateRequest, String imSenderID, final ApiCallback _callback) throws ApiException {
+    public okhttp3.Call postCreateorderV6Call(@javax.annotation.Nonnull String imCustomerNumber, @javax.annotation.Nonnull String imCountryCode, @javax.annotation.Nonnull String imCorrelationID, @javax.annotation.Nonnull OrderCreateRequest orderCreateRequest, @javax.annotation.Nullable String imSenderID, final ApiCallback _callback) throws ApiException {
         String basePath = null;
         // Operation Servers
         String[] localBasePaths = new String[] {  };
@@ -915,7 +915,7 @@ public class OrdersApi {
     }
 
     @SuppressWarnings("rawtypes")
-    private okhttp3.Call postCreateorderV6ValidateBeforeCall(String imCustomerNumber, String imCountryCode, String imCorrelationID, OrderCreateRequest orderCreateRequest, String imSenderID, final ApiCallback _callback) throws ApiException {
+    private okhttp3.Call postCreateorderV6ValidateBeforeCall(@javax.annotation.Nonnull String imCustomerNumber, @javax.annotation.Nonnull String imCountryCode, @javax.annotation.Nonnull String imCorrelationID, @javax.annotation.Nonnull OrderCreateRequest orderCreateRequest, @javax.annotation.Nullable String imSenderID, final ApiCallback _callback) throws ApiException {
         // verify the required parameter 'imCustomerNumber' is set
         if (imCustomerNumber == null) {
             throw new ApiException("Missing the required parameter 'imCustomerNumber' when calling postCreateorderV6(Async)");
@@ -960,7 +960,7 @@ public class OrdersApi {
         <tr><td> 500 </td><td> Internal Server Error </td><td>  * IM-CorrelationID - Unique transaction number to identify each transaction across all the systems. <br>  * IM-SenderID - Unique value used to identify the sender of the transaction. Example: MyCompany <br>  </td></tr>
      </table>
      */
-    public OrderCreateResponse postCreateorderV6(String imCustomerNumber, String imCountryCode, String imCorrelationID, OrderCreateRequest orderCreateRequest, String imSenderID) throws ApiException {
+    public OrderCreateResponse postCreateorderV6(@javax.annotation.Nonnull String imCustomerNumber, @javax.annotation.Nonnull String imCountryCode, @javax.annotation.Nonnull String imCorrelationID, @javax.annotation.Nonnull OrderCreateRequest orderCreateRequest, @javax.annotation.Nullable String imSenderID) throws ApiException {
         ApiResponse<OrderCreateResponse> localVarResp = postCreateorderV6WithHttpInfo(imCustomerNumber, imCountryCode, imCorrelationID, orderCreateRequest, imSenderID);
         return localVarResp.getData();
     }
@@ -985,7 +985,7 @@ public class OrdersApi {
         <tr><td> 500 </td><td> Internal Server Error </td><td>  * IM-CorrelationID - Unique transaction number to identify each transaction across all the systems. <br>  * IM-SenderID - Unique value used to identify the sender of the transaction. Example: MyCompany <br>  </td></tr>
      </table>
      */
-    public ApiResponse<OrderCreateResponse> postCreateorderV6WithHttpInfo(String imCustomerNumber, String imCountryCode, String imCorrelationID, OrderCreateRequest orderCreateRequest, String imSenderID) throws ApiException {
+    public ApiResponse<OrderCreateResponse> postCreateorderV6WithHttpInfo(@javax.annotation.Nonnull String imCustomerNumber, @javax.annotation.Nonnull String imCountryCode, @javax.annotation.Nonnull String imCorrelationID, @javax.annotation.Nonnull OrderCreateRequest orderCreateRequest, @javax.annotation.Nullable String imSenderID) throws ApiException {
         okhttp3.Call localVarCall = postCreateorderV6ValidateBeforeCall(imCustomerNumber, imCountryCode, imCorrelationID, orderCreateRequest, imSenderID, null);
         Type localVarReturnType = new TypeToken<OrderCreateResponse>(){}.getType();
         return localVarApiClient.execute(localVarCall, localVarReturnType);
@@ -1012,7 +1012,7 @@ public class OrdersApi {
         <tr><td> 500 </td><td> Internal Server Error </td><td>  * IM-CorrelationID - Unique transaction number to identify each transaction across all the systems. <br>  * IM-SenderID - Unique value used to identify the sender of the transaction. Example: MyCompany <br>  </td></tr>
      </table>
      */
-    public okhttp3.Call postCreateorderV6Async(String imCustomerNumber, String imCountryCode, String imCorrelationID, OrderCreateRequest orderCreateRequest, String imSenderID, final ApiCallback<OrderCreateResponse> _callback) throws ApiException {
+    public okhttp3.Call postCreateorderV6Async(@javax.annotation.Nonnull String imCustomerNumber, @javax.annotation.Nonnull String imCountryCode, @javax.annotation.Nonnull String imCorrelationID, @javax.annotation.Nonnull OrderCreateRequest orderCreateRequest, @javax.annotation.Nullable String imSenderID, final ApiCallback<OrderCreateResponse> _callback) throws ApiException {
 
         okhttp3.Call localVarCall = postCreateorderV6ValidateBeforeCall(imCustomerNumber, imCountryCode, imCorrelationID, orderCreateRequest, imSenderID, _callback);
         Type localVarReturnType = new TypeToken<OrderCreateResponse>(){}.getType();
@@ -1039,7 +1039,7 @@ public class OrdersApi {
         <tr><td> 500 </td><td> Server Error </td><td>  -  </td></tr>
      </table>
      */
-    public okhttp3.Call postCreateorderV7Call(String imCustomerNumber, String imCountryCode, String imCorrelationID, OrderCreateV7Request orderCreateV7Request, String imSenderID, final ApiCallback _callback) throws ApiException {
+    public okhttp3.Call postCreateorderV7Call(@javax.annotation.Nonnull String imCustomerNumber, @javax.annotation.Nonnull String imCountryCode, @javax.annotation.Nonnull String imCorrelationID, @javax.annotation.Nonnull OrderCreateV7Request orderCreateV7Request, @javax.annotation.Nullable String imSenderID, final ApiCallback _callback) throws ApiException {
         String basePath = null;
         // Operation Servers
         String[] localBasePaths = new String[] {  };
@@ -1105,7 +1105,7 @@ public class OrdersApi {
     }
 
     @SuppressWarnings("rawtypes")
-    private okhttp3.Call postCreateorderV7ValidateBeforeCall(String imCustomerNumber, String imCountryCode, String imCorrelationID, OrderCreateV7Request orderCreateV7Request, String imSenderID, final ApiCallback _callback) throws ApiException {
+    private okhttp3.Call postCreateorderV7ValidateBeforeCall(@javax.annotation.Nonnull String imCustomerNumber, @javax.annotation.Nonnull String imCountryCode, @javax.annotation.Nonnull String imCorrelationID, @javax.annotation.Nonnull OrderCreateV7Request orderCreateV7Request, @javax.annotation.Nullable String imSenderID, final ApiCallback _callback) throws ApiException {
         // verify the required parameter 'imCustomerNumber' is set
         if (imCustomerNumber == null) {
             throw new ApiException("Missing the required parameter 'imCustomerNumber' when calling postCreateorderV7(Async)");
@@ -1150,7 +1150,7 @@ public class OrdersApi {
         <tr><td> 500 </td><td> Server Error </td><td>  -  </td></tr>
      </table>
      */
-    public OrderCreateV7Response201 postCreateorderV7(String imCustomerNumber, String imCountryCode, String imCorrelationID, OrderCreateV7Request orderCreateV7Request, String imSenderID) throws ApiException {
+    public OrderCreateV7Response201 postCreateorderV7(@javax.annotation.Nonnull String imCustomerNumber, @javax.annotation.Nonnull String imCountryCode, @javax.annotation.Nonnull String imCorrelationID, @javax.annotation.Nonnull OrderCreateV7Request orderCreateV7Request, @javax.annotation.Nullable String imSenderID) throws ApiException {
         ApiResponse<OrderCreateV7Response201> localVarResp = postCreateorderV7WithHttpInfo(imCustomerNumber, imCountryCode, imCorrelationID, orderCreateV7Request, imSenderID);
         return localVarResp.getData();
     }
@@ -1175,7 +1175,7 @@ public class OrdersApi {
         <tr><td> 500 </td><td> Server Error </td><td>  -  </td></tr>
      </table>
      */
-    public ApiResponse<OrderCreateV7Response201> postCreateorderV7WithHttpInfo(String imCustomerNumber, String imCountryCode, String imCorrelationID, OrderCreateV7Request orderCreateV7Request, String imSenderID) throws ApiException {
+    public ApiResponse<OrderCreateV7Response201> postCreateorderV7WithHttpInfo(@javax.annotation.Nonnull String imCustomerNumber, @javax.annotation.Nonnull String imCountryCode, @javax.annotation.Nonnull String imCorrelationID, @javax.annotation.Nonnull OrderCreateV7Request orderCreateV7Request, @javax.annotation.Nullable String imSenderID) throws ApiException {
         okhttp3.Call localVarCall = postCreateorderV7ValidateBeforeCall(imCustomerNumber, imCountryCode, imCorrelationID, orderCreateV7Request, imSenderID, null);
         Type localVarReturnType = new TypeToken<OrderCreateV7Response201>(){}.getType();
         return localVarApiClient.execute(localVarCall, localVarReturnType);
@@ -1202,7 +1202,7 @@ public class OrdersApi {
         <tr><td> 500 </td><td> Server Error </td><td>  -  </td></tr>
      </table>
      */
-    public okhttp3.Call postCreateorderV7Async(String imCustomerNumber, String imCountryCode, String imCorrelationID, OrderCreateV7Request orderCreateV7Request, String imSenderID, final ApiCallback<OrderCreateV7Response201> _callback) throws ApiException {
+    public okhttp3.Call postCreateorderV7Async(@javax.annotation.Nonnull String imCustomerNumber, @javax.annotation.Nonnull String imCountryCode, @javax.annotation.Nonnull String imCorrelationID, @javax.annotation.Nonnull OrderCreateV7Request orderCreateV7Request, @javax.annotation.Nullable String imSenderID, final ApiCallback<OrderCreateV7Response201> _callback) throws ApiException {
 
         okhttp3.Call localVarCall = postCreateorderV7ValidateBeforeCall(imCustomerNumber, imCountryCode, imCorrelationID, orderCreateV7Request, imSenderID, _callback);
         Type localVarReturnType = new TypeToken<OrderCreateV7Response201>(){}.getType();
@@ -1235,7 +1235,7 @@ public class OrdersApi {
         <tr><td> 500 </td><td> Internal Server Error </td><td>  * IM-CorrelationID - Unique transaction number to identify each transaction across all the systems. <br>  * IM-SenderID - Unique value used to identify the sender of the transaction. Example: MyCompany <br>  </td></tr>
      </table>
      */
-    public okhttp3.Call putOrdermodifyCall(String orderNumber, String imCustomerNumber, String imCountryCode, String imCorrelationID, OrderModifyRequest orderModifyRequest, String actionCode, String regionCode, String imSenderID, final ApiCallback _callback) throws ApiException {
+    public okhttp3.Call putOrdermodifyCall(@javax.annotation.Nonnull String orderNumber, @javax.annotation.Nonnull String imCustomerNumber, @javax.annotation.Nonnull String imCountryCode, @javax.annotation.Nonnull String imCorrelationID, @javax.annotation.Nonnull OrderModifyRequest orderModifyRequest, @javax.annotation.Nullable String actionCode, @javax.annotation.Nullable String regionCode, @javax.annotation.Nullable String imSenderID, final ApiCallback _callback) throws ApiException {
         String basePath = null;
         // Operation Servers
         String[] localBasePaths = new String[] {  };
@@ -1310,7 +1310,7 @@ public class OrdersApi {
     }
 
     @SuppressWarnings("rawtypes")
-    private okhttp3.Call putOrdermodifyValidateBeforeCall(String orderNumber, String imCustomerNumber, String imCountryCode, String imCorrelationID, OrderModifyRequest orderModifyRequest, String actionCode, String regionCode, String imSenderID, final ApiCallback _callback) throws ApiException {
+    private okhttp3.Call putOrdermodifyValidateBeforeCall(@javax.annotation.Nonnull String orderNumber, @javax.annotation.Nonnull String imCustomerNumber, @javax.annotation.Nonnull String imCountryCode, @javax.annotation.Nonnull String imCorrelationID, @javax.annotation.Nonnull OrderModifyRequest orderModifyRequest, @javax.annotation.Nullable String actionCode, @javax.annotation.Nullable String regionCode, @javax.annotation.Nullable String imSenderID, final ApiCallback _callback) throws ApiException {
         // verify the required parameter 'orderNumber' is set
         if (orderNumber == null) {
             throw new ApiException("Missing the required parameter 'orderNumber' when calling putOrdermodify(Async)");
@@ -1366,7 +1366,7 @@ public class OrdersApi {
         <tr><td> 500 </td><td> Internal Server Error </td><td>  * IM-CorrelationID - Unique transaction number to identify each transaction across all the systems. <br>  * IM-SenderID - Unique value used to identify the sender of the transaction. Example: MyCompany <br>  </td></tr>
      </table>
      */
-    public OrderModifyResponse putOrdermodify(String orderNumber, String imCustomerNumber, String imCountryCode, String imCorrelationID, OrderModifyRequest orderModifyRequest, String actionCode, String regionCode, String imSenderID) throws ApiException {
+    public OrderModifyResponse putOrdermodify(@javax.annotation.Nonnull String orderNumber, @javax.annotation.Nonnull String imCustomerNumber, @javax.annotation.Nonnull String imCountryCode, @javax.annotation.Nonnull String imCorrelationID, @javax.annotation.Nonnull OrderModifyRequest orderModifyRequest, @javax.annotation.Nullable String actionCode, @javax.annotation.Nullable String regionCode, @javax.annotation.Nullable String imSenderID) throws ApiException {
         ApiResponse<OrderModifyResponse> localVarResp = putOrdermodifyWithHttpInfo(orderNumber, imCustomerNumber, imCountryCode, imCorrelationID, orderModifyRequest, actionCode, regionCode, imSenderID);
         return localVarResp.getData();
     }
@@ -1397,7 +1397,7 @@ public class OrdersApi {
         <tr><td> 500 </td><td> Internal Server Error </td><td>  * IM-CorrelationID - Unique transaction number to identify each transaction across all the systems. <br>  * IM-SenderID - Unique value used to identify the sender of the transaction. Example: MyCompany <br>  </td></tr>
      </table>
      */
-    public ApiResponse<OrderModifyResponse> putOrdermodifyWithHttpInfo(String orderNumber, String imCustomerNumber, String imCountryCode, String imCorrelationID, OrderModifyRequest orderModifyRequest, String actionCode, String regionCode, String imSenderID) throws ApiException {
+    public ApiResponse<OrderModifyResponse> putOrdermodifyWithHttpInfo(@javax.annotation.Nonnull String orderNumber, @javax.annotation.Nonnull String imCustomerNumber, @javax.annotation.Nonnull String imCountryCode, @javax.annotation.Nonnull String imCorrelationID, @javax.annotation.Nonnull OrderModifyRequest orderModifyRequest, @javax.annotation.Nullable String actionCode, @javax.annotation.Nullable String regionCode, @javax.annotation.Nullable String imSenderID) throws ApiException {
         okhttp3.Call localVarCall = putOrdermodifyValidateBeforeCall(orderNumber, imCustomerNumber, imCountryCode, imCorrelationID, orderModifyRequest, actionCode, regionCode, imSenderID, null);
         Type localVarReturnType = new TypeToken<OrderModifyResponse>(){}.getType();
         return localVarApiClient.execute(localVarCall, localVarReturnType);
@@ -1430,7 +1430,7 @@ public class OrdersApi {
         <tr><td> 500 </td><td> Internal Server Error </td><td>  * IM-CorrelationID - Unique transaction number to identify each transaction across all the systems. <br>  * IM-SenderID - Unique value used to identify the sender of the transaction. Example: MyCompany <br>  </td></tr>
      </table>
      */
-    public okhttp3.Call putOrdermodifyAsync(String orderNumber, String imCustomerNumber, String imCountryCode, String imCorrelationID, OrderModifyRequest orderModifyRequest, String actionCode, String regionCode, String imSenderID, final ApiCallback<OrderModifyResponse> _callback) throws ApiException {
+    public okhttp3.Call putOrdermodifyAsync(@javax.annotation.Nonnull String orderNumber, @javax.annotation.Nonnull String imCustomerNumber, @javax.annotation.Nonnull String imCountryCode, @javax.annotation.Nonnull String imCorrelationID, @javax.annotation.Nonnull OrderModifyRequest orderModifyRequest, @javax.annotation.Nullable String actionCode, @javax.annotation.Nullable String regionCode, @javax.annotation.Nullable String imSenderID, final ApiCallback<OrderModifyResponse> _callback) throws ApiException {
 
         okhttp3.Call localVarCall = putOrdermodifyValidateBeforeCall(orderNumber, imCustomerNumber, imCountryCode, imCorrelationID, orderModifyRequest, actionCode, regionCode, imSenderID, _callback);
         Type localVarReturnType = new TypeToken<OrderModifyResponse>(){}.getType();

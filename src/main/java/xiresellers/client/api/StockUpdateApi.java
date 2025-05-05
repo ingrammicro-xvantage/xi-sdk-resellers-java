@@ -88,7 +88,7 @@ public class StockUpdateApi {
         <tr><td> 500 </td><td> Internal Server Error </td><td>  -  </td></tr>
      </table>
      */
-    public okhttp3.Call resellersV1WebhooksAvailabilityupdatePostCall(String targeturl, String xHubSignature, AvailabilityAsyncNotificationRequest availabilityAsyncNotificationRequest, final ApiCallback _callback) throws ApiException {
+    public okhttp3.Call resellersV1WebhooksAvailabilityupdatePostCall(@javax.annotation.Nonnull String targeturl, @javax.annotation.Nonnull String xHubSignature, @javax.annotation.Nonnull AvailabilityAsyncNotificationRequest availabilityAsyncNotificationRequest, final ApiCallback _callback) throws ApiException {
         String basePath = null;
         // Operation Servers
         String[] localBasePaths = new String[] {  };
@@ -143,7 +143,7 @@ public class StockUpdateApi {
     }
 
     @SuppressWarnings("rawtypes")
-    private okhttp3.Call resellersV1WebhooksAvailabilityupdatePostValidateBeforeCall(String targeturl, String xHubSignature, AvailabilityAsyncNotificationRequest availabilityAsyncNotificationRequest, final ApiCallback _callback) throws ApiException {
+    private okhttp3.Call resellersV1WebhooksAvailabilityupdatePostValidateBeforeCall(@javax.annotation.Nonnull String targeturl, @javax.annotation.Nonnull String xHubSignature, @javax.annotation.Nonnull AvailabilityAsyncNotificationRequest availabilityAsyncNotificationRequest, final ApiCallback _callback) throws ApiException {
         // verify the required parameter 'targeturl' is set
         if (targeturl == null) {
             throw new ApiException("Missing the required parameter 'targeturl' when calling resellersV1WebhooksAvailabilityupdatePost(Async)");
@@ -178,7 +178,7 @@ public class StockUpdateApi {
         <tr><td> 500 </td><td> Internal Server Error </td><td>  -  </td></tr>
      </table>
      */
-    public void resellersV1WebhooksAvailabilityupdatePost(String targeturl, String xHubSignature, AvailabilityAsyncNotificationRequest availabilityAsyncNotificationRequest) throws ApiException {
+    public void resellersV1WebhooksAvailabilityupdatePost(@javax.annotation.Nonnull String targeturl, @javax.annotation.Nonnull String xHubSignature, @javax.annotation.Nonnull AvailabilityAsyncNotificationRequest availabilityAsyncNotificationRequest) throws ApiException {
         resellersV1WebhooksAvailabilityupdatePostWithHttpInfo(targeturl, xHubSignature, availabilityAsyncNotificationRequest);
     }
 
@@ -198,7 +198,7 @@ public class StockUpdateApi {
         <tr><td> 500 </td><td> Internal Server Error </td><td>  -  </td></tr>
      </table>
      */
-    public ApiResponse<Void> resellersV1WebhooksAvailabilityupdatePostWithHttpInfo(String targeturl, String xHubSignature, AvailabilityAsyncNotificationRequest availabilityAsyncNotificationRequest) throws ApiException {
+    public ApiResponse<Void> resellersV1WebhooksAvailabilityupdatePostWithHttpInfo(@javax.annotation.Nonnull String targeturl, @javax.annotation.Nonnull String xHubSignature, @javax.annotation.Nonnull AvailabilityAsyncNotificationRequest availabilityAsyncNotificationRequest) throws ApiException {
         okhttp3.Call localVarCall = resellersV1WebhooksAvailabilityupdatePostValidateBeforeCall(targeturl, xHubSignature, availabilityAsyncNotificationRequest, null);
         return localVarApiClient.execute(localVarCall);
     }
@@ -220,7 +220,7 @@ public class StockUpdateApi {
         <tr><td> 500 </td><td> Internal Server Error </td><td>  -  </td></tr>
      </table>
      */
-    public okhttp3.Call resellersV1WebhooksAvailabilityupdatePostAsync(String targeturl, String xHubSignature, AvailabilityAsyncNotificationRequest availabilityAsyncNotificationRequest, final ApiCallback<Void> _callback) throws ApiException {
+    public okhttp3.Call resellersV1WebhooksAvailabilityupdatePostAsync(@javax.annotation.Nonnull String targeturl, @javax.annotation.Nonnull String xHubSignature, @javax.annotation.Nonnull AvailabilityAsyncNotificationRequest availabilityAsyncNotificationRequest, final ApiCallback<Void> _callback) throws ApiException {
 
         okhttp3.Call localVarCall = resellersV1WebhooksAvailabilityupdatePostValidateBeforeCall(targeturl, xHubSignature, availabilityAsyncNotificationRequest, _callback);
         localVarApiClient.executeAsync(localVarCall, _callback);

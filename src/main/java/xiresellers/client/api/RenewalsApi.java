@@ -95,7 +95,7 @@ public class RenewalsApi {
         <tr><td> 500 </td><td> Internal Server Error </td><td>  -  </td></tr>
      </table>
      */
-    public okhttp3.Call getResellersV6RenewalsdetailsCall(String imCustomerNumber, String imCountryCode, String imCorrelationID, String renewalId, String imSenderID, final ApiCallback _callback) throws ApiException {
+    public okhttp3.Call getResellersV6RenewalsdetailsCall(@javax.annotation.Nonnull String imCustomerNumber, @javax.annotation.Nonnull String imCountryCode, @javax.annotation.Nonnull String imCorrelationID, @javax.annotation.Nonnull String renewalId, @javax.annotation.Nullable String imSenderID, final ApiCallback _callback) throws ApiException {
         String basePath = null;
         // Operation Servers
         String[] localBasePaths = new String[] {  };
@@ -161,7 +161,7 @@ public class RenewalsApi {
     }
 
     @SuppressWarnings("rawtypes")
-    private okhttp3.Call getResellersV6RenewalsdetailsValidateBeforeCall(String imCustomerNumber, String imCountryCode, String imCorrelationID, String renewalId, String imSenderID, final ApiCallback _callback) throws ApiException {
+    private okhttp3.Call getResellersV6RenewalsdetailsValidateBeforeCall(@javax.annotation.Nonnull String imCustomerNumber, @javax.annotation.Nonnull String imCountryCode, @javax.annotation.Nonnull String imCorrelationID, @javax.annotation.Nonnull String renewalId, @javax.annotation.Nullable String imSenderID, final ApiCallback _callback) throws ApiException {
         // verify the required parameter 'imCustomerNumber' is set
         if (imCustomerNumber == null) {
             throw new ApiException("Missing the required parameter 'imCustomerNumber' when calling getResellersV6Renewalsdetails(Async)");
@@ -205,7 +205,7 @@ public class RenewalsApi {
         <tr><td> 500 </td><td> Internal Server Error </td><td>  -  </td></tr>
      </table>
      */
-    public RenewalsDetailsResponse getResellersV6Renewalsdetails(String imCustomerNumber, String imCountryCode, String imCorrelationID, String renewalId, String imSenderID) throws ApiException {
+    public RenewalsDetailsResponse getResellersV6Renewalsdetails(@javax.annotation.Nonnull String imCustomerNumber, @javax.annotation.Nonnull String imCountryCode, @javax.annotation.Nonnull String imCorrelationID, @javax.annotation.Nonnull String renewalId, @javax.annotation.Nullable String imSenderID) throws ApiException {
         ApiResponse<RenewalsDetailsResponse> localVarResp = getResellersV6RenewalsdetailsWithHttpInfo(imCustomerNumber, imCountryCode, imCorrelationID, renewalId, imSenderID);
         return localVarResp.getData();
     }
@@ -229,7 +229,7 @@ public class RenewalsApi {
         <tr><td> 500 </td><td> Internal Server Error </td><td>  -  </td></tr>
      </table>
      */
-    public ApiResponse<RenewalsDetailsResponse> getResellersV6RenewalsdetailsWithHttpInfo(String imCustomerNumber, String imCountryCode, String imCorrelationID, String renewalId, String imSenderID) throws ApiException {
+    public ApiResponse<RenewalsDetailsResponse> getResellersV6RenewalsdetailsWithHttpInfo(@javax.annotation.Nonnull String imCustomerNumber, @javax.annotation.Nonnull String imCountryCode, @javax.annotation.Nonnull String imCorrelationID, @javax.annotation.Nonnull String renewalId, @javax.annotation.Nullable String imSenderID) throws ApiException {
         okhttp3.Call localVarCall = getResellersV6RenewalsdetailsValidateBeforeCall(imCustomerNumber, imCountryCode, imCorrelationID, renewalId, imSenderID, null);
         Type localVarReturnType = new TypeToken<RenewalsDetailsResponse>(){}.getType();
         return localVarApiClient.execute(localVarCall, localVarReturnType);
@@ -255,7 +255,7 @@ public class RenewalsApi {
         <tr><td> 500 </td><td> Internal Server Error </td><td>  -  </td></tr>
      </table>
      */
-    public okhttp3.Call getResellersV6RenewalsdetailsAsync(String imCustomerNumber, String imCountryCode, String imCorrelationID, String renewalId, String imSenderID, final ApiCallback<RenewalsDetailsResponse> _callback) throws ApiException {
+    public okhttp3.Call getResellersV6RenewalsdetailsAsync(@javax.annotation.Nonnull String imCustomerNumber, @javax.annotation.Nonnull String imCountryCode, @javax.annotation.Nonnull String imCorrelationID, @javax.annotation.Nonnull String renewalId, @javax.annotation.Nullable String imSenderID, final ApiCallback<RenewalsDetailsResponse> _callback) throws ApiException {
 
         okhttp3.Call localVarCall = getResellersV6RenewalsdetailsValidateBeforeCall(imCustomerNumber, imCountryCode, imCorrelationID, renewalId, imSenderID, _callback);
         Type localVarReturnType = new TypeToken<RenewalsDetailsResponse>(){}.getType();
@@ -287,7 +287,7 @@ public class RenewalsApi {
         <tr><td> 500 </td><td> Internal Server Error </td><td>  -  </td></tr>
      </table>
      */
-    public okhttp3.Call postRenewalssearchCall(String imCustomerNumber, String imCountryCode, String imCorrelationID, String imSenderID, String customerOrderNumber, String ingramPurchaseOrderNumber, String serialNumber, String page, String size, String sort, RenewalsSearchRequest renewalsSearchRequest, final ApiCallback _callback) throws ApiException {
+    public okhttp3.Call postRenewalssearchCall(@javax.annotation.Nonnull String imCustomerNumber, @javax.annotation.Nonnull String imCountryCode, @javax.annotation.Nonnull String imCorrelationID, @javax.annotation.Nullable String imSenderID, @javax.annotation.Nullable String customerOrderNumber, @javax.annotation.Nullable String ingramPurchaseOrderNumber, @javax.annotation.Nullable String serialNumber, @javax.annotation.Nullable String page, @javax.annotation.Nullable String size, @javax.annotation.Nullable String sort, @javax.annotation.Nullable RenewalsSearchRequest renewalsSearchRequest, final ApiCallback _callback) throws ApiException {
         String basePath = null;
         // Operation Servers
         String[] localBasePaths = new String[] {  };
@@ -377,7 +377,7 @@ public class RenewalsApi {
     }
 
     @SuppressWarnings("rawtypes")
-    private okhttp3.Call postRenewalssearchValidateBeforeCall(String imCustomerNumber, String imCountryCode, String imCorrelationID, String imSenderID, String customerOrderNumber, String ingramPurchaseOrderNumber, String serialNumber, String page, String size, String sort, RenewalsSearchRequest renewalsSearchRequest, final ApiCallback _callback) throws ApiException {
+    private okhttp3.Call postRenewalssearchValidateBeforeCall(@javax.annotation.Nonnull String imCustomerNumber, @javax.annotation.Nonnull String imCountryCode, @javax.annotation.Nonnull String imCorrelationID, @javax.annotation.Nullable String imSenderID, @javax.annotation.Nullable String customerOrderNumber, @javax.annotation.Nullable String ingramPurchaseOrderNumber, @javax.annotation.Nullable String serialNumber, @javax.annotation.Nullable String page, @javax.annotation.Nullable String size, @javax.annotation.Nullable String sort, @javax.annotation.Nullable RenewalsSearchRequest renewalsSearchRequest, final ApiCallback _callback) throws ApiException {
         // verify the required parameter 'imCustomerNumber' is set
         if (imCustomerNumber == null) {
             throw new ApiException("Missing the required parameter 'imCustomerNumber' when calling postRenewalssearch(Async)");
@@ -422,7 +422,7 @@ public class RenewalsApi {
         <tr><td> 500 </td><td> Internal Server Error </td><td>  -  </td></tr>
      </table>
      */
-    public RenewalsSearchResponse postRenewalssearch(String imCustomerNumber, String imCountryCode, String imCorrelationID, String imSenderID, String customerOrderNumber, String ingramPurchaseOrderNumber, String serialNumber, String page, String size, String sort, RenewalsSearchRequest renewalsSearchRequest) throws ApiException {
+    public RenewalsSearchResponse postRenewalssearch(@javax.annotation.Nonnull String imCustomerNumber, @javax.annotation.Nonnull String imCountryCode, @javax.annotation.Nonnull String imCorrelationID, @javax.annotation.Nullable String imSenderID, @javax.annotation.Nullable String customerOrderNumber, @javax.annotation.Nullable String ingramPurchaseOrderNumber, @javax.annotation.Nullable String serialNumber, @javax.annotation.Nullable String page, @javax.annotation.Nullable String size, @javax.annotation.Nullable String sort, @javax.annotation.Nullable RenewalsSearchRequest renewalsSearchRequest) throws ApiException {
         ApiResponse<RenewalsSearchResponse> localVarResp = postRenewalssearchWithHttpInfo(imCustomerNumber, imCountryCode, imCorrelationID, imSenderID, customerOrderNumber, ingramPurchaseOrderNumber, serialNumber, page, size, sort, renewalsSearchRequest);
         return localVarResp.getData();
     }
@@ -452,7 +452,7 @@ public class RenewalsApi {
         <tr><td> 500 </td><td> Internal Server Error </td><td>  -  </td></tr>
      </table>
      */
-    public ApiResponse<RenewalsSearchResponse> postRenewalssearchWithHttpInfo(String imCustomerNumber, String imCountryCode, String imCorrelationID, String imSenderID, String customerOrderNumber, String ingramPurchaseOrderNumber, String serialNumber, String page, String size, String sort, RenewalsSearchRequest renewalsSearchRequest) throws ApiException {
+    public ApiResponse<RenewalsSearchResponse> postRenewalssearchWithHttpInfo(@javax.annotation.Nonnull String imCustomerNumber, @javax.annotation.Nonnull String imCountryCode, @javax.annotation.Nonnull String imCorrelationID, @javax.annotation.Nullable String imSenderID, @javax.annotation.Nullable String customerOrderNumber, @javax.annotation.Nullable String ingramPurchaseOrderNumber, @javax.annotation.Nullable String serialNumber, @javax.annotation.Nullable String page, @javax.annotation.Nullable String size, @javax.annotation.Nullable String sort, @javax.annotation.Nullable RenewalsSearchRequest renewalsSearchRequest) throws ApiException {
         okhttp3.Call localVarCall = postRenewalssearchValidateBeforeCall(imCustomerNumber, imCountryCode, imCorrelationID, imSenderID, customerOrderNumber, ingramPurchaseOrderNumber, serialNumber, page, size, sort, renewalsSearchRequest, null);
         Type localVarReturnType = new TypeToken<RenewalsSearchResponse>(){}.getType();
         return localVarApiClient.execute(localVarCall, localVarReturnType);
@@ -484,7 +484,7 @@ public class RenewalsApi {
         <tr><td> 500 </td><td> Internal Server Error </td><td>  -  </td></tr>
      </table>
      */
-    public okhttp3.Call postRenewalssearchAsync(String imCustomerNumber, String imCountryCode, String imCorrelationID, String imSenderID, String customerOrderNumber, String ingramPurchaseOrderNumber, String serialNumber, String page, String size, String sort, RenewalsSearchRequest renewalsSearchRequest, final ApiCallback<RenewalsSearchResponse> _callback) throws ApiException {
+    public okhttp3.Call postRenewalssearchAsync(@javax.annotation.Nonnull String imCustomerNumber, @javax.annotation.Nonnull String imCountryCode, @javax.annotation.Nonnull String imCorrelationID, @javax.annotation.Nullable String imSenderID, @javax.annotation.Nullable String customerOrderNumber, @javax.annotation.Nullable String ingramPurchaseOrderNumber, @javax.annotation.Nullable String serialNumber, @javax.annotation.Nullable String page, @javax.annotation.Nullable String size, @javax.annotation.Nullable String sort, @javax.annotation.Nullable RenewalsSearchRequest renewalsSearchRequest, final ApiCallback<RenewalsSearchResponse> _callback) throws ApiException {
 
         okhttp3.Call localVarCall = postRenewalssearchValidateBeforeCall(imCustomerNumber, imCountryCode, imCorrelationID, imSenderID, customerOrderNumber, ingramPurchaseOrderNumber, serialNumber, page, size, sort, renewalsSearchRequest, _callback);
         Type localVarReturnType = new TypeToken<RenewalsSearchResponse>(){}.getType();

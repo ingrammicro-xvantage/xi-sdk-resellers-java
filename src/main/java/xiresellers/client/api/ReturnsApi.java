@@ -96,7 +96,7 @@ public class ReturnsApi {
         <tr><td> 500 </td><td> Internal Server Error </td><td>  -  </td></tr>
      </table>
      */
-    public okhttp3.Call getResellersV6ReturnsdetailsCall(String imCustomerNumber, String imCountryCode, String imCorrelationID, String caseRequestNumber, String imSenderID, final ApiCallback _callback) throws ApiException {
+    public okhttp3.Call getResellersV6ReturnsdetailsCall(@javax.annotation.Nonnull String imCustomerNumber, @javax.annotation.Nonnull String imCountryCode, @javax.annotation.Nonnull String imCorrelationID, @javax.annotation.Nonnull String caseRequestNumber, @javax.annotation.Nullable String imSenderID, final ApiCallback _callback) throws ApiException {
         String basePath = null;
         // Operation Servers
         String[] localBasePaths = new String[] {  };
@@ -162,7 +162,7 @@ public class ReturnsApi {
     }
 
     @SuppressWarnings("rawtypes")
-    private okhttp3.Call getResellersV6ReturnsdetailsValidateBeforeCall(String imCustomerNumber, String imCountryCode, String imCorrelationID, String caseRequestNumber, String imSenderID, final ApiCallback _callback) throws ApiException {
+    private okhttp3.Call getResellersV6ReturnsdetailsValidateBeforeCall(@javax.annotation.Nonnull String imCustomerNumber, @javax.annotation.Nonnull String imCountryCode, @javax.annotation.Nonnull String imCorrelationID, @javax.annotation.Nonnull String caseRequestNumber, @javax.annotation.Nullable String imSenderID, final ApiCallback _callback) throws ApiException {
         // verify the required parameter 'imCustomerNumber' is set
         if (imCustomerNumber == null) {
             throw new ApiException("Missing the required parameter 'imCustomerNumber' when calling getResellersV6Returnsdetails(Async)");
@@ -206,7 +206,7 @@ public class ReturnsApi {
         <tr><td> 500 </td><td> Internal Server Error </td><td>  -  </td></tr>
      </table>
      */
-    public ReturnsDetailsResponse getResellersV6Returnsdetails(String imCustomerNumber, String imCountryCode, String imCorrelationID, String caseRequestNumber, String imSenderID) throws ApiException {
+    public ReturnsDetailsResponse getResellersV6Returnsdetails(@javax.annotation.Nonnull String imCustomerNumber, @javax.annotation.Nonnull String imCountryCode, @javax.annotation.Nonnull String imCorrelationID, @javax.annotation.Nonnull String caseRequestNumber, @javax.annotation.Nullable String imSenderID) throws ApiException {
         ApiResponse<ReturnsDetailsResponse> localVarResp = getResellersV6ReturnsdetailsWithHttpInfo(imCustomerNumber, imCountryCode, imCorrelationID, caseRequestNumber, imSenderID);
         return localVarResp.getData();
     }
@@ -230,7 +230,7 @@ public class ReturnsApi {
         <tr><td> 500 </td><td> Internal Server Error </td><td>  -  </td></tr>
      </table>
      */
-    public ApiResponse<ReturnsDetailsResponse> getResellersV6ReturnsdetailsWithHttpInfo(String imCustomerNumber, String imCountryCode, String imCorrelationID, String caseRequestNumber, String imSenderID) throws ApiException {
+    public ApiResponse<ReturnsDetailsResponse> getResellersV6ReturnsdetailsWithHttpInfo(@javax.annotation.Nonnull String imCustomerNumber, @javax.annotation.Nonnull String imCountryCode, @javax.annotation.Nonnull String imCorrelationID, @javax.annotation.Nonnull String caseRequestNumber, @javax.annotation.Nullable String imSenderID) throws ApiException {
         okhttp3.Call localVarCall = getResellersV6ReturnsdetailsValidateBeforeCall(imCustomerNumber, imCountryCode, imCorrelationID, caseRequestNumber, imSenderID, null);
         Type localVarReturnType = new TypeToken<ReturnsDetailsResponse>(){}.getType();
         return localVarApiClient.execute(localVarCall, localVarReturnType);
@@ -256,7 +256,7 @@ public class ReturnsApi {
         <tr><td> 500 </td><td> Internal Server Error </td><td>  -  </td></tr>
      </table>
      */
-    public okhttp3.Call getResellersV6ReturnsdetailsAsync(String imCustomerNumber, String imCountryCode, String imCorrelationID, String caseRequestNumber, String imSenderID, final ApiCallback<ReturnsDetailsResponse> _callback) throws ApiException {
+    public okhttp3.Call getResellersV6ReturnsdetailsAsync(@javax.annotation.Nonnull String imCustomerNumber, @javax.annotation.Nonnull String imCountryCode, @javax.annotation.Nonnull String imCorrelationID, @javax.annotation.Nonnull String caseRequestNumber, @javax.annotation.Nullable String imSenderID, final ApiCallback<ReturnsDetailsResponse> _callback) throws ApiException {
 
         okhttp3.Call localVarCall = getResellersV6ReturnsdetailsValidateBeforeCall(imCustomerNumber, imCountryCode, imCorrelationID, caseRequestNumber, imSenderID, _callback);
         Type localVarReturnType = new TypeToken<ReturnsDetailsResponse>(){}.getType();
@@ -296,7 +296,7 @@ public class ReturnsApi {
         <tr><td> 500 </td><td> Internal Server Error </td><td>  -  </td></tr>
      </table>
      */
-    public okhttp3.Call getResellersV6ReturnssearchCall(String imCustomerNumber, String imCountryCode, String imCorrelationID, String imSenderID, String caseRequestNumber, String invoiceNumber, String returnClaimId, String referenceNumber, String ingramPartNumber, String vendorPartNumber, String returnStatusIn, String claimStatusIn, String createdOnBt, String modifiedOnBt, String returnReasonIn, String page, String size, String sort, String sortingColumnName, final ApiCallback _callback) throws ApiException {
+    public okhttp3.Call getResellersV6ReturnssearchCall(@javax.annotation.Nonnull String imCustomerNumber, @javax.annotation.Nonnull String imCountryCode, @javax.annotation.Nonnull String imCorrelationID, @javax.annotation.Nullable String imSenderID, @javax.annotation.Nullable String caseRequestNumber, @javax.annotation.Nullable String invoiceNumber, @javax.annotation.Nullable String returnClaimId, @javax.annotation.Nullable String referenceNumber, @javax.annotation.Nullable String ingramPartNumber, @javax.annotation.Nullable String vendorPartNumber, @javax.annotation.Nullable String returnStatusIn, @javax.annotation.Nullable String claimStatusIn, @javax.annotation.Nullable String createdOnBt, @javax.annotation.Nullable String modifiedOnBt, @javax.annotation.Nullable String returnReasonIn, @javax.annotation.Nullable String page, @javax.annotation.Nullable String size, @javax.annotation.Nullable String sort, @javax.annotation.Nullable String sortingColumnName, final ApiCallback _callback) throws ApiException {
         String basePath = null;
         // Operation Servers
         String[] localBasePaths = new String[] {  };
@@ -421,7 +421,7 @@ public class ReturnsApi {
     }
 
     @SuppressWarnings("rawtypes")
-    private okhttp3.Call getResellersV6ReturnssearchValidateBeforeCall(String imCustomerNumber, String imCountryCode, String imCorrelationID, String imSenderID, String caseRequestNumber, String invoiceNumber, String returnClaimId, String referenceNumber, String ingramPartNumber, String vendorPartNumber, String returnStatusIn, String claimStatusIn, String createdOnBt, String modifiedOnBt, String returnReasonIn, String page, String size, String sort, String sortingColumnName, final ApiCallback _callback) throws ApiException {
+    private okhttp3.Call getResellersV6ReturnssearchValidateBeforeCall(@javax.annotation.Nonnull String imCustomerNumber, @javax.annotation.Nonnull String imCountryCode, @javax.annotation.Nonnull String imCorrelationID, @javax.annotation.Nullable String imSenderID, @javax.annotation.Nullable String caseRequestNumber, @javax.annotation.Nullable String invoiceNumber, @javax.annotation.Nullable String returnClaimId, @javax.annotation.Nullable String referenceNumber, @javax.annotation.Nullable String ingramPartNumber, @javax.annotation.Nullable String vendorPartNumber, @javax.annotation.Nullable String returnStatusIn, @javax.annotation.Nullable String claimStatusIn, @javax.annotation.Nullable String createdOnBt, @javax.annotation.Nullable String modifiedOnBt, @javax.annotation.Nullable String returnReasonIn, @javax.annotation.Nullable String page, @javax.annotation.Nullable String size, @javax.annotation.Nullable String sort, @javax.annotation.Nullable String sortingColumnName, final ApiCallback _callback) throws ApiException {
         // verify the required parameter 'imCustomerNumber' is set
         if (imCustomerNumber == null) {
             throw new ApiException("Missing the required parameter 'imCustomerNumber' when calling getResellersV6Returnssearch(Async)");
@@ -474,7 +474,7 @@ public class ReturnsApi {
         <tr><td> 500 </td><td> Internal Server Error </td><td>  -  </td></tr>
      </table>
      */
-    public ReturnsSearchResponse getResellersV6Returnssearch(String imCustomerNumber, String imCountryCode, String imCorrelationID, String imSenderID, String caseRequestNumber, String invoiceNumber, String returnClaimId, String referenceNumber, String ingramPartNumber, String vendorPartNumber, String returnStatusIn, String claimStatusIn, String createdOnBt, String modifiedOnBt, String returnReasonIn, String page, String size, String sort, String sortingColumnName) throws ApiException {
+    public ReturnsSearchResponse getResellersV6Returnssearch(@javax.annotation.Nonnull String imCustomerNumber, @javax.annotation.Nonnull String imCountryCode, @javax.annotation.Nonnull String imCorrelationID, @javax.annotation.Nullable String imSenderID, @javax.annotation.Nullable String caseRequestNumber, @javax.annotation.Nullable String invoiceNumber, @javax.annotation.Nullable String returnClaimId, @javax.annotation.Nullable String referenceNumber, @javax.annotation.Nullable String ingramPartNumber, @javax.annotation.Nullable String vendorPartNumber, @javax.annotation.Nullable String returnStatusIn, @javax.annotation.Nullable String claimStatusIn, @javax.annotation.Nullable String createdOnBt, @javax.annotation.Nullable String modifiedOnBt, @javax.annotation.Nullable String returnReasonIn, @javax.annotation.Nullable String page, @javax.annotation.Nullable String size, @javax.annotation.Nullable String sort, @javax.annotation.Nullable String sortingColumnName) throws ApiException {
         ApiResponse<ReturnsSearchResponse> localVarResp = getResellersV6ReturnssearchWithHttpInfo(imCustomerNumber, imCountryCode, imCorrelationID, imSenderID, caseRequestNumber, invoiceNumber, returnClaimId, referenceNumber, ingramPartNumber, vendorPartNumber, returnStatusIn, claimStatusIn, createdOnBt, modifiedOnBt, returnReasonIn, page, size, sort, sortingColumnName);
         return localVarResp.getData();
     }
@@ -512,7 +512,7 @@ public class ReturnsApi {
         <tr><td> 500 </td><td> Internal Server Error </td><td>  -  </td></tr>
      </table>
      */
-    public ApiResponse<ReturnsSearchResponse> getResellersV6ReturnssearchWithHttpInfo(String imCustomerNumber, String imCountryCode, String imCorrelationID, String imSenderID, String caseRequestNumber, String invoiceNumber, String returnClaimId, String referenceNumber, String ingramPartNumber, String vendorPartNumber, String returnStatusIn, String claimStatusIn, String createdOnBt, String modifiedOnBt, String returnReasonIn, String page, String size, String sort, String sortingColumnName) throws ApiException {
+    public ApiResponse<ReturnsSearchResponse> getResellersV6ReturnssearchWithHttpInfo(@javax.annotation.Nonnull String imCustomerNumber, @javax.annotation.Nonnull String imCountryCode, @javax.annotation.Nonnull String imCorrelationID, @javax.annotation.Nullable String imSenderID, @javax.annotation.Nullable String caseRequestNumber, @javax.annotation.Nullable String invoiceNumber, @javax.annotation.Nullable String returnClaimId, @javax.annotation.Nullable String referenceNumber, @javax.annotation.Nullable String ingramPartNumber, @javax.annotation.Nullable String vendorPartNumber, @javax.annotation.Nullable String returnStatusIn, @javax.annotation.Nullable String claimStatusIn, @javax.annotation.Nullable String createdOnBt, @javax.annotation.Nullable String modifiedOnBt, @javax.annotation.Nullable String returnReasonIn, @javax.annotation.Nullable String page, @javax.annotation.Nullable String size, @javax.annotation.Nullable String sort, @javax.annotation.Nullable String sortingColumnName) throws ApiException {
         okhttp3.Call localVarCall = getResellersV6ReturnssearchValidateBeforeCall(imCustomerNumber, imCountryCode, imCorrelationID, imSenderID, caseRequestNumber, invoiceNumber, returnClaimId, referenceNumber, ingramPartNumber, vendorPartNumber, returnStatusIn, claimStatusIn, createdOnBt, modifiedOnBt, returnReasonIn, page, size, sort, sortingColumnName, null);
         Type localVarReturnType = new TypeToken<ReturnsSearchResponse>(){}.getType();
         return localVarApiClient.execute(localVarCall, localVarReturnType);
@@ -552,7 +552,7 @@ public class ReturnsApi {
         <tr><td> 500 </td><td> Internal Server Error </td><td>  -  </td></tr>
      </table>
      */
-    public okhttp3.Call getResellersV6ReturnssearchAsync(String imCustomerNumber, String imCountryCode, String imCorrelationID, String imSenderID, String caseRequestNumber, String invoiceNumber, String returnClaimId, String referenceNumber, String ingramPartNumber, String vendorPartNumber, String returnStatusIn, String claimStatusIn, String createdOnBt, String modifiedOnBt, String returnReasonIn, String page, String size, String sort, String sortingColumnName, final ApiCallback<ReturnsSearchResponse> _callback) throws ApiException {
+    public okhttp3.Call getResellersV6ReturnssearchAsync(@javax.annotation.Nonnull String imCustomerNumber, @javax.annotation.Nonnull String imCountryCode, @javax.annotation.Nonnull String imCorrelationID, @javax.annotation.Nullable String imSenderID, @javax.annotation.Nullable String caseRequestNumber, @javax.annotation.Nullable String invoiceNumber, @javax.annotation.Nullable String returnClaimId, @javax.annotation.Nullable String referenceNumber, @javax.annotation.Nullable String ingramPartNumber, @javax.annotation.Nullable String vendorPartNumber, @javax.annotation.Nullable String returnStatusIn, @javax.annotation.Nullable String claimStatusIn, @javax.annotation.Nullable String createdOnBt, @javax.annotation.Nullable String modifiedOnBt, @javax.annotation.Nullable String returnReasonIn, @javax.annotation.Nullable String page, @javax.annotation.Nullable String size, @javax.annotation.Nullable String sort, @javax.annotation.Nullable String sortingColumnName, final ApiCallback<ReturnsSearchResponse> _callback) throws ApiException {
 
         okhttp3.Call localVarCall = getResellersV6ReturnssearchValidateBeforeCall(imCustomerNumber, imCountryCode, imCorrelationID, imSenderID, caseRequestNumber, invoiceNumber, returnClaimId, referenceNumber, ingramPartNumber, vendorPartNumber, returnStatusIn, claimStatusIn, createdOnBt, modifiedOnBt, returnReasonIn, page, size, sort, sortingColumnName, _callback);
         Type localVarReturnType = new TypeToken<ReturnsSearchResponse>(){}.getType();
@@ -578,7 +578,7 @@ public class ReturnsApi {
         <tr><td> 500 </td><td> Internal Server Error </td><td>  -  </td></tr>
      </table>
      */
-    public okhttp3.Call postReturnscreateCall(String imCustomerNumber, String imCountryCode, String imCorrelationID, String imSenderID, ReturnsCreateRequest returnsCreateRequest, final ApiCallback _callback) throws ApiException {
+    public okhttp3.Call postReturnscreateCall(@javax.annotation.Nonnull String imCustomerNumber, @javax.annotation.Nonnull String imCountryCode, @javax.annotation.Nonnull String imCorrelationID, @javax.annotation.Nullable String imSenderID, @javax.annotation.Nullable ReturnsCreateRequest returnsCreateRequest, final ApiCallback _callback) throws ApiException {
         String basePath = null;
         // Operation Servers
         String[] localBasePaths = new String[] {  };
@@ -644,7 +644,7 @@ public class ReturnsApi {
     }
 
     @SuppressWarnings("rawtypes")
-    private okhttp3.Call postReturnscreateValidateBeforeCall(String imCustomerNumber, String imCountryCode, String imCorrelationID, String imSenderID, ReturnsCreateRequest returnsCreateRequest, final ApiCallback _callback) throws ApiException {
+    private okhttp3.Call postReturnscreateValidateBeforeCall(@javax.annotation.Nonnull String imCustomerNumber, @javax.annotation.Nonnull String imCountryCode, @javax.annotation.Nonnull String imCorrelationID, @javax.annotation.Nullable String imSenderID, @javax.annotation.Nullable ReturnsCreateRequest returnsCreateRequest, final ApiCallback _callback) throws ApiException {
         // verify the required parameter 'imCustomerNumber' is set
         if (imCustomerNumber == null) {
             throw new ApiException("Missing the required parameter 'imCustomerNumber' when calling postReturnscreate(Async)");
@@ -683,7 +683,7 @@ public class ReturnsApi {
         <tr><td> 500 </td><td> Internal Server Error </td><td>  -  </td></tr>
      </table>
      */
-    public ReturnsCreateResponse postReturnscreate(String imCustomerNumber, String imCountryCode, String imCorrelationID, String imSenderID, ReturnsCreateRequest returnsCreateRequest) throws ApiException {
+    public ReturnsCreateResponse postReturnscreate(@javax.annotation.Nonnull String imCustomerNumber, @javax.annotation.Nonnull String imCountryCode, @javax.annotation.Nonnull String imCorrelationID, @javax.annotation.Nullable String imSenderID, @javax.annotation.Nullable ReturnsCreateRequest returnsCreateRequest) throws ApiException {
         ApiResponse<ReturnsCreateResponse> localVarResp = postReturnscreateWithHttpInfo(imCustomerNumber, imCountryCode, imCorrelationID, imSenderID, returnsCreateRequest);
         return localVarResp.getData();
     }
@@ -707,7 +707,7 @@ public class ReturnsApi {
         <tr><td> 500 </td><td> Internal Server Error </td><td>  -  </td></tr>
      </table>
      */
-    public ApiResponse<ReturnsCreateResponse> postReturnscreateWithHttpInfo(String imCustomerNumber, String imCountryCode, String imCorrelationID, String imSenderID, ReturnsCreateRequest returnsCreateRequest) throws ApiException {
+    public ApiResponse<ReturnsCreateResponse> postReturnscreateWithHttpInfo(@javax.annotation.Nonnull String imCustomerNumber, @javax.annotation.Nonnull String imCountryCode, @javax.annotation.Nonnull String imCorrelationID, @javax.annotation.Nullable String imSenderID, @javax.annotation.Nullable ReturnsCreateRequest returnsCreateRequest) throws ApiException {
         okhttp3.Call localVarCall = postReturnscreateValidateBeforeCall(imCustomerNumber, imCountryCode, imCorrelationID, imSenderID, returnsCreateRequest, null);
         Type localVarReturnType = new TypeToken<ReturnsCreateResponse>(){}.getType();
         return localVarApiClient.execute(localVarCall, localVarReturnType);
@@ -733,7 +733,7 @@ public class ReturnsApi {
         <tr><td> 500 </td><td> Internal Server Error </td><td>  -  </td></tr>
      </table>
      */
-    public okhttp3.Call postReturnscreateAsync(String imCustomerNumber, String imCountryCode, String imCorrelationID, String imSenderID, ReturnsCreateRequest returnsCreateRequest, final ApiCallback<ReturnsCreateResponse> _callback) throws ApiException {
+    public okhttp3.Call postReturnscreateAsync(@javax.annotation.Nonnull String imCustomerNumber, @javax.annotation.Nonnull String imCountryCode, @javax.annotation.Nonnull String imCorrelationID, @javax.annotation.Nullable String imSenderID, @javax.annotation.Nullable ReturnsCreateRequest returnsCreateRequest, final ApiCallback<ReturnsCreateResponse> _callback) throws ApiException {
 
         okhttp3.Call localVarCall = postReturnscreateValidateBeforeCall(imCustomerNumber, imCountryCode, imCorrelationID, imSenderID, returnsCreateRequest, _callback);
         Type localVarReturnType = new TypeToken<ReturnsCreateResponse>(){}.getType();

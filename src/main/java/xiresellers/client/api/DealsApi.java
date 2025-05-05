@@ -94,7 +94,7 @@ public class DealsApi {
         <tr><td> 500 </td><td> Internal Server Error </td><td>  -  </td></tr>
      </table>
      */
-    public okhttp3.Call getResellersV6DealsdetailsCall(String imCustomerNumber, String imCountryCode, String imCorrelationID, String imApplicationId, String dealId, final ApiCallback _callback) throws ApiException {
+    public okhttp3.Call getResellersV6DealsdetailsCall(@javax.annotation.Nonnull String imCustomerNumber, @javax.annotation.Nonnull String imCountryCode, @javax.annotation.Nonnull String imCorrelationID, @javax.annotation.Nonnull String imApplicationId, @javax.annotation.Nonnull String dealId, final ApiCallback _callback) throws ApiException {
         String basePath = null;
         // Operation Servers
         String[] localBasePaths = new String[] {  };
@@ -160,7 +160,7 @@ public class DealsApi {
     }
 
     @SuppressWarnings("rawtypes")
-    private okhttp3.Call getResellersV6DealsdetailsValidateBeforeCall(String imCustomerNumber, String imCountryCode, String imCorrelationID, String imApplicationId, String dealId, final ApiCallback _callback) throws ApiException {
+    private okhttp3.Call getResellersV6DealsdetailsValidateBeforeCall(@javax.annotation.Nonnull String imCustomerNumber, @javax.annotation.Nonnull String imCountryCode, @javax.annotation.Nonnull String imCorrelationID, @javax.annotation.Nonnull String imApplicationId, @javax.annotation.Nonnull String dealId, final ApiCallback _callback) throws ApiException {
         // verify the required parameter 'imCustomerNumber' is set
         if (imCustomerNumber == null) {
             throw new ApiException("Missing the required parameter 'imCustomerNumber' when calling getResellersV6Dealsdetails(Async)");
@@ -209,7 +209,7 @@ public class DealsApi {
         <tr><td> 500 </td><td> Internal Server Error </td><td>  -  </td></tr>
      </table>
      */
-    public DealsDetailsResponse getResellersV6Dealsdetails(String imCustomerNumber, String imCountryCode, String imCorrelationID, String imApplicationId, String dealId) throws ApiException {
+    public DealsDetailsResponse getResellersV6Dealsdetails(@javax.annotation.Nonnull String imCustomerNumber, @javax.annotation.Nonnull String imCountryCode, @javax.annotation.Nonnull String imCorrelationID, @javax.annotation.Nonnull String imApplicationId, @javax.annotation.Nonnull String dealId) throws ApiException {
         ApiResponse<DealsDetailsResponse> localVarResp = getResellersV6DealsdetailsWithHttpInfo(imCustomerNumber, imCountryCode, imCorrelationID, imApplicationId, dealId);
         return localVarResp.getData();
     }
@@ -233,7 +233,7 @@ public class DealsApi {
         <tr><td> 500 </td><td> Internal Server Error </td><td>  -  </td></tr>
      </table>
      */
-    public ApiResponse<DealsDetailsResponse> getResellersV6DealsdetailsWithHttpInfo(String imCustomerNumber, String imCountryCode, String imCorrelationID, String imApplicationId, String dealId) throws ApiException {
+    public ApiResponse<DealsDetailsResponse> getResellersV6DealsdetailsWithHttpInfo(@javax.annotation.Nonnull String imCustomerNumber, @javax.annotation.Nonnull String imCountryCode, @javax.annotation.Nonnull String imCorrelationID, @javax.annotation.Nonnull String imApplicationId, @javax.annotation.Nonnull String dealId) throws ApiException {
         okhttp3.Call localVarCall = getResellersV6DealsdetailsValidateBeforeCall(imCustomerNumber, imCountryCode, imCorrelationID, imApplicationId, dealId, null);
         Type localVarReturnType = new TypeToken<DealsDetailsResponse>(){}.getType();
         return localVarApiClient.execute(localVarCall, localVarReturnType);
@@ -259,7 +259,7 @@ public class DealsApi {
         <tr><td> 500 </td><td> Internal Server Error </td><td>  -  </td></tr>
      </table>
      */
-    public okhttp3.Call getResellersV6DealsdetailsAsync(String imCustomerNumber, String imCountryCode, String imCorrelationID, String imApplicationId, String dealId, final ApiCallback<DealsDetailsResponse> _callback) throws ApiException {
+    public okhttp3.Call getResellersV6DealsdetailsAsync(@javax.annotation.Nonnull String imCustomerNumber, @javax.annotation.Nonnull String imCountryCode, @javax.annotation.Nonnull String imCorrelationID, @javax.annotation.Nonnull String imApplicationId, @javax.annotation.Nonnull String dealId, final ApiCallback<DealsDetailsResponse> _callback) throws ApiException {
 
         okhttp3.Call localVarCall = getResellersV6DealsdetailsValidateBeforeCall(imCustomerNumber, imCountryCode, imCorrelationID, imApplicationId, dealId, _callback);
         Type localVarReturnType = new TypeToken<DealsDetailsResponse>(){}.getType();
@@ -289,7 +289,7 @@ public class DealsApi {
         <tr><td> 500 </td><td> Internal Server Error </td><td>  -  </td></tr>
      </table>
      */
-    public okhttp3.Call getResellersV6DealssearchCall(String imCustomerNumber, String imCountryCode, String imCorrelationID, String imSenderID, String endUser, String vendor, String dealId, Integer size, Integer page, final ApiCallback _callback) throws ApiException {
+    public okhttp3.Call getResellersV6DealssearchCall(@javax.annotation.Nonnull String imCustomerNumber, @javax.annotation.Nonnull String imCountryCode, @javax.annotation.Nonnull String imCorrelationID, @javax.annotation.Nullable String imSenderID, @javax.annotation.Nullable String endUser, @javax.annotation.Nullable String vendor, @javax.annotation.Nullable String dealId, @javax.annotation.Nullable Integer size, @javax.annotation.Nullable Integer page, final ApiCallback _callback) throws ApiException {
         String basePath = null;
         // Operation Servers
         String[] localBasePaths = new String[] {  };
@@ -374,7 +374,7 @@ public class DealsApi {
     }
 
     @SuppressWarnings("rawtypes")
-    private okhttp3.Call getResellersV6DealssearchValidateBeforeCall(String imCustomerNumber, String imCountryCode, String imCorrelationID, String imSenderID, String endUser, String vendor, String dealId, Integer size, Integer page, final ApiCallback _callback) throws ApiException {
+    private okhttp3.Call getResellersV6DealssearchValidateBeforeCall(@javax.annotation.Nonnull String imCustomerNumber, @javax.annotation.Nonnull String imCountryCode, @javax.annotation.Nonnull String imCorrelationID, @javax.annotation.Nullable String imSenderID, @javax.annotation.Nullable String endUser, @javax.annotation.Nullable String vendor, @javax.annotation.Nullable String dealId, @javax.annotation.Nullable Integer size, @javax.annotation.Nullable Integer page, final ApiCallback _callback) throws ApiException {
         // verify the required parameter 'imCustomerNumber' is set
         if (imCustomerNumber == null) {
             throw new ApiException("Missing the required parameter 'imCustomerNumber' when calling getResellersV6Dealssearch(Async)");
@@ -417,7 +417,7 @@ public class DealsApi {
         <tr><td> 500 </td><td> Internal Server Error </td><td>  -  </td></tr>
      </table>
      */
-    public DealsSearchResponse getResellersV6Dealssearch(String imCustomerNumber, String imCountryCode, String imCorrelationID, String imSenderID, String endUser, String vendor, String dealId, Integer size, Integer page) throws ApiException {
+    public DealsSearchResponse getResellersV6Dealssearch(@javax.annotation.Nonnull String imCustomerNumber, @javax.annotation.Nonnull String imCountryCode, @javax.annotation.Nonnull String imCorrelationID, @javax.annotation.Nullable String imSenderID, @javax.annotation.Nullable String endUser, @javax.annotation.Nullable String vendor, @javax.annotation.Nullable String dealId, @javax.annotation.Nullable Integer size, @javax.annotation.Nullable Integer page) throws ApiException {
         ApiResponse<DealsSearchResponse> localVarResp = getResellersV6DealssearchWithHttpInfo(imCustomerNumber, imCountryCode, imCorrelationID, imSenderID, endUser, vendor, dealId, size, page);
         return localVarResp.getData();
     }
@@ -445,7 +445,7 @@ public class DealsApi {
         <tr><td> 500 </td><td> Internal Server Error </td><td>  -  </td></tr>
      </table>
      */
-    public ApiResponse<DealsSearchResponse> getResellersV6DealssearchWithHttpInfo(String imCustomerNumber, String imCountryCode, String imCorrelationID, String imSenderID, String endUser, String vendor, String dealId, Integer size, Integer page) throws ApiException {
+    public ApiResponse<DealsSearchResponse> getResellersV6DealssearchWithHttpInfo(@javax.annotation.Nonnull String imCustomerNumber, @javax.annotation.Nonnull String imCountryCode, @javax.annotation.Nonnull String imCorrelationID, @javax.annotation.Nullable String imSenderID, @javax.annotation.Nullable String endUser, @javax.annotation.Nullable String vendor, @javax.annotation.Nullable String dealId, @javax.annotation.Nullable Integer size, @javax.annotation.Nullable Integer page) throws ApiException {
         okhttp3.Call localVarCall = getResellersV6DealssearchValidateBeforeCall(imCustomerNumber, imCountryCode, imCorrelationID, imSenderID, endUser, vendor, dealId, size, page, null);
         Type localVarReturnType = new TypeToken<DealsSearchResponse>(){}.getType();
         return localVarApiClient.execute(localVarCall, localVarReturnType);
@@ -475,7 +475,7 @@ public class DealsApi {
         <tr><td> 500 </td><td> Internal Server Error </td><td>  -  </td></tr>
      </table>
      */
-    public okhttp3.Call getResellersV6DealssearchAsync(String imCustomerNumber, String imCountryCode, String imCorrelationID, String imSenderID, String endUser, String vendor, String dealId, Integer size, Integer page, final ApiCallback<DealsSearchResponse> _callback) throws ApiException {
+    public okhttp3.Call getResellersV6DealssearchAsync(@javax.annotation.Nonnull String imCustomerNumber, @javax.annotation.Nonnull String imCountryCode, @javax.annotation.Nonnull String imCorrelationID, @javax.annotation.Nullable String imSenderID, @javax.annotation.Nullable String endUser, @javax.annotation.Nullable String vendor, @javax.annotation.Nullable String dealId, @javax.annotation.Nullable Integer size, @javax.annotation.Nullable Integer page, final ApiCallback<DealsSearchResponse> _callback) throws ApiException {
 
         okhttp3.Call localVarCall = getResellersV6DealssearchValidateBeforeCall(imCustomerNumber, imCountryCode, imCorrelationID, imSenderID, endUser, vendor, dealId, size, page, _callback);
         Type localVarReturnType = new TypeToken<DealsSearchResponse>(){}.getType();

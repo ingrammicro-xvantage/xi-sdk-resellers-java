@@ -23,8 +23,9 @@ import java.io.IOException;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
+import org.openapitools.jackson.nullable.JsonNullable;
 import xiresellers.client.model.FreightRequestLinesInner;
-import xiresellers.client.model.FreightRequestShipToAddressInner;
+import xiresellers.client.model.FreightRequestShipToAddress;
 
 import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
@@ -52,12 +53,12 @@ import xiresellers.client.JSON;
 /**
  * FreightRequest
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2025-04-09T06:25:58.100608330Z[Etc/UTC]", comments = "Generator version: 7.12.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2025-05-05T07:27:07.209261089Z[Etc/UTC]", comments = "Generator version: 7.13.0")
 public class FreightRequest {
   public static final String SERIALIZED_NAME_BILL_TO_ADDRESS_ID = "billToAddressId";
   @SerializedName(SERIALIZED_NAME_BILL_TO_ADDRESS_ID)
   @javax.annotation.Nullable
-  private String billToAddressId;
+  private Object billToAddressId = null;
 
   public static final String SERIALIZED_NAME_SHIP_TO_ADDRESS_ID = "shipToAddressId";
   @SerializedName(SERIALIZED_NAME_SHIP_TO_ADDRESS_ID)
@@ -67,7 +68,7 @@ public class FreightRequest {
   public static final String SERIALIZED_NAME_SHIP_TO_ADDRESS = "shipToAddress";
   @SerializedName(SERIALIZED_NAME_SHIP_TO_ADDRESS)
   @javax.annotation.Nullable
-  private List<FreightRequestShipToAddressInner> shipToAddress = new ArrayList<>();
+  private FreightRequestShipToAddress shipToAddress;
 
   public static final String SERIALIZED_NAME_LINES = "lines";
   @SerializedName(SERIALIZED_NAME_LINES)
@@ -77,7 +78,7 @@ public class FreightRequest {
   public FreightRequest() {
   }
 
-  public FreightRequest billToAddressId(@javax.annotation.Nullable String billToAddressId) {
+  public FreightRequest billToAddressId(@javax.annotation.Nullable Object billToAddressId) {
     this.billToAddressId = billToAddressId;
     return this;
   }
@@ -87,11 +88,11 @@ public class FreightRequest {
    * @return billToAddressId
    */
   @javax.annotation.Nullable
-  public String getBillToAddressId() {
+  public Object getBillToAddressId() {
     return billToAddressId;
   }
 
-  public void setBillToAddressId(@javax.annotation.Nullable String billToAddressId) {
+  public void setBillToAddressId(@javax.annotation.Nullable Object billToAddressId) {
     this.billToAddressId = billToAddressId;
   }
 
@@ -115,29 +116,21 @@ public class FreightRequest {
   }
 
 
-  public FreightRequest shipToAddress(@javax.annotation.Nullable List<FreightRequestShipToAddressInner> shipToAddress) {
+  public FreightRequest shipToAddress(@javax.annotation.Nullable FreightRequestShipToAddress shipToAddress) {
     this.shipToAddress = shipToAddress;
     return this;
   }
 
-  public FreightRequest addShipToAddressItem(FreightRequestShipToAddressInner shipToAddressItem) {
-    if (this.shipToAddress == null) {
-      this.shipToAddress = new ArrayList<>();
-    }
-    this.shipToAddress.add(shipToAddressItem);
-    return this;
-  }
-
   /**
-   * The shipping information.
+   * Get shipToAddress
    * @return shipToAddress
    */
   @javax.annotation.Nullable
-  public List<FreightRequestShipToAddressInner> getShipToAddress() {
+  public FreightRequestShipToAddress getShipToAddress() {
     return shipToAddress;
   }
 
-  public void setShipToAddress(@javax.annotation.Nullable List<FreightRequestShipToAddressInner> shipToAddress) {
+  public void setShipToAddress(@javax.annotation.Nullable FreightRequestShipToAddress shipToAddress) {
     this.shipToAddress = shipToAddress;
   }
 
@@ -185,9 +178,20 @@ public class FreightRequest {
         Objects.equals(this.lines, freightRequest.lines);
   }
 
+  private static <T> boolean equalsNullable(JsonNullable<T> a, JsonNullable<T> b) {
+    return a == b || (a != null && b != null && a.isPresent() && b.isPresent() && Objects.deepEquals(a.get(), b.get()));
+  }
+
   @Override
   public int hashCode() {
     return Objects.hash(billToAddressId, shipToAddressId, shipToAddress, lines);
+  }
+
+  private static <T> int hashCodeNullable(JsonNullable<T> a) {
+    if (a == null) {
+      return 1;
+    }
+    return a.isPresent() ? Arrays.deepHashCode(new Object[]{a.get()}) : 31;
   }
 
   @Override
@@ -250,25 +254,12 @@ public class FreightRequest {
         }
       }
         JsonObject jsonObj = jsonElement.getAsJsonObject();
-      if ((jsonObj.get("billToAddressId") != null && !jsonObj.get("billToAddressId").isJsonNull()) && !jsonObj.get("billToAddressId").isJsonPrimitive()) {
-        throw new IllegalArgumentException(String.format("Expected the field `billToAddressId` to be a primitive type in the JSON string but got `%s`", jsonObj.get("billToAddressId").toString()));
-      }
       if ((jsonObj.get("shipToAddressId") != null && !jsonObj.get("shipToAddressId").isJsonNull()) && !jsonObj.get("shipToAddressId").isJsonPrimitive()) {
         throw new IllegalArgumentException(String.format("Expected the field `shipToAddressId` to be a primitive type in the JSON string but got `%s`", jsonObj.get("shipToAddressId").toString()));
       }
+      // validate the optional field `shipToAddress`
       if (jsonObj.get("shipToAddress") != null && !jsonObj.get("shipToAddress").isJsonNull()) {
-        JsonArray jsonArrayshipToAddress = jsonObj.getAsJsonArray("shipToAddress");
-        if (jsonArrayshipToAddress != null) {
-          // ensure the json data is an array
-          if (!jsonObj.get("shipToAddress").isJsonArray()) {
-            throw new IllegalArgumentException(String.format("Expected the field `shipToAddress` to be an array in the JSON string but got `%s`", jsonObj.get("shipToAddress").toString()));
-          }
-
-          // validate the optional field `shipToAddress` (array)
-          for (int i = 0; i < jsonArrayshipToAddress.size(); i++) {
-            FreightRequestShipToAddressInner.validateJsonElement(jsonArrayshipToAddress.get(i));
-          };
-        }
+        FreightRequestShipToAddress.validateJsonElement(jsonObj.get("shipToAddress"));
       }
       if (jsonObj.get("lines") != null && !jsonObj.get("lines").isJsonNull()) {
         JsonArray jsonArraylines = jsonObj.getAsJsonArray("lines");

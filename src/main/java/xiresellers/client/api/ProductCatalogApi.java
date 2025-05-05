@@ -96,7 +96,7 @@ public class ProductCatalogApi {
         <tr><td> 500 </td><td> Internal Server Error </td><td>  -  </td></tr>
      </table>
      */
-    public okhttp3.Call getResellerV6ProductdetailCall(String ingramPartNumber, String imCustomerNumber, String imCountryCode, String imCorrelationID, String imSenderID, final ApiCallback _callback) throws ApiException {
+    public okhttp3.Call getResellerV6ProductdetailCall(@javax.annotation.Nonnull String ingramPartNumber, @javax.annotation.Nonnull String imCustomerNumber, @javax.annotation.Nonnull String imCountryCode, @javax.annotation.Nonnull String imCorrelationID, @javax.annotation.Nullable String imSenderID, final ApiCallback _callback) throws ApiException {
         String basePath = null;
         // Operation Servers
         String[] localBasePaths = new String[] {  };
@@ -162,7 +162,7 @@ public class ProductCatalogApi {
     }
 
     @SuppressWarnings("rawtypes")
-    private okhttp3.Call getResellerV6ProductdetailValidateBeforeCall(String ingramPartNumber, String imCustomerNumber, String imCountryCode, String imCorrelationID, String imSenderID, final ApiCallback _callback) throws ApiException {
+    private okhttp3.Call getResellerV6ProductdetailValidateBeforeCall(@javax.annotation.Nonnull String ingramPartNumber, @javax.annotation.Nonnull String imCustomerNumber, @javax.annotation.Nonnull String imCountryCode, @javax.annotation.Nonnull String imCorrelationID, @javax.annotation.Nullable String imSenderID, final ApiCallback _callback) throws ApiException {
         // verify the required parameter 'ingramPartNumber' is set
         if (ingramPartNumber == null) {
             throw new ApiException("Missing the required parameter 'ingramPartNumber' when calling getResellerV6Productdetail(Async)");
@@ -207,7 +207,7 @@ public class ProductCatalogApi {
         <tr><td> 500 </td><td> Internal Server Error </td><td>  -  </td></tr>
      </table>
      */
-    public ProductDetailResponse getResellerV6Productdetail(String ingramPartNumber, String imCustomerNumber, String imCountryCode, String imCorrelationID, String imSenderID) throws ApiException {
+    public ProductDetailResponse getResellerV6Productdetail(@javax.annotation.Nonnull String ingramPartNumber, @javax.annotation.Nonnull String imCustomerNumber, @javax.annotation.Nonnull String imCountryCode, @javax.annotation.Nonnull String imCorrelationID, @javax.annotation.Nullable String imSenderID) throws ApiException {
         ApiResponse<ProductDetailResponse> localVarResp = getResellerV6ProductdetailWithHttpInfo(ingramPartNumber, imCustomerNumber, imCountryCode, imCorrelationID, imSenderID);
         return localVarResp.getData();
     }
@@ -232,7 +232,7 @@ public class ProductCatalogApi {
         <tr><td> 500 </td><td> Internal Server Error </td><td>  -  </td></tr>
      </table>
      */
-    public ApiResponse<ProductDetailResponse> getResellerV6ProductdetailWithHttpInfo(String ingramPartNumber, String imCustomerNumber, String imCountryCode, String imCorrelationID, String imSenderID) throws ApiException {
+    public ApiResponse<ProductDetailResponse> getResellerV6ProductdetailWithHttpInfo(@javax.annotation.Nonnull String ingramPartNumber, @javax.annotation.Nonnull String imCustomerNumber, @javax.annotation.Nonnull String imCountryCode, @javax.annotation.Nonnull String imCorrelationID, @javax.annotation.Nullable String imSenderID) throws ApiException {
         okhttp3.Call localVarCall = getResellerV6ProductdetailValidateBeforeCall(ingramPartNumber, imCustomerNumber, imCountryCode, imCorrelationID, imSenderID, null);
         Type localVarReturnType = new TypeToken<ProductDetailResponse>(){}.getType();
         return localVarApiClient.execute(localVarCall, localVarReturnType);
@@ -259,7 +259,7 @@ public class ProductCatalogApi {
         <tr><td> 500 </td><td> Internal Server Error </td><td>  -  </td></tr>
      </table>
      */
-    public okhttp3.Call getResellerV6ProductdetailAsync(String ingramPartNumber, String imCustomerNumber, String imCountryCode, String imCorrelationID, String imSenderID, final ApiCallback<ProductDetailResponse> _callback) throws ApiException {
+    public okhttp3.Call getResellerV6ProductdetailAsync(@javax.annotation.Nonnull String ingramPartNumber, @javax.annotation.Nonnull String imCustomerNumber, @javax.annotation.Nonnull String imCountryCode, @javax.annotation.Nonnull String imCorrelationID, @javax.annotation.Nullable String imSenderID, final ApiCallback<ProductDetailResponse> _callback) throws ApiException {
 
         okhttp3.Call localVarCall = getResellerV6ProductdetailValidateBeforeCall(ingramPartNumber, imCustomerNumber, imCountryCode, imCorrelationID, imSenderID, _callback);
         Type localVarReturnType = new TypeToken<ProductDetailResponse>(){}.getType();
@@ -288,7 +288,7 @@ public class ProductCatalogApi {
         <tr><td> 500 </td><td> Internal Server Error </td><td>  -  </td></tr>
      </table>
      */
-    public okhttp3.Call getResellerV6ProductdetailcmpCall(String imCustomerNumber, String imCountryCode, String imCorrelationID, String imSenderID, String planName, String planId, String vendorPartNumber, final ApiCallback _callback) throws ApiException {
+    public okhttp3.Call getResellerV6ProductdetailcmpCall(@javax.annotation.Nonnull String imCustomerNumber, @javax.annotation.Nonnull String imCountryCode, @javax.annotation.Nonnull String imCorrelationID, @javax.annotation.Nullable String imSenderID, @javax.annotation.Nullable String planName, @javax.annotation.Nullable String planId, @javax.annotation.Nullable String vendorPartNumber, final ApiCallback _callback) throws ApiException {
         String basePath = null;
         // Operation Servers
         String[] localBasePaths = new String[] {  };
@@ -365,7 +365,7 @@ public class ProductCatalogApi {
     }
 
     @SuppressWarnings("rawtypes")
-    private okhttp3.Call getResellerV6ProductdetailcmpValidateBeforeCall(String imCustomerNumber, String imCountryCode, String imCorrelationID, String imSenderID, String planName, String planId, String vendorPartNumber, final ApiCallback _callback) throws ApiException {
+    private okhttp3.Call getResellerV6ProductdetailcmpValidateBeforeCall(@javax.annotation.Nonnull String imCustomerNumber, @javax.annotation.Nonnull String imCountryCode, @javax.annotation.Nonnull String imCorrelationID, @javax.annotation.Nullable String imSenderID, @javax.annotation.Nullable String planName, @javax.annotation.Nullable String planId, @javax.annotation.Nullable String vendorPartNumber, final ApiCallback _callback) throws ApiException {
         // verify the required parameter 'imCustomerNumber' is set
         if (imCustomerNumber == null) {
             throw new ApiException("Missing the required parameter 'imCustomerNumber' when calling getResellerV6Productdetailcmp(Async)");
@@ -407,7 +407,7 @@ public class ProductCatalogApi {
         <tr><td> 500 </td><td> Internal Server Error </td><td>  -  </td></tr>
      </table>
      */
-    public ProductDetailResponse getResellerV6Productdetailcmp(String imCustomerNumber, String imCountryCode, String imCorrelationID, String imSenderID, String planName, String planId, String vendorPartNumber) throws ApiException {
+    public ProductDetailResponse getResellerV6Productdetailcmp(@javax.annotation.Nonnull String imCustomerNumber, @javax.annotation.Nonnull String imCountryCode, @javax.annotation.Nonnull String imCorrelationID, @javax.annotation.Nullable String imSenderID, @javax.annotation.Nullable String planName, @javax.annotation.Nullable String planId, @javax.annotation.Nullable String vendorPartNumber) throws ApiException {
         ApiResponse<ProductDetailResponse> localVarResp = getResellerV6ProductdetailcmpWithHttpInfo(imCustomerNumber, imCountryCode, imCorrelationID, imSenderID, planName, planId, vendorPartNumber);
         return localVarResp.getData();
     }
@@ -434,7 +434,7 @@ public class ProductCatalogApi {
         <tr><td> 500 </td><td> Internal Server Error </td><td>  -  </td></tr>
      </table>
      */
-    public ApiResponse<ProductDetailResponse> getResellerV6ProductdetailcmpWithHttpInfo(String imCustomerNumber, String imCountryCode, String imCorrelationID, String imSenderID, String planName, String planId, String vendorPartNumber) throws ApiException {
+    public ApiResponse<ProductDetailResponse> getResellerV6ProductdetailcmpWithHttpInfo(@javax.annotation.Nonnull String imCustomerNumber, @javax.annotation.Nonnull String imCountryCode, @javax.annotation.Nonnull String imCorrelationID, @javax.annotation.Nullable String imSenderID, @javax.annotation.Nullable String planName, @javax.annotation.Nullable String planId, @javax.annotation.Nullable String vendorPartNumber) throws ApiException {
         okhttp3.Call localVarCall = getResellerV6ProductdetailcmpValidateBeforeCall(imCustomerNumber, imCountryCode, imCorrelationID, imSenderID, planName, planId, vendorPartNumber, null);
         Type localVarReturnType = new TypeToken<ProductDetailResponse>(){}.getType();
         return localVarApiClient.execute(localVarCall, localVarReturnType);
@@ -463,7 +463,7 @@ public class ProductCatalogApi {
         <tr><td> 500 </td><td> Internal Server Error </td><td>  -  </td></tr>
      </table>
      */
-    public okhttp3.Call getResellerV6ProductdetailcmpAsync(String imCustomerNumber, String imCountryCode, String imCorrelationID, String imSenderID, String planName, String planId, String vendorPartNumber, final ApiCallback<ProductDetailResponse> _callback) throws ApiException {
+    public okhttp3.Call getResellerV6ProductdetailcmpAsync(@javax.annotation.Nonnull String imCustomerNumber, @javax.annotation.Nonnull String imCountryCode, @javax.annotation.Nonnull String imCorrelationID, @javax.annotation.Nullable String imSenderID, @javax.annotation.Nullable String planName, @javax.annotation.Nullable String planId, @javax.annotation.Nullable String vendorPartNumber, final ApiCallback<ProductDetailResponse> _callback) throws ApiException {
 
         okhttp3.Call localVarCall = getResellerV6ProductdetailcmpValidateBeforeCall(imCustomerNumber, imCountryCode, imCorrelationID, imSenderID, planName, planId, vendorPartNumber, _callback);
         Type localVarReturnType = new TypeToken<ProductDetailResponse>(){}.getType();
@@ -503,7 +503,7 @@ public class ProductCatalogApi {
         <tr><td> 500 </td><td> Internal Server Error </td><td>  * IM-CorrelationID - Unique transaction number to identify each transaction across all the systems. <br>  * IM-SenderID - Sender Identification text . <br>  </td></tr>
      </table>
      */
-    public okhttp3.Call getResellerV6ProductsearchCall(String imCustomerNumber, String imCorrelationID, String imCountryCode, Integer pageNumber, Integer pageSize, String imSenderID, String type, String hasDiscounts, List<String> vendor, List<String> vendorPartNumber, String acceptLanguage, String vendorNumber, List<String> keyword, String category, String skipAuthorisation, String groupName, String planID, Boolean showGroupInfo, final ApiCallback _callback) throws ApiException {
+    public okhttp3.Call getResellerV6ProductsearchCall(@javax.annotation.Nonnull String imCustomerNumber, @javax.annotation.Nonnull String imCorrelationID, @javax.annotation.Nonnull String imCountryCode, @javax.annotation.Nullable Integer pageNumber, @javax.annotation.Nullable Integer pageSize, @javax.annotation.Nullable String imSenderID, @javax.annotation.Nullable String type, @javax.annotation.Nullable String hasDiscounts, @javax.annotation.Nullable List<String> vendor, @javax.annotation.Nullable List<String> vendorPartNumber, @javax.annotation.Nullable String acceptLanguage, @javax.annotation.Nullable String vendorNumber, @javax.annotation.Nullable List<String> keyword, @javax.annotation.Nullable String category, @javax.annotation.Nullable String skipAuthorisation, @javax.annotation.Nullable String groupName, @javax.annotation.Nullable String planID, @javax.annotation.Nullable Boolean showGroupInfo, final ApiCallback _callback) throws ApiException {
         String basePath = null;
         // Operation Servers
         String[] localBasePaths = new String[] {  };
@@ -625,7 +625,7 @@ public class ProductCatalogApi {
     }
 
     @SuppressWarnings("rawtypes")
-    private okhttp3.Call getResellerV6ProductsearchValidateBeforeCall(String imCustomerNumber, String imCorrelationID, String imCountryCode, Integer pageNumber, Integer pageSize, String imSenderID, String type, String hasDiscounts, List<String> vendor, List<String> vendorPartNumber, String acceptLanguage, String vendorNumber, List<String> keyword, String category, String skipAuthorisation, String groupName, String planID, Boolean showGroupInfo, final ApiCallback _callback) throws ApiException {
+    private okhttp3.Call getResellerV6ProductsearchValidateBeforeCall(@javax.annotation.Nonnull String imCustomerNumber, @javax.annotation.Nonnull String imCorrelationID, @javax.annotation.Nonnull String imCountryCode, @javax.annotation.Nullable Integer pageNumber, @javax.annotation.Nullable Integer pageSize, @javax.annotation.Nullable String imSenderID, @javax.annotation.Nullable String type, @javax.annotation.Nullable String hasDiscounts, @javax.annotation.Nullable List<String> vendor, @javax.annotation.Nullable List<String> vendorPartNumber, @javax.annotation.Nullable String acceptLanguage, @javax.annotation.Nullable String vendorNumber, @javax.annotation.Nullable List<String> keyword, @javax.annotation.Nullable String category, @javax.annotation.Nullable String skipAuthorisation, @javax.annotation.Nullable String groupName, @javax.annotation.Nullable String planID, @javax.annotation.Nullable Boolean showGroupInfo, final ApiCallback _callback) throws ApiException {
         // verify the required parameter 'imCustomerNumber' is set
         if (imCustomerNumber == null) {
             throw new ApiException("Missing the required parameter 'imCustomerNumber' when calling getResellerV6Productsearch(Async)");
@@ -678,7 +678,7 @@ public class ProductCatalogApi {
         <tr><td> 500 </td><td> Internal Server Error </td><td>  * IM-CorrelationID - Unique transaction number to identify each transaction across all the systems. <br>  * IM-SenderID - Sender Identification text . <br>  </td></tr>
      </table>
      */
-    public ProductSearchResponse getResellerV6Productsearch(String imCustomerNumber, String imCorrelationID, String imCountryCode, Integer pageNumber, Integer pageSize, String imSenderID, String type, String hasDiscounts, List<String> vendor, List<String> vendorPartNumber, String acceptLanguage, String vendorNumber, List<String> keyword, String category, String skipAuthorisation, String groupName, String planID, Boolean showGroupInfo) throws ApiException {
+    public ProductSearchResponse getResellerV6Productsearch(@javax.annotation.Nonnull String imCustomerNumber, @javax.annotation.Nonnull String imCorrelationID, @javax.annotation.Nonnull String imCountryCode, @javax.annotation.Nullable Integer pageNumber, @javax.annotation.Nullable Integer pageSize, @javax.annotation.Nullable String imSenderID, @javax.annotation.Nullable String type, @javax.annotation.Nullable String hasDiscounts, @javax.annotation.Nullable List<String> vendor, @javax.annotation.Nullable List<String> vendorPartNumber, @javax.annotation.Nullable String acceptLanguage, @javax.annotation.Nullable String vendorNumber, @javax.annotation.Nullable List<String> keyword, @javax.annotation.Nullable String category, @javax.annotation.Nullable String skipAuthorisation, @javax.annotation.Nullable String groupName, @javax.annotation.Nullable String planID, @javax.annotation.Nullable Boolean showGroupInfo) throws ApiException {
         ApiResponse<ProductSearchResponse> localVarResp = getResellerV6ProductsearchWithHttpInfo(imCustomerNumber, imCorrelationID, imCountryCode, pageNumber, pageSize, imSenderID, type, hasDiscounts, vendor, vendorPartNumber, acceptLanguage, vendorNumber, keyword, category, skipAuthorisation, groupName, planID, showGroupInfo);
         return localVarResp.getData();
     }
@@ -716,7 +716,7 @@ public class ProductCatalogApi {
         <tr><td> 500 </td><td> Internal Server Error </td><td>  * IM-CorrelationID - Unique transaction number to identify each transaction across all the systems. <br>  * IM-SenderID - Sender Identification text . <br>  </td></tr>
      </table>
      */
-    public ApiResponse<ProductSearchResponse> getResellerV6ProductsearchWithHttpInfo(String imCustomerNumber, String imCorrelationID, String imCountryCode, Integer pageNumber, Integer pageSize, String imSenderID, String type, String hasDiscounts, List<String> vendor, List<String> vendorPartNumber, String acceptLanguage, String vendorNumber, List<String> keyword, String category, String skipAuthorisation, String groupName, String planID, Boolean showGroupInfo) throws ApiException {
+    public ApiResponse<ProductSearchResponse> getResellerV6ProductsearchWithHttpInfo(@javax.annotation.Nonnull String imCustomerNumber, @javax.annotation.Nonnull String imCorrelationID, @javax.annotation.Nonnull String imCountryCode, @javax.annotation.Nullable Integer pageNumber, @javax.annotation.Nullable Integer pageSize, @javax.annotation.Nullable String imSenderID, @javax.annotation.Nullable String type, @javax.annotation.Nullable String hasDiscounts, @javax.annotation.Nullable List<String> vendor, @javax.annotation.Nullable List<String> vendorPartNumber, @javax.annotation.Nullable String acceptLanguage, @javax.annotation.Nullable String vendorNumber, @javax.annotation.Nullable List<String> keyword, @javax.annotation.Nullable String category, @javax.annotation.Nullable String skipAuthorisation, @javax.annotation.Nullable String groupName, @javax.annotation.Nullable String planID, @javax.annotation.Nullable Boolean showGroupInfo) throws ApiException {
         okhttp3.Call localVarCall = getResellerV6ProductsearchValidateBeforeCall(imCustomerNumber, imCorrelationID, imCountryCode, pageNumber, pageSize, imSenderID, type, hasDiscounts, vendor, vendorPartNumber, acceptLanguage, vendorNumber, keyword, category, skipAuthorisation, groupName, planID, showGroupInfo, null);
         Type localVarReturnType = new TypeToken<ProductSearchResponse>(){}.getType();
         return localVarApiClient.execute(localVarCall, localVarReturnType);
@@ -756,7 +756,7 @@ public class ProductCatalogApi {
         <tr><td> 500 </td><td> Internal Server Error </td><td>  * IM-CorrelationID - Unique transaction number to identify each transaction across all the systems. <br>  * IM-SenderID - Sender Identification text . <br>  </td></tr>
      </table>
      */
-    public okhttp3.Call getResellerV6ProductsearchAsync(String imCustomerNumber, String imCorrelationID, String imCountryCode, Integer pageNumber, Integer pageSize, String imSenderID, String type, String hasDiscounts, List<String> vendor, List<String> vendorPartNumber, String acceptLanguage, String vendorNumber, List<String> keyword, String category, String skipAuthorisation, String groupName, String planID, Boolean showGroupInfo, final ApiCallback<ProductSearchResponse> _callback) throws ApiException {
+    public okhttp3.Call getResellerV6ProductsearchAsync(@javax.annotation.Nonnull String imCustomerNumber, @javax.annotation.Nonnull String imCorrelationID, @javax.annotation.Nonnull String imCountryCode, @javax.annotation.Nullable Integer pageNumber, @javax.annotation.Nullable Integer pageSize, @javax.annotation.Nullable String imSenderID, @javax.annotation.Nullable String type, @javax.annotation.Nullable String hasDiscounts, @javax.annotation.Nullable List<String> vendor, @javax.annotation.Nullable List<String> vendorPartNumber, @javax.annotation.Nullable String acceptLanguage, @javax.annotation.Nullable String vendorNumber, @javax.annotation.Nullable List<String> keyword, @javax.annotation.Nullable String category, @javax.annotation.Nullable String skipAuthorisation, @javax.annotation.Nullable String groupName, @javax.annotation.Nullable String planID, @javax.annotation.Nullable Boolean showGroupInfo, final ApiCallback<ProductSearchResponse> _callback) throws ApiException {
 
         okhttp3.Call localVarCall = getResellerV6ProductsearchValidateBeforeCall(imCustomerNumber, imCorrelationID, imCountryCode, pageNumber, pageSize, imSenderID, type, hasDiscounts, vendor, vendorPartNumber, acceptLanguage, vendorNumber, keyword, category, skipAuthorisation, groupName, planID, showGroupInfo, _callback);
         Type localVarReturnType = new TypeToken<ProductSearchResponse>(){}.getType();
@@ -787,7 +787,7 @@ public class ProductCatalogApi {
         <tr><td> 500 </td><td> Internal Server Error </td><td>  -  </td></tr>
      </table>
      */
-    public okhttp3.Call postPriceandavailabilityCall(Boolean includeAvailability, Boolean includePricing, String imCustomerNumber, String imCountryCode, String imCorrelationID, Boolean includeProductAttributes, String imSenderID, PriceAndAvailabilityRequest priceAndAvailabilityRequest, final ApiCallback _callback) throws ApiException {
+    public okhttp3.Call postPriceandavailabilityCall(@javax.annotation.Nonnull Boolean includeAvailability, @javax.annotation.Nonnull Boolean includePricing, @javax.annotation.Nonnull String imCustomerNumber, @javax.annotation.Nonnull String imCountryCode, @javax.annotation.Nonnull String imCorrelationID, @javax.annotation.Nullable Boolean includeProductAttributes, @javax.annotation.Nullable String imSenderID, @javax.annotation.Nullable PriceAndAvailabilityRequest priceAndAvailabilityRequest, final ApiCallback _callback) throws ApiException {
         String basePath = null;
         // Operation Servers
         String[] localBasePaths = new String[] {  };
@@ -865,7 +865,7 @@ public class ProductCatalogApi {
     }
 
     @SuppressWarnings("rawtypes")
-    private okhttp3.Call postPriceandavailabilityValidateBeforeCall(Boolean includeAvailability, Boolean includePricing, String imCustomerNumber, String imCountryCode, String imCorrelationID, Boolean includeProductAttributes, String imSenderID, PriceAndAvailabilityRequest priceAndAvailabilityRequest, final ApiCallback _callback) throws ApiException {
+    private okhttp3.Call postPriceandavailabilityValidateBeforeCall(@javax.annotation.Nonnull Boolean includeAvailability, @javax.annotation.Nonnull Boolean includePricing, @javax.annotation.Nonnull String imCustomerNumber, @javax.annotation.Nonnull String imCountryCode, @javax.annotation.Nonnull String imCorrelationID, @javax.annotation.Nullable Boolean includeProductAttributes, @javax.annotation.Nullable String imSenderID, @javax.annotation.Nullable PriceAndAvailabilityRequest priceAndAvailabilityRequest, final ApiCallback _callback) throws ApiException {
         // verify the required parameter 'includeAvailability' is set
         if (includeAvailability == null) {
             throw new ApiException("Missing the required parameter 'includeAvailability' when calling postPriceandavailability(Async)");
@@ -919,7 +919,7 @@ public class ProductCatalogApi {
         <tr><td> 500 </td><td> Internal Server Error </td><td>  -  </td></tr>
      </table>
      */
-    public List<PriceAndAvailabilityResponseInner> postPriceandavailability(Boolean includeAvailability, Boolean includePricing, String imCustomerNumber, String imCountryCode, String imCorrelationID, Boolean includeProductAttributes, String imSenderID, PriceAndAvailabilityRequest priceAndAvailabilityRequest) throws ApiException {
+    public List<PriceAndAvailabilityResponseInner> postPriceandavailability(@javax.annotation.Nonnull Boolean includeAvailability, @javax.annotation.Nonnull Boolean includePricing, @javax.annotation.Nonnull String imCustomerNumber, @javax.annotation.Nonnull String imCountryCode, @javax.annotation.Nonnull String imCorrelationID, @javax.annotation.Nullable Boolean includeProductAttributes, @javax.annotation.Nullable String imSenderID, @javax.annotation.Nullable PriceAndAvailabilityRequest priceAndAvailabilityRequest) throws ApiException {
         ApiResponse<List<PriceAndAvailabilityResponseInner>> localVarResp = postPriceandavailabilityWithHttpInfo(includeAvailability, includePricing, imCustomerNumber, imCountryCode, imCorrelationID, includeProductAttributes, imSenderID, priceAndAvailabilityRequest);
         return localVarResp.getData();
     }
@@ -948,7 +948,7 @@ public class ProductCatalogApi {
         <tr><td> 500 </td><td> Internal Server Error </td><td>  -  </td></tr>
      </table>
      */
-    public ApiResponse<List<PriceAndAvailabilityResponseInner>> postPriceandavailabilityWithHttpInfo(Boolean includeAvailability, Boolean includePricing, String imCustomerNumber, String imCountryCode, String imCorrelationID, Boolean includeProductAttributes, String imSenderID, PriceAndAvailabilityRequest priceAndAvailabilityRequest) throws ApiException {
+    public ApiResponse<List<PriceAndAvailabilityResponseInner>> postPriceandavailabilityWithHttpInfo(@javax.annotation.Nonnull Boolean includeAvailability, @javax.annotation.Nonnull Boolean includePricing, @javax.annotation.Nonnull String imCustomerNumber, @javax.annotation.Nonnull String imCountryCode, @javax.annotation.Nonnull String imCorrelationID, @javax.annotation.Nullable Boolean includeProductAttributes, @javax.annotation.Nullable String imSenderID, @javax.annotation.Nullable PriceAndAvailabilityRequest priceAndAvailabilityRequest) throws ApiException {
         okhttp3.Call localVarCall = postPriceandavailabilityValidateBeforeCall(includeAvailability, includePricing, imCustomerNumber, imCountryCode, imCorrelationID, includeProductAttributes, imSenderID, priceAndAvailabilityRequest, null);
         Type localVarReturnType = new TypeToken<List<PriceAndAvailabilityResponseInner>>(){}.getType();
         return localVarApiClient.execute(localVarCall, localVarReturnType);
@@ -979,7 +979,7 @@ public class ProductCatalogApi {
         <tr><td> 500 </td><td> Internal Server Error </td><td>  -  </td></tr>
      </table>
      */
-    public okhttp3.Call postPriceandavailabilityAsync(Boolean includeAvailability, Boolean includePricing, String imCustomerNumber, String imCountryCode, String imCorrelationID, Boolean includeProductAttributes, String imSenderID, PriceAndAvailabilityRequest priceAndAvailabilityRequest, final ApiCallback<List<PriceAndAvailabilityResponseInner>> _callback) throws ApiException {
+    public okhttp3.Call postPriceandavailabilityAsync(@javax.annotation.Nonnull Boolean includeAvailability, @javax.annotation.Nonnull Boolean includePricing, @javax.annotation.Nonnull String imCustomerNumber, @javax.annotation.Nonnull String imCountryCode, @javax.annotation.Nonnull String imCorrelationID, @javax.annotation.Nullable Boolean includeProductAttributes, @javax.annotation.Nullable String imSenderID, @javax.annotation.Nullable PriceAndAvailabilityRequest priceAndAvailabilityRequest, final ApiCallback<List<PriceAndAvailabilityResponseInner>> _callback) throws ApiException {
 
         okhttp3.Call localVarCall = postPriceandavailabilityValidateBeforeCall(includeAvailability, includePricing, imCustomerNumber, imCountryCode, imCorrelationID, includeProductAttributes, imSenderID, priceAndAvailabilityRequest, _callback);
         Type localVarReturnType = new TypeToken<List<PriceAndAvailabilityResponseInner>>(){}.getType();

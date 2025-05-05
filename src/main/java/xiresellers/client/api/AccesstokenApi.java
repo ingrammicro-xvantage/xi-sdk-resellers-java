@@ -91,7 +91,7 @@ public class AccesstokenApi {
         <tr><td> 500 </td><td> Internal Server Error </td><td>  -  </td></tr>
      </table>
      */
-    public okhttp3.Call getAccesstokenCall(String grantType, String clientId, String clientSecret, final ApiCallback _callback) throws ApiException {
+    public okhttp3.Call getAccesstokenCall(@javax.annotation.Nonnull String grantType, @javax.annotation.Nonnull String clientId, @javax.annotation.Nonnull String clientSecret, final ApiCallback _callback) throws ApiException {
         String basePath = null;
         // Operation Servers
         String[] localBasePaths = new String[] {  };
@@ -148,7 +148,7 @@ public class AccesstokenApi {
     }
 
     @SuppressWarnings("rawtypes")
-    private okhttp3.Call getAccesstokenValidateBeforeCall(String grantType, String clientId, String clientSecret, final ApiCallback _callback) throws ApiException {
+    private okhttp3.Call getAccesstokenValidateBeforeCall(@javax.annotation.Nonnull String grantType, @javax.annotation.Nonnull String clientId, @javax.annotation.Nonnull String clientSecret, final ApiCallback _callback) throws ApiException {
         // verify the required parameter 'grantType' is set
         if (grantType == null) {
             throw new ApiException("Missing the required parameter 'grantType' when calling getAccesstoken(Async)");
@@ -185,7 +185,7 @@ public class AccesstokenApi {
         <tr><td> 500 </td><td> Internal Server Error </td><td>  -  </td></tr>
      </table>
      */
-    public AccesstokenResponse getAccesstoken(String grantType, String clientId, String clientSecret) throws ApiException {
+    public AccesstokenResponse getAccesstoken(@javax.annotation.Nonnull String grantType, @javax.annotation.Nonnull String clientId, @javax.annotation.Nonnull String clientSecret) throws ApiException {
         ApiResponse<AccesstokenResponse> localVarResp = getAccesstokenWithHttpInfo(grantType, clientId, clientSecret);
         return localVarResp.getData();
     }
@@ -207,7 +207,7 @@ public class AccesstokenApi {
         <tr><td> 500 </td><td> Internal Server Error </td><td>  -  </td></tr>
      </table>
      */
-    public ApiResponse<AccesstokenResponse> getAccesstokenWithHttpInfo(String grantType, String clientId, String clientSecret) throws ApiException {
+    public ApiResponse<AccesstokenResponse> getAccesstokenWithHttpInfo(@javax.annotation.Nonnull String grantType, @javax.annotation.Nonnull String clientId, @javax.annotation.Nonnull String clientSecret) throws ApiException {
         okhttp3.Call localVarCall = getAccesstokenValidateBeforeCall(grantType, clientId, clientSecret, null);
         Type localVarReturnType = new TypeToken<AccesstokenResponse>(){}.getType();
         return localVarApiClient.execute(localVarCall, localVarReturnType);
@@ -231,7 +231,7 @@ public class AccesstokenApi {
         <tr><td> 500 </td><td> Internal Server Error </td><td>  -  </td></tr>
      </table>
      */
-    public okhttp3.Call getAccesstokenAsync(String grantType, String clientId, String clientSecret, final ApiCallback<AccesstokenResponse> _callback) throws ApiException {
+    public okhttp3.Call getAccesstokenAsync(@javax.annotation.Nonnull String grantType, @javax.annotation.Nonnull String clientId, @javax.annotation.Nonnull String clientSecret, final ApiCallback<AccesstokenResponse> _callback) throws ApiException {
 
         okhttp3.Call localVarCall = getAccesstokenValidateBeforeCall(grantType, clientId, clientSecret, _callback);
         Type localVarReturnType = new TypeToken<AccesstokenResponse>(){}.getType();

@@ -46,19 +46,14 @@ import java.util.Set;
 import xiresellers.client.JSON;
 
 /**
- * QuoteCreateRequestEndUserInfo
+ * The shipping information.
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2025-04-09T06:25:58.100608330Z[Etc/UTC]", comments = "Generator version: 7.12.0")
-public class QuoteCreateRequestEndUserInfo {
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2025-05-05T07:27:07.209261089Z[Etc/UTC]", comments = "Generator version: 7.13.0")
+public class FreightRequestShipToAddress {
   public static final String SERIALIZED_NAME_COMPANY_NAME = "companyName";
   @SerializedName(SERIALIZED_NAME_COMPANY_NAME)
   @javax.annotation.Nullable
   private String companyName;
-
-  public static final String SERIALIZED_NAME_CONTACT = "contact";
-  @SerializedName(SERIALIZED_NAME_CONTACT)
-  @javax.annotation.Nullable
-  private String contact;
 
   public static final String SERIALIZED_NAME_ADDRESS_LINE1 = "addressLine1";
   @SerializedName(SERIALIZED_NAME_ADDRESS_LINE1)
@@ -69,6 +64,11 @@ public class QuoteCreateRequestEndUserInfo {
   @SerializedName(SERIALIZED_NAME_ADDRESS_LINE2)
   @javax.annotation.Nullable
   private String addressLine2;
+
+  public static final String SERIALIZED_NAME_ADDRESS_LINE3 = "addressLine3";
+  @SerializedName(SERIALIZED_NAME_ADDRESS_LINE3)
+  @javax.annotation.Nullable
+  private String addressLine3;
 
   public static final String SERIALIZED_NAME_CITY = "city";
   @SerializedName(SERIALIZED_NAME_CITY)
@@ -90,26 +90,16 @@ public class QuoteCreateRequestEndUserInfo {
   @javax.annotation.Nullable
   private String countryCode;
 
-  public static final String SERIALIZED_NAME_EMAIL = "email";
-  @SerializedName(SERIALIZED_NAME_EMAIL)
-  @javax.annotation.Nullable
-  private String email;
-
-  public static final String SERIALIZED_NAME_PHONE_NUMBER = "phoneNumber";
-  @SerializedName(SERIALIZED_NAME_PHONE_NUMBER)
-  @javax.annotation.Nullable
-  private String phoneNumber;
-
-  public QuoteCreateRequestEndUserInfo() {
+  public FreightRequestShipToAddress() {
   }
 
-  public QuoteCreateRequestEndUserInfo companyName(@javax.annotation.Nullable String companyName) {
+  public FreightRequestShipToAddress companyName(@javax.annotation.Nullable String companyName) {
     this.companyName = companyName;
     return this;
   }
 
   /**
-   * Name of the company associated with the quote.
+   * The name of the company the order will be shipped to.
    * @return companyName
    */
   @javax.annotation.Nullable
@@ -122,32 +112,13 @@ public class QuoteCreateRequestEndUserInfo {
   }
 
 
-  public QuoteCreateRequestEndUserInfo contact(@javax.annotation.Nullable String contact) {
-    this.contact = contact;
-    return this;
-  }
-
-  /**
-   * Contact name of end user associated with the quote.
-   * @return contact
-   */
-  @javax.annotation.Nullable
-  public String getContact() {
-    return contact;
-  }
-
-  public void setContact(@javax.annotation.Nullable String contact) {
-    this.contact = contact;
-  }
-
-
-  public QuoteCreateRequestEndUserInfo addressLine1(@javax.annotation.Nullable String addressLine1) {
+  public FreightRequestShipToAddress addressLine1(@javax.annotation.Nullable String addressLine1) {
     this.addressLine1 = addressLine1;
     return this;
   }
 
   /**
-   * Address line 1 for end user associated with the quote
+   * Line 1 of the address the order will be shipped to.
    * @return addressLine1
    */
   @javax.annotation.Nullable
@@ -160,13 +131,13 @@ public class QuoteCreateRequestEndUserInfo {
   }
 
 
-  public QuoteCreateRequestEndUserInfo addressLine2(@javax.annotation.Nullable String addressLine2) {
+  public FreightRequestShipToAddress addressLine2(@javax.annotation.Nullable String addressLine2) {
     this.addressLine2 = addressLine2;
     return this;
   }
 
   /**
-   * Address line 2 for end user associated with the quote
+   * Line 2 of the address the order will be shipped to.
    * @return addressLine2
    */
   @javax.annotation.Nullable
@@ -179,13 +150,32 @@ public class QuoteCreateRequestEndUserInfo {
   }
 
 
-  public QuoteCreateRequestEndUserInfo city(@javax.annotation.Nullable String city) {
+  public FreightRequestShipToAddress addressLine3(@javax.annotation.Nullable String addressLine3) {
+    this.addressLine3 = addressLine3;
+    return this;
+  }
+
+  /**
+   * Line 3 of the address the order will be shipped to.
+   * @return addressLine3
+   */
+  @javax.annotation.Nullable
+  public String getAddressLine3() {
+    return addressLine3;
+  }
+
+  public void setAddressLine3(@javax.annotation.Nullable String addressLine3) {
+    this.addressLine3 = addressLine3;
+  }
+
+
+  public FreightRequestShipToAddress city(@javax.annotation.Nullable String city) {
     this.city = city;
     return this;
   }
 
   /**
-   * City for end user associated with the quote
+   * The city the order will be shipped to.
    * @return city
    */
   @javax.annotation.Nullable
@@ -198,13 +188,13 @@ public class QuoteCreateRequestEndUserInfo {
   }
 
 
-  public QuoteCreateRequestEndUserInfo state(@javax.annotation.Nullable String state) {
+  public FreightRequestShipToAddress state(@javax.annotation.Nullable String state) {
     this.state = state;
     return this;
   }
 
   /**
-   * Two letter state abbreviation for end user associated with the quote.
+   * The state the order will be shipped to.
    * @return state
    */
   @javax.annotation.Nullable
@@ -217,13 +207,13 @@ public class QuoteCreateRequestEndUserInfo {
   }
 
 
-  public QuoteCreateRequestEndUserInfo postalCode(@javax.annotation.Nullable String postalCode) {
+  public FreightRequestShipToAddress postalCode(@javax.annotation.Nullable String postalCode) {
     this.postalCode = postalCode;
     return this;
   }
 
   /**
-   * Zip code of end user associated with the quote.
+   * The zip or postal code the order will be shipped to.
    * @return postalCode
    */
   @javax.annotation.Nullable
@@ -236,13 +226,13 @@ public class QuoteCreateRequestEndUserInfo {
   }
 
 
-  public QuoteCreateRequestEndUserInfo countryCode(@javax.annotation.Nullable String countryCode) {
+  public FreightRequestShipToAddress countryCode(@javax.annotation.Nullable String countryCode) {
     this.countryCode = countryCode;
     return this;
   }
 
   /**
-   * Two letter Country abbreviation for end user associated with the quote.
+   * The two-character ISO country code the order will be shipped to.
    * @return countryCode
    */
   @javax.annotation.Nullable
@@ -255,44 +245,6 @@ public class QuoteCreateRequestEndUserInfo {
   }
 
 
-  public QuoteCreateRequestEndUserInfo email(@javax.annotation.Nullable String email) {
-    this.email = email;
-    return this;
-  }
-
-  /**
-   * Email of end-user the quote associated with the quote.
-   * @return email
-   */
-  @javax.annotation.Nullable
-  public String getEmail() {
-    return email;
-  }
-
-  public void setEmail(@javax.annotation.Nullable String email) {
-    this.email = email;
-  }
-
-
-  public QuoteCreateRequestEndUserInfo phoneNumber(@javax.annotation.Nullable String phoneNumber) {
-    this.phoneNumber = phoneNumber;
-    return this;
-  }
-
-  /**
-   * Phone number of end user associated with the quote.
-   * @return phoneNumber
-   */
-  @javax.annotation.Nullable
-  public String getPhoneNumber() {
-    return phoneNumber;
-  }
-
-  public void setPhoneNumber(@javax.annotation.Nullable String phoneNumber) {
-    this.phoneNumber = phoneNumber;
-  }
-
-
 
   @Override
   public boolean equals(Object o) {
@@ -302,38 +254,34 @@ public class QuoteCreateRequestEndUserInfo {
     if (o == null || getClass() != o.getClass()) {
       return false;
     }
-    QuoteCreateRequestEndUserInfo quoteCreateRequestEndUserInfo = (QuoteCreateRequestEndUserInfo) o;
-    return Objects.equals(this.companyName, quoteCreateRequestEndUserInfo.companyName) &&
-        Objects.equals(this.contact, quoteCreateRequestEndUserInfo.contact) &&
-        Objects.equals(this.addressLine1, quoteCreateRequestEndUserInfo.addressLine1) &&
-        Objects.equals(this.addressLine2, quoteCreateRequestEndUserInfo.addressLine2) &&
-        Objects.equals(this.city, quoteCreateRequestEndUserInfo.city) &&
-        Objects.equals(this.state, quoteCreateRequestEndUserInfo.state) &&
-        Objects.equals(this.postalCode, quoteCreateRequestEndUserInfo.postalCode) &&
-        Objects.equals(this.countryCode, quoteCreateRequestEndUserInfo.countryCode) &&
-        Objects.equals(this.email, quoteCreateRequestEndUserInfo.email) &&
-        Objects.equals(this.phoneNumber, quoteCreateRequestEndUserInfo.phoneNumber);
+    FreightRequestShipToAddress freightRequestShipToAddress = (FreightRequestShipToAddress) o;
+    return Objects.equals(this.companyName, freightRequestShipToAddress.companyName) &&
+        Objects.equals(this.addressLine1, freightRequestShipToAddress.addressLine1) &&
+        Objects.equals(this.addressLine2, freightRequestShipToAddress.addressLine2) &&
+        Objects.equals(this.addressLine3, freightRequestShipToAddress.addressLine3) &&
+        Objects.equals(this.city, freightRequestShipToAddress.city) &&
+        Objects.equals(this.state, freightRequestShipToAddress.state) &&
+        Objects.equals(this.postalCode, freightRequestShipToAddress.postalCode) &&
+        Objects.equals(this.countryCode, freightRequestShipToAddress.countryCode);
   }
 
   @Override
   public int hashCode() {
-    return Objects.hash(companyName, contact, addressLine1, addressLine2, city, state, postalCode, countryCode, email, phoneNumber);
+    return Objects.hash(companyName, addressLine1, addressLine2, addressLine3, city, state, postalCode, countryCode);
   }
 
   @Override
   public String toString() {
     StringBuilder sb = new StringBuilder();
-    sb.append("class QuoteCreateRequestEndUserInfo {\n");
+    sb.append("class FreightRequestShipToAddress {\n");
     sb.append("    companyName: ").append(toIndentedString(companyName)).append("\n");
-    sb.append("    contact: ").append(toIndentedString(contact)).append("\n");
     sb.append("    addressLine1: ").append(toIndentedString(addressLine1)).append("\n");
     sb.append("    addressLine2: ").append(toIndentedString(addressLine2)).append("\n");
+    sb.append("    addressLine3: ").append(toIndentedString(addressLine3)).append("\n");
     sb.append("    city: ").append(toIndentedString(city)).append("\n");
     sb.append("    state: ").append(toIndentedString(state)).append("\n");
     sb.append("    postalCode: ").append(toIndentedString(postalCode)).append("\n");
     sb.append("    countryCode: ").append(toIndentedString(countryCode)).append("\n");
-    sb.append("    email: ").append(toIndentedString(email)).append("\n");
-    sb.append("    phoneNumber: ").append(toIndentedString(phoneNumber)).append("\n");
     sb.append("}");
     return sb.toString();
   }
@@ -357,15 +305,13 @@ public class QuoteCreateRequestEndUserInfo {
     // a set of all properties/fields (JSON key names)
     openapiFields = new HashSet<String>();
     openapiFields.add("companyName");
-    openapiFields.add("contact");
     openapiFields.add("addressLine1");
     openapiFields.add("addressLine2");
+    openapiFields.add("addressLine3");
     openapiFields.add("city");
     openapiFields.add("state");
     openapiFields.add("postalCode");
     openapiFields.add("countryCode");
-    openapiFields.add("email");
-    openapiFields.add("phoneNumber");
 
     // a set of required properties/fields (JSON key names)
     openapiRequiredFields = new HashSet<String>();
@@ -375,34 +321,34 @@ public class QuoteCreateRequestEndUserInfo {
    * Validates the JSON Element and throws an exception if issues found
    *
    * @param jsonElement JSON Element
-   * @throws IOException if the JSON Element is invalid with respect to QuoteCreateRequestEndUserInfo
+   * @throws IOException if the JSON Element is invalid with respect to FreightRequestShipToAddress
    */
   public static void validateJsonElement(JsonElement jsonElement) throws IOException {
       if (jsonElement == null) {
-        if (!QuoteCreateRequestEndUserInfo.openapiRequiredFields.isEmpty()) { // has required fields but JSON element is null
-          throw new IllegalArgumentException(String.format("The required field(s) %s in QuoteCreateRequestEndUserInfo is not found in the empty JSON string", QuoteCreateRequestEndUserInfo.openapiRequiredFields.toString()));
+        if (!FreightRequestShipToAddress.openapiRequiredFields.isEmpty()) { // has required fields but JSON element is null
+          throw new IllegalArgumentException(String.format("The required field(s) %s in FreightRequestShipToAddress is not found in the empty JSON string", FreightRequestShipToAddress.openapiRequiredFields.toString()));
         }
       }
 
       Set<Map.Entry<String, JsonElement>> entries = jsonElement.getAsJsonObject().entrySet();
       // check to see if the JSON string contains additional fields
       for (Map.Entry<String, JsonElement> entry : entries) {
-        if (!QuoteCreateRequestEndUserInfo.openapiFields.contains(entry.getKey())) {
-          throw new IllegalArgumentException(String.format("The field `%s` in the JSON string is not defined in the `QuoteCreateRequestEndUserInfo` properties. JSON: %s", entry.getKey(), jsonElement.toString()));
+        if (!FreightRequestShipToAddress.openapiFields.contains(entry.getKey())) {
+          throw new IllegalArgumentException(String.format("The field `%s` in the JSON string is not defined in the `FreightRequestShipToAddress` properties. JSON: %s", entry.getKey(), jsonElement.toString()));
         }
       }
         JsonObject jsonObj = jsonElement.getAsJsonObject();
       if ((jsonObj.get("companyName") != null && !jsonObj.get("companyName").isJsonNull()) && !jsonObj.get("companyName").isJsonPrimitive()) {
         throw new IllegalArgumentException(String.format("Expected the field `companyName` to be a primitive type in the JSON string but got `%s`", jsonObj.get("companyName").toString()));
       }
-      if ((jsonObj.get("contact") != null && !jsonObj.get("contact").isJsonNull()) && !jsonObj.get("contact").isJsonPrimitive()) {
-        throw new IllegalArgumentException(String.format("Expected the field `contact` to be a primitive type in the JSON string but got `%s`", jsonObj.get("contact").toString()));
-      }
       if ((jsonObj.get("addressLine1") != null && !jsonObj.get("addressLine1").isJsonNull()) && !jsonObj.get("addressLine1").isJsonPrimitive()) {
         throw new IllegalArgumentException(String.format("Expected the field `addressLine1` to be a primitive type in the JSON string but got `%s`", jsonObj.get("addressLine1").toString()));
       }
       if ((jsonObj.get("addressLine2") != null && !jsonObj.get("addressLine2").isJsonNull()) && !jsonObj.get("addressLine2").isJsonPrimitive()) {
         throw new IllegalArgumentException(String.format("Expected the field `addressLine2` to be a primitive type in the JSON string but got `%s`", jsonObj.get("addressLine2").toString()));
+      }
+      if ((jsonObj.get("addressLine3") != null && !jsonObj.get("addressLine3").isJsonNull()) && !jsonObj.get("addressLine3").isJsonPrimitive()) {
+        throw new IllegalArgumentException(String.format("Expected the field `addressLine3` to be a primitive type in the JSON string but got `%s`", jsonObj.get("addressLine3").toString()));
       }
       if ((jsonObj.get("city") != null && !jsonObj.get("city").isJsonNull()) && !jsonObj.get("city").isJsonPrimitive()) {
         throw new IllegalArgumentException(String.format("Expected the field `city` to be a primitive type in the JSON string but got `%s`", jsonObj.get("city").toString()));
@@ -416,34 +362,28 @@ public class QuoteCreateRequestEndUserInfo {
       if ((jsonObj.get("countryCode") != null && !jsonObj.get("countryCode").isJsonNull()) && !jsonObj.get("countryCode").isJsonPrimitive()) {
         throw new IllegalArgumentException(String.format("Expected the field `countryCode` to be a primitive type in the JSON string but got `%s`", jsonObj.get("countryCode").toString()));
       }
-      if ((jsonObj.get("email") != null && !jsonObj.get("email").isJsonNull()) && !jsonObj.get("email").isJsonPrimitive()) {
-        throw new IllegalArgumentException(String.format("Expected the field `email` to be a primitive type in the JSON string but got `%s`", jsonObj.get("email").toString()));
-      }
-      if ((jsonObj.get("phoneNumber") != null && !jsonObj.get("phoneNumber").isJsonNull()) && !jsonObj.get("phoneNumber").isJsonPrimitive()) {
-        throw new IllegalArgumentException(String.format("Expected the field `phoneNumber` to be a primitive type in the JSON string but got `%s`", jsonObj.get("phoneNumber").toString()));
-      }
   }
 
   public static class CustomTypeAdapterFactory implements TypeAdapterFactory {
     @SuppressWarnings("unchecked")
     @Override
     public <T> TypeAdapter<T> create(Gson gson, TypeToken<T> type) {
-       if (!QuoteCreateRequestEndUserInfo.class.isAssignableFrom(type.getRawType())) {
-         return null; // this class only serializes 'QuoteCreateRequestEndUserInfo' and its subtypes
+       if (!FreightRequestShipToAddress.class.isAssignableFrom(type.getRawType())) {
+         return null; // this class only serializes 'FreightRequestShipToAddress' and its subtypes
        }
        final TypeAdapter<JsonElement> elementAdapter = gson.getAdapter(JsonElement.class);
-       final TypeAdapter<QuoteCreateRequestEndUserInfo> thisAdapter
-                        = gson.getDelegateAdapter(this, TypeToken.get(QuoteCreateRequestEndUserInfo.class));
+       final TypeAdapter<FreightRequestShipToAddress> thisAdapter
+                        = gson.getDelegateAdapter(this, TypeToken.get(FreightRequestShipToAddress.class));
 
-       return (TypeAdapter<T>) new TypeAdapter<QuoteCreateRequestEndUserInfo>() {
+       return (TypeAdapter<T>) new TypeAdapter<FreightRequestShipToAddress>() {
            @Override
-           public void write(JsonWriter out, QuoteCreateRequestEndUserInfo value) throws IOException {
+           public void write(JsonWriter out, FreightRequestShipToAddress value) throws IOException {
              JsonObject obj = thisAdapter.toJsonTree(value).getAsJsonObject();
              elementAdapter.write(out, obj);
            }
 
            @Override
-           public QuoteCreateRequestEndUserInfo read(JsonReader in) throws IOException {
+           public FreightRequestShipToAddress read(JsonReader in) throws IOException {
              JsonElement jsonElement = elementAdapter.read(in);
              validateJsonElement(jsonElement);
              return thisAdapter.fromJsonTree(jsonElement);
@@ -454,18 +394,18 @@ public class QuoteCreateRequestEndUserInfo {
   }
 
   /**
-   * Create an instance of QuoteCreateRequestEndUserInfo given an JSON string
+   * Create an instance of FreightRequestShipToAddress given an JSON string
    *
    * @param jsonString JSON string
-   * @return An instance of QuoteCreateRequestEndUserInfo
-   * @throws IOException if the JSON string is invalid with respect to QuoteCreateRequestEndUserInfo
+   * @return An instance of FreightRequestShipToAddress
+   * @throws IOException if the JSON string is invalid with respect to FreightRequestShipToAddress
    */
-  public static QuoteCreateRequestEndUserInfo fromJson(String jsonString) throws IOException {
-    return JSON.getGson().fromJson(jsonString, QuoteCreateRequestEndUserInfo.class);
+  public static FreightRequestShipToAddress fromJson(String jsonString) throws IOException {
+    return JSON.getGson().fromJson(jsonString, FreightRequestShipToAddress.class);
   }
 
   /**
-   * Convert an instance of QuoteCreateRequestEndUserInfo to an JSON string
+   * Convert an instance of FreightRequestShipToAddress to an JSON string
    *
    * @return JSON string
    */
