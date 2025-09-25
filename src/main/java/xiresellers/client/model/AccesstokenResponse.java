@@ -48,7 +48,7 @@ import xiresellers.client.JSON;
 /**
  * AccesstokenResponse
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2025-05-05T10:31:26.179314383Z[Etc/UTC]", comments = "Generator version: 7.13.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2025-09-25T06:59:55.428803335Z[Etc/UTC]", comments = "Generator version: 7.14.0")
 public class AccesstokenResponse {
   public static final String SERIALIZED_NAME_ACCESS_TOKEN = "access_token";
   @SerializedName(SERIALIZED_NAME_ACCESS_TOKEN)
@@ -173,13 +173,10 @@ public class AccesstokenResponse {
 
   static {
     // a set of all properties/fields (JSON key names)
-    openapiFields = new HashSet<String>();
-    openapiFields.add("access_token");
-    openapiFields.add("token_type");
-    openapiFields.add("expires_in");
+    openapiFields = new HashSet<String>(Arrays.asList("access_token", "token_type", "expires_in"));
 
     // a set of required properties/fields (JSON key names)
-    openapiRequiredFields = new HashSet<String>();
+    openapiRequiredFields = new HashSet<String>(0);
   }
 
   /**

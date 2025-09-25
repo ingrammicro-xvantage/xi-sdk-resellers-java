@@ -53,7 +53,7 @@ import xiresellers.client.JSON;
 /**
  * InvoiceDetailsv61ResponseLinesInner
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2025-05-05T10:31:26.179314383Z[Etc/UTC]", comments = "Generator version: 7.13.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2025-09-25T06:59:55.428803335Z[Etc/UTC]", comments = "Generator version: 7.14.0")
 public class InvoiceDetailsv61ResponseLinesInner {
   public static final String SERIALIZED_NAME_INGRAM_LINE_NUMBER = "ingramLineNumber";
   @SerializedName(SERIALIZED_NAME_INGRAM_LINE_NUMBER)
@@ -639,30 +639,10 @@ public class InvoiceDetailsv61ResponseLinesInner {
 
   static {
     // a set of all properties/fields (JSON key names)
-    openapiFields = new HashSet<String>();
-    openapiFields.add("ingramLineNumber");
-    openapiFields.add("customerLineNumber");
-    openapiFields.add("ingramPartNumber");
-    openapiFields.add("upc");
-    openapiFields.add("vendorPartNumber");
-    openapiFields.add("customerPartNumber");
-    openapiFields.add("vendorName");
-    openapiFields.add("productDescription");
-    openapiFields.add("unitWeight");
-    openapiFields.add("quantity");
-    openapiFields.add("unitPrice");
-    openapiFields.add("unitOfMeasure");
-    openapiFields.add("currencyCode");
-    openapiFields.add("extendedPrice");
-    openapiFields.add("taxPercentage");
-    openapiFields.add("taxRate");
-    openapiFields.add("taxAmount");
-    openapiFields.add("serialNumbers");
-    openapiFields.add("quantityOrdered");
-    openapiFields.add("quantityShipped");
+    openapiFields = new HashSet<String>(Arrays.asList("ingramLineNumber", "customerLineNumber", "ingramPartNumber", "upc", "vendorPartNumber", "customerPartNumber", "vendorName", "productDescription", "unitWeight", "quantity", "unitPrice", "unitOfMeasure", "currencyCode", "extendedPrice", "taxPercentage", "taxRate", "taxAmount", "serialNumbers", "quantityOrdered", "quantityShipped"));
 
     // a set of required properties/fields (JSON key names)
-    openapiRequiredFields = new HashSet<String>();
+    openapiRequiredFields = new HashSet<String>(0);
   }
 
   /**

@@ -55,7 +55,7 @@ import xiresellers.client.JSON;
 /**
  * OrderCreateV7RequestLinesInner
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2025-05-05T10:31:26.179314383Z[Etc/UTC]", comments = "Generator version: 7.13.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2025-09-25T06:59:55.428803335Z[Etc/UTC]", comments = "Generator version: 7.14.0")
 public class OrderCreateV7RequestLinesInner {
   public static final String SERIALIZED_NAME_CUSTOMER_LINE_NUMBER = "customerLineNumber";
   @SerializedName(SERIALIZED_NAME_CUSTOMER_LINE_NUMBER)
@@ -423,21 +423,10 @@ public class OrderCreateV7RequestLinesInner {
 
   static {
     // a set of all properties/fields (JSON key names)
-    openapiFields = new HashSet<String>();
-    openapiFields.add("customerLineNumber");
-    openapiFields.add("ingramPartNumber");
-    openapiFields.add("vendorPartNumber");
-    openapiFields.add("quantity");
-    openapiFields.add("unitPrice");
-    openapiFields.add("specialBidNumber");
-    openapiFields.add("endUserPrice");
-    openapiFields.add("notes");
-    openapiFields.add("endUserInfo");
-    openapiFields.add("additionalAttributes");
-    openapiFields.add("vmfAdditionalAttributesLines");
+    openapiFields = new HashSet<String>(Arrays.asList("customerLineNumber", "ingramPartNumber", "vendorPartNumber", "quantity", "unitPrice", "specialBidNumber", "endUserPrice", "notes", "endUserInfo", "additionalAttributes", "vmfAdditionalAttributesLines"));
 
     // a set of required properties/fields (JSON key names)
-    openapiRequiredFields = new HashSet<String>();
+    openapiRequiredFields = new HashSet<String>(0);
   }
 
   /**

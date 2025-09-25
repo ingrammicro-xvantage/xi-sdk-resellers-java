@@ -52,7 +52,7 @@ import xiresellers.client.JSON;
 /**
  * OrderDetailB2BLinesInnerShipmentDetailsInner
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2025-05-05T10:31:26.179314383Z[Etc/UTC]", comments = "Generator version: 7.13.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2025-09-25T06:59:55.428803335Z[Etc/UTC]", comments = "Generator version: 7.14.0")
 public class OrderDetailB2BLinesInnerShipmentDetailsInner {
   public static final String SERIALIZED_NAME_QUANTITY = "quantity";
   @SerializedName(SERIALIZED_NAME_QUANTITY)
@@ -378,20 +378,10 @@ public class OrderDetailB2BLinesInnerShipmentDetailsInner {
 
   static {
     // a set of all properties/fields (JSON key names)
-    openapiFields = new HashSet<String>();
-    openapiFields.add("quantity");
-    openapiFields.add("deliveryNumber");
-    openapiFields.add("estimatedShipDate");
-    openapiFields.add("shippedDate");
-    openapiFields.add("estimatedDeliveryDate");
-    openapiFields.add("shipFromWarehouseId");
-    openapiFields.add("shipFromLocation");
-    openapiFields.add("invoiceNumber");
-    openapiFields.add("invoiceDate");
-    openapiFields.add("carrierDetails");
+    openapiFields = new HashSet<String>(Arrays.asList("quantity", "deliveryNumber", "estimatedShipDate", "shippedDate", "estimatedDeliveryDate", "shipFromWarehouseId", "shipFromLocation", "invoiceNumber", "invoiceDate", "carrierDetails"));
 
     // a set of required properties/fields (JSON key names)
-    openapiRequiredFields = new HashSet<String>();
+    openapiRequiredFields = new HashSet<String>(0);
   }
 
   /**

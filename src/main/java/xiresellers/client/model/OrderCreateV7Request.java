@@ -58,7 +58,7 @@ import xiresellers.client.JSON;
 /**
  * OrderCreateV7Request
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2025-05-05T10:31:26.179314383Z[Etc/UTC]", comments = "Generator version: 7.13.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2025-09-25T06:59:55.428803335Z[Etc/UTC]", comments = "Generator version: 7.14.0")
 public class OrderCreateV7Request {
   public static final String SERIALIZED_NAME_QUOTE_NUMBER = "quoteNumber";
   @SerializedName(SERIALIZED_NAME_QUOTE_NUMBER)
@@ -530,25 +530,10 @@ public class OrderCreateV7Request {
 
   static {
     // a set of all properties/fields (JSON key names)
-    openapiFields = new HashSet<String>();
-    openapiFields.add("quoteNumber");
-    openapiFields.add("customerOrderNumber");
-    openapiFields.add("endCustomerOrderNumber");
-    openapiFields.add("notes");
-    openapiFields.add("billToAddressId");
-    openapiFields.add("specialBidNumber");
-    openapiFields.add("acceptBackOrder");
-    openapiFields.add("vendAuthNumber");
-    openapiFields.add("resellerInfo");
-    openapiFields.add("endUserInfo");
-    openapiFields.add("shipToInfo");
-    openapiFields.add("shipmentDetails");
-    openapiFields.add("additionalAttributes");
-    openapiFields.add("vmfAdditionalAttributes");
-    openapiFields.add("lines");
+    openapiFields = new HashSet<String>(Arrays.asList("quoteNumber", "customerOrderNumber", "endCustomerOrderNumber", "notes", "billToAddressId", "specialBidNumber", "acceptBackOrder", "vendAuthNumber", "resellerInfo", "endUserInfo", "shipToInfo", "shipmentDetails", "additionalAttributes", "vmfAdditionalAttributes", "lines"));
 
     // a set of required properties/fields (JSON key names)
-    openapiRequiredFields = new HashSet<String>();
+    openapiRequiredFields = new HashSet<String>(0);
   }
 
   /**

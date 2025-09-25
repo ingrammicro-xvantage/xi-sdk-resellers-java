@@ -55,7 +55,7 @@ import xiresellers.client.JSON;
 /**
  * ProductDetailResponse
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2025-05-05T10:31:26.179314383Z[Etc/UTC]", comments = "Generator version: 7.13.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2025-09-25T06:59:55.428803335Z[Etc/UTC]", comments = "Generator version: 7.14.0")
 public class ProductDetailResponse {
   public static final String SERIALIZED_NAME_INGRAM_PART_NUMBER = "ingramPartNumber";
   @SerializedName(SERIALIZED_NAME_INGRAM_PART_NUMBER)
@@ -571,27 +571,10 @@ public class ProductDetailResponse {
 
   static {
     // a set of all properties/fields (JSON key names)
-    openapiFields = new HashSet<String>();
-    openapiFields.add("ingramPartNumber");
-    openapiFields.add("vendorPartNumber");
-    openapiFields.add("productAuthorized");
-    openapiFields.add("description");
-    openapiFields.add("upc");
-    openapiFields.add("productCategory");
-    openapiFields.add("productSubcategory");
-    openapiFields.add("vendorName");
-    openapiFields.add("vendorNumber");
-    openapiFields.add("productStatusCode");
-    openapiFields.add("productClass");
-    openapiFields.add("customerPartNumber");
-    openapiFields.add("indicators");
-    openapiFields.add("ciscoFields");
-    openapiFields.add("warrantyInformation");
-    openapiFields.add("additionalInformation");
-    openapiFields.add("subscriptionDetails");
+    openapiFields = new HashSet<String>(Arrays.asList("ingramPartNumber", "vendorPartNumber", "productAuthorized", "description", "upc", "productCategory", "productSubcategory", "vendorName", "vendorNumber", "productStatusCode", "productClass", "customerPartNumber", "indicators", "ciscoFields", "warrantyInformation", "additionalInformation", "subscriptionDetails"));
 
     // a set of required properties/fields (JSON key names)
-    openapiRequiredFields = new HashSet<String>();
+    openapiRequiredFields = new HashSet<String>(0);
   }
 
   /**

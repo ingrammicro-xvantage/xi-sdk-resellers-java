@@ -82,6 +82,7 @@ public class DealsApi {
      * @param imCorrelationID Unique transaction number to identify each transaction across all the systems. (required)
      * @param imApplicationId Unique value used to identify the sender of the transaction. Example: MyCompany (required)
      * @param dealId Unique deal ID. (required)
+     * @param vendorName Vendor for that bid (required)
      * @param _callback Callback for upload/download progress
      * @return Call to execute
      * @throws ApiException If fail to serialize the request body object
@@ -94,7 +95,7 @@ public class DealsApi {
         <tr><td> 500 </td><td> Internal Server Error </td><td>  -  </td></tr>
      </table>
      */
-    public okhttp3.Call getResellersV6DealsdetailsCall(@javax.annotation.Nonnull String imCustomerNumber, @javax.annotation.Nonnull String imCountryCode, @javax.annotation.Nonnull String imCorrelationID, @javax.annotation.Nonnull String imApplicationId, @javax.annotation.Nonnull String dealId, final ApiCallback _callback) throws ApiException {
+    public okhttp3.Call getResellersV6DealsdetailsCall(@javax.annotation.Nonnull String imCustomerNumber, @javax.annotation.Nonnull String imCountryCode, @javax.annotation.Nonnull String imCorrelationID, @javax.annotation.Nonnull String imApplicationId, @javax.annotation.Nonnull String dealId, @javax.annotation.Nonnull String vendorName, final ApiCallback _callback) throws ApiException {
         String basePath = null;
         // Operation Servers
         String[] localBasePaths = new String[] {  };
@@ -119,6 +120,10 @@ public class DealsApi {
         Map<String, String> localVarHeaderParams = new HashMap<String, String>();
         Map<String, String> localVarCookieParams = new HashMap<String, String>();
         Map<String, Object> localVarFormParams = new HashMap<String, Object>();
+
+        if (vendorName != null) {
+            localVarQueryParams.addAll(localVarApiClient.parameterToPair("vendorName", vendorName));
+        }
 
         final String[] localVarAccepts = {
             "application/json"
@@ -160,7 +165,7 @@ public class DealsApi {
     }
 
     @SuppressWarnings("rawtypes")
-    private okhttp3.Call getResellersV6DealsdetailsValidateBeforeCall(@javax.annotation.Nonnull String imCustomerNumber, @javax.annotation.Nonnull String imCountryCode, @javax.annotation.Nonnull String imCorrelationID, @javax.annotation.Nonnull String imApplicationId, @javax.annotation.Nonnull String dealId, final ApiCallback _callback) throws ApiException {
+    private okhttp3.Call getResellersV6DealsdetailsValidateBeforeCall(@javax.annotation.Nonnull String imCustomerNumber, @javax.annotation.Nonnull String imCountryCode, @javax.annotation.Nonnull String imCorrelationID, @javax.annotation.Nonnull String imApplicationId, @javax.annotation.Nonnull String dealId, @javax.annotation.Nonnull String vendorName, final ApiCallback _callback) throws ApiException {
         // verify the required parameter 'imCustomerNumber' is set
         if (imCustomerNumber == null) {
             throw new ApiException("Missing the required parameter 'imCustomerNumber' when calling getResellersV6Dealsdetails(Async)");
@@ -186,7 +191,12 @@ public class DealsApi {
             throw new ApiException("Missing the required parameter 'dealId' when calling getResellersV6Dealsdetails(Async)");
         }
 
-        return getResellersV6DealsdetailsCall(imCustomerNumber, imCountryCode, imCorrelationID, imApplicationId, dealId, _callback);
+        // verify the required parameter 'vendorName' is set
+        if (vendorName == null) {
+            throw new ApiException("Missing the required parameter 'vendorName' when calling getResellersV6Dealsdetails(Async)");
+        }
+
+        return getResellersV6DealsdetailsCall(imCustomerNumber, imCountryCode, imCorrelationID, imApplicationId, dealId, vendorName, _callback);
 
     }
 
@@ -198,6 +208,7 @@ public class DealsApi {
      * @param imCorrelationID Unique transaction number to identify each transaction across all the systems. (required)
      * @param imApplicationId Unique value used to identify the sender of the transaction. Example: MyCompany (required)
      * @param dealId Unique deal ID. (required)
+     * @param vendorName Vendor for that bid (required)
      * @return DealsDetailsResponse
      * @throws ApiException If fail to call the API, e.g. server error or cannot deserialize the response body
      * @http.response.details
@@ -209,8 +220,8 @@ public class DealsApi {
         <tr><td> 500 </td><td> Internal Server Error </td><td>  -  </td></tr>
      </table>
      */
-    public DealsDetailsResponse getResellersV6Dealsdetails(@javax.annotation.Nonnull String imCustomerNumber, @javax.annotation.Nonnull String imCountryCode, @javax.annotation.Nonnull String imCorrelationID, @javax.annotation.Nonnull String imApplicationId, @javax.annotation.Nonnull String dealId) throws ApiException {
-        ApiResponse<DealsDetailsResponse> localVarResp = getResellersV6DealsdetailsWithHttpInfo(imCustomerNumber, imCountryCode, imCorrelationID, imApplicationId, dealId);
+    public DealsDetailsResponse getResellersV6Dealsdetails(@javax.annotation.Nonnull String imCustomerNumber, @javax.annotation.Nonnull String imCountryCode, @javax.annotation.Nonnull String imCorrelationID, @javax.annotation.Nonnull String imApplicationId, @javax.annotation.Nonnull String dealId, @javax.annotation.Nonnull String vendorName) throws ApiException {
+        ApiResponse<DealsDetailsResponse> localVarResp = getResellersV6DealsdetailsWithHttpInfo(imCustomerNumber, imCountryCode, imCorrelationID, imApplicationId, dealId, vendorName);
         return localVarResp.getData();
     }
 
@@ -222,6 +233,7 @@ public class DealsApi {
      * @param imCorrelationID Unique transaction number to identify each transaction across all the systems. (required)
      * @param imApplicationId Unique value used to identify the sender of the transaction. Example: MyCompany (required)
      * @param dealId Unique deal ID. (required)
+     * @param vendorName Vendor for that bid (required)
      * @return ApiResponse&lt;DealsDetailsResponse&gt;
      * @throws ApiException If fail to call the API, e.g. server error or cannot deserialize the response body
      * @http.response.details
@@ -233,8 +245,8 @@ public class DealsApi {
         <tr><td> 500 </td><td> Internal Server Error </td><td>  -  </td></tr>
      </table>
      */
-    public ApiResponse<DealsDetailsResponse> getResellersV6DealsdetailsWithHttpInfo(@javax.annotation.Nonnull String imCustomerNumber, @javax.annotation.Nonnull String imCountryCode, @javax.annotation.Nonnull String imCorrelationID, @javax.annotation.Nonnull String imApplicationId, @javax.annotation.Nonnull String dealId) throws ApiException {
-        okhttp3.Call localVarCall = getResellersV6DealsdetailsValidateBeforeCall(imCustomerNumber, imCountryCode, imCorrelationID, imApplicationId, dealId, null);
+    public ApiResponse<DealsDetailsResponse> getResellersV6DealsdetailsWithHttpInfo(@javax.annotation.Nonnull String imCustomerNumber, @javax.annotation.Nonnull String imCountryCode, @javax.annotation.Nonnull String imCorrelationID, @javax.annotation.Nonnull String imApplicationId, @javax.annotation.Nonnull String dealId, @javax.annotation.Nonnull String vendorName) throws ApiException {
+        okhttp3.Call localVarCall = getResellersV6DealsdetailsValidateBeforeCall(imCustomerNumber, imCountryCode, imCorrelationID, imApplicationId, dealId, vendorName, null);
         Type localVarReturnType = new TypeToken<DealsDetailsResponse>(){}.getType();
         return localVarApiClient.execute(localVarCall, localVarReturnType);
     }
@@ -247,6 +259,7 @@ public class DealsApi {
      * @param imCorrelationID Unique transaction number to identify each transaction across all the systems. (required)
      * @param imApplicationId Unique value used to identify the sender of the transaction. Example: MyCompany (required)
      * @param dealId Unique deal ID. (required)
+     * @param vendorName Vendor for that bid (required)
      * @param _callback The callback to be executed when the API call finishes
      * @return The request call
      * @throws ApiException If fail to process the API call, e.g. serializing the request body object
@@ -259,9 +272,9 @@ public class DealsApi {
         <tr><td> 500 </td><td> Internal Server Error </td><td>  -  </td></tr>
      </table>
      */
-    public okhttp3.Call getResellersV6DealsdetailsAsync(@javax.annotation.Nonnull String imCustomerNumber, @javax.annotation.Nonnull String imCountryCode, @javax.annotation.Nonnull String imCorrelationID, @javax.annotation.Nonnull String imApplicationId, @javax.annotation.Nonnull String dealId, final ApiCallback<DealsDetailsResponse> _callback) throws ApiException {
+    public okhttp3.Call getResellersV6DealsdetailsAsync(@javax.annotation.Nonnull String imCustomerNumber, @javax.annotation.Nonnull String imCountryCode, @javax.annotation.Nonnull String imCorrelationID, @javax.annotation.Nonnull String imApplicationId, @javax.annotation.Nonnull String dealId, @javax.annotation.Nonnull String vendorName, final ApiCallback<DealsDetailsResponse> _callback) throws ApiException {
 
-        okhttp3.Call localVarCall = getResellersV6DealsdetailsValidateBeforeCall(imCustomerNumber, imCountryCode, imCorrelationID, imApplicationId, dealId, _callback);
+        okhttp3.Call localVarCall = getResellersV6DealsdetailsValidateBeforeCall(imCustomerNumber, imCountryCode, imCorrelationID, imApplicationId, dealId, vendorName, _callback);
         Type localVarReturnType = new TypeToken<DealsDetailsResponse>(){}.getType();
         localVarApiClient.executeAsync(localVarCall, localVarReturnType, _callback);
         return localVarCall;

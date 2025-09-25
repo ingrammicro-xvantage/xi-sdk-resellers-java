@@ -51,7 +51,7 @@ import xiresellers.client.JSON;
 /**
  * AvailabilityAsyncNotificationRequest
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2025-05-05T10:31:26.179314383Z[Etc/UTC]", comments = "Generator version: 7.13.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2025-09-25T06:59:55.428803335Z[Etc/UTC]", comments = "Generator version: 7.14.0")
 public class AvailabilityAsyncNotificationRequest {
   public static final String SERIALIZED_NAME_TOPIC = "topic";
   @SerializedName(SERIALIZED_NAME_TOPIC)
@@ -236,15 +236,10 @@ public class AvailabilityAsyncNotificationRequest {
 
   static {
     // a set of all properties/fields (JSON key names)
-    openapiFields = new HashSet<String>();
-    openapiFields.add("topic");
-    openapiFields.add("event");
-    openapiFields.add("eventTimeStamp");
-    openapiFields.add("eventId");
-    openapiFields.add("resource");
+    openapiFields = new HashSet<String>(Arrays.asList("topic", "event", "eventTimeStamp", "eventId", "resource"));
 
     // a set of required properties/fields (JSON key names)
-    openapiRequiredFields = new HashSet<String>();
+    openapiRequiredFields = new HashSet<String>(0);
   }
 
   /**

@@ -10,7 +10,7 @@ All URIs are relative to *https://api.ingrammicro.com:443*
 
 <a id="getResellersV6Dealsdetails"></a>
 # **getResellersV6Dealsdetails**
-> DealsDetailsResponse getResellersV6Dealsdetails(imCustomerNumber, imCountryCode, imCorrelationID, imApplicationId, dealId)
+> DealsDetailsResponse getResellersV6Dealsdetails(imCustomerNumber, imCountryCode, imCorrelationID, imApplicationId, dealId, vendorName)
 
 Deals Details
 
@@ -41,8 +41,9 @@ public class Example {
     String imCorrelationID = "fbac82ba-cf0a-4bcf-fc03-0c5084"; // String | Unique transaction number to identify each transaction across all the systems.
     String imApplicationId = "MyCompany"; // String | Unique value used to identify the sender of the transaction. Example: MyCompany
     String dealId = "12345678"; // String | Unique deal ID.
+    String vendorName = "Cisco"; // String | Vendor for that bid
     try {
-      DealsDetailsResponse result = apiInstance.getResellersV6Dealsdetails(imCustomerNumber, imCountryCode, imCorrelationID, imApplicationId, dealId);
+      DealsDetailsResponse result = apiInstance.getResellersV6Dealsdetails(imCustomerNumber, imCountryCode, imCorrelationID, imApplicationId, dealId, vendorName);
       System.out.println(result);
     } catch (ApiException e) {
       System.err.println("Exception when calling DealsApi#getResellersV6Dealsdetails");
@@ -64,6 +65,7 @@ public class Example {
 | **imCorrelationID** | **String**| Unique transaction number to identify each transaction across all the systems. | |
 | **imApplicationId** | **String**| Unique value used to identify the sender of the transaction. Example: MyCompany | |
 | **dealId** | **String**| Unique deal ID. | |
+| **vendorName** | **String**| Vendor for that bid | |
 
 ### Return type
 

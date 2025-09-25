@@ -49,7 +49,7 @@ import xiresellers.client.JSON;
 /**
  * PriceAndAvailabilityRequestAvailabilityByWarehouseInner
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2025-05-05T10:31:26.179314383Z[Etc/UTC]", comments = "Generator version: 7.13.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2025-09-25T06:59:55.428803335Z[Etc/UTC]", comments = "Generator version: 7.14.0")
 public class PriceAndAvailabilityRequestAvailabilityByWarehouseInner {
   public static final String SERIALIZED_NAME_AVAILABILITY_BY_WAREHOUSE_ID = "availabilityByWarehouseId";
   @SerializedName(SERIALIZED_NAME_AVAILABILITY_BY_WAREHOUSE_ID)
@@ -159,12 +159,10 @@ public class PriceAndAvailabilityRequestAvailabilityByWarehouseInner {
 
   static {
     // a set of all properties/fields (JSON key names)
-    openapiFields = new HashSet<String>();
-    openapiFields.add("availabilityByWarehouseId");
-    openapiFields.add("availabilityForAllLocation");
+    openapiFields = new HashSet<String>(Arrays.asList("availabilityByWarehouseId", "availabilityForAllLocation"));
 
     // a set of required properties/fields (JSON key names)
-    openapiRequiredFields = new HashSet<String>();
+    openapiRequiredFields = new HashSet<String>(0);
   }
 
   /**

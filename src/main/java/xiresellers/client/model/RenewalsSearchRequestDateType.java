@@ -52,7 +52,7 @@ import xiresellers.client.JSON;
 /**
  * RenewalsSearchRequestDateType
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2025-05-05T10:31:26.179314383Z[Etc/UTC]", comments = "Generator version: 7.13.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2025-09-25T06:59:55.428803335Z[Etc/UTC]", comments = "Generator version: 7.14.0")
 public class RenewalsSearchRequestDateType {
   public static final String SERIALIZED_NAME_START_DATE = "startDate";
   @SerializedName(SERIALIZED_NAME_START_DATE)
@@ -203,14 +203,10 @@ public class RenewalsSearchRequestDateType {
 
   static {
     // a set of all properties/fields (JSON key names)
-    openapiFields = new HashSet<String>();
-    openapiFields.add("startDate");
-    openapiFields.add("endDate");
-    openapiFields.add("invoiceDate");
-    openapiFields.add("expirationDate");
+    openapiFields = new HashSet<String>(Arrays.asList("startDate", "endDate", "invoiceDate", "expirationDate"));
 
     // a set of required properties/fields (JSON key names)
-    openapiRequiredFields = new HashSet<String>();
+    openapiRequiredFields = new HashSet<String>(0);
   }
 
   /**

@@ -57,7 +57,7 @@ import xiresellers.client.JSON;
 /**
  * OrderCreateRequest
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2025-05-05T10:31:26.179314383Z[Etc/UTC]", comments = "Generator version: 7.13.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2025-09-25T06:59:55.428803335Z[Etc/UTC]", comments = "Generator version: 7.14.0")
 public class OrderCreateRequest {
   public static final String SERIALIZED_NAME_CUSTOMER_ORDER_NUMBER = "customerOrderNumber";
   @SerializedName(SERIALIZED_NAME_CUSTOMER_ORDER_NUMBER)
@@ -458,24 +458,10 @@ public class OrderCreateRequest {
 
   static {
     // a set of all properties/fields (JSON key names)
-    openapiFields = new HashSet<String>();
-    openapiFields.add("customerOrderNumber");
-    openapiFields.add("endCustomerOrderNumber");
-    openapiFields.add("billToAddressId");
-    openapiFields.add("specialBidNumber");
-    openapiFields.add("notes");
-    openapiFields.add("acceptBackOrder");
-    openapiFields.add("resellerInfo");
-    openapiFields.add("vmf");
-    openapiFields.add("shipToInfo");
-    openapiFields.add("endUserInfo");
-    openapiFields.add("lines");
-    openapiFields.add("shipmentDetails");
-    openapiFields.add("additionalAttributes");
+    openapiFields = new HashSet<String>(Arrays.asList("customerOrderNumber", "endCustomerOrderNumber", "billToAddressId", "specialBidNumber", "notes", "acceptBackOrder", "resellerInfo", "vmf", "shipToInfo", "endUserInfo", "lines", "shipmentDetails", "additionalAttributes"));
 
     // a set of required properties/fields (JSON key names)
-    openapiRequiredFields = new HashSet<String>();
-    openapiRequiredFields.add("customerOrderNumber");
+    openapiRequiredFields = new HashSet<String>(Arrays.asList("customerOrderNumber"));
   }
 
   /**

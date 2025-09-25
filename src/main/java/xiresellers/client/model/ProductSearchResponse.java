@@ -52,7 +52,7 @@ import xiresellers.client.JSON;
 /**
  * ProductSearchResponse
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2025-05-05T10:31:26.179314383Z[Etc/UTC]", comments = "Generator version: 7.13.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2025-09-25T06:59:55.428803335Z[Etc/UTC]", comments = "Generator version: 7.14.0")
 public class ProductSearchResponse {
   public static final String SERIALIZED_NAME_RECORDS_FOUND = "recordsFound";
   @SerializedName(SERIALIZED_NAME_RECORDS_FOUND)
@@ -297,17 +297,10 @@ public class ProductSearchResponse {
 
   static {
     // a set of all properties/fields (JSON key names)
-    openapiFields = new HashSet<String>();
-    openapiFields.add("recordsFound");
-    openapiFields.add("pageSize");
-    openapiFields.add("pageNumber");
-    openapiFields.add("catalog");
-    openapiFields.add("subscriptionCatalog");
-    openapiFields.add("nextPage");
-    openapiFields.add("previousPage");
+    openapiFields = new HashSet<String>(Arrays.asList("recordsFound", "pageSize", "pageNumber", "catalog", "subscriptionCatalog", "nextPage", "previousPage"));
 
     // a set of required properties/fields (JSON key names)
-    openapiRequiredFields = new HashSet<String>();
+    openapiRequiredFields = new HashSet<String>(0);
   }
 
   /**

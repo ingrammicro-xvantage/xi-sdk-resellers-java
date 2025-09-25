@@ -51,7 +51,7 @@ import xiresellers.client.JSON;
 /**
  * RenewalsSearchResponseRenewalsInner
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2025-05-05T10:31:26.179314383Z[Etc/UTC]", comments = "Generator version: 7.13.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2025-09-25T06:59:55.428803335Z[Etc/UTC]", comments = "Generator version: 7.14.0")
 public class RenewalsSearchResponseRenewalsInner {
   public static final String SERIALIZED_NAME_RENEWAL_ID = "renewalId";
   @SerializedName(SERIALIZED_NAME_RENEWAL_ID)
@@ -340,19 +340,10 @@ public class RenewalsSearchResponseRenewalsInner {
 
   static {
     // a set of all properties/fields (JSON key names)
-    openapiFields = new HashSet<String>();
-    openapiFields.add("renewalId");
-    openapiFields.add("customerOrderNumber");
-    openapiFields.add("referenceNumber");
-    openapiFields.add("endUser");
-    openapiFields.add("vendor");
-    openapiFields.add("expirationDate");
-    openapiFields.add("renewalValue");
-    openapiFields.add("status");
-    openapiFields.add("links");
+    openapiFields = new HashSet<String>(Arrays.asList("renewalId", "customerOrderNumber", "referenceNumber", "endUser", "vendor", "expirationDate", "renewalValue", "status", "links"));
 
     // a set of required properties/fields (JSON key names)
-    openapiRequiredFields = new HashSet<String>();
+    openapiRequiredFields = new HashSet<String>(0);
   }
 
   /**

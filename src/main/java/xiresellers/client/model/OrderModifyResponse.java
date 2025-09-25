@@ -55,7 +55,7 @@ import xiresellers.client.JSON;
 /**
  * OrderModifyResponse
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2025-05-05T10:31:26.179314383Z[Etc/UTC]", comments = "Generator version: 7.13.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2025-09-25T06:59:55.428803335Z[Etc/UTC]", comments = "Generator version: 7.14.0")
 public class OrderModifyResponse {
   public static final String SERIALIZED_NAME_INGRAM_ORDER_NUMBER = "ingramOrderNumber";
   @SerializedName(SERIALIZED_NAME_INGRAM_ORDER_NUMBER)
@@ -542,26 +542,10 @@ public class OrderModifyResponse {
 
   static {
     // a set of all properties/fields (JSON key names)
-    openapiFields = new HashSet<String>();
-    openapiFields.add("ingramOrderNumber");
-    openapiFields.add("changeDescription");
-    openapiFields.add("orderModifiedDate");
-    openapiFields.add("customerOrderNumber");
-    openapiFields.add("endCustomerOrderNumber");
-    openapiFields.add("orderTotal");
-    openapiFields.add("notes");
-    openapiFields.add("orderSubTotal");
-    openapiFields.add("freightCharges");
-    openapiFields.add("totalTax");
-    openapiFields.add("orderStatus");
-    openapiFields.add("billToAddressId");
-    openapiFields.add("shipToInfo");
-    openapiFields.add("lines");
-    openapiFields.add("rejectedLineItems");
-    openapiFields.add("additionalAttributes");
+    openapiFields = new HashSet<String>(Arrays.asList("ingramOrderNumber", "changeDescription", "orderModifiedDate", "customerOrderNumber", "endCustomerOrderNumber", "orderTotal", "notes", "orderSubTotal", "freightCharges", "totalTax", "orderStatus", "billToAddressId", "shipToInfo", "lines", "rejectedLineItems", "additionalAttributes"));
 
     // a set of required properties/fields (JSON key names)
-    openapiRequiredFields = new HashSet<String>();
+    openapiRequiredFields = new HashSet<String>(0);
   }
 
   /**

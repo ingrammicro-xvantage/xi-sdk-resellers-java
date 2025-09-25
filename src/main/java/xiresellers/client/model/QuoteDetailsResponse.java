@@ -58,7 +58,7 @@ import xiresellers.client.JSON;
 /**
  * QuoteDetailsResponse
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2025-05-05T10:31:26.179314383Z[Etc/UTC]", comments = "Generator version: 7.13.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2025-09-25T06:59:55.428803335Z[Etc/UTC]", comments = "Generator version: 7.14.0")
 public class QuoteDetailsResponse {
   public static final String SERIALIZED_NAME_QUOTE_NAME = "quoteName";
   @SerializedName(SERIALIZED_NAME_QUOTE_NAME)
@@ -1232,52 +1232,10 @@ public class QuoteDetailsResponse {
 
   static {
     // a set of all properties/fields (JSON key names)
-    openapiFields = new HashSet<String>();
-    openapiFields.add("quoteName");
-    openapiFields.add("quoteNumber");
-    openapiFields.add("quoteGuid");
-    openapiFields.add("revision");
-    openapiFields.add("ingramQuoteDate");
-    openapiFields.add("lastModifiedDate");
-    openapiFields.add("ingramQuoteExpiryDate");
-    openapiFields.add("currencyCode");
-    openapiFields.add("specialBidId");
-    openapiFields.add("specialBidEffectiveDate");
-    openapiFields.add("specialBidExpirationDate");
-    openapiFields.add("vendorQuoteNumber");
-    openapiFields.add("isPartialOrderAllowed");
-    openapiFields.add("status");
-    openapiFields.add("statusReason");
-    openapiFields.add("closingReason");
-    openapiFields.add("dateClosed");
-    openapiFields.add("customerNeed");
-    openapiFields.add("proposedSolution");
-    openapiFields.add("introPreamble");
-    openapiFields.add("purchaseInstructions");
-    openapiFields.add("legalTerms");
-    openapiFields.add("quoteType");
-    openapiFields.add("leaseInfo");
-    openapiFields.add("leasingInstructions");
-    openapiFields.add("imWarehouse");
-    openapiFields.add("imWarehouseGstNumber");
-    openapiFields.add("paymentTermsName");
-    openapiFields.add("resellerInfo");
-    openapiFields.add("endUserInfo");
-    openapiFields.add("shippingInfo");
-    openapiFields.add("products");
-    openapiFields.add("productsCount");
-    openapiFields.add("extendedMsrpTotal");
-    openapiFields.add("quantityTotal");
-    openapiFields.add("extraFeesTotal");
-    openapiFields.add("extraFeesTotalDetails");
-    openapiFields.add("taxTotal");
-    openapiFields.add("extendedQuotePriceTotal");
-    openapiFields.add("freightAmount");
-    openapiFields.add("totalQuoteAmount");
-    openapiFields.add("additionalAttributes");
+    openapiFields = new HashSet<String>(Arrays.asList("quoteName", "quoteNumber", "quoteGuid", "revision", "ingramQuoteDate", "lastModifiedDate", "ingramQuoteExpiryDate", "currencyCode", "specialBidId", "specialBidEffectiveDate", "specialBidExpirationDate", "vendorQuoteNumber", "isPartialOrderAllowed", "status", "statusReason", "closingReason", "dateClosed", "customerNeed", "proposedSolution", "introPreamble", "purchaseInstructions", "legalTerms", "quoteType", "leaseInfo", "leasingInstructions", "imWarehouse", "imWarehouseGstNumber", "paymentTermsName", "resellerInfo", "endUserInfo", "shippingInfo", "products", "productsCount", "extendedMsrpTotal", "quantityTotal", "extraFeesTotal", "extraFeesTotalDetails", "taxTotal", "extendedQuotePriceTotal", "freightAmount", "totalQuoteAmount", "additionalAttributes"));
 
     // a set of required properties/fields (JSON key names)
-    openapiRequiredFields = new HashSet<String>();
+    openapiRequiredFields = new HashSet<String>(0);
   }
 
   /**

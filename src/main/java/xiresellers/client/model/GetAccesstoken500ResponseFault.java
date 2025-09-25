@@ -49,7 +49,7 @@ import xiresellers.client.JSON;
 /**
  * GetAccesstoken500ResponseFault
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2025-05-05T10:31:26.179314383Z[Etc/UTC]", comments = "Generator version: 7.13.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2025-09-25T06:59:55.428803335Z[Etc/UTC]", comments = "Generator version: 7.14.0")
 public class GetAccesstoken500ResponseFault {
   public static final String SERIALIZED_NAME_FAULTSTRING = "faultstring";
   @SerializedName(SERIALIZED_NAME_FAULTSTRING)
@@ -148,12 +148,10 @@ public class GetAccesstoken500ResponseFault {
 
   static {
     // a set of all properties/fields (JSON key names)
-    openapiFields = new HashSet<String>();
-    openapiFields.add("faultstring");
-    openapiFields.add("detail");
+    openapiFields = new HashSet<String>(Arrays.asList("faultstring", "detail"));
 
     // a set of required properties/fields (JSON key names)
-    openapiRequiredFields = new HashSet<String>();
+    openapiRequiredFields = new HashSet<String>(0);
   }
 
   /**

@@ -58,7 +58,7 @@ import xiresellers.client.JSON;
 /**
  * OrderDetailB2BLinesInner
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2025-05-05T10:31:26.179314383Z[Etc/UTC]", comments = "Generator version: 7.13.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2025-09-25T06:59:55.428803335Z[Etc/UTC]", comments = "Generator version: 7.14.0")
 public class OrderDetailB2BLinesInner {
   public static final String SERIALIZED_NAME_SUB_ORDER_NUMBER = "subOrderNumber";
   @SerializedName(SERIALIZED_NAME_SUB_ORDER_NUMBER)
@@ -996,42 +996,10 @@ public class OrderDetailB2BLinesInner {
 
   static {
     // a set of all properties/fields (JSON key names)
-    openapiFields = new HashSet<String>();
-    openapiFields.add("subOrderNumber");
-    openapiFields.add("ingramOrderLineNumber");
-    openapiFields.add("vendorSalesOrderLineNumber");
-    openapiFields.add("customerLineNumber");
-    openapiFields.add("lineStatus");
-    openapiFields.add("ingramPartNumber");
-    openapiFields.add("vendorPartNumber");
-    openapiFields.add("vendorName");
-    openapiFields.add("partDescription");
-    openapiFields.add("unitWeight");
-    openapiFields.add("weightUom");
-    openapiFields.add("unitPrice");
-    openapiFields.add("upcCode");
-    openapiFields.add("extendedPrice");
-    openapiFields.add("taxAmount");
-    openapiFields.add("currencyCode");
-    openapiFields.add("quantityOrdered");
-    openapiFields.add("quantityConfirmed");
-    openapiFields.add("quantityBackOrdered");
-    openapiFields.add("specialBidNumber");
-    openapiFields.add("requestedDeliverydate");
-    openapiFields.add("promisedDeliveryDate");
-    openapiFields.add("backOrderETADate");
-    openapiFields.add("lineNotes");
-    openapiFields.add("shipmentDetails");
-    openapiFields.add("serviceContractInfo");
-    openapiFields.add("additionalAttributes");
-    openapiFields.add("links");
-    openapiFields.add("estimatedDates");
-    openapiFields.add("scheduleLines");
-    openapiFields.add("multipleShipments");
-    openapiFields.add("defaultCarrierName");
+    openapiFields = new HashSet<String>(Arrays.asList("subOrderNumber", "ingramOrderLineNumber", "vendorSalesOrderLineNumber", "customerLineNumber", "lineStatus", "ingramPartNumber", "vendorPartNumber", "vendorName", "partDescription", "unitWeight", "weightUom", "unitPrice", "upcCode", "extendedPrice", "taxAmount", "currencyCode", "quantityOrdered", "quantityConfirmed", "quantityBackOrdered", "specialBidNumber", "requestedDeliverydate", "promisedDeliveryDate", "backOrderETADate", "lineNotes", "shipmentDetails", "serviceContractInfo", "additionalAttributes", "links", "estimatedDates", "scheduleLines", "multipleShipments", "defaultCarrierName"));
 
     // a set of required properties/fields (JSON key names)
-    openapiRequiredFields = new HashSet<String>();
+    openapiRequiredFields = new HashSet<String>(0);
   }
 
   /**

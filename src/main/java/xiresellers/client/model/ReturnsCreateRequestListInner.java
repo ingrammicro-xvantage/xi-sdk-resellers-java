@@ -52,7 +52,7 @@ import xiresellers.client.JSON;
 /**
  * ReturnsCreateRequestListInner
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2025-05-05T10:31:26.179314383Z[Etc/UTC]", comments = "Generator version: 7.13.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2025-09-25T06:59:55.428803335Z[Etc/UTC]", comments = "Generator version: 7.14.0")
 public class ReturnsCreateRequestListInner {
   public static final String SERIALIZED_NAME_INVOICE_NUMBER = "invoiceNumber";
   @SerializedName(SERIALIZED_NAME_INVOICE_NUMBER)
@@ -471,31 +471,10 @@ public class ReturnsCreateRequestListInner {
 
   static {
     // a set of all properties/fields (JSON key names)
-    openapiFields = new HashSet<String>();
-    openapiFields.add("invoiceNumber");
-    openapiFields.add("invoiceDate");
-    openapiFields.add("customerOrderNumber");
-    openapiFields.add("ingramPartNumber");
-    openapiFields.add("vendorPartNumber");
-    openapiFields.add("serialNumber");
-    openapiFields.add("quantity");
-    openapiFields.add("primaryReason");
-    openapiFields.add("secondaryReason");
-    openapiFields.add("notes");
-    openapiFields.add("referenceNumber");
-    openapiFields.add("billToAddressId");
-    openapiFields.add("shipFromInfo");
-    openapiFields.add("numberOfBoxes");
+    openapiFields = new HashSet<String>(Arrays.asList("invoiceNumber", "invoiceDate", "customerOrderNumber", "ingramPartNumber", "vendorPartNumber", "serialNumber", "quantity", "primaryReason", "secondaryReason", "notes", "referenceNumber", "billToAddressId", "shipFromInfo", "numberOfBoxes"));
 
     // a set of required properties/fields (JSON key names)
-    openapiRequiredFields = new HashSet<String>();
-    openapiRequiredFields.add("invoiceNumber");
-    openapiRequiredFields.add("invoiceDate");
-    openapiRequiredFields.add("quantity");
-    openapiRequiredFields.add("primaryReason");
-    openapiRequiredFields.add("secondaryReason");
-    openapiRequiredFields.add("shipFromInfo");
-    openapiRequiredFields.add("numberOfBoxes");
+    openapiRequiredFields = new HashSet<String>(Arrays.asList("invoiceNumber", "invoiceDate", "quantity", "primaryReason", "secondaryReason", "shipFromInfo", "numberOfBoxes"));
   }
 
   /**

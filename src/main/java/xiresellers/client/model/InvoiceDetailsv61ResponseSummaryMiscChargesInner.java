@@ -48,7 +48,7 @@ import xiresellers.client.JSON;
 /**
  * InvoiceDetailsv61ResponseSummaryMiscChargesInner
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2025-05-05T10:31:26.179314383Z[Etc/UTC]", comments = "Generator version: 7.13.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2025-09-25T06:59:55.428803335Z[Etc/UTC]", comments = "Generator version: 7.14.0")
 public class InvoiceDetailsv61ResponseSummaryMiscChargesInner {
   public static final String SERIALIZED_NAME_CHARGE_DESCRIPTION = "chargeDescription";
   @SerializedName(SERIALIZED_NAME_CHARGE_DESCRIPTION)
@@ -225,15 +225,10 @@ public class InvoiceDetailsv61ResponseSummaryMiscChargesInner {
 
   static {
     // a set of all properties/fields (JSON key names)
-    openapiFields = new HashSet<String>();
-    openapiFields.add("chargeDescription");
-    openapiFields.add("miscChargeLineCount");
-    openapiFields.add("miscChargeLineTotal");
-    openapiFields.add("chargeLineReference");
-    openapiFields.add("isNonMisc");
+    openapiFields = new HashSet<String>(Arrays.asList("chargeDescription", "miscChargeLineCount", "miscChargeLineTotal", "chargeLineReference", "isNonMisc"));
 
     // a set of required properties/fields (JSON key names)
-    openapiRequiredFields = new HashSet<String>();
+    openapiRequiredFields = new HashSet<String>(0);
   }
 
   /**

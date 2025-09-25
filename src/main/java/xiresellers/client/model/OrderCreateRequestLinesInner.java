@@ -54,7 +54,7 @@ import xiresellers.client.JSON;
 /**
  * OrderCreateRequestLinesInner
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2025-05-05T10:31:26.179314383Z[Etc/UTC]", comments = "Generator version: 7.13.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2025-09-25T06:59:55.428803335Z[Etc/UTC]", comments = "Generator version: 7.14.0")
 public class OrderCreateRequestLinesInner {
   public static final String SERIALIZED_NAME_CUSTOMER_LINE_NUMBER = "customerLineNumber";
   @SerializedName(SERIALIZED_NAME_CUSTOMER_LINE_NUMBER)
@@ -385,20 +385,10 @@ public class OrderCreateRequestLinesInner {
 
   static {
     // a set of all properties/fields (JSON key names)
-    openapiFields = new HashSet<String>();
-    openapiFields.add("customerLineNumber");
-    openapiFields.add("ingramPartNumber");
-    openapiFields.add("quantity");
-    openapiFields.add("specialBidNumber");
-    openapiFields.add("notes");
-    openapiFields.add("unitPrice");
-    openapiFields.add("endUserPrice");
-    openapiFields.add("additionalAttributes");
-    openapiFields.add("warrantyInfo");
-    openapiFields.add("endUserInfo");
+    openapiFields = new HashSet<String>(Arrays.asList("customerLineNumber", "ingramPartNumber", "quantity", "specialBidNumber", "notes", "unitPrice", "endUserPrice", "additionalAttributes", "warrantyInfo", "endUserInfo"));
 
     // a set of required properties/fields (JSON key names)
-    openapiRequiredFields = new HashSet<String>();
+    openapiRequiredFields = new HashSet<String>(0);
   }
 
   /**

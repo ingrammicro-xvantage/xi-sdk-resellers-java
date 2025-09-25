@@ -48,7 +48,7 @@ import xiresellers.client.JSON;
 /**
  * ProductDetailResponseIndicators
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2025-05-05T10:31:26.179314383Z[Etc/UTC]", comments = "Generator version: 7.13.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2025-09-25T06:59:55.428803335Z[Etc/UTC]", comments = "Generator version: 7.14.0")
 public class ProductDetailResponseIndicators {
   public static final String SERIALIZED_NAME_HAS_WARRANTY = "hasWarranty";
   @SerializedName(SERIALIZED_NAME_HAS_WARRANTY)
@@ -901,41 +901,10 @@ public class ProductDetailResponseIndicators {
 
   static {
     // a set of all properties/fields (JSON key names)
-    openapiFields = new HashSet<String>();
-    openapiFields.add("hasWarranty");
-    openapiFields.add("isNewProduct");
-    openapiFields.add("HasReturnLimits");
-    openapiFields.add("IsBackOrderAllowed");
-    openapiFields.add("isShippedFromPartner");
-    openapiFields.add("isReplacementProduct");
-    openapiFields.add("isDirectship");
-    openapiFields.add("isDownloadable");
-    openapiFields.add("isDigitalType");
-    openapiFields.add("skuType");
-    openapiFields.add("hasStdSpecialPrice");
-    openapiFields.add("hasAcopSpecialPrice");
-    openapiFields.add("hasAcopQuantityBreak");
-    openapiFields.add("hasStdWebDiscount");
-    openapiFields.add("hasSpecialBid");
-    openapiFields.add("isExportableToCountry");
-    openapiFields.add("isDiscontinuedProduct");
-    openapiFields.add("isRefurbishedProduct");
-    openapiFields.add("isReturnableProduct");
-    openapiFields.add("isIngramShip");
-    openapiFields.add("isEnduserRequired");
-    openapiFields.add("isHeavyWeight");
-    openapiFields.add("hasLtl");
-    openapiFields.add("isClearanceProduct");
-    openapiFields.add("hasBundle");
-    openapiFields.add("isOversizeProduct");
-    openapiFields.add("isPreorderProduct");
-    openapiFields.add("isLicenseProduct");
-    openapiFields.add("isDirectshipOrderable");
-    openapiFields.add("isServiceSku");
-    openapiFields.add("isConfigurable");
+    openapiFields = new HashSet<String>(Arrays.asList("hasWarranty", "isNewProduct", "HasReturnLimits", "IsBackOrderAllowed", "isShippedFromPartner", "isReplacementProduct", "isDirectship", "isDownloadable", "isDigitalType", "skuType", "hasStdSpecialPrice", "hasAcopSpecialPrice", "hasAcopQuantityBreak", "hasStdWebDiscount", "hasSpecialBid", "isExportableToCountry", "isDiscontinuedProduct", "isRefurbishedProduct", "isReturnableProduct", "isIngramShip", "isEnduserRequired", "isHeavyWeight", "hasLtl", "isClearanceProduct", "hasBundle", "isOversizeProduct", "isPreorderProduct", "isLicenseProduct", "isDirectshipOrderable", "isServiceSku", "isConfigurable"));
 
     // a set of required properties/fields (JSON key names)
-    openapiRequiredFields = new HashSet<String>();
+    openapiRequiredFields = new HashSet<String>(0);
   }
 
   /**

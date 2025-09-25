@@ -48,7 +48,7 @@ import xiresellers.client.JSON;
 /**
  * ReturnsCreateRequestListInnerShipFromInfoInner
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2025-05-05T10:31:26.179314383Z[Etc/UTC]", comments = "Generator version: 7.13.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2025-09-25T06:59:55.428803335Z[Etc/UTC]", comments = "Generator version: 7.14.0")
 public class ReturnsCreateRequestListInnerShipFromInfoInner {
   public static final String SERIALIZED_NAME_COMPANY_NAME = "companyName";
   @SerializedName(SERIALIZED_NAME_COMPANY_NAME)
@@ -381,29 +381,10 @@ public class ReturnsCreateRequestListInnerShipFromInfoInner {
 
   static {
     // a set of all properties/fields (JSON key names)
-    openapiFields = new HashSet<String>();
-    openapiFields.add("companyName");
-    openapiFields.add("contact");
-    openapiFields.add("addressLine1");
-    openapiFields.add("addressLine2");
-    openapiFields.add("addressLine3");
-    openapiFields.add("city");
-    openapiFields.add("state");
-    openapiFields.add("postalCode");
-    openapiFields.add("countryCode");
-    openapiFields.add("email");
-    openapiFields.add("phoneNumber");
+    openapiFields = new HashSet<String>(Arrays.asList("companyName", "contact", "addressLine1", "addressLine2", "addressLine3", "city", "state", "postalCode", "countryCode", "email", "phoneNumber"));
 
     // a set of required properties/fields (JSON key names)
-    openapiRequiredFields = new HashSet<String>();
-    openapiRequiredFields.add("companyName");
-    openapiRequiredFields.add("contact");
-    openapiRequiredFields.add("addressLine1");
-    openapiRequiredFields.add("city");
-    openapiRequiredFields.add("state");
-    openapiRequiredFields.add("postalCode");
-    openapiRequiredFields.add("countryCode");
-    openapiRequiredFields.add("email");
+    openapiRequiredFields = new HashSet<String>(Arrays.asList("companyName", "contact", "addressLine1", "city", "state", "postalCode", "countryCode", "email"));
   }
 
   /**

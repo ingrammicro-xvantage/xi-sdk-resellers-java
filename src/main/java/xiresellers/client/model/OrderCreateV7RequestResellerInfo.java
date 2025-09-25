@@ -49,7 +49,7 @@ import xiresellers.client.JSON;
 /**
  * The address and contact information provided by the reseller.
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2025-05-05T10:31:26.179314383Z[Etc/UTC]", comments = "Generator version: 7.13.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2025-09-25T06:59:55.428803335Z[Etc/UTC]", comments = "Generator version: 7.14.0")
 public class OrderCreateV7RequestResellerInfo {
   public static final String SERIALIZED_NAME_RESELLER_ID = "resellerId";
   @SerializedName(SERIALIZED_NAME_RESELLER_ID)
@@ -393,21 +393,10 @@ public class OrderCreateV7RequestResellerInfo {
 
   static {
     // a set of all properties/fields (JSON key names)
-    openapiFields = new HashSet<String>();
-    openapiFields.add("resellerId");
-    openapiFields.add("companyName");
-    openapiFields.add("contact");
-    openapiFields.add("addressLine1");
-    openapiFields.add("addressLine2");
-    openapiFields.add("city");
-    openapiFields.add("state");
-    openapiFields.add("postalCode");
-    openapiFields.add("countryCode");
-    openapiFields.add("phoneNumber");
-    openapiFields.add("email");
+    openapiFields = new HashSet<String>(Arrays.asList("resellerId", "companyName", "contact", "addressLine1", "addressLine2", "city", "state", "postalCode", "countryCode", "phoneNumber", "email"));
 
     // a set of required properties/fields (JSON key names)
-    openapiRequiredFields = new HashSet<String>();
+    openapiRequiredFields = new HashSet<String>(0);
   }
 
   /**

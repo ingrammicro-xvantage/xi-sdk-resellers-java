@@ -48,7 +48,7 @@ import xiresellers.client.JSON;
 /**
  * InvoiceDetailsv61ResponseShipToInfo
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2025-05-05T10:31:26.179314383Z[Etc/UTC]", comments = "Generator version: 7.13.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2025-09-25T06:59:55.428803335Z[Etc/UTC]", comments = "Generator version: 7.14.0")
 public class InvoiceDetailsv61ResponseShipToInfo {
   public static final String SERIALIZED_NAME_CONTACT = "contact";
   @SerializedName(SERIALIZED_NAME_CONTACT)
@@ -381,21 +381,10 @@ public class InvoiceDetailsv61ResponseShipToInfo {
 
   static {
     // a set of all properties/fields (JSON key names)
-    openapiFields = new HashSet<String>();
-    openapiFields.add("contact");
-    openapiFields.add("companyName");
-    openapiFields.add("addressLine1");
-    openapiFields.add("addressLine2");
-    openapiFields.add("addressLine3");
-    openapiFields.add("city");
-    openapiFields.add("state");
-    openapiFields.add("postalCode");
-    openapiFields.add("countryCode");
-    openapiFields.add("phoneNumber");
-    openapiFields.add("email");
+    openapiFields = new HashSet<String>(Arrays.asList("contact", "companyName", "addressLine1", "addressLine2", "addressLine3", "city", "state", "postalCode", "countryCode", "phoneNumber", "email"));
 
     // a set of required properties/fields (JSON key names)
-    openapiRequiredFields = new HashSet<String>();
+    openapiRequiredFields = new HashSet<String>(0);
   }
 
   /**

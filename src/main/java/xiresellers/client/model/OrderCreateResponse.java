@@ -54,7 +54,7 @@ import xiresellers.client.JSON;
 /**
  * OrderCreateResponse
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2025-05-05T10:31:26.179314383Z[Etc/UTC]", comments = "Generator version: 7.13.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2025-09-25T06:59:55.428803335Z[Etc/UTC]", comments = "Generator version: 7.14.0")
 public class OrderCreateResponse {
   public static final String SERIALIZED_NAME_CUSTOMER_ORDER_NUMBER = "customerOrderNumber";
   @SerializedName(SERIALIZED_NAME_CUSTOMER_ORDER_NUMBER)
@@ -369,20 +369,10 @@ public class OrderCreateResponse {
 
   static {
     // a set of all properties/fields (JSON key names)
-    openapiFields = new HashSet<String>();
-    openapiFields.add("customerOrderNumber");
-    openapiFields.add("endCustomerOrderNumber");
-    openapiFields.add("billToAddressId");
-    openapiFields.add("specialBidNumber");
-    openapiFields.add("orderSplit");
-    openapiFields.add("processedPartially");
-    openapiFields.add("purchaseOrderTotal");
-    openapiFields.add("shipToInfo");
-    openapiFields.add("endUserInfo");
-    openapiFields.add("orders");
+    openapiFields = new HashSet<String>(Arrays.asList("customerOrderNumber", "endCustomerOrderNumber", "billToAddressId", "specialBidNumber", "orderSplit", "processedPartially", "purchaseOrderTotal", "shipToInfo", "endUserInfo", "orders"));
 
     // a set of required properties/fields (JSON key names)
-    openapiRequiredFields = new HashSet<String>();
+    openapiRequiredFields = new HashSet<String>(0);
   }
 
   /**

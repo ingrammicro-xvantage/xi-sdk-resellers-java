@@ -48,7 +48,7 @@ import xiresellers.client.JSON;
 /**
  * OrderCreateResponseOrdersInnerLinesInnerShipmentDetailsInner
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2025-05-05T10:31:26.179314383Z[Etc/UTC]", comments = "Generator version: 7.13.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2025-09-25T06:59:55.428803335Z[Etc/UTC]", comments = "Generator version: 7.14.0")
 public class OrderCreateResponseOrdersInnerLinesInnerShipmentDetailsInner {
   public static final String SERIALIZED_NAME_CARRIER_CODE = "carrierCode";
   @SerializedName(SERIALIZED_NAME_CARRIER_CODE)
@@ -277,17 +277,10 @@ public class OrderCreateResponseOrdersInnerLinesInnerShipmentDetailsInner {
 
   static {
     // a set of all properties/fields (JSON key names)
-    openapiFields = new HashSet<String>();
-    openapiFields.add("carrierCode");
-    openapiFields.add("carrierName");
-    openapiFields.add("shipFromWarehouseId");
-    openapiFields.add("shipFromLocation");
-    openapiFields.add("freightAccountNumber");
-    openapiFields.add("signatureRequired");
-    openapiFields.add("shippingInstructions");
+    openapiFields = new HashSet<String>(Arrays.asList("carrierCode", "carrierName", "shipFromWarehouseId", "shipFromLocation", "freightAccountNumber", "signatureRequired", "shippingInstructions"));
 
     // a set of required properties/fields (JSON key names)
-    openapiRequiredFields = new HashSet<String>();
+    openapiRequiredFields = new HashSet<String>(0);
   }
 
   /**

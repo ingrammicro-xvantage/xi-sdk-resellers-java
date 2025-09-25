@@ -58,7 +58,7 @@ import xiresellers.client.JSON;
 /**
  * PriceAndAvailabilityResponseInner
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2025-05-05T10:31:26.179314383Z[Etc/UTC]", comments = "Generator version: 7.13.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2025-09-25T06:59:55.428803335Z[Etc/UTC]", comments = "Generator version: 7.14.0")
 public class PriceAndAvailabilityResponseInner {
   public static final String SERIALIZED_NAME_INDEX = "index";
   @SerializedName(SERIALIZED_NAME_INDEX)
@@ -902,39 +902,10 @@ public class PriceAndAvailabilityResponseInner {
 
   static {
     // a set of all properties/fields (JSON key names)
-    openapiFields = new HashSet<String>();
-    openapiFields.add("index");
-    openapiFields.add("productStatusCode");
-    openapiFields.add("productStatusMessage");
-    openapiFields.add("ingramPartNumber");
-    openapiFields.add("vendorPartNumber");
-    openapiFields.add("extendedVendorPartNumber");
-    openapiFields.add("customerPartNumber");
-    openapiFields.add("upc");
-    openapiFields.add("partNumberType");
-    openapiFields.add("vendorNumber");
-    openapiFields.add("vendorName");
-    openapiFields.add("description");
-    openapiFields.add("productClass");
-    openapiFields.add("uom");
-    openapiFields.add("productStatus");
-    openapiFields.add("acceptBackOrder");
-    openapiFields.add("productAuthorized");
-    openapiFields.add("returnableProduct");
-    openapiFields.add("endUserInfoRequired");
-    openapiFields.add("govtSpecialPriceAvailable");
-    openapiFields.add("govtProgramType");
-    openapiFields.add("govtEndUserType");
-    openapiFields.add("availability");
-    openapiFields.add("reserveInventoryDetails");
-    openapiFields.add("pricing");
-    openapiFields.add("discounts");
-    openapiFields.add("bundlePartIndicator");
-    openapiFields.add("serviceFees");
-    openapiFields.add("subscriptionPrice");
+    openapiFields = new HashSet<String>(Arrays.asList("index", "productStatusCode", "productStatusMessage", "ingramPartNumber", "vendorPartNumber", "extendedVendorPartNumber", "customerPartNumber", "upc", "partNumberType", "vendorNumber", "vendorName", "description", "productClass", "uom", "productStatus", "acceptBackOrder", "productAuthorized", "returnableProduct", "endUserInfoRequired", "govtSpecialPriceAvailable", "govtProgramType", "govtEndUserType", "availability", "reserveInventoryDetails", "pricing", "discounts", "bundlePartIndicator", "serviceFees", "subscriptionPrice"));
 
     // a set of required properties/fields (JSON key names)
-    openapiRequiredFields = new HashSet<String>();
+    openapiRequiredFields = new HashSet<String>(0);
   }
 
   /**

@@ -57,7 +57,7 @@ import xiresellers.client.JSON;
 /**
  * OrderDetailB2B
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2025-05-05T10:31:26.179314383Z[Etc/UTC]", comments = "Generator version: 7.13.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2025-09-25T06:59:55.428803335Z[Etc/UTC]", comments = "Generator version: 7.14.0")
 public class OrderDetailB2B {
   public static final String SERIALIZED_NAME_INGRAM_ORDER_NUMBER = "ingramOrderNumber";
   @SerializedName(SERIALIZED_NAME_INGRAM_ORDER_NUMBER)
@@ -763,34 +763,10 @@ public class OrderDetailB2B {
 
   static {
     // a set of all properties/fields (JSON key names)
-    openapiFields = new HashSet<String>();
-    openapiFields.add("ingramOrderNumber");
-    openapiFields.add("ingramOrderDate");
-    openapiFields.add("orderType");
-    openapiFields.add("customerOrderNumber");
-    openapiFields.add("endCustomerOrderNumber");
-    openapiFields.add("webOrderId");
-    openapiFields.add("vendorSalesOrderNumber");
-    openapiFields.add("ingramPurchaseOrderNumber");
-    openapiFields.add("orderStatus");
-    openapiFields.add("orderTotal");
-    openapiFields.add("orderSubTotal");
-    openapiFields.add("freightCharges");
-    openapiFields.add("currencyCode");
-    openapiFields.add("totalWeight");
-    openapiFields.add("totalTax");
-    openapiFields.add("totalFees");
-    openapiFields.add("paymentTerms");
-    openapiFields.add("notes");
-    openapiFields.add("billToInfo");
-    openapiFields.add("shipToInfo");
-    openapiFields.add("endUserInfo");
-    openapiFields.add("lines");
-    openapiFields.add("miscellaneousCharges");
-    openapiFields.add("additionalAttributes");
+    openapiFields = new HashSet<String>(Arrays.asList("ingramOrderNumber", "ingramOrderDate", "orderType", "customerOrderNumber", "endCustomerOrderNumber", "webOrderId", "vendorSalesOrderNumber", "ingramPurchaseOrderNumber", "orderStatus", "orderTotal", "orderSubTotal", "freightCharges", "currencyCode", "totalWeight", "totalTax", "totalFees", "paymentTerms", "notes", "billToInfo", "shipToInfo", "endUserInfo", "lines", "miscellaneousCharges", "additionalAttributes"));
 
     // a set of required properties/fields (JSON key names)
-    openapiRequiredFields = new HashSet<String>();
+    openapiRequiredFields = new HashSet<String>(0);
   }
 
   /**

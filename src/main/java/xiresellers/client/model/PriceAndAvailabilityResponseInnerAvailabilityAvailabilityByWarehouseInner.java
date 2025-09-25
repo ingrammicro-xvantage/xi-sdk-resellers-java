@@ -52,7 +52,7 @@ import xiresellers.client.JSON;
 /**
  * PriceAndAvailabilityResponseInnerAvailabilityAvailabilityByWarehouseInner
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2025-05-05T10:31:26.179314383Z[Etc/UTC]", comments = "Generator version: 7.13.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2025-09-25T06:59:55.428803335Z[Etc/UTC]", comments = "Generator version: 7.14.0")
 public class PriceAndAvailabilityResponseInnerAvailabilityAvailabilityByWarehouseInner {
   public static final String SERIALIZED_NAME_LOCATION = "location";
   @SerializedName(SERIALIZED_NAME_LOCATION)
@@ -300,17 +300,10 @@ public class PriceAndAvailabilityResponseInnerAvailabilityAvailabilityByWarehous
 
   static {
     // a set of all properties/fields (JSON key names)
-    openapiFields = new HashSet<String>();
-    openapiFields.add("location");
-    openapiFields.add("warehouseId");
-    openapiFields.add("quantityAvailable");
-    openapiFields.add("quantityBackordered");
-    openapiFields.add("quantityBackorderedEta");
-    openapiFields.add("quantityOnOrder");
-    openapiFields.add("backOrderInfo");
+    openapiFields = new HashSet<String>(Arrays.asList("location", "warehouseId", "quantityAvailable", "quantityBackordered", "quantityBackorderedEta", "quantityOnOrder", "backOrderInfo"));
 
     // a set of required properties/fields (JSON key names)
-    openapiRequiredFields = new HashSet<String>();
+    openapiRequiredFields = new HashSet<String>(0);
   }
 
   /**

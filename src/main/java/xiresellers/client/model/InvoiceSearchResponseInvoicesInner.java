@@ -51,7 +51,7 @@ import xiresellers.client.JSON;
 /**
  * InvoiceSearchResponseInvoicesInner
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2025-05-05T10:31:26.179314383Z[Etc/UTC]", comments = "Generator version: 7.13.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2025-09-25T06:59:55.428803335Z[Etc/UTC]", comments = "Generator version: 7.14.0")
 public class InvoiceSearchResponseInvoicesInner {
   public static final String SERIALIZED_NAME_PAYMENT_TERMS_DUE_DATE = "paymentTermsDueDate";
   @SerializedName(SERIALIZED_NAME_PAYMENT_TERMS_DUE_DATE)
@@ -496,25 +496,10 @@ public class InvoiceSearchResponseInvoicesInner {
 
   static {
     // a set of all properties/fields (JSON key names)
-    openapiFields = new HashSet<String>();
-    openapiFields.add("paymentTermsDueDate");
-    openapiFields.add("specialBidNumbers");
-    openapiFields.add("erpOrderNumber");
-    openapiFields.add("invoiceNumber");
-    openapiFields.add("invoiceStatus");
-    openapiFields.add("invoiceDate");
-    openapiFields.add("invoiceDueDate");
-    openapiFields.add("invoicedAmountDue");
-    openapiFields.add("customerOrderNumber");
-    openapiFields.add("endCustomerOrderNumber");
-    openapiFields.add("orderCreateDate");
-    openapiFields.add("invoiceAmountInclTax");
-    openapiFields.add("forgntotalamount");
-    openapiFields.add("gstInvoiceNumber");
-    openapiFields.add("isfseccenabled");
+    openapiFields = new HashSet<String>(Arrays.asList("paymentTermsDueDate", "specialBidNumbers", "erpOrderNumber", "invoiceNumber", "invoiceStatus", "invoiceDate", "invoiceDueDate", "invoicedAmountDue", "customerOrderNumber", "endCustomerOrderNumber", "orderCreateDate", "invoiceAmountInclTax", "forgntotalamount", "gstInvoiceNumber", "isfseccenabled"));
 
     // a set of required properties/fields (JSON key names)
-    openapiRequiredFields = new HashSet<String>();
+    openapiRequiredFields = new HashSet<String>(0);
   }
 
   /**

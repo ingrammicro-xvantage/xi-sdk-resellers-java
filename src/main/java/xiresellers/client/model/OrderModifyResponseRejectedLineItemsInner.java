@@ -48,7 +48,7 @@ import xiresellers.client.JSON;
 /**
  * OrderModifyResponseRejectedLineItemsInner
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2025-05-05T10:31:26.179314383Z[Etc/UTC]", comments = "Generator version: 7.13.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2025-09-25T06:59:55.428803335Z[Etc/UTC]", comments = "Generator version: 7.14.0")
 public class OrderModifyResponseRejectedLineItemsInner {
   public static final String SERIALIZED_NAME_INGRAM_LINE_NUMBER = "ingramLineNumber";
   @SerializedName(SERIALIZED_NAME_INGRAM_LINE_NUMBER)
@@ -277,17 +277,10 @@ public class OrderModifyResponseRejectedLineItemsInner {
 
   static {
     // a set of all properties/fields (JSON key names)
-    openapiFields = new HashSet<String>();
-    openapiFields.add("ingramLineNumber");
-    openapiFields.add("customerLineNumber");
-    openapiFields.add("ingramPartNumber");
-    openapiFields.add("vendorPartNumber");
-    openapiFields.add("quantityOrdered");
-    openapiFields.add("rejectCode");
-    openapiFields.add("rejectReason");
+    openapiFields = new HashSet<String>(Arrays.asList("ingramLineNumber", "customerLineNumber", "ingramPartNumber", "vendorPartNumber", "quantityOrdered", "rejectCode", "rejectReason"));
 
     // a set of required properties/fields (JSON key names)
-    openapiRequiredFields = new HashSet<String>();
+    openapiRequiredFields = new HashSet<String>(0);
   }
 
   /**

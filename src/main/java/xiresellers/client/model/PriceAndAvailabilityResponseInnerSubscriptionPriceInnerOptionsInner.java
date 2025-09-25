@@ -55,7 +55,7 @@ import xiresellers.client.JSON;
 /**
  * PriceAndAvailabilityResponseInnerSubscriptionPriceInnerOptionsInner
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2025-05-05T10:31:26.179314383Z[Etc/UTC]", comments = "Generator version: 7.13.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2025-09-25T06:59:55.428803335Z[Etc/UTC]", comments = "Generator version: 7.14.0")
 public class PriceAndAvailabilityResponseInnerSubscriptionPriceInnerOptionsInner {
   public static final String SERIALIZED_NAME_RESOURCE_ID = "resourceId";
   @SerializedName(SERIALIZED_NAME_RESOURCE_ID)
@@ -423,21 +423,10 @@ public class PriceAndAvailabilityResponseInnerSubscriptionPriceInnerOptionsInner
 
   static {
     // a set of all properties/fields (JSON key names)
-    openapiFields = new HashSet<String>();
-    openapiFields.add("resourceId");
-    openapiFields.add("resourceUId");
-    openapiFields.add("resourceName");
-    openapiFields.add("vendorPartNumber");
-    openapiFields.add("minUnits");
-    openapiFields.add("maxUnits");
-    openapiFields.add("recurringpricemodel");
-    openapiFields.add("unitOfMeasure");
-    openapiFields.add("resourcePricing");
-    openapiFields.add("discounts");
-    openapiFields.add("fees");
+    openapiFields = new HashSet<String>(Arrays.asList("resourceId", "resourceUId", "resourceName", "vendorPartNumber", "minUnits", "maxUnits", "recurringpricemodel", "unitOfMeasure", "resourcePricing", "discounts", "fees"));
 
     // a set of required properties/fields (JSON key names)
-    openapiRequiredFields = new HashSet<String>();
+    openapiRequiredFields = new HashSet<String>(0);
   }
 
   /**

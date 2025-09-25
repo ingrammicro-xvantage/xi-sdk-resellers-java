@@ -52,7 +52,7 @@ import xiresellers.client.JSON;
 /**
  * ValidateQuoteResponse
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2025-05-05T10:31:26.179314383Z[Etc/UTC]", comments = "Generator version: 7.13.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2025-09-25T06:59:55.428803335Z[Etc/UTC]", comments = "Generator version: 7.14.0")
 public class ValidateQuoteResponse {
   public static final String SERIALIZED_NAME_QUOTE_NUMBER = "quoteNumber";
   @SerializedName(SERIALIZED_NAME_QUOTE_NUMBER)
@@ -323,18 +323,10 @@ public class ValidateQuoteResponse {
 
   static {
     // a set of all properties/fields (JSON key names)
-    openapiFields = new HashSet<String>();
-    openapiFields.add("quoteNumber");
-    openapiFields.add("vendorName");
-    openapiFields.add("vmfAdditionalAttributes");
-    openapiFields.add("lines");
-    openapiFields.add("quoteType");
-    openapiFields.add("vendorGroupName");
-    openapiFields.add("vendorQuoteNumber");
-    openapiFields.add("vendorMasterNumber");
+    openapiFields = new HashSet<String>(Arrays.asList("quoteNumber", "vendorName", "vmfAdditionalAttributes", "lines", "quoteType", "vendorGroupName", "vendorQuoteNumber", "vendorMasterNumber"));
 
     // a set of required properties/fields (JSON key names)
-    openapiRequiredFields = new HashSet<String>();
+    openapiRequiredFields = new HashSet<String>(0);
   }
 
   /**

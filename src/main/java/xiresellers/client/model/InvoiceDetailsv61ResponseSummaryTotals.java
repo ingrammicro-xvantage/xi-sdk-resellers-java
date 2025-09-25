@@ -48,7 +48,7 @@ import xiresellers.client.JSON;
 /**
  * InvoiceDetailsv61ResponseSummaryTotals
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2025-05-05T10:31:26.179314383Z[Etc/UTC]", comments = "Generator version: 7.13.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2025-09-25T06:59:55.428803335Z[Etc/UTC]", comments = "Generator version: 7.14.0")
 public class InvoiceDetailsv61ResponseSummaryTotals {
   public static final String SERIALIZED_NAME_NET_INVOICE_AMOUNT = "netInvoiceAmount";
   @SerializedName(SERIALIZED_NAME_NET_INVOICE_AMOUNT)
@@ -251,16 +251,10 @@ public class InvoiceDetailsv61ResponseSummaryTotals {
 
   static {
     // a set of all properties/fields (JSON key names)
-    openapiFields = new HashSet<String>();
-    openapiFields.add("netInvoiceAmount");
-    openapiFields.add("discountAmount");
-    openapiFields.add("discountType");
-    openapiFields.add("totalTaxAmount");
-    openapiFields.add("invoicedAmountDue");
-    openapiFields.add("freightAmount");
+    openapiFields = new HashSet<String>(Arrays.asList("netInvoiceAmount", "discountAmount", "discountType", "totalTaxAmount", "invoicedAmountDue", "freightAmount"));
 
     // a set of required properties/fields (JSON key names)
-    openapiRequiredFields = new HashSet<String>();
+    openapiRequiredFields = new HashSet<String>(0);
   }
 
   /**

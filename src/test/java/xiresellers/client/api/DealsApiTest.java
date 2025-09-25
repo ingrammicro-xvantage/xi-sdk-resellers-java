@@ -48,7 +48,8 @@ public class DealsApiTest {
         String imCorrelationID = null;
         String imApplicationId = null;
         String dealId = null;
-        DealsDetailsResponse response = api.getResellersV6Dealsdetails(imCustomerNumber, imCountryCode, imCorrelationID, imApplicationId, dealId);
+        String vendorName = null;
+        DealsDetailsResponse response = api.getResellersV6Dealsdetails(imCustomerNumber, imCountryCode, imCorrelationID, imApplicationId, dealId, vendorName);
         // TODO: test validations
     }
 

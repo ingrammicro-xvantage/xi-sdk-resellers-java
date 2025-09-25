@@ -56,7 +56,7 @@ import xiresellers.client.JSON;
 /**
  * InvoiceDetailsv61Response
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2025-05-05T10:31:26.179314383Z[Etc/UTC]", comments = "Generator version: 7.13.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2025-09-25T06:59:55.428803335Z[Etc/UTC]", comments = "Generator version: 7.14.0")
 public class InvoiceDetailsv61Response {
   public static final String SERIALIZED_NAME_INVOICE_NUMBER = "invoiceNumber";
   @SerializedName(SERIALIZED_NAME_INVOICE_NUMBER)
@@ -631,30 +631,10 @@ public class InvoiceDetailsv61Response {
 
   static {
     // a set of all properties/fields (JSON key names)
-    openapiFields = new HashSet<String>();
-    openapiFields.add("invoiceNumber");
-    openapiFields.add("invoiceStatus");
-    openapiFields.add("invoiceDate");
-    openapiFields.add("customerOrderNumber");
-    openapiFields.add("endCustomerOrderNumber");
-    openapiFields.add("orderNumber");
-    openapiFields.add("orderDate");
-    openapiFields.add("billToID");
-    openapiFields.add("invoiceType");
-    openapiFields.add("invoiceDueDate");
-    openapiFields.add("customerCountryCode");
-    openapiFields.add("customerNumber");
-    openapiFields.add("ingramOrderNumber");
-    openapiFields.add("notes");
-    openapiFields.add("paymentTermsInfo");
-    openapiFields.add("billToInfo");
-    openapiFields.add("shipToInfo");
-    openapiFields.add("lines");
-    openapiFields.add("fxRateInfo");
-    openapiFields.add("summary");
+    openapiFields = new HashSet<String>(Arrays.asList("invoiceNumber", "invoiceStatus", "invoiceDate", "customerOrderNumber", "endCustomerOrderNumber", "orderNumber", "orderDate", "billToID", "invoiceType", "invoiceDueDate", "customerCountryCode", "customerNumber", "ingramOrderNumber", "notes", "paymentTermsInfo", "billToInfo", "shipToInfo", "lines", "fxRateInfo", "summary"));
 
     // a set of required properties/fields (JSON key names)
-    openapiRequiredFields = new HashSet<String>();
+    openapiRequiredFields = new HashSet<String>(0);
   }
 
   /**

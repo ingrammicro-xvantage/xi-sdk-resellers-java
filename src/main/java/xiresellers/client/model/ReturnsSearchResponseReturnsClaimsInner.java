@@ -52,7 +52,7 @@ import xiresellers.client.JSON;
 /**
  * ReturnsSearchResponseReturnsClaimsInner
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2025-05-05T10:31:26.179314383Z[Etc/UTC]", comments = "Generator version: 7.13.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2025-09-25T06:59:55.428803335Z[Etc/UTC]", comments = "Generator version: 7.14.0")
 public class ReturnsSearchResponseReturnsClaimsInner {
   public static final String SERIALIZED_NAME_RETURN_CLAIM_ID = "returnClaimId";
   @SerializedName(SERIALIZED_NAME_RETURN_CLAIM_ID)
@@ -393,21 +393,10 @@ public class ReturnsSearchResponseReturnsClaimsInner {
 
   static {
     // a set of all properties/fields (JSON key names)
-    openapiFields = new HashSet<String>();
-    openapiFields.add("returnClaimId");
-    openapiFields.add("caseRequestNumber");
-    openapiFields.add("createdOn");
-    openapiFields.add("type");
-    openapiFields.add("returnReason");
-    openapiFields.add("referenceNumber");
-    openapiFields.add("estimatedTotalValue");
-    openapiFields.add("credit");
-    openapiFields.add("modifiedOn");
-    openapiFields.add("status");
-    openapiFields.add("links");
+    openapiFields = new HashSet<String>(Arrays.asList("returnClaimId", "caseRequestNumber", "createdOn", "type", "returnReason", "referenceNumber", "estimatedTotalValue", "credit", "modifiedOn", "status", "links"));
 
     // a set of required properties/fields (JSON key names)
-    openapiRequiredFields = new HashSet<String>();
+    openapiRequiredFields = new HashSet<String>(0);
   }
 
   /**

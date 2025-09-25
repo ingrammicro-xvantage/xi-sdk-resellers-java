@@ -49,7 +49,7 @@ import xiresellers.client.JSON;
 /**
  * QuoteDetailsResponseProductsInnerPriceDiscountsInner
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2025-05-05T10:31:26.179314383Z[Etc/UTC]", comments = "Generator version: 7.13.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2025-09-25T06:59:55.428803335Z[Etc/UTC]", comments = "Generator version: 7.14.0")
 public class QuoteDetailsResponseProductsInnerPriceDiscountsInner {
   public static final String SERIALIZED_NAME_TYPE = "type";
   @SerializedName(SERIALIZED_NAME_TYPE)
@@ -382,21 +382,10 @@ public class QuoteDetailsResponseProductsInnerPriceDiscountsInner {
 
   static {
     // a set of all properties/fields (JSON key names)
-    openapiFields = new HashSet<String>();
-    openapiFields.add("type");
-    openapiFields.add("amount");
-    openapiFields.add("expirationDate");
-    openapiFields.add("description");
-    openapiFields.add("avaliableQunatity");
-    openapiFields.add("minimumQuantity");
-    openapiFields.add("bidNumber");
-    openapiFields.add("bidVersion");
-    openapiFields.add("validFrom");
-    openapiFields.add("validTo");
-    openapiFields.add("discountOffList");
+    openapiFields = new HashSet<String>(Arrays.asList("type", "amount", "expirationDate", "description", "avaliableQunatity", "minimumQuantity", "bidNumber", "bidVersion", "validFrom", "validTo", "discountOffList"));
 
     // a set of required properties/fields (JSON key names)
-    openapiRequiredFields = new HashSet<String>();
+    openapiRequiredFields = new HashSet<String>(0);
   }
 
   /**

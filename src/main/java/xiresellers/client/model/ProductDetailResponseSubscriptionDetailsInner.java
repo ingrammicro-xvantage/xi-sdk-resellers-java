@@ -55,7 +55,7 @@ import xiresellers.client.JSON;
 /**
  * ProductDetailResponseSubscriptionDetailsInner
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2025-05-05T10:31:26.179314383Z[Etc/UTC]", comments = "Generator version: 7.13.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2025-09-25T06:59:55.428803335Z[Etc/UTC]", comments = "Generator version: 7.14.0")
 public class ProductDetailResponseSubscriptionDetailsInner {
   public static final String SERIALIZED_NAME_PLAN_ID = "planId";
   @SerializedName(SERIALIZED_NAME_PLAN_ID)
@@ -394,20 +394,10 @@ public class ProductDetailResponseSubscriptionDetailsInner {
 
   static {
     // a set of all properties/fields (JSON key names)
-    openapiFields = new HashSet<String>();
-    openapiFields.add("planId");
-    openapiFields.add("planName");
-    openapiFields.add("planDescription");
-    openapiFields.add("groups");
-    openapiFields.add("subscriptionPeriod");
-    openapiFields.add("billingPeriod");
-    openapiFields.add("options");
-    openapiFields.add("links");
-    openapiFields.add("nextPage");
-    openapiFields.add("previousPage");
+    openapiFields = new HashSet<String>(Arrays.asList("planId", "planName", "planDescription", "groups", "subscriptionPeriod", "billingPeriod", "options", "links", "nextPage", "previousPage"));
 
     // a set of required properties/fields (JSON key names)
-    openapiRequiredFields = new HashSet<String>();
+    openapiRequiredFields = new HashSet<String>(0);
   }
 
   /**

@@ -48,7 +48,7 @@ import xiresellers.client.JSON;
 /**
  * The shipping information provided by the reseller.
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2025-05-05T10:31:26.179314383Z[Etc/UTC]", comments = "Generator version: 7.13.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2025-09-25T06:59:55.428803335Z[Etc/UTC]", comments = "Generator version: 7.14.0")
 public class OrderCreateV7ResponseResourceShipToInfo {
   public static final String SERIALIZED_NAME_ADDRESS_ID = "addressId";
   @SerializedName(SERIALIZED_NAME_ADDRESS_ID)
@@ -303,18 +303,10 @@ public class OrderCreateV7ResponseResourceShipToInfo {
 
   static {
     // a set of all properties/fields (JSON key names)
-    openapiFields = new HashSet<String>();
-    openapiFields.add("addressId");
-    openapiFields.add("companyName");
-    openapiFields.add("addressLine1");
-    openapiFields.add("addressLine2");
-    openapiFields.add("city");
-    openapiFields.add("state");
-    openapiFields.add("postalCode");
-    openapiFields.add("countryCode");
+    openapiFields = new HashSet<String>(Arrays.asList("addressId", "companyName", "addressLine1", "addressLine2", "city", "state", "postalCode", "countryCode"));
 
     // a set of required properties/fields (JSON key names)
-    openapiRequiredFields = new HashSet<String>();
+    openapiRequiredFields = new HashSet<String>(0);
   }
 
   /**

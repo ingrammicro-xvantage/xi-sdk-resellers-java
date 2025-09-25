@@ -48,7 +48,7 @@ import xiresellers.client.JSON;
 /**
  * InvoiceDetailsv61ResponseSummaryLines
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2025-05-05T10:31:26.179314383Z[Etc/UTC]", comments = "Generator version: 7.13.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2025-09-25T06:59:55.428803335Z[Etc/UTC]", comments = "Generator version: 7.14.0")
 public class InvoiceDetailsv61ResponseSummaryLines {
   public static final String SERIALIZED_NAME_PRODUCT_LINE_COUNT = "productLineCount";
   @SerializedName(SERIALIZED_NAME_PRODUCT_LINE_COUNT)
@@ -147,12 +147,10 @@ public class InvoiceDetailsv61ResponseSummaryLines {
 
   static {
     // a set of all properties/fields (JSON key names)
-    openapiFields = new HashSet<String>();
-    openapiFields.add("productLineCount");
-    openapiFields.add("productLineTotalQuantity");
+    openapiFields = new HashSet<String>(Arrays.asList("productLineCount", "productLineTotalQuantity"));
 
     // a set of required properties/fields (JSON key names)
-    openapiRequiredFields = new HashSet<String>();
+    openapiRequiredFields = new HashSet<String>(0);
   }
 
   /**

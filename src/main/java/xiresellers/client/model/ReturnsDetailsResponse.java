@@ -52,7 +52,7 @@ import xiresellers.client.JSON;
 /**
  * ReturnsDetailsResponse
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2025-05-05T10:31:26.179314383Z[Etc/UTC]", comments = "Generator version: 7.13.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2025-09-25T06:59:55.428803335Z[Etc/UTC]", comments = "Generator version: 7.14.0")
 public class ReturnsDetailsResponse {
   public static final String SERIALIZED_NAME_TYPE_OF_DETAILS = "typeOfDetails";
   @SerializedName(SERIALIZED_NAME_TYPE_OF_DETAILS)
@@ -445,23 +445,10 @@ public class ReturnsDetailsResponse {
 
   static {
     // a set of all properties/fields (JSON key names)
-    openapiFields = new HashSet<String>();
-    openapiFields.add("typeOfDetails");
-    openapiFields.add("rmaClaimId");
-    openapiFields.add("caseRequestNumber");
-    openapiFields.add("createdOn");
-    openapiFields.add("returnReason");
-    openapiFields.add("referenceNumber");
-    openapiFields.add("status");
-    openapiFields.add("returnWarehouseAddress");
-    openapiFields.add("products");
-    openapiFields.add("subTotal");
-    openapiFields.add("tax");
-    openapiFields.add("additionalFees");
-    openapiFields.add("estimatedTotal");
+    openapiFields = new HashSet<String>(Arrays.asList("typeOfDetails", "rmaClaimId", "caseRequestNumber", "createdOn", "returnReason", "referenceNumber", "status", "returnWarehouseAddress", "products", "subTotal", "tax", "additionalFees", "estimatedTotal"));
 
     // a set of required properties/fields (JSON key names)
-    openapiRequiredFields = new HashSet<String>();
+    openapiRequiredFields = new HashSet<String>(0);
   }
 
   /**

@@ -52,7 +52,7 @@ import xiresellers.client.JSON;
 /**
  * OrderStatusAsyncNotificationRequestResourceInnerLinesInner
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2025-05-05T10:31:26.179314383Z[Etc/UTC]", comments = "Generator version: 7.13.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2025-09-25T06:59:55.428803335Z[Etc/UTC]", comments = "Generator version: 7.14.0")
 public class OrderStatusAsyncNotificationRequestResourceInnerLinesInner {
   public static final String SERIALIZED_NAME_LINE_NUMBER = "LineNumber";
   @SerializedName(SERIALIZED_NAME_LINE_NUMBER)
@@ -375,20 +375,10 @@ public class OrderStatusAsyncNotificationRequestResourceInnerLinesInner {
 
   static {
     // a set of all properties/fields (JSON key names)
-    openapiFields = new HashSet<String>();
-    openapiFields.add("LineNumber");
-    openapiFields.add("subOrderNumber");
-    openapiFields.add("lineStatus");
-    openapiFields.add("ingramPartNumber");
-    openapiFields.add("vendorPartNumber");
-    openapiFields.add("requestedQuantity");
-    openapiFields.add("shippedQuantity");
-    openapiFields.add("backorderedQuantity");
-    openapiFields.add("shipmentDetails");
-    openapiFields.add("serialNumberDetails");
+    openapiFields = new HashSet<String>(Arrays.asList("LineNumber", "subOrderNumber", "lineStatus", "ingramPartNumber", "vendorPartNumber", "requestedQuantity", "shippedQuantity", "backorderedQuantity", "shipmentDetails", "serialNumberDetails"));
 
     // a set of required properties/fields (JSON key names)
-    openapiRequiredFields = new HashSet<String>();
+    openapiRequiredFields = new HashSet<String>(0);
   }
 
   /**
