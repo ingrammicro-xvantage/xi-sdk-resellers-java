@@ -41,6 +41,8 @@ import xiresellers.client.model.OrderModifyResponse;
 import xiresellers.client.model.OrderSearchResponse;
 import xiresellers.client.model.PostCreateorderV7400Response;
 import xiresellers.client.model.PostCreateorderV7500Response;
+import xiresellers.client.model.VendorRequiredInfoRequest;
+import xiresellers.client.model.VendorRequiredInforesponse;
 
 import java.lang.reflect.Type;
 import java.util.ArrayList;
@@ -1434,6 +1436,184 @@ public class OrdersApi {
 
         okhttp3.Call localVarCall = putOrdermodifyValidateBeforeCall(orderNumber, imCustomerNumber, imCountryCode, imCorrelationID, orderModifyRequest, actionCode, regionCode, imSenderID, _callback);
         Type localVarReturnType = new TypeToken<OrderModifyResponse>(){}.getType();
+        localVarApiClient.executeAsync(localVarCall, localVarReturnType, _callback);
+        return localVarCall;
+    }
+    /**
+     * Build call for vendorRequiredInfo
+     * @param imCustomerNumber Your unique Ingram Micro customer number. (required)
+     * @param imCorrelationID Unique transaction number to identify each transaction across all the systems. (required)
+     * @param imCountryCode Two-character ISO country code. (required)
+     * @param imSenderID Unique value used to identify the sender of the transaction.  (required)
+     * @param vendorRequiredInfoRequest  (optional)
+     * @param _callback Callback for upload/download progress
+     * @return Call to execute
+     * @throws ApiException If fail to serialize the request body object
+     * @http.response.details
+     <table border="1">
+       <caption>Response Details</caption>
+        <tr><td> Status Code </td><td> Description </td><td> Response Headers </td></tr>
+        <tr><td> 200 </td><td> Ok </td><td>  -  </td></tr>
+     </table>
+     */
+    public okhttp3.Call vendorRequiredInfoCall(@javax.annotation.Nonnull String imCustomerNumber, @javax.annotation.Nonnull String imCorrelationID, @javax.annotation.Nonnull String imCountryCode, @javax.annotation.Nonnull String imSenderID, @javax.annotation.Nullable VendorRequiredInfoRequest vendorRequiredInfoRequest, final ApiCallback _callback) throws ApiException {
+        String basePath = null;
+        // Operation Servers
+        String[] localBasePaths = new String[] {  };
+
+        // Determine Base Path to Use
+        if (localCustomBaseUrl != null){
+            basePath = localCustomBaseUrl;
+        } else if ( localBasePaths.length > 0 ) {
+            basePath = localBasePaths[localHostIndex];
+        } else {
+            basePath = null;
+        }
+
+        Object localVarPostBody = vendorRequiredInfoRequest;
+
+        // create path and map variables
+        String localVarPath = "/resellers/v7/vendorrequiredinfo";
+
+        List<Pair> localVarQueryParams = new ArrayList<Pair>();
+        List<Pair> localVarCollectionQueryParams = new ArrayList<Pair>();
+        Map<String, String> localVarHeaderParams = new HashMap<String, String>();
+        Map<String, String> localVarCookieParams = new HashMap<String, String>();
+        Map<String, Object> localVarFormParams = new HashMap<String, Object>();
+
+        final String[] localVarAccepts = {
+            "application/json"
+        };
+        final String localVarAccept = localVarApiClient.selectHeaderAccept(localVarAccepts);
+        if (localVarAccept != null) {
+            localVarHeaderParams.put("Accept", localVarAccept);
+        }
+
+        final String[] localVarContentTypes = {
+            "application/json"
+        };
+        final String localVarContentType = localVarApiClient.selectHeaderContentType(localVarContentTypes);
+        if (localVarContentType != null) {
+            localVarHeaderParams.put("Content-Type", localVarContentType);
+        }
+
+        if (imCustomerNumber != null) {
+            localVarHeaderParams.put("IM-CustomerNumber", localVarApiClient.parameterToString(imCustomerNumber));
+        }
+
+
+        if (imCorrelationID != null) {
+            localVarHeaderParams.put("IM-CorrelationID", localVarApiClient.parameterToString(imCorrelationID));
+        }
+
+
+        if (imCountryCode != null) {
+            localVarHeaderParams.put("IM-CountryCode", localVarApiClient.parameterToString(imCountryCode));
+        }
+
+
+        if (imSenderID != null) {
+            localVarHeaderParams.put("IM-SenderID", localVarApiClient.parameterToString(imSenderID));
+        }
+
+
+        String[] localVarAuthNames = new String[] { "application" };
+        return localVarApiClient.buildCall(basePath, localVarPath, "POST", localVarQueryParams, localVarCollectionQueryParams, localVarPostBody, localVarHeaderParams, localVarCookieParams, localVarFormParams, localVarAuthNames, _callback);
+    }
+
+    @SuppressWarnings("rawtypes")
+    private okhttp3.Call vendorRequiredInfoValidateBeforeCall(@javax.annotation.Nonnull String imCustomerNumber, @javax.annotation.Nonnull String imCorrelationID, @javax.annotation.Nonnull String imCountryCode, @javax.annotation.Nonnull String imSenderID, @javax.annotation.Nullable VendorRequiredInfoRequest vendorRequiredInfoRequest, final ApiCallback _callback) throws ApiException {
+        // verify the required parameter 'imCustomerNumber' is set
+        if (imCustomerNumber == null) {
+            throw new ApiException("Missing the required parameter 'imCustomerNumber' when calling vendorRequiredInfo(Async)");
+        }
+
+        // verify the required parameter 'imCorrelationID' is set
+        if (imCorrelationID == null) {
+            throw new ApiException("Missing the required parameter 'imCorrelationID' when calling vendorRequiredInfo(Async)");
+        }
+
+        // verify the required parameter 'imCountryCode' is set
+        if (imCountryCode == null) {
+            throw new ApiException("Missing the required parameter 'imCountryCode' when calling vendorRequiredInfo(Async)");
+        }
+
+        // verify the required parameter 'imSenderID' is set
+        if (imSenderID == null) {
+            throw new ApiException("Missing the required parameter 'imSenderID' when calling vendorRequiredInfo(Async)");
+        }
+
+        return vendorRequiredInfoCall(imCustomerNumber, imCorrelationID, imCountryCode, imSenderID, vendorRequiredInfoRequest, _callback);
+
+    }
+
+    /**
+     * Vendor Required Info
+     * &lt;p&gt;The vendor required info API allows customers to identify all the mandatory fields that will be required to create an order before placing an order. These fields are required by the vendor to process orders. The customers can identify Vendor Required Information, aka Vendor Mandatory Fields or VMFs, using any of the following.&lt;/p&gt;&lt;ul&gt;&lt;li&gt;Ingram Part Number&lt;/li&gt;&lt;li&gt;Vendor Part Number&lt;/li&gt;&lt;li&gt;Plan ID&lt;/li&gt;&lt;li&gt;Ingram Quote Number&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;For the non-cloud Technology Solutions products, such as Hardware, Software, or Warranty, the VMFs will be returned in the “vmfAdditionalAttributes” object in the response, whereas for the cloud subscriptions products, the VMFs will be returned in the “vriAdditionalAttributes” object in the response.&lt;/p&gt;&lt;p&gt;While creating an Order Create request for the non-cloud products, such as Hardware, Software, or Warranty, pass “vmfAdditionalAttributes” object with the necessary response in the “attributeValue” field.&lt;/p&gt;&lt;p&gt;While creating an Order Create request, for Subscription products, pass “vriAdditionalAttributes” object with the necessary response in the “attributeValue” field and any other applicable subcomponents to create an order. &lt;/p&gt;
+     * @param imCustomerNumber Your unique Ingram Micro customer number. (required)
+     * @param imCorrelationID Unique transaction number to identify each transaction across all the systems. (required)
+     * @param imCountryCode Two-character ISO country code. (required)
+     * @param imSenderID Unique value used to identify the sender of the transaction.  (required)
+     * @param vendorRequiredInfoRequest  (optional)
+     * @return VendorRequiredInforesponse
+     * @throws ApiException If fail to call the API, e.g. server error or cannot deserialize the response body
+     * @http.response.details
+     <table border="1">
+       <caption>Response Details</caption>
+        <tr><td> Status Code </td><td> Description </td><td> Response Headers </td></tr>
+        <tr><td> 200 </td><td> Ok </td><td>  -  </td></tr>
+     </table>
+     */
+    public VendorRequiredInforesponse vendorRequiredInfo(@javax.annotation.Nonnull String imCustomerNumber, @javax.annotation.Nonnull String imCorrelationID, @javax.annotation.Nonnull String imCountryCode, @javax.annotation.Nonnull String imSenderID, @javax.annotation.Nullable VendorRequiredInfoRequest vendorRequiredInfoRequest) throws ApiException {
+        ApiResponse<VendorRequiredInforesponse> localVarResp = vendorRequiredInfoWithHttpInfo(imCustomerNumber, imCorrelationID, imCountryCode, imSenderID, vendorRequiredInfoRequest);
+        return localVarResp.getData();
+    }
+
+    /**
+     * Vendor Required Info
+     * &lt;p&gt;The vendor required info API allows customers to identify all the mandatory fields that will be required to create an order before placing an order. These fields are required by the vendor to process orders. The customers can identify Vendor Required Information, aka Vendor Mandatory Fields or VMFs, using any of the following.&lt;/p&gt;&lt;ul&gt;&lt;li&gt;Ingram Part Number&lt;/li&gt;&lt;li&gt;Vendor Part Number&lt;/li&gt;&lt;li&gt;Plan ID&lt;/li&gt;&lt;li&gt;Ingram Quote Number&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;For the non-cloud Technology Solutions products, such as Hardware, Software, or Warranty, the VMFs will be returned in the “vmfAdditionalAttributes” object in the response, whereas for the cloud subscriptions products, the VMFs will be returned in the “vriAdditionalAttributes” object in the response.&lt;/p&gt;&lt;p&gt;While creating an Order Create request for the non-cloud products, such as Hardware, Software, or Warranty, pass “vmfAdditionalAttributes” object with the necessary response in the “attributeValue” field.&lt;/p&gt;&lt;p&gt;While creating an Order Create request, for Subscription products, pass “vriAdditionalAttributes” object with the necessary response in the “attributeValue” field and any other applicable subcomponents to create an order. &lt;/p&gt;
+     * @param imCustomerNumber Your unique Ingram Micro customer number. (required)
+     * @param imCorrelationID Unique transaction number to identify each transaction across all the systems. (required)
+     * @param imCountryCode Two-character ISO country code. (required)
+     * @param imSenderID Unique value used to identify the sender of the transaction.  (required)
+     * @param vendorRequiredInfoRequest  (optional)
+     * @return ApiResponse&lt;VendorRequiredInforesponse&gt;
+     * @throws ApiException If fail to call the API, e.g. server error or cannot deserialize the response body
+     * @http.response.details
+     <table border="1">
+       <caption>Response Details</caption>
+        <tr><td> Status Code </td><td> Description </td><td> Response Headers </td></tr>
+        <tr><td> 200 </td><td> Ok </td><td>  -  </td></tr>
+     </table>
+     */
+    public ApiResponse<VendorRequiredInforesponse> vendorRequiredInfoWithHttpInfo(@javax.annotation.Nonnull String imCustomerNumber, @javax.annotation.Nonnull String imCorrelationID, @javax.annotation.Nonnull String imCountryCode, @javax.annotation.Nonnull String imSenderID, @javax.annotation.Nullable VendorRequiredInfoRequest vendorRequiredInfoRequest) throws ApiException {
+        okhttp3.Call localVarCall = vendorRequiredInfoValidateBeforeCall(imCustomerNumber, imCorrelationID, imCountryCode, imSenderID, vendorRequiredInfoRequest, null);
+        Type localVarReturnType = new TypeToken<VendorRequiredInforesponse>(){}.getType();
+        return localVarApiClient.execute(localVarCall, localVarReturnType);
+    }
+
+    /**
+     * Vendor Required Info (asynchronously)
+     * &lt;p&gt;The vendor required info API allows customers to identify all the mandatory fields that will be required to create an order before placing an order. These fields are required by the vendor to process orders. The customers can identify Vendor Required Information, aka Vendor Mandatory Fields or VMFs, using any of the following.&lt;/p&gt;&lt;ul&gt;&lt;li&gt;Ingram Part Number&lt;/li&gt;&lt;li&gt;Vendor Part Number&lt;/li&gt;&lt;li&gt;Plan ID&lt;/li&gt;&lt;li&gt;Ingram Quote Number&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;For the non-cloud Technology Solutions products, such as Hardware, Software, or Warranty, the VMFs will be returned in the “vmfAdditionalAttributes” object in the response, whereas for the cloud subscriptions products, the VMFs will be returned in the “vriAdditionalAttributes” object in the response.&lt;/p&gt;&lt;p&gt;While creating an Order Create request for the non-cloud products, such as Hardware, Software, or Warranty, pass “vmfAdditionalAttributes” object with the necessary response in the “attributeValue” field.&lt;/p&gt;&lt;p&gt;While creating an Order Create request, for Subscription products, pass “vriAdditionalAttributes” object with the necessary response in the “attributeValue” field and any other applicable subcomponents to create an order. &lt;/p&gt;
+     * @param imCustomerNumber Your unique Ingram Micro customer number. (required)
+     * @param imCorrelationID Unique transaction number to identify each transaction across all the systems. (required)
+     * @param imCountryCode Two-character ISO country code. (required)
+     * @param imSenderID Unique value used to identify the sender of the transaction.  (required)
+     * @param vendorRequiredInfoRequest  (optional)
+     * @param _callback The callback to be executed when the API call finishes
+     * @return The request call
+     * @throws ApiException If fail to process the API call, e.g. serializing the request body object
+     * @http.response.details
+     <table border="1">
+       <caption>Response Details</caption>
+        <tr><td> Status Code </td><td> Description </td><td> Response Headers </td></tr>
+        <tr><td> 200 </td><td> Ok </td><td>  -  </td></tr>
+     </table>
+     */
+    public okhttp3.Call vendorRequiredInfoAsync(@javax.annotation.Nonnull String imCustomerNumber, @javax.annotation.Nonnull String imCorrelationID, @javax.annotation.Nonnull String imCountryCode, @javax.annotation.Nonnull String imSenderID, @javax.annotation.Nullable VendorRequiredInfoRequest vendorRequiredInfoRequest, final ApiCallback<VendorRequiredInforesponse> _callback) throws ApiException {
+
+        okhttp3.Call localVarCall = vendorRequiredInfoValidateBeforeCall(imCustomerNumber, imCorrelationID, imCountryCode, imSenderID, vendorRequiredInfoRequest, _callback);
+        Type localVarReturnType = new TypeToken<VendorRequiredInforesponse>(){}.getType();
         localVarApiClient.executeAsync(localVarCall, localVarReturnType, _callback);
         return localVarCall;
     }

@@ -28,6 +28,8 @@ import xiresellers.client.model.OrderModifyResponse;
 import xiresellers.client.model.OrderSearchResponse;
 import xiresellers.client.model.PostCreateorderV7400Response;
 import xiresellers.client.model.PostCreateorderV7500Response;
+import xiresellers.client.model.VendorRequiredInfoRequest;
+import xiresellers.client.model.VendorRequiredInforesponse;
 import org.junit.jupiter.api.Disabled;
 import org.junit.jupiter.api.Test;
 
@@ -175,6 +177,24 @@ public class OrdersApiTest {
         String regionCode = null;
         String imSenderID = null;
         OrderModifyResponse response = api.putOrdermodify(orderNumber, imCustomerNumber, imCountryCode, imCorrelationID, orderModifyRequest, actionCode, regionCode, imSenderID);
+        // TODO: test validations
+    }
+
+    /**
+     * Vendor Required Info
+     *
+     * &lt;p&gt;The vendor required info API allows customers to identify all the mandatory fields that will be required to create an order before placing an order. These fields are required by the vendor to process orders. The customers can identify Vendor Required Information, aka Vendor Mandatory Fields or VMFs, using any of the following.&lt;/p&gt;&lt;ul&gt;&lt;li&gt;Ingram Part Number&lt;/li&gt;&lt;li&gt;Vendor Part Number&lt;/li&gt;&lt;li&gt;Plan ID&lt;/li&gt;&lt;li&gt;Ingram Quote Number&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;For the non-cloud Technology Solutions products, such as Hardware, Software, or Warranty, the VMFs will be returned in the “vmfAdditionalAttributes” object in the response, whereas for the cloud subscriptions products, the VMFs will be returned in the “vriAdditionalAttributes” object in the response.&lt;/p&gt;&lt;p&gt;While creating an Order Create request for the non-cloud products, such as Hardware, Software, or Warranty, pass “vmfAdditionalAttributes” object with the necessary response in the “attributeValue” field.&lt;/p&gt;&lt;p&gt;While creating an Order Create request, for Subscription products, pass “vriAdditionalAttributes” object with the necessary response in the “attributeValue” field and any other applicable subcomponents to create an order. &lt;/p&gt;
+     *
+     * @throws ApiException if the Api call fails
+     */
+    @Test
+    public void vendorRequiredInfoTest() throws ApiException {
+        String imCustomerNumber = null;
+        String imCorrelationID = null;
+        String imCountryCode = null;
+        String imSenderID = null;
+        VendorRequiredInfoRequest vendorRequiredInfoRequest = null;
+        VendorRequiredInforesponse response = api.vendorRequiredInfo(imCustomerNumber, imCorrelationID, imCountryCode, imSenderID, vendorRequiredInfoRequest);
         // TODO: test validations
     }
 
