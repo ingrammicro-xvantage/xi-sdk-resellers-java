@@ -48,7 +48,7 @@ import xiresellers.client.JSON;
 /**
  * FreightResponseFreightEstimateResponseDistributionInnerCarrierListInner
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2025-10-08T06:24:36.592477760Z[Etc/UTC]", comments = "Generator version: 7.14.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2025-10-08T08:12:07.443855968Z[Etc/UTC]", comments = "Generator version: 7.14.0")
 public class FreightResponseFreightEstimateResponseDistributionInnerCarrierListInner {
   public static final String SERIALIZED_NAME_CARRIER_CODE = "carrierCode";
   @SerializedName(SERIALIZED_NAME_CARRIER_CODE)

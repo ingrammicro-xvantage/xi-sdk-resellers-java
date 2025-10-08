@@ -19499,6 +19499,7 @@ components:
         planID:
           description: The ID of the subscription plan.
           type: integer
+      type: object
     VendorRequiredInforesponse_responseMessages_inner:
       example:
         traceId: traceId

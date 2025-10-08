@@ -53,7 +53,7 @@ import xiresellers.client.JSON;
 /**
  * PriceAndAvailabilityResponseInnerDiscountsInner
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2025-10-08T06:24:36.592477760Z[Etc/UTC]", comments = "Generator version: 7.14.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2025-10-08T08:12:07.443855968Z[Etc/UTC]", comments = "Generator version: 7.14.0")
 public class PriceAndAvailabilityResponseInnerDiscountsInner {
   public static final String SERIALIZED_NAME_SPECIAL_PRICING = "specialPricing";
   @SerializedName(SERIALIZED_NAME_SPECIAL_PRICING)
