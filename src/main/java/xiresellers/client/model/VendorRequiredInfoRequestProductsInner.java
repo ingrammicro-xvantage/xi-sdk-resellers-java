@@ -48,7 +48,7 @@ import xiresellers.client.JSON;
 /**
  * VendorRequiredInfoRequestProductsInner
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2025-10-08T08:12:07.443855968Z[Etc/UTC]", comments = "Generator version: 7.14.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2025-10-08T08:55:50.819362151Z[Etc/UTC]", comments = "Generator version: 7.14.0")
 public class VendorRequiredInfoRequestProductsInner {
   public static final String SERIALIZED_NAME_INGRAM_PART_NUMBER = "ingramPartNumber";
   @SerializedName(SERIALIZED_NAME_INGRAM_PART_NUMBER)
@@ -63,7 +63,7 @@ public class VendorRequiredInfoRequestProductsInner {
   public static final String SERIALIZED_NAME_PLAN_I_D = "planID";
   @SerializedName(SERIALIZED_NAME_PLAN_I_D)
   @javax.annotation.Nullable
-  private Integer planID;
+  private String planID;
 
   public VendorRequiredInfoRequestProductsInner() {
   }
@@ -106,7 +106,7 @@ public class VendorRequiredInfoRequestProductsInner {
   }
 
 
-  public VendorRequiredInfoRequestProductsInner planID(@javax.annotation.Nullable Integer planID) {
+  public VendorRequiredInfoRequestProductsInner planID(@javax.annotation.Nullable String planID) {
     this.planID = planID;
     return this;
   }
@@ -116,11 +116,11 @@ public class VendorRequiredInfoRequestProductsInner {
    * @return planID
    */
   @javax.annotation.Nullable
-  public Integer getPlanID() {
+  public String getPlanID() {
     return planID;
   }
 
-  public void setPlanID(@javax.annotation.Nullable Integer planID) {
+  public void setPlanID(@javax.annotation.Nullable String planID) {
     this.planID = planID;
   }
 
@@ -205,6 +205,9 @@ public class VendorRequiredInfoRequestProductsInner {
       }
       if ((jsonObj.get("vendorPartNumber") != null && !jsonObj.get("vendorPartNumber").isJsonNull()) && !jsonObj.get("vendorPartNumber").isJsonPrimitive()) {
         throw new IllegalArgumentException(String.format("Expected the field `vendorPartNumber` to be a primitive type in the JSON string but got `%s`", jsonObj.get("vendorPartNumber").toString()));
+      }
+      if ((jsonObj.get("planID") != null && !jsonObj.get("planID").isJsonNull()) && !jsonObj.get("planID").isJsonPrimitive()) {
+        throw new IllegalArgumentException(String.format("Expected the field `planID` to be a primitive type in the JSON string but got `%s`", jsonObj.get("planID").toString()));
       }
   }
 
