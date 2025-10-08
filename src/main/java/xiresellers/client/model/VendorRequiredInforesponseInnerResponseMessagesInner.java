@@ -46,10 +46,10 @@ import java.util.Set;
 import xiresellers.client.JSON;
 
 /**
- * VendorRequiredInforesponseResponseMessagesInner
+ * VendorRequiredInforesponseInnerResponseMessagesInner
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2025-10-08T08:55:50.819362151Z[Etc/UTC]", comments = "Generator version: 7.14.0")
-public class VendorRequiredInforesponseResponseMessagesInner {
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2025-10-08T10:03:08.517274592Z[Etc/UTC]", comments = "Generator version: 7.14.0")
+public class VendorRequiredInforesponseInnerResponseMessagesInner {
   public static final String SERIALIZED_NAME_ID = "id";
   @SerializedName(SERIALIZED_NAME_ID)
   @javax.annotation.Nullable
@@ -70,10 +70,10 @@ public class VendorRequiredInforesponseResponseMessagesInner {
   @javax.annotation.Nullable
   private String message;
 
-  public VendorRequiredInforesponseResponseMessagesInner() {
+  public VendorRequiredInforesponseInnerResponseMessagesInner() {
   }
 
-  public VendorRequiredInforesponseResponseMessagesInner id(@javax.annotation.Nullable String id) {
+  public VendorRequiredInforesponseInnerResponseMessagesInner id(@javax.annotation.Nullable String id) {
     this.id = id;
     return this;
   }
@@ -92,7 +92,7 @@ public class VendorRequiredInforesponseResponseMessagesInner {
   }
 
 
-  public VendorRequiredInforesponseResponseMessagesInner traceId(@javax.annotation.Nullable String traceId) {
+  public VendorRequiredInforesponseInnerResponseMessagesInner traceId(@javax.annotation.Nullable String traceId) {
     this.traceId = traceId;
     return this;
   }
@@ -111,7 +111,7 @@ public class VendorRequiredInforesponseResponseMessagesInner {
   }
 
 
-  public VendorRequiredInforesponseResponseMessagesInner type(@javax.annotation.Nullable String type) {
+  public VendorRequiredInforesponseInnerResponseMessagesInner type(@javax.annotation.Nullable String type) {
     this.type = type;
     return this;
   }
@@ -130,7 +130,7 @@ public class VendorRequiredInforesponseResponseMessagesInner {
   }
 
 
-  public VendorRequiredInforesponseResponseMessagesInner message(@javax.annotation.Nullable String message) {
+  public VendorRequiredInforesponseInnerResponseMessagesInner message(@javax.annotation.Nullable String message) {
     this.message = message;
     return this;
   }
@@ -158,11 +158,11 @@ public class VendorRequiredInforesponseResponseMessagesInner {
     if (o == null || getClass() != o.getClass()) {
       return false;
     }
-    VendorRequiredInforesponseResponseMessagesInner vendorRequiredInforesponseResponseMessagesInner = (VendorRequiredInforesponseResponseMessagesInner) o;
-    return Objects.equals(this.id, vendorRequiredInforesponseResponseMessagesInner.id) &&
-        Objects.equals(this.traceId, vendorRequiredInforesponseResponseMessagesInner.traceId) &&
-        Objects.equals(this.type, vendorRequiredInforesponseResponseMessagesInner.type) &&
-        Objects.equals(this.message, vendorRequiredInforesponseResponseMessagesInner.message);
+    VendorRequiredInforesponseInnerResponseMessagesInner vendorRequiredInforesponseInnerResponseMessagesInner = (VendorRequiredInforesponseInnerResponseMessagesInner) o;
+    return Objects.equals(this.id, vendorRequiredInforesponseInnerResponseMessagesInner.id) &&
+        Objects.equals(this.traceId, vendorRequiredInforesponseInnerResponseMessagesInner.traceId) &&
+        Objects.equals(this.type, vendorRequiredInforesponseInnerResponseMessagesInner.type) &&
+        Objects.equals(this.message, vendorRequiredInforesponseInnerResponseMessagesInner.message);
   }
 
   @Override
@@ -173,7 +173,7 @@ public class VendorRequiredInforesponseResponseMessagesInner {
   @Override
   public String toString() {
     StringBuilder sb = new StringBuilder();
-    sb.append("class VendorRequiredInforesponseResponseMessagesInner {\n");
+    sb.append("class VendorRequiredInforesponseInnerResponseMessagesInner {\n");
     sb.append("    id: ").append(toIndentedString(id)).append("\n");
     sb.append("    traceId: ").append(toIndentedString(traceId)).append("\n");
     sb.append("    type: ").append(toIndentedString(type)).append("\n");
@@ -209,20 +209,20 @@ public class VendorRequiredInforesponseResponseMessagesInner {
    * Validates the JSON Element and throws an exception if issues found
    *
    * @param jsonElement JSON Element
-   * @throws IOException if the JSON Element is invalid with respect to VendorRequiredInforesponseResponseMessagesInner
+   * @throws IOException if the JSON Element is invalid with respect to VendorRequiredInforesponseInnerResponseMessagesInner
    */
   public static void validateJsonElement(JsonElement jsonElement) throws IOException {
       if (jsonElement == null) {
-        if (!VendorRequiredInforesponseResponseMessagesInner.openapiRequiredFields.isEmpty()) { // has required fields but JSON element is null
-          throw new IllegalArgumentException(String.format("The required field(s) %s in VendorRequiredInforesponseResponseMessagesInner is not found in the empty JSON string", VendorRequiredInforesponseResponseMessagesInner.openapiRequiredFields.toString()));
+        if (!VendorRequiredInforesponseInnerResponseMessagesInner.openapiRequiredFields.isEmpty()) { // has required fields but JSON element is null
+          throw new IllegalArgumentException(String.format("The required field(s) %s in VendorRequiredInforesponseInnerResponseMessagesInner is not found in the empty JSON string", VendorRequiredInforesponseInnerResponseMessagesInner.openapiRequiredFields.toString()));
         }
       }
 
       Set<Map.Entry<String, JsonElement>> entries = jsonElement.getAsJsonObject().entrySet();
       // check to see if the JSON string contains additional fields
       for (Map.Entry<String, JsonElement> entry : entries) {
-        if (!VendorRequiredInforesponseResponseMessagesInner.openapiFields.contains(entry.getKey())) {
-          throw new IllegalArgumentException(String.format("The field `%s` in the JSON string is not defined in the `VendorRequiredInforesponseResponseMessagesInner` properties. JSON: %s", entry.getKey(), jsonElement.toString()));
+        if (!VendorRequiredInforesponseInnerResponseMessagesInner.openapiFields.contains(entry.getKey())) {
+          throw new IllegalArgumentException(String.format("The field `%s` in the JSON string is not defined in the `VendorRequiredInforesponseInnerResponseMessagesInner` properties. JSON: %s", entry.getKey(), jsonElement.toString()));
         }
       }
         JsonObject jsonObj = jsonElement.getAsJsonObject();
@@ -244,22 +244,22 @@ public class VendorRequiredInforesponseResponseMessagesInner {
     @SuppressWarnings("unchecked")
     @Override
     public <T> TypeAdapter<T> create(Gson gson, TypeToken<T> type) {
-       if (!VendorRequiredInforesponseResponseMessagesInner.class.isAssignableFrom(type.getRawType())) {
-         return null; // this class only serializes 'VendorRequiredInforesponseResponseMessagesInner' and its subtypes
+       if (!VendorRequiredInforesponseInnerResponseMessagesInner.class.isAssignableFrom(type.getRawType())) {
+         return null; // this class only serializes 'VendorRequiredInforesponseInnerResponseMessagesInner' and its subtypes
        }
        final TypeAdapter<JsonElement> elementAdapter = gson.getAdapter(JsonElement.class);
-       final TypeAdapter<VendorRequiredInforesponseResponseMessagesInner> thisAdapter
-                        = gson.getDelegateAdapter(this, TypeToken.get(VendorRequiredInforesponseResponseMessagesInner.class));
+       final TypeAdapter<VendorRequiredInforesponseInnerResponseMessagesInner> thisAdapter
+                        = gson.getDelegateAdapter(this, TypeToken.get(VendorRequiredInforesponseInnerResponseMessagesInner.class));
 
-       return (TypeAdapter<T>) new TypeAdapter<VendorRequiredInforesponseResponseMessagesInner>() {
+       return (TypeAdapter<T>) new TypeAdapter<VendorRequiredInforesponseInnerResponseMessagesInner>() {
            @Override
-           public void write(JsonWriter out, VendorRequiredInforesponseResponseMessagesInner value) throws IOException {
+           public void write(JsonWriter out, VendorRequiredInforesponseInnerResponseMessagesInner value) throws IOException {
              JsonObject obj = thisAdapter.toJsonTree(value).getAsJsonObject();
              elementAdapter.write(out, obj);
            }
 
            @Override
-           public VendorRequiredInforesponseResponseMessagesInner read(JsonReader in) throws IOException {
+           public VendorRequiredInforesponseInnerResponseMessagesInner read(JsonReader in) throws IOException {
              JsonElement jsonElement = elementAdapter.read(in);
              validateJsonElement(jsonElement);
              return thisAdapter.fromJsonTree(jsonElement);
@@ -270,18 +270,18 @@ public class VendorRequiredInforesponseResponseMessagesInner {
   }
 
   /**
-   * Create an instance of VendorRequiredInforesponseResponseMessagesInner given an JSON string
+   * Create an instance of VendorRequiredInforesponseInnerResponseMessagesInner given an JSON string
    *
    * @param jsonString JSON string
-   * @return An instance of VendorRequiredInforesponseResponseMessagesInner
-   * @throws IOException if the JSON string is invalid with respect to VendorRequiredInforesponseResponseMessagesInner
+   * @return An instance of VendorRequiredInforesponseInnerResponseMessagesInner
+   * @throws IOException if the JSON string is invalid with respect to VendorRequiredInforesponseInnerResponseMessagesInner
    */
-  public static VendorRequiredInforesponseResponseMessagesInner fromJson(String jsonString) throws IOException {
-    return JSON.getGson().fromJson(jsonString, VendorRequiredInforesponseResponseMessagesInner.class);
+  public static VendorRequiredInforesponseInnerResponseMessagesInner fromJson(String jsonString) throws IOException {
+    return JSON.getGson().fromJson(jsonString, VendorRequiredInforesponseInnerResponseMessagesInner.class);
   }
 
   /**
-   * Convert an instance of VendorRequiredInforesponseResponseMessagesInner to an JSON string
+   * Convert an instance of VendorRequiredInforesponseInnerResponseMessagesInner to an JSON string
    *
    * @return JSON string
    */

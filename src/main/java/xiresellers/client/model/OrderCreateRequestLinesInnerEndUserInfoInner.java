@@ -49,7 +49,7 @@ import xiresellers.client.JSON;
 /**
  * OrderCreateRequestLinesInnerEndUserInfoInner
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2025-10-08T08:55:50.819362151Z[Etc/UTC]", comments = "Generator version: 7.14.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2025-10-08T10:03:08.517274592Z[Etc/UTC]", comments = "Generator version: 7.14.0")
 public class OrderCreateRequestLinesInnerEndUserInfoInner {
   public static final String SERIALIZED_NAME_END_USER_TYPE = "endUserType";
   @SerializedName(SERIALIZED_NAME_END_USER_TYPE)

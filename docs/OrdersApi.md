@@ -536,7 +536,7 @@ public class Example {
 
 <a id="vendorRequiredInfo"></a>
 # **vendorRequiredInfo**
-> VendorRequiredInforesponse vendorRequiredInfo(imCustomerNumber, imCorrelationID, imCountryCode, imSenderID, vendorRequiredInfoRequest)
+> List&lt;VendorRequiredInforesponseInner&gt; vendorRequiredInfo(imCustomerNumber, imCorrelationID, imCountryCode, imSenderID, vendorRequiredInfoRequest)
 
 Vendor Required Info
 
@@ -568,7 +568,7 @@ public class Example {
     String imSenderID = "MyCompany"; // String | Unique value used to identify the sender of the transaction. 
     VendorRequiredInfoRequest vendorRequiredInfoRequest = new VendorRequiredInfoRequest(); // VendorRequiredInfoRequest | 
     try {
-      VendorRequiredInforesponse result = apiInstance.vendorRequiredInfo(imCustomerNumber, imCorrelationID, imCountryCode, imSenderID, vendorRequiredInfoRequest);
+      List<VendorRequiredInforesponseInner> result = apiInstance.vendorRequiredInfo(imCustomerNumber, imCorrelationID, imCountryCode, imSenderID, vendorRequiredInfoRequest);
       System.out.println(result);
     } catch (ApiException e) {
       System.err.println("Exception when calling OrdersApi#vendorRequiredInfo");
@@ -593,7 +593,7 @@ public class Example {
 
 ### Return type
 
-[**VendorRequiredInforesponse**](VendorRequiredInforesponse.md)
+[**List&lt;VendorRequiredInforesponseInner&gt;**](VendorRequiredInforesponseInner.md)
 
 ### Authorization
 

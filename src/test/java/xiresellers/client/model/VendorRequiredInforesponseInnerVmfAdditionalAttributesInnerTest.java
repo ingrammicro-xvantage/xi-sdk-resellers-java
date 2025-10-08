@@ -22,22 +22,22 @@ import java.io.IOException;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
-import xiresellers.client.model.VendorRequiredInforesponseVmfAdditionalAttributesInnerAdditionalAttributesInner;
+import xiresellers.client.model.VendorRequiredInforesponseInnerVmfAdditionalAttributesInnerAdditionalAttributesInner;
 import org.junit.jupiter.api.Disabled;
 import org.junit.jupiter.api.Test;
 
 /**
- * Model tests for VendorRequiredInforesponseVmfAdditionalAttributesInner
+ * Model tests for VendorRequiredInforesponseInnerVmfAdditionalAttributesInner
  */
-public class VendorRequiredInforesponseVmfAdditionalAttributesInnerTest {
-    private final VendorRequiredInforesponseVmfAdditionalAttributesInner model = new VendorRequiredInforesponseVmfAdditionalAttributesInner();
+public class VendorRequiredInforesponseInnerVmfAdditionalAttributesInnerTest {
+    private final VendorRequiredInforesponseInnerVmfAdditionalAttributesInner model = new VendorRequiredInforesponseInnerVmfAdditionalAttributesInner();
 
     /**
-     * Model tests for VendorRequiredInforesponseVmfAdditionalAttributesInner
+     * Model tests for VendorRequiredInforesponseInnerVmfAdditionalAttributesInner
      */
     @Test
-    public void testVendorRequiredInforesponseVmfAdditionalAttributesInner() {
-        // TODO: test VendorRequiredInforesponseVmfAdditionalAttributesInner
+    public void testVendorRequiredInforesponseInnerVmfAdditionalAttributesInner() {
+        // TODO: test VendorRequiredInforesponseInnerVmfAdditionalAttributesInner
     }
 
     /**

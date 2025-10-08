@@ -42,7 +42,7 @@ import xiresellers.client.model.OrderSearchResponse;
 import xiresellers.client.model.PostCreateorderV7400Response;
 import xiresellers.client.model.PostCreateorderV7500Response;
 import xiresellers.client.model.VendorRequiredInfoRequest;
-import xiresellers.client.model.VendorRequiredInforesponse;
+import xiresellers.client.model.VendorRequiredInforesponseInner;
 
 import java.lang.reflect.Type;
 import java.util.ArrayList;
@@ -1555,7 +1555,7 @@ public class OrdersApi {
      * @param imCountryCode Two-character ISO country code. (required)
      * @param imSenderID Unique value used to identify the sender of the transaction.  (required)
      * @param vendorRequiredInfoRequest  (optional)
-     * @return VendorRequiredInforesponse
+     * @return List&lt;VendorRequiredInforesponseInner&gt;
      * @throws ApiException If fail to call the API, e.g. server error or cannot deserialize the response body
      * @http.response.details
      <table border="1">
@@ -1564,8 +1564,8 @@ public class OrdersApi {
         <tr><td> 200 </td><td> Ok </td><td>  -  </td></tr>
      </table>
      */
-    public VendorRequiredInforesponse vendorRequiredInfo(@javax.annotation.Nonnull String imCustomerNumber, @javax.annotation.Nonnull String imCorrelationID, @javax.annotation.Nonnull String imCountryCode, @javax.annotation.Nonnull String imSenderID, @javax.annotation.Nullable VendorRequiredInfoRequest vendorRequiredInfoRequest) throws ApiException {
-        ApiResponse<VendorRequiredInforesponse> localVarResp = vendorRequiredInfoWithHttpInfo(imCustomerNumber, imCorrelationID, imCountryCode, imSenderID, vendorRequiredInfoRequest);
+    public List<VendorRequiredInforesponseInner> vendorRequiredInfo(@javax.annotation.Nonnull String imCustomerNumber, @javax.annotation.Nonnull String imCorrelationID, @javax.annotation.Nonnull String imCountryCode, @javax.annotation.Nonnull String imSenderID, @javax.annotation.Nullable VendorRequiredInfoRequest vendorRequiredInfoRequest) throws ApiException {
+        ApiResponse<List<VendorRequiredInforesponseInner>> localVarResp = vendorRequiredInfoWithHttpInfo(imCustomerNumber, imCorrelationID, imCountryCode, imSenderID, vendorRequiredInfoRequest);
         return localVarResp.getData();
     }
 
@@ -1577,7 +1577,7 @@ public class OrdersApi {
      * @param imCountryCode Two-character ISO country code. (required)
      * @param imSenderID Unique value used to identify the sender of the transaction.  (required)
      * @param vendorRequiredInfoRequest  (optional)
-     * @return ApiResponse&lt;VendorRequiredInforesponse&gt;
+     * @return ApiResponse&lt;List&lt;VendorRequiredInforesponseInner&gt;&gt;
      * @throws ApiException If fail to call the API, e.g. server error or cannot deserialize the response body
      * @http.response.details
      <table border="1">
@@ -1586,9 +1586,9 @@ public class OrdersApi {
         <tr><td> 200 </td><td> Ok </td><td>  -  </td></tr>
      </table>
      */
-    public ApiResponse<VendorRequiredInforesponse> vendorRequiredInfoWithHttpInfo(@javax.annotation.Nonnull String imCustomerNumber, @javax.annotation.Nonnull String imCorrelationID, @javax.annotation.Nonnull String imCountryCode, @javax.annotation.Nonnull String imSenderID, @javax.annotation.Nullable VendorRequiredInfoRequest vendorRequiredInfoRequest) throws ApiException {
+    public ApiResponse<List<VendorRequiredInforesponseInner>> vendorRequiredInfoWithHttpInfo(@javax.annotation.Nonnull String imCustomerNumber, @javax.annotation.Nonnull String imCorrelationID, @javax.annotation.Nonnull String imCountryCode, @javax.annotation.Nonnull String imSenderID, @javax.annotation.Nullable VendorRequiredInfoRequest vendorRequiredInfoRequest) throws ApiException {
         okhttp3.Call localVarCall = vendorRequiredInfoValidateBeforeCall(imCustomerNumber, imCorrelationID, imCountryCode, imSenderID, vendorRequiredInfoRequest, null);
-        Type localVarReturnType = new TypeToken<VendorRequiredInforesponse>(){}.getType();
+        Type localVarReturnType = new TypeToken<List<VendorRequiredInforesponseInner>>(){}.getType();
         return localVarApiClient.execute(localVarCall, localVarReturnType);
     }
 
@@ -1610,10 +1610,10 @@ public class OrdersApi {
         <tr><td> 200 </td><td> Ok </td><td>  -  </td></tr>
      </table>
      */
-    public okhttp3.Call vendorRequiredInfoAsync(@javax.annotation.Nonnull String imCustomerNumber, @javax.annotation.Nonnull String imCorrelationID, @javax.annotation.Nonnull String imCountryCode, @javax.annotation.Nonnull String imSenderID, @javax.annotation.Nullable VendorRequiredInfoRequest vendorRequiredInfoRequest, final ApiCallback<VendorRequiredInforesponse> _callback) throws ApiException {
+    public okhttp3.Call vendorRequiredInfoAsync(@javax.annotation.Nonnull String imCustomerNumber, @javax.annotation.Nonnull String imCorrelationID, @javax.annotation.Nonnull String imCountryCode, @javax.annotation.Nonnull String imSenderID, @javax.annotation.Nullable VendorRequiredInfoRequest vendorRequiredInfoRequest, final ApiCallback<List<VendorRequiredInforesponseInner>> _callback) throws ApiException {
 
         okhttp3.Call localVarCall = vendorRequiredInfoValidateBeforeCall(imCustomerNumber, imCorrelationID, imCountryCode, imSenderID, vendorRequiredInfoRequest, _callback);
-        Type localVarReturnType = new TypeToken<VendorRequiredInforesponse>(){}.getType();
+        Type localVarReturnType = new TypeToken<List<VendorRequiredInforesponseInner>>(){}.getType();
         localVarApiClient.executeAsync(localVarCall, localVarReturnType, _callback);
         return localVarCall;
     }

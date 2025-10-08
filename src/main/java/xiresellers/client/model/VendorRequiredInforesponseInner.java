@@ -23,9 +23,9 @@ import java.io.IOException;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
-import xiresellers.client.model.VendorRequiredInforesponseResponseMessagesInner;
-import xiresellers.client.model.VendorRequiredInforesponseVmfAdditionalAttributesInner;
-import xiresellers.client.model.VendorRequiredInforesponseVmfAdditionalAttributesInnerAdditionalAttributesInner;
+import xiresellers.client.model.VendorRequiredInforesponseInnerResponseMessagesInner;
+import xiresellers.client.model.VendorRequiredInforesponseInnerVmfAdditionalAttributesInner;
+import xiresellers.client.model.VendorRequiredInforesponseInnerVmfAdditionalAttributesInnerAdditionalAttributesInner;
 
 import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
@@ -51,10 +51,10 @@ import java.util.Set;
 import xiresellers.client.JSON;
 
 /**
- * VendorRequiredInforesponse
+ * VendorRequiredInforesponseInner
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2025-10-08T08:55:50.819362151Z[Etc/UTC]", comments = "Generator version: 7.14.0")
-public class VendorRequiredInforesponse {
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2025-10-08T10:03:08.517274592Z[Etc/UTC]", comments = "Generator version: 7.14.0")
+public class VendorRequiredInforesponseInner {
   public static final String SERIALIZED_NAME_QUOTE_NUMBER = "quoteNumber";
   @SerializedName(SERIALIZED_NAME_QUOTE_NUMBER)
   @javax.annotation.Nullable
@@ -83,22 +83,22 @@ public class VendorRequiredInforesponse {
   public static final String SERIALIZED_NAME_RESPONSE_MESSAGES = "responseMessages";
   @SerializedName(SERIALIZED_NAME_RESPONSE_MESSAGES)
   @javax.annotation.Nullable
-  private List<VendorRequiredInforesponseResponseMessagesInner> responseMessages = new ArrayList<>();
+  private List<VendorRequiredInforesponseInnerResponseMessagesInner> responseMessages = new ArrayList<>();
 
   public static final String SERIALIZED_NAME_VMF_ADDITIONAL_ATTRIBUTES = "vmfAdditionalAttributes";
   @SerializedName(SERIALIZED_NAME_VMF_ADDITIONAL_ATTRIBUTES)
   @javax.annotation.Nullable
-  private List<VendorRequiredInforesponseVmfAdditionalAttributesInner> vmfAdditionalAttributes = new ArrayList<>();
+  private List<VendorRequiredInforesponseInnerVmfAdditionalAttributesInner> vmfAdditionalAttributes = new ArrayList<>();
 
   public static final String SERIALIZED_NAME_VRI_ADDITIONAL_ATTRIBUTES = "vriAdditionalAttributes";
   @SerializedName(SERIALIZED_NAME_VRI_ADDITIONAL_ATTRIBUTES)
   @javax.annotation.Nullable
-  private List<VendorRequiredInforesponseVmfAdditionalAttributesInnerAdditionalAttributesInner> vriAdditionalAttributes = new ArrayList<>();
+  private List<VendorRequiredInforesponseInnerVmfAdditionalAttributesInnerAdditionalAttributesInner> vriAdditionalAttributes = new ArrayList<>();
 
-  public VendorRequiredInforesponse() {
+  public VendorRequiredInforesponseInner() {
   }
 
-  public VendorRequiredInforesponse quoteNumber(@javax.annotation.Nullable String quoteNumber) {
+  public VendorRequiredInforesponseInner quoteNumber(@javax.annotation.Nullable String quoteNumber) {
     this.quoteNumber = quoteNumber;
     return this;
   }
@@ -117,7 +117,7 @@ public class VendorRequiredInforesponse {
   }
 
 
-  public VendorRequiredInforesponse ingramPartNumber(@javax.annotation.Nullable String ingramPartNumber) {
+  public VendorRequiredInforesponseInner ingramPartNumber(@javax.annotation.Nullable String ingramPartNumber) {
     this.ingramPartNumber = ingramPartNumber;
     return this;
   }
@@ -136,7 +136,7 @@ public class VendorRequiredInforesponse {
   }
 
 
-  public VendorRequiredInforesponse vendorPartNumber(@javax.annotation.Nullable String vendorPartNumber) {
+  public VendorRequiredInforesponseInner vendorPartNumber(@javax.annotation.Nullable String vendorPartNumber) {
     this.vendorPartNumber = vendorPartNumber;
     return this;
   }
@@ -155,7 +155,7 @@ public class VendorRequiredInforesponse {
   }
 
 
-  public VendorRequiredInforesponse planId(@javax.annotation.Nullable String planId) {
+  public VendorRequiredInforesponseInner planId(@javax.annotation.Nullable String planId) {
     this.planId = planId;
     return this;
   }
@@ -174,7 +174,7 @@ public class VendorRequiredInforesponse {
   }
 
 
-  public VendorRequiredInforesponse planName(@javax.annotation.Nullable String planName) {
+  public VendorRequiredInforesponseInner planName(@javax.annotation.Nullable String planName) {
     this.planName = planName;
     return this;
   }
@@ -193,12 +193,12 @@ public class VendorRequiredInforesponse {
   }
 
 
-  public VendorRequiredInforesponse responseMessages(@javax.annotation.Nullable List<VendorRequiredInforesponseResponseMessagesInner> responseMessages) {
+  public VendorRequiredInforesponseInner responseMessages(@javax.annotation.Nullable List<VendorRequiredInforesponseInnerResponseMessagesInner> responseMessages) {
     this.responseMessages = responseMessages;
     return this;
   }
 
-  public VendorRequiredInforesponse addResponseMessagesItem(VendorRequiredInforesponseResponseMessagesInner responseMessagesItem) {
+  public VendorRequiredInforesponseInner addResponseMessagesItem(VendorRequiredInforesponseInnerResponseMessagesInner responseMessagesItem) {
     if (this.responseMessages == null) {
       this.responseMessages = new ArrayList<>();
     }
@@ -211,21 +211,21 @@ public class VendorRequiredInforesponse {
    * @return responseMessages
    */
   @javax.annotation.Nullable
-  public List<VendorRequiredInforesponseResponseMessagesInner> getResponseMessages() {
+  public List<VendorRequiredInforesponseInnerResponseMessagesInner> getResponseMessages() {
     return responseMessages;
   }
 
-  public void setResponseMessages(@javax.annotation.Nullable List<VendorRequiredInforesponseResponseMessagesInner> responseMessages) {
+  public void setResponseMessages(@javax.annotation.Nullable List<VendorRequiredInforesponseInnerResponseMessagesInner> responseMessages) {
     this.responseMessages = responseMessages;
   }
 
 
-  public VendorRequiredInforesponse vmfAdditionalAttributes(@javax.annotation.Nullable List<VendorRequiredInforesponseVmfAdditionalAttributesInner> vmfAdditionalAttributes) {
+  public VendorRequiredInforesponseInner vmfAdditionalAttributes(@javax.annotation.Nullable List<VendorRequiredInforesponseInnerVmfAdditionalAttributesInner> vmfAdditionalAttributes) {
     this.vmfAdditionalAttributes = vmfAdditionalAttributes;
     return this;
   }
 
-  public VendorRequiredInforesponse addVmfAdditionalAttributesItem(VendorRequiredInforesponseVmfAdditionalAttributesInner vmfAdditionalAttributesItem) {
+  public VendorRequiredInforesponseInner addVmfAdditionalAttributesItem(VendorRequiredInforesponseInnerVmfAdditionalAttributesInner vmfAdditionalAttributesItem) {
     if (this.vmfAdditionalAttributes == null) {
       this.vmfAdditionalAttributes = new ArrayList<>();
     }
@@ -238,21 +238,21 @@ public class VendorRequiredInforesponse {
    * @return vmfAdditionalAttributes
    */
   @javax.annotation.Nullable
-  public List<VendorRequiredInforesponseVmfAdditionalAttributesInner> getVmfAdditionalAttributes() {
+  public List<VendorRequiredInforesponseInnerVmfAdditionalAttributesInner> getVmfAdditionalAttributes() {
     return vmfAdditionalAttributes;
   }
 
-  public void setVmfAdditionalAttributes(@javax.annotation.Nullable List<VendorRequiredInforesponseVmfAdditionalAttributesInner> vmfAdditionalAttributes) {
+  public void setVmfAdditionalAttributes(@javax.annotation.Nullable List<VendorRequiredInforesponseInnerVmfAdditionalAttributesInner> vmfAdditionalAttributes) {
     this.vmfAdditionalAttributes = vmfAdditionalAttributes;
   }
 
 
-  public VendorRequiredInforesponse vriAdditionalAttributes(@javax.annotation.Nullable List<VendorRequiredInforesponseVmfAdditionalAttributesInnerAdditionalAttributesInner> vriAdditionalAttributes) {
+  public VendorRequiredInforesponseInner vriAdditionalAttributes(@javax.annotation.Nullable List<VendorRequiredInforesponseInnerVmfAdditionalAttributesInnerAdditionalAttributesInner> vriAdditionalAttributes) {
     this.vriAdditionalAttributes = vriAdditionalAttributes;
     return this;
   }
 
-  public VendorRequiredInforesponse addVriAdditionalAttributesItem(VendorRequiredInforesponseVmfAdditionalAttributesInnerAdditionalAttributesInner vriAdditionalAttributesItem) {
+  public VendorRequiredInforesponseInner addVriAdditionalAttributesItem(VendorRequiredInforesponseInnerVmfAdditionalAttributesInnerAdditionalAttributesInner vriAdditionalAttributesItem) {
     if (this.vriAdditionalAttributes == null) {
       this.vriAdditionalAttributes = new ArrayList<>();
     }
@@ -265,11 +265,11 @@ public class VendorRequiredInforesponse {
    * @return vriAdditionalAttributes
    */
   @javax.annotation.Nullable
-  public List<VendorRequiredInforesponseVmfAdditionalAttributesInnerAdditionalAttributesInner> getVriAdditionalAttributes() {
+  public List<VendorRequiredInforesponseInnerVmfAdditionalAttributesInnerAdditionalAttributesInner> getVriAdditionalAttributes() {
     return vriAdditionalAttributes;
   }
 
-  public void setVriAdditionalAttributes(@javax.annotation.Nullable List<VendorRequiredInforesponseVmfAdditionalAttributesInnerAdditionalAttributesInner> vriAdditionalAttributes) {
+  public void setVriAdditionalAttributes(@javax.annotation.Nullable List<VendorRequiredInforesponseInnerVmfAdditionalAttributesInnerAdditionalAttributesInner> vriAdditionalAttributes) {
     this.vriAdditionalAttributes = vriAdditionalAttributes;
   }
 
@@ -283,15 +283,15 @@ public class VendorRequiredInforesponse {
     if (o == null || getClass() != o.getClass()) {
       return false;
     }
-    VendorRequiredInforesponse vendorRequiredInforesponse = (VendorRequiredInforesponse) o;
-    return Objects.equals(this.quoteNumber, vendorRequiredInforesponse.quoteNumber) &&
-        Objects.equals(this.ingramPartNumber, vendorRequiredInforesponse.ingramPartNumber) &&
-        Objects.equals(this.vendorPartNumber, vendorRequiredInforesponse.vendorPartNumber) &&
-        Objects.equals(this.planId, vendorRequiredInforesponse.planId) &&
-        Objects.equals(this.planName, vendorRequiredInforesponse.planName) &&
-        Objects.equals(this.responseMessages, vendorRequiredInforesponse.responseMessages) &&
-        Objects.equals(this.vmfAdditionalAttributes, vendorRequiredInforesponse.vmfAdditionalAttributes) &&
-        Objects.equals(this.vriAdditionalAttributes, vendorRequiredInforesponse.vriAdditionalAttributes);
+    VendorRequiredInforesponseInner vendorRequiredInforesponseInner = (VendorRequiredInforesponseInner) o;
+    return Objects.equals(this.quoteNumber, vendorRequiredInforesponseInner.quoteNumber) &&
+        Objects.equals(this.ingramPartNumber, vendorRequiredInforesponseInner.ingramPartNumber) &&
+        Objects.equals(this.vendorPartNumber, vendorRequiredInforesponseInner.vendorPartNumber) &&
+        Objects.equals(this.planId, vendorRequiredInforesponseInner.planId) &&
+        Objects.equals(this.planName, vendorRequiredInforesponseInner.planName) &&
+        Objects.equals(this.responseMessages, vendorRequiredInforesponseInner.responseMessages) &&
+        Objects.equals(this.vmfAdditionalAttributes, vendorRequiredInforesponseInner.vmfAdditionalAttributes) &&
+        Objects.equals(this.vriAdditionalAttributes, vendorRequiredInforesponseInner.vriAdditionalAttributes);
   }
 
   @Override
@@ -302,7 +302,7 @@ public class VendorRequiredInforesponse {
   @Override
   public String toString() {
     StringBuilder sb = new StringBuilder();
-    sb.append("class VendorRequiredInforesponse {\n");
+    sb.append("class VendorRequiredInforesponseInner {\n");
     sb.append("    quoteNumber: ").append(toIndentedString(quoteNumber)).append("\n");
     sb.append("    ingramPartNumber: ").append(toIndentedString(ingramPartNumber)).append("\n");
     sb.append("    vendorPartNumber: ").append(toIndentedString(vendorPartNumber)).append("\n");
@@ -342,20 +342,20 @@ public class VendorRequiredInforesponse {
    * Validates the JSON Element and throws an exception if issues found
    *
    * @param jsonElement JSON Element
-   * @throws IOException if the JSON Element is invalid with respect to VendorRequiredInforesponse
+   * @throws IOException if the JSON Element is invalid with respect to VendorRequiredInforesponseInner
    */
   public static void validateJsonElement(JsonElement jsonElement) throws IOException {
       if (jsonElement == null) {
-        if (!VendorRequiredInforesponse.openapiRequiredFields.isEmpty()) { // has required fields but JSON element is null
-          throw new IllegalArgumentException(String.format("The required field(s) %s in VendorRequiredInforesponse is not found in the empty JSON string", VendorRequiredInforesponse.openapiRequiredFields.toString()));
+        if (!VendorRequiredInforesponseInner.openapiRequiredFields.isEmpty()) { // has required fields but JSON element is null
+          throw new IllegalArgumentException(String.format("The required field(s) %s in VendorRequiredInforesponseInner is not found in the empty JSON string", VendorRequiredInforesponseInner.openapiRequiredFields.toString()));
         }
       }
 
       Set<Map.Entry<String, JsonElement>> entries = jsonElement.getAsJsonObject().entrySet();
       // check to see if the JSON string contains additional fields
       for (Map.Entry<String, JsonElement> entry : entries) {
-        if (!VendorRequiredInforesponse.openapiFields.contains(entry.getKey())) {
-          throw new IllegalArgumentException(String.format("The field `%s` in the JSON string is not defined in the `VendorRequiredInforesponse` properties. JSON: %s", entry.getKey(), jsonElement.toString()));
+        if (!VendorRequiredInforesponseInner.openapiFields.contains(entry.getKey())) {
+          throw new IllegalArgumentException(String.format("The field `%s` in the JSON string is not defined in the `VendorRequiredInforesponseInner` properties. JSON: %s", entry.getKey(), jsonElement.toString()));
         }
       }
         JsonObject jsonObj = jsonElement.getAsJsonObject();
@@ -384,7 +384,7 @@ public class VendorRequiredInforesponse {
 
           // validate the optional field `responseMessages` (array)
           for (int i = 0; i < jsonArrayresponseMessages.size(); i++) {
-            VendorRequiredInforesponseResponseMessagesInner.validateJsonElement(jsonArrayresponseMessages.get(i));
+            VendorRequiredInforesponseInnerResponseMessagesInner.validateJsonElement(jsonArrayresponseMessages.get(i));
           };
         }
       }
@@ -398,7 +398,7 @@ public class VendorRequiredInforesponse {
 
           // validate the optional field `vmfAdditionalAttributes` (array)
           for (int i = 0; i < jsonArrayvmfAdditionalAttributes.size(); i++) {
-            VendorRequiredInforesponseVmfAdditionalAttributesInner.validateJsonElement(jsonArrayvmfAdditionalAttributes.get(i));
+            VendorRequiredInforesponseInnerVmfAdditionalAttributesInner.validateJsonElement(jsonArrayvmfAdditionalAttributes.get(i));
           };
         }
       }
@@ -412,7 +412,7 @@ public class VendorRequiredInforesponse {
 
           // validate the optional field `vriAdditionalAttributes` (array)
           for (int i = 0; i < jsonArrayvriAdditionalAttributes.size(); i++) {
-            VendorRequiredInforesponseVmfAdditionalAttributesInnerAdditionalAttributesInner.validateJsonElement(jsonArrayvriAdditionalAttributes.get(i));
+            VendorRequiredInforesponseInnerVmfAdditionalAttributesInnerAdditionalAttributesInner.validateJsonElement(jsonArrayvriAdditionalAttributes.get(i));
           };
         }
       }
@@ -422,22 +422,22 @@ public class VendorRequiredInforesponse {
     @SuppressWarnings("unchecked")
     @Override
     public <T> TypeAdapter<T> create(Gson gson, TypeToken<T> type) {
-       if (!VendorRequiredInforesponse.class.isAssignableFrom(type.getRawType())) {
-         return null; // this class only serializes 'VendorRequiredInforesponse' and its subtypes
+       if (!VendorRequiredInforesponseInner.class.isAssignableFrom(type.getRawType())) {
+         return null; // this class only serializes 'VendorRequiredInforesponseInner' and its subtypes
        }
        final TypeAdapter<JsonElement> elementAdapter = gson.getAdapter(JsonElement.class);
-       final TypeAdapter<VendorRequiredInforesponse> thisAdapter
-                        = gson.getDelegateAdapter(this, TypeToken.get(VendorRequiredInforesponse.class));
+       final TypeAdapter<VendorRequiredInforesponseInner> thisAdapter
+                        = gson.getDelegateAdapter(this, TypeToken.get(VendorRequiredInforesponseInner.class));
 
-       return (TypeAdapter<T>) new TypeAdapter<VendorRequiredInforesponse>() {
+       return (TypeAdapter<T>) new TypeAdapter<VendorRequiredInforesponseInner>() {
            @Override
-           public void write(JsonWriter out, VendorRequiredInforesponse value) throws IOException {
+           public void write(JsonWriter out, VendorRequiredInforesponseInner value) throws IOException {
              JsonObject obj = thisAdapter.toJsonTree(value).getAsJsonObject();
              elementAdapter.write(out, obj);
            }
 
            @Override
-           public VendorRequiredInforesponse read(JsonReader in) throws IOException {
+           public VendorRequiredInforesponseInner read(JsonReader in) throws IOException {
              JsonElement jsonElement = elementAdapter.read(in);
              validateJsonElement(jsonElement);
              return thisAdapter.fromJsonTree(jsonElement);
@@ -448,18 +448,18 @@ public class VendorRequiredInforesponse {
   }
 
   /**
-   * Create an instance of VendorRequiredInforesponse given an JSON string
+   * Create an instance of VendorRequiredInforesponseInner given an JSON string
    *
    * @param jsonString JSON string
-   * @return An instance of VendorRequiredInforesponse
-   * @throws IOException if the JSON string is invalid with respect to VendorRequiredInforesponse
+   * @return An instance of VendorRequiredInforesponseInner
+   * @throws IOException if the JSON string is invalid with respect to VendorRequiredInforesponseInner
    */
-  public static VendorRequiredInforesponse fromJson(String jsonString) throws IOException {
-    return JSON.getGson().fromJson(jsonString, VendorRequiredInforesponse.class);
+  public static VendorRequiredInforesponseInner fromJson(String jsonString) throws IOException {
+    return JSON.getGson().fromJson(jsonString, VendorRequiredInforesponseInner.class);
   }
 
   /**
-   * Convert an instance of VendorRequiredInforesponse to an JSON string
+   * Convert an instance of VendorRequiredInforesponseInner to an JSON string
    *
    * @return JSON string
    */

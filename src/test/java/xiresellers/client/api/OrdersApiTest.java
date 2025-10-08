@@ -29,7 +29,7 @@ import xiresellers.client.model.OrderSearchResponse;
 import xiresellers.client.model.PostCreateorderV7400Response;
 import xiresellers.client.model.PostCreateorderV7500Response;
 import xiresellers.client.model.VendorRequiredInfoRequest;
-import xiresellers.client.model.VendorRequiredInforesponse;
+import xiresellers.client.model.VendorRequiredInforesponseInner;
 import org.junit.jupiter.api.Disabled;
 import org.junit.jupiter.api.Test;
 
@@ -194,7 +194,7 @@ public class OrdersApiTest {
         String imCountryCode = null;
         String imSenderID = null;
         VendorRequiredInfoRequest vendorRequiredInfoRequest = null;
-        VendorRequiredInforesponse response = api.vendorRequiredInfo(imCustomerNumber, imCorrelationID, imCountryCode, imSenderID, vendorRequiredInfoRequest);
+        List<VendorRequiredInforesponseInner> response = api.vendorRequiredInfo(imCustomerNumber, imCorrelationID, imCountryCode, imSenderID, vendorRequiredInfoRequest);
         // TODO: test validations
     }
 

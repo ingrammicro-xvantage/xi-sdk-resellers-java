@@ -24,17 +24,17 @@ import org.junit.jupiter.api.Disabled;
 import org.junit.jupiter.api.Test;
 
 /**
- * Model tests for VendorRequiredInforesponseResponseMessagesInner
+ * Model tests for VendorRequiredInforesponseInnerResponseMessagesInner
  */
-public class VendorRequiredInforesponseResponseMessagesInnerTest {
-    private final VendorRequiredInforesponseResponseMessagesInner model = new VendorRequiredInforesponseResponseMessagesInner();
+public class VendorRequiredInforesponseInnerResponseMessagesInnerTest {
+    private final VendorRequiredInforesponseInnerResponseMessagesInner model = new VendorRequiredInforesponseInnerResponseMessagesInner();
 
     /**
-     * Model tests for VendorRequiredInforesponseResponseMessagesInner
+     * Model tests for VendorRequiredInforesponseInnerResponseMessagesInner
      */
     @Test
-    public void testVendorRequiredInforesponseResponseMessagesInner() {
-        // TODO: test VendorRequiredInforesponseResponseMessagesInner
+    public void testVendorRequiredInforesponseInnerResponseMessagesInner() {
+        // TODO: test VendorRequiredInforesponseInnerResponseMessagesInner
     }
 
     /**

@@ -22,24 +22,24 @@ import java.io.IOException;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
-import xiresellers.client.model.VendorRequiredInforesponseResponseMessagesInner;
-import xiresellers.client.model.VendorRequiredInforesponseVmfAdditionalAttributesInner;
-import xiresellers.client.model.VendorRequiredInforesponseVmfAdditionalAttributesInnerAdditionalAttributesInner;
+import xiresellers.client.model.VendorRequiredInforesponseInnerResponseMessagesInner;
+import xiresellers.client.model.VendorRequiredInforesponseInnerVmfAdditionalAttributesInner;
+import xiresellers.client.model.VendorRequiredInforesponseInnerVmfAdditionalAttributesInnerAdditionalAttributesInner;
 import org.junit.jupiter.api.Disabled;
 import org.junit.jupiter.api.Test;
 
 /**
- * Model tests for VendorRequiredInforesponse
+ * Model tests for VendorRequiredInforesponseInner
  */
-public class VendorRequiredInforesponseTest {
-    private final VendorRequiredInforesponse model = new VendorRequiredInforesponse();
+public class VendorRequiredInforesponseInnerTest {
+    private final VendorRequiredInforesponseInner model = new VendorRequiredInforesponseInner();
 
     /**
-     * Model tests for VendorRequiredInforesponse
+     * Model tests for VendorRequiredInforesponseInner
      */
     @Test
-    public void testVendorRequiredInforesponse() {
-        // TODO: test VendorRequiredInforesponse
+    public void testVendorRequiredInforesponseInner() {
+        // TODO: test VendorRequiredInforesponseInner
     }
 
     /**

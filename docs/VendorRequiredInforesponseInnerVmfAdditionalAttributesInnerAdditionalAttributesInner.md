@@ -1,6 +1,6 @@
 
 
-# VendorRequiredInforesponseVmfAdditionalAttributesInnerAdditionalAttributesInner
+# VendorRequiredInforesponseInnerVmfAdditionalAttributesInnerAdditionalAttributesInner
 
 
 ## Properties
@@ -11,7 +11,7 @@
 |**attributeValue** | **String** | The value of the vendor mandatory field. |  [optional] |
 |**attributeDescription** | **String** | The description of the vendor mandatory field. |  [optional] |
 |**attributeHint** | **String** | The hint of the vendor mandatory field. |  [optional] |
-|**choices** | [**List&lt;VendorRequiredInforesponseVmfAdditionalAttributesInnerAdditionalAttributesInnerChoicesInner&gt;**](VendorRequiredInforesponseVmfAdditionalAttributesInnerAdditionalAttributesInnerChoicesInner.md) |  |  [optional] |
+|**choices** | [**List&lt;VendorRequiredInforesponseInnerVmfAdditionalAttributesInnerAdditionalAttributesInnerChoicesInner&gt;**](VendorRequiredInforesponseInnerVmfAdditionalAttributesInnerAdditionalAttributesInnerChoicesInner.md) |  |  [optional] |
 
 
 

@@ -1,6 +1,6 @@
 
 
-# VendorRequiredInforesponseResponseMessagesInner
+# VendorRequiredInforesponseInnerResponseMessagesInner
 
 
 ## Properties

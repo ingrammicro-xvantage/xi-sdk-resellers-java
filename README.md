@@ -2,7 +2,7 @@
 
 XI Sdk Resellers
 - API version: 1.0.0
-  - Build date: 2025-10-08T08:55:50.819362151Z[Etc/UTC]
+  - Build date: 2025-10-08T10:03:08.517274592Z[Etc/UTC]
   - Generator version: 7.14.0
 
 For Resellers seeking to innovate with Ingram Micro's API solutions, automate your eCommerce experience with our array of API's and webhooks to craft a seamless journey for your customers.
@@ -368,11 +368,11 @@ Class | Method | HTTP request | Description
  - [ValidateQuoteResponseVmfAdditionalAttributesInner](docs/ValidateQuoteResponseVmfAdditionalAttributesInner.md)
  - [VendorRequiredInfoRequest](docs/VendorRequiredInfoRequest.md)
  - [VendorRequiredInfoRequestProductsInner](docs/VendorRequiredInfoRequestProductsInner.md)
- - [VendorRequiredInforesponse](docs/VendorRequiredInforesponse.md)
- - [VendorRequiredInforesponseResponseMessagesInner](docs/VendorRequiredInforesponseResponseMessagesInner.md)
- - [VendorRequiredInforesponseVmfAdditionalAttributesInner](docs/VendorRequiredInforesponseVmfAdditionalAttributesInner.md)
- - [VendorRequiredInforesponseVmfAdditionalAttributesInnerAdditionalAttributesInner](docs/VendorRequiredInforesponseVmfAdditionalAttributesInnerAdditionalAttributesInner.md)
- - [VendorRequiredInforesponseVmfAdditionalAttributesInnerAdditionalAttributesInnerChoicesInner](docs/VendorRequiredInforesponseVmfAdditionalAttributesInnerAdditionalAttributesInnerChoicesInner.md)
+ - [VendorRequiredInforesponseInner](docs/VendorRequiredInforesponseInner.md)
+ - [VendorRequiredInforesponseInnerResponseMessagesInner](docs/VendorRequiredInforesponseInnerResponseMessagesInner.md)
+ - [VendorRequiredInforesponseInnerVmfAdditionalAttributesInner](docs/VendorRequiredInforesponseInnerVmfAdditionalAttributesInner.md)
+ - [VendorRequiredInforesponseInnerVmfAdditionalAttributesInnerAdditionalAttributesInner](docs/VendorRequiredInforesponseInnerVmfAdditionalAttributesInnerAdditionalAttributesInner.md)
+ - [VendorRequiredInforesponseInnerVmfAdditionalAttributesInnerAdditionalAttributesInnerChoicesInner](docs/VendorRequiredInforesponseInnerVmfAdditionalAttributesInnerAdditionalAttributesInnerChoicesInner.md)
 
 
 <a id="documentation-for-authorization"></a>
