@@ -54,7 +54,7 @@ import xiresellers.client.JSON;
 /**
  * PriceAndAvailabilityRequest
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2025-09-26T06:26:31.324486053Z[Etc/UTC]", comments = "Generator version: 7.14.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2025-10-08T06:24:36.592477760Z[Etc/UTC]", comments = "Generator version: 7.14.0")
 public class PriceAndAvailabilityRequest {
   public static final String SERIALIZED_NAME_SHOW_AVAILABLE_DISCOUNTS = "showAvailableDiscounts";
   @SerializedName(SERIALIZED_NAME_SHOW_AVAILABLE_DISCOUNTS)

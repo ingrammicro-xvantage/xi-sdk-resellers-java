@@ -21,7 +21,7 @@
 |**customerPartNumber** | **String** | Reseller / end-user’s part number for the product. |  [optional] |
 |**indicators** | [**ProductDetailResponseIndicators**](ProductDetailResponseIndicators.md) |  |  [optional] |
 |**ciscoFields** | [**ProductDetailResponseCiscoFields**](ProductDetailResponseCiscoFields.md) |  |  [optional] |
-|**warrantyInformation** | **List&lt;Object&gt;** | Warranty information related to the product. |  [optional] |
+|**warrantyInformation** | **List&lt;String&gt;** | Warranty codes related to the product. |  [optional] |
 |**additionalInformation** | [**ProductDetailResponseAdditionalInformation**](ProductDetailResponseAdditionalInformation.md) |  |  [optional] |
 |**subscriptionDetails** | [**List&lt;ProductDetailResponseSubscriptionDetailsInner&gt;**](ProductDetailResponseSubscriptionDetailsInner.md) | Subscription product Details |  [optional] |
 

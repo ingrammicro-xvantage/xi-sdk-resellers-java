@@ -55,7 +55,7 @@ import xiresellers.client.JSON;
 /**
  * ProductDetailResponse
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2025-09-26T06:26:31.324486053Z[Etc/UTC]", comments = "Generator version: 7.14.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2025-10-08T06:24:36.592477760Z[Etc/UTC]", comments = "Generator version: 7.14.0")
 public class ProductDetailResponse {
   public static final String SERIALIZED_NAME_INGRAM_PART_NUMBER = "ingramPartNumber";
   @SerializedName(SERIALIZED_NAME_INGRAM_PART_NUMBER)
@@ -130,7 +130,7 @@ public class ProductDetailResponse {
   public static final String SERIALIZED_NAME_WARRANTY_INFORMATION = "warrantyInformation";
   @SerializedName(SERIALIZED_NAME_WARRANTY_INFORMATION)
   @javax.annotation.Nullable
-  private List<Object> warrantyInformation = new ArrayList<>();
+  private List<String> warrantyInformation = new ArrayList<>();
 
   public static final String SERIALIZED_NAME_ADDITIONAL_INFORMATION = "additionalInformation";
   @SerializedName(SERIALIZED_NAME_ADDITIONAL_INFORMATION)
@@ -411,12 +411,12 @@ public class ProductDetailResponse {
   }
 
 
-  public ProductDetailResponse warrantyInformation(@javax.annotation.Nullable List<Object> warrantyInformation) {
+  public ProductDetailResponse warrantyInformation(@javax.annotation.Nullable List<String> warrantyInformation) {
     this.warrantyInformation = warrantyInformation;
     return this;
   }
 
-  public ProductDetailResponse addWarrantyInformationItem(Object warrantyInformationItem) {
+  public ProductDetailResponse addWarrantyInformationItem(String warrantyInformationItem) {
     if (this.warrantyInformation == null) {
       this.warrantyInformation = new ArrayList<>();
     }
@@ -425,15 +425,15 @@ public class ProductDetailResponse {
   }
 
   /**
-   * Warranty information related to the product.
+   * Warranty codes related to the product.
    * @return warrantyInformation
    */
   @javax.annotation.Nullable
-  public List<Object> getWarrantyInformation() {
+  public List<String> getWarrantyInformation() {
     return warrantyInformation;
   }
 
-  public void setWarrantyInformation(@javax.annotation.Nullable List<Object> warrantyInformation) {
+  public void setWarrantyInformation(@javax.annotation.Nullable List<String> warrantyInformation) {
     this.warrantyInformation = warrantyInformation;
   }
 
