@@ -55,7 +55,7 @@ import xiresellers.client.JSON;
 /**
  * OrderCreateResponseOrdersInnerLinesInner
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2025-11-19T10:23:41.995631184Z[Etc/UTC]", comments = "Generator version: 7.17.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2025-11-19T10:39:12.466905476Z[Etc/UTC]", comments = "Generator version: 7.17.0")
 public class OrderCreateResponseOrdersInnerLinesInner {
   public static final String SERIALIZED_NAME_SUB_ORDER_NUMBER = "subOrderNumber";
   @SerializedName(SERIALIZED_NAME_SUB_ORDER_NUMBER)

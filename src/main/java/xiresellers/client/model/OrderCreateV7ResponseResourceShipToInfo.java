@@ -50,7 +50,7 @@ import xiresellers.client.JSON;
 /**
  * The shipping information provided by the reseller.
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2025-11-19T10:23:41.995631184Z[Etc/UTC]", comments = "Generator version: 7.17.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2025-11-19T10:39:12.466905476Z[Etc/UTC]", comments = "Generator version: 7.17.0")
 public class OrderCreateV7ResponseResourceShipToInfo {
   public static final String SERIALIZED_NAME_ADDRESS_ID = "addressId";
   @SerializedName(SERIALIZED_NAME_ADDRESS_ID)
