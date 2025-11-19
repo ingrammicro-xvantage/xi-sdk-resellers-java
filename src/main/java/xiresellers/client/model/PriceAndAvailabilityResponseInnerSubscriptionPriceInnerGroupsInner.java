@@ -1,6 +1,6 @@
 /*
  * XI Sdk Resellers
- * For Resellers seeking to innovate with Ingram Micro API solutions, automate your eCommerce experience with our array of API's and webhooks to craft a seamless journey for your customers.
+ * For Resellers seeking to innovate with Ingram Micro APIs solutions, automate your eCommerce experience with our array of API's and webhooks to craft a seamless journey for your customers.
  *
  * The version of the OpenAPI document: 1.0.0
  * 
@@ -51,7 +51,7 @@ import xiresellers.client.JSON;
 /**
  * PriceAndAvailabilityResponseInnerSubscriptionPriceInnerGroupsInner
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2025-11-19T09:55:15.223059622Z[Etc/UTC]", comments = "Generator version: 7.17.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2025-11-19T10:22:41.337512836Z[Etc/UTC]", comments = "Generator version: 7.17.0")
 public class PriceAndAvailabilityResponseInnerSubscriptionPriceInnerGroupsInner {
   public static final String SERIALIZED_NAME_GROUP_NAME = "groupName";
   @SerializedName(SERIALIZED_NAME_GROUP_NAME)
