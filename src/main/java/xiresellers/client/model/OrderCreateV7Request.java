@@ -1,6 +1,6 @@
 /*
  * XI Sdk Resellers
- * For Resellers seeking to innovate with Ingram Micro's API solutions, automate your eCommerce experience with our array of API's and webhooks to craft a seamless journey for your customers.
+ * For Resellers seeking to innovate with Ingram Micro API solutions, automate your eCommerce experience with our array of API's and webhooks to craft a seamless journey for your customers.
  *
  * The version of the OpenAPI document: 1.0.0
  * 
@@ -14,6 +14,7 @@
 package xiresellers.client.model;
 
 import java.util.Objects;
+import java.util.Locale;
 import com.google.gson.TypeAdapter;
 import com.google.gson.annotations.JsonAdapter;
 import com.google.gson.annotations.SerializedName;
@@ -31,6 +32,7 @@ import xiresellers.client.model.OrderCreateV7RequestResellerInfo;
 import xiresellers.client.model.OrderCreateV7RequestShipToInfo;
 import xiresellers.client.model.OrderCreateV7RequestShipmentDetails;
 import xiresellers.client.model.OrderCreateV7RequestVmfAdditionalAttributesInner;
+import xiresellers.client.model.OrderCreateV7RequestVmfVendorAdditionalAttributesInner;
 
 import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
@@ -52,13 +54,14 @@ import java.util.HashSet;
 import java.util.List;
 import java.util.Map;
 import java.util.Set;
+import java.util.Locale;
 
 import xiresellers.client.JSON;
 
 /**
  * OrderCreateV7Request
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2025-10-08T10:03:08.517274592Z[Etc/UTC]", comments = "Generator version: 7.14.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2025-11-19T09:27:17.785927845Z[Etc/UTC]", comments = "Generator version: 7.17.0")
 public class OrderCreateV7Request {
   public static final String SERIALIZED_NAME_QUOTE_NUMBER = "quoteNumber";
   @SerializedName(SERIALIZED_NAME_QUOTE_NUMBER)
@@ -128,7 +131,17 @@ public class OrderCreateV7Request {
   public static final String SERIALIZED_NAME_VMF_ADDITIONAL_ATTRIBUTES = "vmfAdditionalAttributes";
   @SerializedName(SERIALIZED_NAME_VMF_ADDITIONAL_ATTRIBUTES)
   @javax.annotation.Nullable
-  private List<OrderCreateV7RequestVmfAdditionalAttributesInner> vmfAdditionalAttributes;
+  private List<OrderCreateV7RequestVmfAdditionalAttributesInner> vmfAdditionalAttributes = new ArrayList<>();
+
+  public static final String SERIALIZED_NAME_VMF_VENDOR_ADDITIONAL_ATTRIBUTES = "vmfVendorAdditionalAttributes";
+  @SerializedName(SERIALIZED_NAME_VMF_VENDOR_ADDITIONAL_ATTRIBUTES)
+  @javax.annotation.Nullable
+  private List<OrderCreateV7RequestVmfVendorAdditionalAttributesInner> vmfVendorAdditionalAttributes = new ArrayList<>();
+
+  public static final String SERIALIZED_NAME_VRI_ADDITIONAL_ATTRIBUTES = "vriAdditionalAttributes";
+  @SerializedName(SERIALIZED_NAME_VRI_ADDITIONAL_ATTRIBUTES)
+  @javax.annotation.Nullable
+  private List<OrderCreateV7RequestVmfVendorAdditionalAttributesInner> vriAdditionalAttributes = new ArrayList<>();
 
   public static final String SERIALIZED_NAME_LINES = "lines";
   @SerializedName(SERIALIZED_NAME_LINES)
@@ -407,7 +420,7 @@ public class OrderCreateV7Request {
   }
 
   /**
-   * The object containing the list of fields required at a header level by the vendor.
+   * The object containing the list of fields required at a header level by the vendor.&lt;br&gt; This a &lt;code&gt;Deprecated&lt;/code&gt; object. Kindly use &lt;b&gt;vmfVendorAdditionalAttributes&lt;/b&gt; object
    * @return vmfAdditionalAttributes
    */
   @javax.annotation.Nullable
@@ -417,6 +430,60 @@ public class OrderCreateV7Request {
 
   public void setVmfAdditionalAttributes(@javax.annotation.Nullable List<OrderCreateV7RequestVmfAdditionalAttributesInner> vmfAdditionalAttributes) {
     this.vmfAdditionalAttributes = vmfAdditionalAttributes;
+  }
+
+
+  public OrderCreateV7Request vmfVendorAdditionalAttributes(@javax.annotation.Nullable List<OrderCreateV7RequestVmfVendorAdditionalAttributesInner> vmfVendorAdditionalAttributes) {
+    this.vmfVendorAdditionalAttributes = vmfVendorAdditionalAttributes;
+    return this;
+  }
+
+  public OrderCreateV7Request addVmfVendorAdditionalAttributesItem(OrderCreateV7RequestVmfVendorAdditionalAttributesInner vmfVendorAdditionalAttributesItem) {
+    if (this.vmfVendorAdditionalAttributes == null) {
+      this.vmfVendorAdditionalAttributes = new ArrayList<>();
+    }
+    this.vmfVendorAdditionalAttributes.add(vmfVendorAdditionalAttributesItem);
+    return this;
+  }
+
+  /**
+   * The object containing the list of Vendor Mandatory Fields required by the vendor for the Hardware products.
+   * @return vmfVendorAdditionalAttributes
+   */
+  @javax.annotation.Nullable
+  public List<OrderCreateV7RequestVmfVendorAdditionalAttributesInner> getVmfVendorAdditionalAttributes() {
+    return vmfVendorAdditionalAttributes;
+  }
+
+  public void setVmfVendorAdditionalAttributes(@javax.annotation.Nullable List<OrderCreateV7RequestVmfVendorAdditionalAttributesInner> vmfVendorAdditionalAttributes) {
+    this.vmfVendorAdditionalAttributes = vmfVendorAdditionalAttributes;
+  }
+
+
+  public OrderCreateV7Request vriAdditionalAttributes(@javax.annotation.Nullable List<OrderCreateV7RequestVmfVendorAdditionalAttributesInner> vriAdditionalAttributes) {
+    this.vriAdditionalAttributes = vriAdditionalAttributes;
+    return this;
+  }
+
+  public OrderCreateV7Request addVriAdditionalAttributesItem(OrderCreateV7RequestVmfVendorAdditionalAttributesInner vriAdditionalAttributesItem) {
+    if (this.vriAdditionalAttributes == null) {
+      this.vriAdditionalAttributes = new ArrayList<>();
+    }
+    this.vriAdditionalAttributes.add(vriAdditionalAttributesItem);
+    return this;
+  }
+
+  /**
+   * The object containing the list of Vendor Mandatory Fields required by the vendor for the subscription products.&lt;br&gt; Use this object ONLY when using a full quote ordering for a subsciption product. For line-level ordering use &lt;b&gt;vriAdditionalAttributes&lt;/b&gt; object inside the line object. 
+   * @return vriAdditionalAttributes
+   */
+  @javax.annotation.Nullable
+  public List<OrderCreateV7RequestVmfVendorAdditionalAttributesInner> getVriAdditionalAttributes() {
+    return vriAdditionalAttributes;
+  }
+
+  public void setVriAdditionalAttributes(@javax.annotation.Nullable List<OrderCreateV7RequestVmfVendorAdditionalAttributesInner> vriAdditionalAttributes) {
+    this.vriAdditionalAttributes = vriAdditionalAttributes;
   }
 
 
@@ -471,6 +538,8 @@ public class OrderCreateV7Request {
         Objects.equals(this.shipmentDetails, orderCreateV7Request.shipmentDetails) &&
         Objects.equals(this.additionalAttributes, orderCreateV7Request.additionalAttributes) &&
         Objects.equals(this.vmfAdditionalAttributes, orderCreateV7Request.vmfAdditionalAttributes) &&
+        Objects.equals(this.vmfVendorAdditionalAttributes, orderCreateV7Request.vmfVendorAdditionalAttributes) &&
+        Objects.equals(this.vriAdditionalAttributes, orderCreateV7Request.vriAdditionalAttributes) &&
         Objects.equals(this.lines, orderCreateV7Request.lines);
   }
 
@@ -480,7 +549,7 @@ public class OrderCreateV7Request {
 
   @Override
   public int hashCode() {
-    return Objects.hash(quoteNumber, customerOrderNumber, endCustomerOrderNumber, notes, billToAddressId, specialBidNumber, acceptBackOrder, vendAuthNumber, resellerInfo, endUserInfo, shipToInfo, shipmentDetails, additionalAttributes, vmfAdditionalAttributes, lines);
+    return Objects.hash(quoteNumber, customerOrderNumber, endCustomerOrderNumber, notes, billToAddressId, specialBidNumber, acceptBackOrder, vendAuthNumber, resellerInfo, endUserInfo, shipToInfo, shipmentDetails, additionalAttributes, vmfAdditionalAttributes, vmfVendorAdditionalAttributes, vriAdditionalAttributes, lines);
   }
 
   private static <T> int hashCodeNullable(JsonNullable<T> a) {
@@ -508,6 +577,8 @@ public class OrderCreateV7Request {
     sb.append("    shipmentDetails: ").append(toIndentedString(shipmentDetails)).append("\n");
     sb.append("    additionalAttributes: ").append(toIndentedString(additionalAttributes)).append("\n");
     sb.append("    vmfAdditionalAttributes: ").append(toIndentedString(vmfAdditionalAttributes)).append("\n");
+    sb.append("    vmfVendorAdditionalAttributes: ").append(toIndentedString(vmfVendorAdditionalAttributes)).append("\n");
+    sb.append("    vriAdditionalAttributes: ").append(toIndentedString(vriAdditionalAttributes)).append("\n");
     sb.append("    lines: ").append(toIndentedString(lines)).append("\n");
     sb.append("}");
     return sb.toString();
@@ -530,7 +601,7 @@ public class OrderCreateV7Request {
 
   static {
     // a set of all properties/fields (JSON key names)
-    openapiFields = new HashSet<String>(Arrays.asList("quoteNumber", "customerOrderNumber", "endCustomerOrderNumber", "notes", "billToAddressId", "specialBidNumber", "acceptBackOrder", "vendAuthNumber", "resellerInfo", "endUserInfo", "shipToInfo", "shipmentDetails", "additionalAttributes", "vmfAdditionalAttributes", "lines"));
+    openapiFields = new HashSet<String>(Arrays.asList("quoteNumber", "customerOrderNumber", "endCustomerOrderNumber", "notes", "billToAddressId", "specialBidNumber", "acceptBackOrder", "vendAuthNumber", "resellerInfo", "endUserInfo", "shipToInfo", "shipmentDetails", "additionalAttributes", "vmfAdditionalAttributes", "vmfVendorAdditionalAttributes", "vriAdditionalAttributes", "lines"));
 
     // a set of required properties/fields (JSON key names)
     openapiRequiredFields = new HashSet<String>(0);
@@ -545,7 +616,7 @@ public class OrderCreateV7Request {
   public static void validateJsonElement(JsonElement jsonElement) throws IOException {
       if (jsonElement == null) {
         if (!OrderCreateV7Request.openapiRequiredFields.isEmpty()) { // has required fields but JSON element is null
-          throw new IllegalArgumentException(String.format("The required field(s) %s in OrderCreateV7Request is not found in the empty JSON string", OrderCreateV7Request.openapiRequiredFields.toString()));
+          throw new IllegalArgumentException(String.format(Locale.ROOT, "The required field(s) %s in OrderCreateV7Request is not found in the empty JSON string", OrderCreateV7Request.openapiRequiredFields.toString()));
         }
       }
 
@@ -553,30 +624,30 @@ public class OrderCreateV7Request {
       // check to see if the JSON string contains additional fields
       for (Map.Entry<String, JsonElement> entry : entries) {
         if (!OrderCreateV7Request.openapiFields.contains(entry.getKey())) {
-          throw new IllegalArgumentException(String.format("The field `%s` in the JSON string is not defined in the `OrderCreateV7Request` properties. JSON: %s", entry.getKey(), jsonElement.toString()));
+          throw new IllegalArgumentException(String.format(Locale.ROOT, "The field `%s` in the JSON string is not defined in the `OrderCreateV7Request` properties. JSON: %s", entry.getKey(), jsonElement.toString()));
         }
       }
         JsonObject jsonObj = jsonElement.getAsJsonObject();
       if ((jsonObj.get("quoteNumber") != null && !jsonObj.get("quoteNumber").isJsonNull()) && !jsonObj.get("quoteNumber").isJsonPrimitive()) {
-        throw new IllegalArgumentException(String.format("Expected the field `quoteNumber` to be a primitive type in the JSON string but got `%s`", jsonObj.get("quoteNumber").toString()));
+        throw new IllegalArgumentException(String.format(Locale.ROOT, "Expected the field `quoteNumber` to be a primitive type in the JSON string but got `%s`", jsonObj.get("quoteNumber").toString()));
       }
       if ((jsonObj.get("customerOrderNumber") != null && !jsonObj.get("customerOrderNumber").isJsonNull()) && !jsonObj.get("customerOrderNumber").isJsonPrimitive()) {
-        throw new IllegalArgumentException(String.format("Expected the field `customerOrderNumber` to be a primitive type in the JSON string but got `%s`", jsonObj.get("customerOrderNumber").toString()));
+        throw new IllegalArgumentException(String.format(Locale.ROOT, "Expected the field `customerOrderNumber` to be a primitive type in the JSON string but got `%s`", jsonObj.get("customerOrderNumber").toString()));
       }
       if ((jsonObj.get("endCustomerOrderNumber") != null && !jsonObj.get("endCustomerOrderNumber").isJsonNull()) && !jsonObj.get("endCustomerOrderNumber").isJsonPrimitive()) {
-        throw new IllegalArgumentException(String.format("Expected the field `endCustomerOrderNumber` to be a primitive type in the JSON string but got `%s`", jsonObj.get("endCustomerOrderNumber").toString()));
+        throw new IllegalArgumentException(String.format(Locale.ROOT, "Expected the field `endCustomerOrderNumber` to be a primitive type in the JSON string but got `%s`", jsonObj.get("endCustomerOrderNumber").toString()));
       }
       if ((jsonObj.get("notes") != null && !jsonObj.get("notes").isJsonNull()) && !jsonObj.get("notes").isJsonPrimitive()) {
-        throw new IllegalArgumentException(String.format("Expected the field `notes` to be a primitive type in the JSON string but got `%s`", jsonObj.get("notes").toString()));
+        throw new IllegalArgumentException(String.format(Locale.ROOT, "Expected the field `notes` to be a primitive type in the JSON string but got `%s`", jsonObj.get("notes").toString()));
       }
       if ((jsonObj.get("billToAddressId") != null && !jsonObj.get("billToAddressId").isJsonNull()) && !jsonObj.get("billToAddressId").isJsonPrimitive()) {
-        throw new IllegalArgumentException(String.format("Expected the field `billToAddressId` to be a primitive type in the JSON string but got `%s`", jsonObj.get("billToAddressId").toString()));
+        throw new IllegalArgumentException(String.format(Locale.ROOT, "Expected the field `billToAddressId` to be a primitive type in the JSON string but got `%s`", jsonObj.get("billToAddressId").toString()));
       }
       if ((jsonObj.get("specialBidNumber") != null && !jsonObj.get("specialBidNumber").isJsonNull()) && !jsonObj.get("specialBidNumber").isJsonPrimitive()) {
-        throw new IllegalArgumentException(String.format("Expected the field `specialBidNumber` to be a primitive type in the JSON string but got `%s`", jsonObj.get("specialBidNumber").toString()));
+        throw new IllegalArgumentException(String.format(Locale.ROOT, "Expected the field `specialBidNumber` to be a primitive type in the JSON string but got `%s`", jsonObj.get("specialBidNumber").toString()));
       }
       if ((jsonObj.get("vendAuthNumber") != null && !jsonObj.get("vendAuthNumber").isJsonNull()) && !jsonObj.get("vendAuthNumber").isJsonPrimitive()) {
-        throw new IllegalArgumentException(String.format("Expected the field `vendAuthNumber` to be a primitive type in the JSON string but got `%s`", jsonObj.get("vendAuthNumber").toString()));
+        throw new IllegalArgumentException(String.format(Locale.ROOT, "Expected the field `vendAuthNumber` to be a primitive type in the JSON string but got `%s`", jsonObj.get("vendAuthNumber").toString()));
       }
       // validate the optional field `resellerInfo`
       if (jsonObj.get("resellerInfo") != null && !jsonObj.get("resellerInfo").isJsonNull()) {
@@ -599,7 +670,7 @@ public class OrderCreateV7Request {
         if (jsonArrayadditionalAttributes != null) {
           // ensure the json data is an array
           if (!jsonObj.get("additionalAttributes").isJsonArray()) {
-            throw new IllegalArgumentException(String.format("Expected the field `additionalAttributes` to be an array in the JSON string but got `%s`", jsonObj.get("additionalAttributes").toString()));
+            throw new IllegalArgumentException(String.format(Locale.ROOT, "Expected the field `additionalAttributes` to be an array in the JSON string but got `%s`", jsonObj.get("additionalAttributes").toString()));
           }
 
           // validate the optional field `additionalAttributes` (array)
@@ -613,7 +684,7 @@ public class OrderCreateV7Request {
         if (jsonArrayvmfAdditionalAttributes != null) {
           // ensure the json data is an array
           if (!jsonObj.get("vmfAdditionalAttributes").isJsonArray()) {
-            throw new IllegalArgumentException(String.format("Expected the field `vmfAdditionalAttributes` to be an array in the JSON string but got `%s`", jsonObj.get("vmfAdditionalAttributes").toString()));
+            throw new IllegalArgumentException(String.format(Locale.ROOT, "Expected the field `vmfAdditionalAttributes` to be an array in the JSON string but got `%s`", jsonObj.get("vmfAdditionalAttributes").toString()));
           }
 
           // validate the optional field `vmfAdditionalAttributes` (array)
@@ -622,12 +693,40 @@ public class OrderCreateV7Request {
           };
         }
       }
+      if (jsonObj.get("vmfVendorAdditionalAttributes") != null && !jsonObj.get("vmfVendorAdditionalAttributes").isJsonNull()) {
+        JsonArray jsonArrayvmfVendorAdditionalAttributes = jsonObj.getAsJsonArray("vmfVendorAdditionalAttributes");
+        if (jsonArrayvmfVendorAdditionalAttributes != null) {
+          // ensure the json data is an array
+          if (!jsonObj.get("vmfVendorAdditionalAttributes").isJsonArray()) {
+            throw new IllegalArgumentException(String.format(Locale.ROOT, "Expected the field `vmfVendorAdditionalAttributes` to be an array in the JSON string but got `%s`", jsonObj.get("vmfVendorAdditionalAttributes").toString()));
+          }
+
+          // validate the optional field `vmfVendorAdditionalAttributes` (array)
+          for (int i = 0; i < jsonArrayvmfVendorAdditionalAttributes.size(); i++) {
+            OrderCreateV7RequestVmfVendorAdditionalAttributesInner.validateJsonElement(jsonArrayvmfVendorAdditionalAttributes.get(i));
+          };
+        }
+      }
+      if (jsonObj.get("vriAdditionalAttributes") != null && !jsonObj.get("vriAdditionalAttributes").isJsonNull()) {
+        JsonArray jsonArrayvriAdditionalAttributes = jsonObj.getAsJsonArray("vriAdditionalAttributes");
+        if (jsonArrayvriAdditionalAttributes != null) {
+          // ensure the json data is an array
+          if (!jsonObj.get("vriAdditionalAttributes").isJsonArray()) {
+            throw new IllegalArgumentException(String.format(Locale.ROOT, "Expected the field `vriAdditionalAttributes` to be an array in the JSON string but got `%s`", jsonObj.get("vriAdditionalAttributes").toString()));
+          }
+
+          // validate the optional field `vriAdditionalAttributes` (array)
+          for (int i = 0; i < jsonArrayvriAdditionalAttributes.size(); i++) {
+            OrderCreateV7RequestVmfVendorAdditionalAttributesInner.validateJsonElement(jsonArrayvriAdditionalAttributes.get(i));
+          };
+        }
+      }
       if (jsonObj.get("lines") != null && !jsonObj.get("lines").isJsonNull()) {
         JsonArray jsonArraylines = jsonObj.getAsJsonArray("lines");
         if (jsonArraylines != null) {
           // ensure the json data is an array
           if (!jsonObj.get("lines").isJsonArray()) {
-            throw new IllegalArgumentException(String.format("Expected the field `lines` to be an array in the JSON string but got `%s`", jsonObj.get("lines").toString()));
+            throw new IllegalArgumentException(String.format(Locale.ROOT, "Expected the field `lines` to be an array in the JSON string but got `%s`", jsonObj.get("lines").toString()));
           }
 
           // validate the optional field `lines` (array)

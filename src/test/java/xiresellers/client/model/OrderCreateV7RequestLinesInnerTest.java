@@ -1,6 +1,6 @@
 /*
  * XI Sdk Resellers
- * For Resellers seeking to innovate with Ingram Micro's API solutions, automate your eCommerce experience with our array of API's and webhooks to craft a seamless journey for your customers.
+ * For Resellers seeking to innovate with Ingram Micro API solutions, automate your eCommerce experience with our array of API's and webhooks to craft a seamless journey for your customers.
  *
  * The version of the OpenAPI document: 1.0.0
  * 
@@ -23,10 +23,13 @@ import java.math.BigDecimal;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
-import org.openapitools.jackson.nullable.JsonNullable;
 import xiresellers.client.model.OrderCreateV7RequestLinesInnerAdditionalAttributesInner;
+import xiresellers.client.model.OrderCreateV7RequestLinesInnerBillingPeriodInner;
 import xiresellers.client.model.OrderCreateV7RequestLinesInnerEndUserInfoInner;
+import xiresellers.client.model.OrderCreateV7RequestLinesInnerSubscriptionPeriodInner;
 import xiresellers.client.model.OrderCreateV7RequestLinesInnerVmfAdditionalAttributesLinesInner;
+import xiresellers.client.model.OrderCreateV7RequestLinesInnerWarrantyInfo;
+import xiresellers.client.model.OrderCreateV7RequestVmfVendorAdditionalAttributesInner;
 import org.junit.jupiter.api.Disabled;
 import org.junit.jupiter.api.Test;
 
@@ -109,6 +112,62 @@ public class OrderCreateV7RequestLinesInnerTest {
     }
 
     /**
+     * Test the property 'resourceId'
+     */
+    @Test
+    public void resourceIdTest() {
+        // TODO: test resourceId
+    }
+
+    /**
+     * Test the property 'planid'
+     */
+    @Test
+    public void planidTest() {
+        // TODO: test planid
+    }
+
+    /**
+     * Test the property 'subscriptionPeriod'
+     */
+    @Test
+    public void subscriptionPeriodTest() {
+        // TODO: test subscriptionPeriod
+    }
+
+    /**
+     * Test the property 'billingPeriod'
+     */
+    @Test
+    public void billingPeriodTest() {
+        // TODO: test billingPeriod
+    }
+
+    /**
+     * Test the property 'margin'
+     */
+    @Test
+    public void marginTest() {
+        // TODO: test margin
+    }
+
+    /**
+     * Test the property 'endCustomerPrice'
+     */
+    @Test
+    public void endCustomerPriceTest() {
+        // TODO: test endCustomerPrice
+    }
+
+    /**
+     * Test the property 'vriAdditionalAttributes'
+     */
+    @Test
+    public void vriAdditionalAttributesTest() {
+        // TODO: test vriAdditionalAttributes
+    }
+
+    /**
      * Test the property 'endUserInfo'
      */
     @Test
@@ -122,6 +181,14 @@ public class OrderCreateV7RequestLinesInnerTest {
     @Test
     public void additionalAttributesTest() {
         // TODO: test additionalAttributes
+    }
+
+    /**
+     * Test the property 'warrantyInfo'
+     */
+    @Test
+    public void warrantyInfoTest() {
+        // TODO: test warrantyInfo
     }
 
     /**

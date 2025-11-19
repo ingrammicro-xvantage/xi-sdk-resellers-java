@@ -1,6 +1,6 @@
 /*
  * XI Sdk Resellers
- * For Resellers seeking to innovate with Ingram Micro's API solutions, automate your eCommerce experience with our array of API's and webhooks to craft a seamless journey for your customers.
+ * For Resellers seeking to innovate with Ingram Micro API solutions, automate your eCommerce experience with our array of API's and webhooks to craft a seamless journey for your customers.
  *
  * The version of the OpenAPI document: 1.0.0
  * 
@@ -166,12 +166,20 @@ public class JSON {
         gsonBuilder.registerTypeAdapterFactory(new xiresellers.client.model.OrderCreateV7RequestEndUserInfo.CustomTypeAdapterFactory());
         gsonBuilder.registerTypeAdapterFactory(new xiresellers.client.model.OrderCreateV7RequestLinesInner.CustomTypeAdapterFactory());
         gsonBuilder.registerTypeAdapterFactory(new xiresellers.client.model.OrderCreateV7RequestLinesInnerAdditionalAttributesInner.CustomTypeAdapterFactory());
+        gsonBuilder.registerTypeAdapterFactory(new xiresellers.client.model.OrderCreateV7RequestLinesInnerBillingPeriodInner.CustomTypeAdapterFactory());
         gsonBuilder.registerTypeAdapterFactory(new xiresellers.client.model.OrderCreateV7RequestLinesInnerEndUserInfoInner.CustomTypeAdapterFactory());
+        gsonBuilder.registerTypeAdapterFactory(new xiresellers.client.model.OrderCreateV7RequestLinesInnerSubscriptionPeriodInner.CustomTypeAdapterFactory());
         gsonBuilder.registerTypeAdapterFactory(new xiresellers.client.model.OrderCreateV7RequestLinesInnerVmfAdditionalAttributesLinesInner.CustomTypeAdapterFactory());
+        gsonBuilder.registerTypeAdapterFactory(new xiresellers.client.model.OrderCreateV7RequestLinesInnerWarrantyInfo.CustomTypeAdapterFactory());
+        gsonBuilder.registerTypeAdapterFactory(new xiresellers.client.model.OrderCreateV7RequestLinesInnerWarrantyInfoSerialInfoInner.CustomTypeAdapterFactory());
         gsonBuilder.registerTypeAdapterFactory(new xiresellers.client.model.OrderCreateV7RequestResellerInfo.CustomTypeAdapterFactory());
         gsonBuilder.registerTypeAdapterFactory(new xiresellers.client.model.OrderCreateV7RequestShipToInfo.CustomTypeAdapterFactory());
         gsonBuilder.registerTypeAdapterFactory(new xiresellers.client.model.OrderCreateV7RequestShipmentDetails.CustomTypeAdapterFactory());
         gsonBuilder.registerTypeAdapterFactory(new xiresellers.client.model.OrderCreateV7RequestVmfAdditionalAttributesInner.CustomTypeAdapterFactory());
+        gsonBuilder.registerTypeAdapterFactory(new xiresellers.client.model.OrderCreateV7RequestVmfVendorAdditionalAttributesInner.CustomTypeAdapterFactory());
+        gsonBuilder.registerTypeAdapterFactory(new xiresellers.client.model.OrderCreateV7RequestVmfVendorAdditionalAttributesInnerAdditionalAttributesInner.CustomTypeAdapterFactory());
+        gsonBuilder.registerTypeAdapterFactory(new xiresellers.client.model.OrderCreateV7RequestVmfVendorAdditionalAttributesInnerAdditionalAttributesInnerChoicesInner.CustomTypeAdapterFactory());
+        gsonBuilder.registerTypeAdapterFactory(new xiresellers.client.model.OrderCreateV7RequestVmfVendorAdditionalAttributesInnerAdditionalAttributesInnerChoicesInnerChoicesInner.CustomTypeAdapterFactory());
         gsonBuilder.registerTypeAdapterFactory(new xiresellers.client.model.OrderCreateV7Response.CustomTypeAdapterFactory());
         gsonBuilder.registerTypeAdapterFactory(new xiresellers.client.model.OrderCreateV7Response201.CustomTypeAdapterFactory());
         gsonBuilder.registerTypeAdapterFactory(new xiresellers.client.model.OrderCreateV7ResponseResource.CustomTypeAdapterFactory());

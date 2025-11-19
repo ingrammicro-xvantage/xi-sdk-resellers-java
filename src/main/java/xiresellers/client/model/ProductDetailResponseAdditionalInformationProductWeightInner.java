@@ -1,6 +1,6 @@
 /*
  * XI Sdk Resellers
- * For Resellers seeking to innovate with Ingram Micro's API solutions, automate your eCommerce experience with our array of API's and webhooks to craft a seamless journey for your customers.
+ * For Resellers seeking to innovate with Ingram Micro API solutions, automate your eCommerce experience with our array of API's and webhooks to craft a seamless journey for your customers.
  *
  * The version of the OpenAPI document: 1.0.0
  * 
@@ -14,6 +14,7 @@
 package xiresellers.client.model;
 
 import java.util.Objects;
+import java.util.Locale;
 import com.google.gson.TypeAdapter;
 import com.google.gson.annotations.JsonAdapter;
 import com.google.gson.annotations.SerializedName;
@@ -43,13 +44,14 @@ import java.util.HashSet;
 import java.util.List;
 import java.util.Map;
 import java.util.Set;
+import java.util.Locale;
 
 import xiresellers.client.JSON;
 
 /**
  * ProductDetailResponseAdditionalInformationProductWeightInner
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2025-10-08T10:03:08.517274592Z[Etc/UTC]", comments = "Generator version: 7.14.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2025-11-19T09:27:17.785927845Z[Etc/UTC]", comments = "Generator version: 7.17.0")
 public class ProductDetailResponseAdditionalInformationProductWeightInner {
   public static final String SERIALIZED_NAME_PLANT_ID = "plantId";
   @SerializedName(SERIALIZED_NAME_PLANT_ID)
@@ -189,7 +191,7 @@ public class ProductDetailResponseAdditionalInformationProductWeightInner {
   public static void validateJsonElement(JsonElement jsonElement) throws IOException {
       if (jsonElement == null) {
         if (!ProductDetailResponseAdditionalInformationProductWeightInner.openapiRequiredFields.isEmpty()) { // has required fields but JSON element is null
-          throw new IllegalArgumentException(String.format("The required field(s) %s in ProductDetailResponseAdditionalInformationProductWeightInner is not found in the empty JSON string", ProductDetailResponseAdditionalInformationProductWeightInner.openapiRequiredFields.toString()));
+          throw new IllegalArgumentException(String.format(Locale.ROOT, "The required field(s) %s in ProductDetailResponseAdditionalInformationProductWeightInner is not found in the empty JSON string", ProductDetailResponseAdditionalInformationProductWeightInner.openapiRequiredFields.toString()));
         }
       }
 
@@ -197,15 +199,15 @@ public class ProductDetailResponseAdditionalInformationProductWeightInner {
       // check to see if the JSON string contains additional fields
       for (Map.Entry<String, JsonElement> entry : entries) {
         if (!ProductDetailResponseAdditionalInformationProductWeightInner.openapiFields.contains(entry.getKey())) {
-          throw new IllegalArgumentException(String.format("The field `%s` in the JSON string is not defined in the `ProductDetailResponseAdditionalInformationProductWeightInner` properties. JSON: %s", entry.getKey(), jsonElement.toString()));
+          throw new IllegalArgumentException(String.format(Locale.ROOT, "The field `%s` in the JSON string is not defined in the `ProductDetailResponseAdditionalInformationProductWeightInner` properties. JSON: %s", entry.getKey(), jsonElement.toString()));
         }
       }
         JsonObject jsonObj = jsonElement.getAsJsonObject();
       if ((jsonObj.get("plantId") != null && !jsonObj.get("plantId").isJsonNull()) && !jsonObj.get("plantId").isJsonPrimitive()) {
-        throw new IllegalArgumentException(String.format("Expected the field `plantId` to be a primitive type in the JSON string but got `%s`", jsonObj.get("plantId").toString()));
+        throw new IllegalArgumentException(String.format(Locale.ROOT, "Expected the field `plantId` to be a primitive type in the JSON string but got `%s`", jsonObj.get("plantId").toString()));
       }
       if ((jsonObj.get("weightUnit") != null && !jsonObj.get("weightUnit").isJsonNull()) && !jsonObj.get("weightUnit").isJsonPrimitive()) {
-        throw new IllegalArgumentException(String.format("Expected the field `weightUnit` to be a primitive type in the JSON string but got `%s`", jsonObj.get("weightUnit").toString()));
+        throw new IllegalArgumentException(String.format(Locale.ROOT, "Expected the field `weightUnit` to be a primitive type in the JSON string but got `%s`", jsonObj.get("weightUnit").toString()));
       }
   }
 

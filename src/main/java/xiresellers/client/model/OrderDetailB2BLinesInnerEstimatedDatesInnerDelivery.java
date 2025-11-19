@@ -1,6 +1,6 @@
 /*
  * XI Sdk Resellers
- * For Resellers seeking to innovate with Ingram Micro's API solutions, automate your eCommerce experience with our array of API's and webhooks to craft a seamless journey for your customers.
+ * For Resellers seeking to innovate with Ingram Micro API solutions, automate your eCommerce experience with our array of API's and webhooks to craft a seamless journey for your customers.
  *
  * The version of the OpenAPI document: 1.0.0
  * 
@@ -14,6 +14,7 @@
 package xiresellers.client.model;
 
 import java.util.Objects;
+import java.util.Locale;
 import com.google.gson.TypeAdapter;
 import com.google.gson.annotations.JsonAdapter;
 import com.google.gson.annotations.SerializedName;
@@ -43,13 +44,14 @@ import java.util.HashSet;
 import java.util.List;
 import java.util.Map;
 import java.util.Set;
+import java.util.Locale;
 
 import xiresellers.client.JSON;
 
 /**
  * OrderDetailB2BLinesInnerEstimatedDatesInnerDelivery
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2025-10-08T10:03:08.517274592Z[Etc/UTC]", comments = "Generator version: 7.14.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2025-11-19T09:27:17.785927845Z[Etc/UTC]", comments = "Generator version: 7.17.0")
 public class OrderDetailB2BLinesInnerEstimatedDatesInnerDelivery {
   public static final String SERIALIZED_NAME_DELIVERY_DATE_TYPE = "deliveryDateType";
   @SerializedName(SERIALIZED_NAME_DELIVERY_DATE_TYPE)
@@ -241,7 +243,7 @@ public class OrderDetailB2BLinesInnerEstimatedDatesInnerDelivery {
   public static void validateJsonElement(JsonElement jsonElement) throws IOException {
       if (jsonElement == null) {
         if (!OrderDetailB2BLinesInnerEstimatedDatesInnerDelivery.openapiRequiredFields.isEmpty()) { // has required fields but JSON element is null
-          throw new IllegalArgumentException(String.format("The required field(s) %s in OrderDetailB2BLinesInnerEstimatedDatesInnerDelivery is not found in the empty JSON string", OrderDetailB2BLinesInnerEstimatedDatesInnerDelivery.openapiRequiredFields.toString()));
+          throw new IllegalArgumentException(String.format(Locale.ROOT, "The required field(s) %s in OrderDetailB2BLinesInnerEstimatedDatesInnerDelivery is not found in the empty JSON string", OrderDetailB2BLinesInnerEstimatedDatesInnerDelivery.openapiRequiredFields.toString()));
         }
       }
 
@@ -249,25 +251,25 @@ public class OrderDetailB2BLinesInnerEstimatedDatesInnerDelivery {
       // check to see if the JSON string contains additional fields
       for (Map.Entry<String, JsonElement> entry : entries) {
         if (!OrderDetailB2BLinesInnerEstimatedDatesInnerDelivery.openapiFields.contains(entry.getKey())) {
-          throw new IllegalArgumentException(String.format("The field `%s` in the JSON string is not defined in the `OrderDetailB2BLinesInnerEstimatedDatesInnerDelivery` properties. JSON: %s", entry.getKey(), jsonElement.toString()));
+          throw new IllegalArgumentException(String.format(Locale.ROOT, "The field `%s` in the JSON string is not defined in the `OrderDetailB2BLinesInnerEstimatedDatesInnerDelivery` properties. JSON: %s", entry.getKey(), jsonElement.toString()));
         }
       }
         JsonObject jsonObj = jsonElement.getAsJsonObject();
       if ((jsonObj.get("deliveryDateType") != null && !jsonObj.get("deliveryDateType").isJsonNull()) && !jsonObj.get("deliveryDateType").isJsonPrimitive()) {
-        throw new IllegalArgumentException(String.format("Expected the field `deliveryDateType` to be a primitive type in the JSON string but got `%s`", jsonObj.get("deliveryDateType").toString()));
+        throw new IllegalArgumentException(String.format(Locale.ROOT, "Expected the field `deliveryDateType` to be a primitive type in the JSON string but got `%s`", jsonObj.get("deliveryDateType").toString()));
       }
       // validate the optional field `deliveryDateRange`
       if (jsonObj.get("deliveryDateRange") != null && !jsonObj.get("deliveryDateRange").isJsonNull()) {
         OrderDetailB2BLinesInnerEstimatedDatesInnerDeliveryDeliveryDateRange.validateJsonElement(jsonObj.get("deliveryDateRange"));
       }
       if ((jsonObj.get("deliverySource") != null && !jsonObj.get("deliverySource").isJsonNull()) && !jsonObj.get("deliverySource").isJsonPrimitive()) {
-        throw new IllegalArgumentException(String.format("Expected the field `deliverySource` to be a primitive type in the JSON string but got `%s`", jsonObj.get("deliverySource").toString()));
+        throw new IllegalArgumentException(String.format(Locale.ROOT, "Expected the field `deliverySource` to be a primitive type in the JSON string but got `%s`", jsonObj.get("deliverySource").toString()));
       }
       if ((jsonObj.get("deliveryDescription") != null && !jsonObj.get("deliveryDescription").isJsonNull()) && !jsonObj.get("deliveryDescription").isJsonPrimitive()) {
-        throw new IllegalArgumentException(String.format("Expected the field `deliveryDescription` to be a primitive type in the JSON string but got `%s`", jsonObj.get("deliveryDescription").toString()));
+        throw new IllegalArgumentException(String.format(Locale.ROOT, "Expected the field `deliveryDescription` to be a primitive type in the JSON string but got `%s`", jsonObj.get("deliveryDescription").toString()));
       }
       if ((jsonObj.get("deliveryDate") != null && !jsonObj.get("deliveryDate").isJsonNull()) && !jsonObj.get("deliveryDate").isJsonPrimitive()) {
-        throw new IllegalArgumentException(String.format("Expected the field `deliveryDate` to be a primitive type in the JSON string but got `%s`", jsonObj.get("deliveryDate").toString()));
+        throw new IllegalArgumentException(String.format(Locale.ROOT, "Expected the field `deliveryDate` to be a primitive type in the JSON string but got `%s`", jsonObj.get("deliveryDate").toString()));
       }
   }
 

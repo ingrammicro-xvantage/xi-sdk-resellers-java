@@ -1,6 +1,6 @@
 /*
  * XI Sdk Resellers
- * For Resellers seeking to innovate with Ingram Micro's API solutions, automate your eCommerce experience with our array of API's and webhooks to craft a seamless journey for your customers.
+ * For Resellers seeking to innovate with Ingram Micro API solutions, automate your eCommerce experience with our array of API's and webhooks to craft a seamless journey for your customers.
  *
  * The version of the OpenAPI document: 1.0.0
  * 
@@ -14,6 +14,7 @@
 package xiresellers.client.model;
 
 import java.util.Objects;
+import java.util.Locale;
 import com.google.gson.TypeAdapter;
 import com.google.gson.annotations.JsonAdapter;
 import com.google.gson.annotations.SerializedName;
@@ -47,13 +48,14 @@ import java.util.HashSet;
 import java.util.List;
 import java.util.Map;
 import java.util.Set;
+import java.util.Locale;
 
 import xiresellers.client.JSON;
 
 /**
  * FreightResponseFreightEstimateResponse
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2025-10-08T10:03:08.517274592Z[Etc/UTC]", comments = "Generator version: 7.14.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2025-11-19T09:27:17.785927845Z[Etc/UTC]", comments = "Generator version: 7.17.0")
 public class FreightResponseFreightEstimateResponse {
   public static final String SERIALIZED_NAME_CURRENCY_CODE = "currencyCode";
   @SerializedName(SERIALIZED_NAME_CURRENCY_CODE)
@@ -339,7 +341,7 @@ public class FreightResponseFreightEstimateResponse {
   public static void validateJsonElement(JsonElement jsonElement) throws IOException {
       if (jsonElement == null) {
         if (!FreightResponseFreightEstimateResponse.openapiRequiredFields.isEmpty()) { // has required fields but JSON element is null
-          throw new IllegalArgumentException(String.format("The required field(s) %s in FreightResponseFreightEstimateResponse is not found in the empty JSON string", FreightResponseFreightEstimateResponse.openapiRequiredFields.toString()));
+          throw new IllegalArgumentException(String.format(Locale.ROOT, "The required field(s) %s in FreightResponseFreightEstimateResponse is not found in the empty JSON string", FreightResponseFreightEstimateResponse.openapiRequiredFields.toString()));
         }
       }
 
@@ -347,19 +349,19 @@ public class FreightResponseFreightEstimateResponse {
       // check to see if the JSON string contains additional fields
       for (Map.Entry<String, JsonElement> entry : entries) {
         if (!FreightResponseFreightEstimateResponse.openapiFields.contains(entry.getKey())) {
-          throw new IllegalArgumentException(String.format("The field `%s` in the JSON string is not defined in the `FreightResponseFreightEstimateResponse` properties. JSON: %s", entry.getKey(), jsonElement.toString()));
+          throw new IllegalArgumentException(String.format(Locale.ROOT, "The field `%s` in the JSON string is not defined in the `FreightResponseFreightEstimateResponse` properties. JSON: %s", entry.getKey(), jsonElement.toString()));
         }
       }
         JsonObject jsonObj = jsonElement.getAsJsonObject();
       if ((jsonObj.get("currencyCode") != null && !jsonObj.get("currencyCode").isJsonNull()) && !jsonObj.get("currencyCode").isJsonPrimitive()) {
-        throw new IllegalArgumentException(String.format("Expected the field `currencyCode` to be a primitive type in the JSON string but got `%s`", jsonObj.get("currencyCode").toString()));
+        throw new IllegalArgumentException(String.format(Locale.ROOT, "Expected the field `currencyCode` to be a primitive type in the JSON string but got `%s`", jsonObj.get("currencyCode").toString()));
       }
       if (jsonObj.get("distribution") != null && !jsonObj.get("distribution").isJsonNull()) {
         JsonArray jsonArraydistribution = jsonObj.getAsJsonArray("distribution");
         if (jsonArraydistribution != null) {
           // ensure the json data is an array
           if (!jsonObj.get("distribution").isJsonArray()) {
-            throw new IllegalArgumentException(String.format("Expected the field `distribution` to be an array in the JSON string but got `%s`", jsonObj.get("distribution").toString()));
+            throw new IllegalArgumentException(String.format(Locale.ROOT, "Expected the field `distribution` to be an array in the JSON string but got `%s`", jsonObj.get("distribution").toString()));
           }
 
           // validate the optional field `distribution` (array)
@@ -373,7 +375,7 @@ public class FreightResponseFreightEstimateResponse {
         if (jsonArraylines != null) {
           // ensure the json data is an array
           if (!jsonObj.get("lines").isJsonArray()) {
-            throw new IllegalArgumentException(String.format("Expected the field `lines` to be an array in the JSON string but got `%s`", jsonObj.get("lines").toString()));
+            throw new IllegalArgumentException(String.format(Locale.ROOT, "Expected the field `lines` to be an array in the JSON string but got `%s`", jsonObj.get("lines").toString()));
           }
 
           // validate the optional field `lines` (array)

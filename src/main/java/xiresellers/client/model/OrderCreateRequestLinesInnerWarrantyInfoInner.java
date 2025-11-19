@@ -1,6 +1,6 @@
 /*
  * XI Sdk Resellers
- * For Resellers seeking to innovate with Ingram Micro's API solutions, automate your eCommerce experience with our array of API's and webhooks to craft a seamless journey for your customers.
+ * For Resellers seeking to innovate with Ingram Micro API solutions, automate your eCommerce experience with our array of API's and webhooks to craft a seamless journey for your customers.
  *
  * The version of the OpenAPI document: 1.0.0
  * 
@@ -14,6 +14,7 @@
 package xiresellers.client.model;
 
 import java.util.Objects;
+import java.util.Locale;
 import com.google.gson.TypeAdapter;
 import com.google.gson.annotations.JsonAdapter;
 import com.google.gson.annotations.SerializedName;
@@ -45,13 +46,14 @@ import java.util.HashSet;
 import java.util.List;
 import java.util.Map;
 import java.util.Set;
+import java.util.Locale;
 
 import xiresellers.client.JSON;
 
 /**
  * OrderCreateRequestLinesInnerWarrantyInfoInner
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2025-10-08T10:03:08.517274592Z[Etc/UTC]", comments = "Generator version: 7.14.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2025-11-19T09:27:17.785927845Z[Etc/UTC]", comments = "Generator version: 7.17.0")
 public class OrderCreateRequestLinesInnerWarrantyInfoInner {
   public static final String SERIALIZED_NAME_DIRECT_LINE_LINK = "directLineLink";
   @SerializedName(SERIALIZED_NAME_DIRECT_LINE_LINK)
@@ -225,7 +227,7 @@ public class OrderCreateRequestLinesInnerWarrantyInfoInner {
   public static void validateJsonElement(JsonElement jsonElement) throws IOException {
       if (jsonElement == null) {
         if (!OrderCreateRequestLinesInnerWarrantyInfoInner.openapiRequiredFields.isEmpty()) { // has required fields but JSON element is null
-          throw new IllegalArgumentException(String.format("The required field(s) %s in OrderCreateRequestLinesInnerWarrantyInfoInner is not found in the empty JSON string", OrderCreateRequestLinesInnerWarrantyInfoInner.openapiRequiredFields.toString()));
+          throw new IllegalArgumentException(String.format(Locale.ROOT, "The required field(s) %s in OrderCreateRequestLinesInnerWarrantyInfoInner is not found in the empty JSON string", OrderCreateRequestLinesInnerWarrantyInfoInner.openapiRequiredFields.toString()));
         }
       }
 
@@ -233,25 +235,25 @@ public class OrderCreateRequestLinesInnerWarrantyInfoInner {
       // check to see if the JSON string contains additional fields
       for (Map.Entry<String, JsonElement> entry : entries) {
         if (!OrderCreateRequestLinesInnerWarrantyInfoInner.openapiFields.contains(entry.getKey())) {
-          throw new IllegalArgumentException(String.format("The field `%s` in the JSON string is not defined in the `OrderCreateRequestLinesInnerWarrantyInfoInner` properties. JSON: %s", entry.getKey(), jsonElement.toString()));
+          throw new IllegalArgumentException(String.format(Locale.ROOT, "The field `%s` in the JSON string is not defined in the `OrderCreateRequestLinesInnerWarrantyInfoInner` properties. JSON: %s", entry.getKey(), jsonElement.toString()));
         }
       }
         JsonObject jsonObj = jsonElement.getAsJsonObject();
       if ((jsonObj.get("directLineLink") != null && !jsonObj.get("directLineLink").isJsonNull()) && !jsonObj.get("directLineLink").isJsonPrimitive()) {
-        throw new IllegalArgumentException(String.format("Expected the field `directLineLink` to be a primitive type in the JSON string but got `%s`", jsonObj.get("directLineLink").toString()));
+        throw new IllegalArgumentException(String.format(Locale.ROOT, "Expected the field `directLineLink` to be a primitive type in the JSON string but got `%s`", jsonObj.get("directLineLink").toString()));
       }
       if ((jsonObj.get("warrantyLineLink") != null && !jsonObj.get("warrantyLineLink").isJsonNull()) && !jsonObj.get("warrantyLineLink").isJsonPrimitive()) {
-        throw new IllegalArgumentException(String.format("Expected the field `warrantyLineLink` to be a primitive type in the JSON string but got `%s`", jsonObj.get("warrantyLineLink").toString()));
+        throw new IllegalArgumentException(String.format(Locale.ROOT, "Expected the field `warrantyLineLink` to be a primitive type in the JSON string but got `%s`", jsonObj.get("warrantyLineLink").toString()));
       }
       if ((jsonObj.get("hardwareLineLink") != null && !jsonObj.get("hardwareLineLink").isJsonNull()) && !jsonObj.get("hardwareLineLink").isJsonPrimitive()) {
-        throw new IllegalArgumentException(String.format("Expected the field `hardwareLineLink` to be a primitive type in the JSON string but got `%s`", jsonObj.get("hardwareLineLink").toString()));
+        throw new IllegalArgumentException(String.format(Locale.ROOT, "Expected the field `hardwareLineLink` to be a primitive type in the JSON string but got `%s`", jsonObj.get("hardwareLineLink").toString()));
       }
       if (jsonObj.get("serialInfo") != null && !jsonObj.get("serialInfo").isJsonNull()) {
         JsonArray jsonArrayserialInfo = jsonObj.getAsJsonArray("serialInfo");
         if (jsonArrayserialInfo != null) {
           // ensure the json data is an array
           if (!jsonObj.get("serialInfo").isJsonArray()) {
-            throw new IllegalArgumentException(String.format("Expected the field `serialInfo` to be an array in the JSON string but got `%s`", jsonObj.get("serialInfo").toString()));
+            throw new IllegalArgumentException(String.format(Locale.ROOT, "Expected the field `serialInfo` to be an array in the JSON string but got `%s`", jsonObj.get("serialInfo").toString()));
           }
 
           // validate the optional field `serialInfo` (array)

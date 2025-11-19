@@ -1,6 +1,6 @@
 /*
  * XI Sdk Resellers
- * For Resellers seeking to innovate with Ingram Micro's API solutions, automate your eCommerce experience with our array of API's and webhooks to craft a seamless journey for your customers.
+ * For Resellers seeking to innovate with Ingram Micro API solutions, automate your eCommerce experience with our array of API's and webhooks to craft a seamless journey for your customers.
  *
  * The version of the OpenAPI document: 1.0.0
  * 
@@ -14,6 +14,7 @@
 package xiresellers.client.model;
 
 import java.util.Objects;
+import java.util.Locale;
 import com.google.gson.TypeAdapter;
 import com.google.gson.annotations.JsonAdapter;
 import com.google.gson.annotations.SerializedName;
@@ -47,13 +48,14 @@ import java.util.HashSet;
 import java.util.List;
 import java.util.Map;
 import java.util.Set;
+import java.util.Locale;
 
 import xiresellers.client.JSON;
 
 /**
  * DealsDetailsResponse
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2025-10-08T10:03:08.517274592Z[Etc/UTC]", comments = "Generator version: 7.14.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2025-11-19T09:27:17.785927845Z[Etc/UTC]", comments = "Generator version: 7.17.0")
 public class DealsDetailsResponse {
   public static final String SERIALIZED_NAME_DEAL_ID = "dealId";
   @SerializedName(SERIALIZED_NAME_DEAL_ID)
@@ -409,7 +411,7 @@ public class DealsDetailsResponse {
   public static void validateJsonElement(JsonElement jsonElement) throws IOException {
       if (jsonElement == null) {
         if (!DealsDetailsResponse.openapiRequiredFields.isEmpty()) { // has required fields but JSON element is null
-          throw new IllegalArgumentException(String.format("The required field(s) %s in DealsDetailsResponse is not found in the empty JSON string", DealsDetailsResponse.openapiRequiredFields.toString()));
+          throw new IllegalArgumentException(String.format(Locale.ROOT, "The required field(s) %s in DealsDetailsResponse is not found in the empty JSON string", DealsDetailsResponse.openapiRequiredFields.toString()));
         }
       }
 
@@ -417,33 +419,33 @@ public class DealsDetailsResponse {
       // check to see if the JSON string contains additional fields
       for (Map.Entry<String, JsonElement> entry : entries) {
         if (!DealsDetailsResponse.openapiFields.contains(entry.getKey())) {
-          throw new IllegalArgumentException(String.format("The field `%s` in the JSON string is not defined in the `DealsDetailsResponse` properties. JSON: %s", entry.getKey(), jsonElement.toString()));
+          throw new IllegalArgumentException(String.format(Locale.ROOT, "The field `%s` in the JSON string is not defined in the `DealsDetailsResponse` properties. JSON: %s", entry.getKey(), jsonElement.toString()));
         }
       }
         JsonObject jsonObj = jsonElement.getAsJsonObject();
       if ((jsonObj.get("dealId") != null && !jsonObj.get("dealId").isJsonNull()) && !jsonObj.get("dealId").isJsonPrimitive()) {
-        throw new IllegalArgumentException(String.format("Expected the field `dealId` to be a primitive type in the JSON string but got `%s`", jsonObj.get("dealId").toString()));
+        throw new IllegalArgumentException(String.format(Locale.ROOT, "Expected the field `dealId` to be a primitive type in the JSON string but got `%s`", jsonObj.get("dealId").toString()));
       }
       if ((jsonObj.get("version") != null && !jsonObj.get("version").isJsonNull()) && !jsonObj.get("version").isJsonPrimitive()) {
-        throw new IllegalArgumentException(String.format("Expected the field `version` to be a primitive type in the JSON string but got `%s`", jsonObj.get("version").toString()));
+        throw new IllegalArgumentException(String.format(Locale.ROOT, "Expected the field `version` to be a primitive type in the JSON string but got `%s`", jsonObj.get("version").toString()));
       }
       if ((jsonObj.get("endUser") != null && !jsonObj.get("endUser").isJsonNull()) && !jsonObj.get("endUser").isJsonPrimitive()) {
-        throw new IllegalArgumentException(String.format("Expected the field `endUser` to be a primitive type in the JSON string but got `%s`", jsonObj.get("endUser").toString()));
+        throw new IllegalArgumentException(String.format(Locale.ROOT, "Expected the field `endUser` to be a primitive type in the JSON string but got `%s`", jsonObj.get("endUser").toString()));
       }
       if ((jsonObj.get("vendor") != null && !jsonObj.get("vendor").isJsonNull()) && !jsonObj.get("vendor").isJsonPrimitive()) {
-        throw new IllegalArgumentException(String.format("Expected the field `vendor` to be a primitive type in the JSON string but got `%s`", jsonObj.get("vendor").toString()));
+        throw new IllegalArgumentException(String.format(Locale.ROOT, "Expected the field `vendor` to be a primitive type in the JSON string but got `%s`", jsonObj.get("vendor").toString()));
       }
       if ((jsonObj.get("dealReceivedOn") != null && !jsonObj.get("dealReceivedOn").isJsonNull()) && !jsonObj.get("dealReceivedOn").isJsonPrimitive()) {
-        throw new IllegalArgumentException(String.format("Expected the field `dealReceivedOn` to be a primitive type in the JSON string but got `%s`", jsonObj.get("dealReceivedOn").toString()));
+        throw new IllegalArgumentException(String.format(Locale.ROOT, "Expected the field `dealReceivedOn` to be a primitive type in the JSON string but got `%s`", jsonObj.get("dealReceivedOn").toString()));
       }
       if ((jsonObj.get("dealExpiryDate") != null && !jsonObj.get("dealExpiryDate").isJsonNull()) && !jsonObj.get("dealExpiryDate").isJsonPrimitive()) {
-        throw new IllegalArgumentException(String.format("Expected the field `dealExpiryDate` to be a primitive type in the JSON string but got `%s`", jsonObj.get("dealExpiryDate").toString()));
+        throw new IllegalArgumentException(String.format(Locale.ROOT, "Expected the field `dealExpiryDate` to be a primitive type in the JSON string but got `%s`", jsonObj.get("dealExpiryDate").toString()));
       }
       if ((jsonObj.get("priceProtectionEndDate") != null && !jsonObj.get("priceProtectionEndDate").isJsonNull()) && !jsonObj.get("priceProtectionEndDate").isJsonPrimitive()) {
-        throw new IllegalArgumentException(String.format("Expected the field `priceProtectionEndDate` to be a primitive type in the JSON string but got `%s`", jsonObj.get("priceProtectionEndDate").toString()));
+        throw new IllegalArgumentException(String.format(Locale.ROOT, "Expected the field `priceProtectionEndDate` to be a primitive type in the JSON string but got `%s`", jsonObj.get("priceProtectionEndDate").toString()));
       }
       if ((jsonObj.get("currencyCode") != null && !jsonObj.get("currencyCode").isJsonNull()) && !jsonObj.get("currencyCode").isJsonPrimitive()) {
-        throw new IllegalArgumentException(String.format("Expected the field `currencyCode` to be a primitive type in the JSON string but got `%s`", jsonObj.get("currencyCode").toString()));
+        throw new IllegalArgumentException(String.format(Locale.ROOT, "Expected the field `currencyCode` to be a primitive type in the JSON string but got `%s`", jsonObj.get("currencyCode").toString()));
       }
       // validate the optional field `endUserInfo`
       if (jsonObj.get("endUserInfo") != null && !jsonObj.get("endUserInfo").isJsonNull()) {
@@ -454,7 +456,7 @@ public class DealsDetailsResponse {
         if (jsonArrayproducts != null) {
           // ensure the json data is an array
           if (!jsonObj.get("products").isJsonArray()) {
-            throw new IllegalArgumentException(String.format("Expected the field `products` to be an array in the JSON string but got `%s`", jsonObj.get("products").toString()));
+            throw new IllegalArgumentException(String.format(Locale.ROOT, "Expected the field `products` to be an array in the JSON string but got `%s`", jsonObj.get("products").toString()));
           }
 
           // validate the optional field `products` (array)

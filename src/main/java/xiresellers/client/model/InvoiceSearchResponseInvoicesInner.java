@@ -1,6 +1,6 @@
 /*
  * XI Sdk Resellers
- * For Resellers seeking to innovate with Ingram Micro's API solutions, automate your eCommerce experience with our array of API's and webhooks to craft a seamless journey for your customers.
+ * For Resellers seeking to innovate with Ingram Micro API solutions, automate your eCommerce experience with our array of API's and webhooks to craft a seamless journey for your customers.
  *
  * The version of the OpenAPI document: 1.0.0
  * 
@@ -14,6 +14,7 @@
 package xiresellers.client.model;
 
 import java.util.Objects;
+import java.util.Locale;
 import com.google.gson.TypeAdapter;
 import com.google.gson.annotations.JsonAdapter;
 import com.google.gson.annotations.SerializedName;
@@ -45,13 +46,14 @@ import java.util.HashSet;
 import java.util.List;
 import java.util.Map;
 import java.util.Set;
+import java.util.Locale;
 
 import xiresellers.client.JSON;
 
 /**
  * InvoiceSearchResponseInvoicesInner
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2025-10-08T10:03:08.517274592Z[Etc/UTC]", comments = "Generator version: 7.14.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2025-11-19T09:27:17.785927845Z[Etc/UTC]", comments = "Generator version: 7.17.0")
 public class InvoiceSearchResponseInvoicesInner {
   public static final String SERIALIZED_NAME_PAYMENT_TERMS_DUE_DATE = "paymentTermsDueDate";
   @SerializedName(SERIALIZED_NAME_PAYMENT_TERMS_DUE_DATE)
@@ -511,7 +513,7 @@ public class InvoiceSearchResponseInvoicesInner {
   public static void validateJsonElement(JsonElement jsonElement) throws IOException {
       if (jsonElement == null) {
         if (!InvoiceSearchResponseInvoicesInner.openapiRequiredFields.isEmpty()) { // has required fields but JSON element is null
-          throw new IllegalArgumentException(String.format("The required field(s) %s in InvoiceSearchResponseInvoicesInner is not found in the empty JSON string", InvoiceSearchResponseInvoicesInner.openapiRequiredFields.toString()));
+          throw new IllegalArgumentException(String.format(Locale.ROOT, "The required field(s) %s in InvoiceSearchResponseInvoicesInner is not found in the empty JSON string", InvoiceSearchResponseInvoicesInner.openapiRequiredFields.toString()));
         }
       }
 
@@ -519,43 +521,43 @@ public class InvoiceSearchResponseInvoicesInner {
       // check to see if the JSON string contains additional fields
       for (Map.Entry<String, JsonElement> entry : entries) {
         if (!InvoiceSearchResponseInvoicesInner.openapiFields.contains(entry.getKey())) {
-          throw new IllegalArgumentException(String.format("The field `%s` in the JSON string is not defined in the `InvoiceSearchResponseInvoicesInner` properties. JSON: %s", entry.getKey(), jsonElement.toString()));
+          throw new IllegalArgumentException(String.format(Locale.ROOT, "The field `%s` in the JSON string is not defined in the `InvoiceSearchResponseInvoicesInner` properties. JSON: %s", entry.getKey(), jsonElement.toString()));
         }
       }
         JsonObject jsonObj = jsonElement.getAsJsonObject();
       if ((jsonObj.get("paymentTermsDueDate") != null && !jsonObj.get("paymentTermsDueDate").isJsonNull()) && !jsonObj.get("paymentTermsDueDate").isJsonPrimitive()) {
-        throw new IllegalArgumentException(String.format("Expected the field `paymentTermsDueDate` to be a primitive type in the JSON string but got `%s`", jsonObj.get("paymentTermsDueDate").toString()));
+        throw new IllegalArgumentException(String.format(Locale.ROOT, "Expected the field `paymentTermsDueDate` to be a primitive type in the JSON string but got `%s`", jsonObj.get("paymentTermsDueDate").toString()));
       }
       // ensure the optional json data is an array if present
       if (jsonObj.get("specialBidNumbers") != null && !jsonObj.get("specialBidNumbers").isJsonNull() && !jsonObj.get("specialBidNumbers").isJsonArray()) {
-        throw new IllegalArgumentException(String.format("Expected the field `specialBidNumbers` to be an array in the JSON string but got `%s`", jsonObj.get("specialBidNumbers").toString()));
+        throw new IllegalArgumentException(String.format(Locale.ROOT, "Expected the field `specialBidNumbers` to be an array in the JSON string but got `%s`", jsonObj.get("specialBidNumbers").toString()));
       }
       if ((jsonObj.get("erpOrderNumber") != null && !jsonObj.get("erpOrderNumber").isJsonNull()) && !jsonObj.get("erpOrderNumber").isJsonPrimitive()) {
-        throw new IllegalArgumentException(String.format("Expected the field `erpOrderNumber` to be a primitive type in the JSON string but got `%s`", jsonObj.get("erpOrderNumber").toString()));
+        throw new IllegalArgumentException(String.format(Locale.ROOT, "Expected the field `erpOrderNumber` to be a primitive type in the JSON string but got `%s`", jsonObj.get("erpOrderNumber").toString()));
       }
       if ((jsonObj.get("invoiceNumber") != null && !jsonObj.get("invoiceNumber").isJsonNull()) && !jsonObj.get("invoiceNumber").isJsonPrimitive()) {
-        throw new IllegalArgumentException(String.format("Expected the field `invoiceNumber` to be a primitive type in the JSON string but got `%s`", jsonObj.get("invoiceNumber").toString()));
+        throw new IllegalArgumentException(String.format(Locale.ROOT, "Expected the field `invoiceNumber` to be a primitive type in the JSON string but got `%s`", jsonObj.get("invoiceNumber").toString()));
       }
       if ((jsonObj.get("invoiceStatus") != null && !jsonObj.get("invoiceStatus").isJsonNull()) && !jsonObj.get("invoiceStatus").isJsonPrimitive()) {
-        throw new IllegalArgumentException(String.format("Expected the field `invoiceStatus` to be a primitive type in the JSON string but got `%s`", jsonObj.get("invoiceStatus").toString()));
+        throw new IllegalArgumentException(String.format(Locale.ROOT, "Expected the field `invoiceStatus` to be a primitive type in the JSON string but got `%s`", jsonObj.get("invoiceStatus").toString()));
       }
       if ((jsonObj.get("invoiceDate") != null && !jsonObj.get("invoiceDate").isJsonNull()) && !jsonObj.get("invoiceDate").isJsonPrimitive()) {
-        throw new IllegalArgumentException(String.format("Expected the field `invoiceDate` to be a primitive type in the JSON string but got `%s`", jsonObj.get("invoiceDate").toString()));
+        throw new IllegalArgumentException(String.format(Locale.ROOT, "Expected the field `invoiceDate` to be a primitive type in the JSON string but got `%s`", jsonObj.get("invoiceDate").toString()));
       }
       if ((jsonObj.get("invoiceDueDate") != null && !jsonObj.get("invoiceDueDate").isJsonNull()) && !jsonObj.get("invoiceDueDate").isJsonPrimitive()) {
-        throw new IllegalArgumentException(String.format("Expected the field `invoiceDueDate` to be a primitive type in the JSON string but got `%s`", jsonObj.get("invoiceDueDate").toString()));
+        throw new IllegalArgumentException(String.format(Locale.ROOT, "Expected the field `invoiceDueDate` to be a primitive type in the JSON string but got `%s`", jsonObj.get("invoiceDueDate").toString()));
       }
       if ((jsonObj.get("customerOrderNumber") != null && !jsonObj.get("customerOrderNumber").isJsonNull()) && !jsonObj.get("customerOrderNumber").isJsonPrimitive()) {
-        throw new IllegalArgumentException(String.format("Expected the field `customerOrderNumber` to be a primitive type in the JSON string but got `%s`", jsonObj.get("customerOrderNumber").toString()));
+        throw new IllegalArgumentException(String.format(Locale.ROOT, "Expected the field `customerOrderNumber` to be a primitive type in the JSON string but got `%s`", jsonObj.get("customerOrderNumber").toString()));
       }
       if ((jsonObj.get("endCustomerOrderNumber") != null && !jsonObj.get("endCustomerOrderNumber").isJsonNull()) && !jsonObj.get("endCustomerOrderNumber").isJsonPrimitive()) {
-        throw new IllegalArgumentException(String.format("Expected the field `endCustomerOrderNumber` to be a primitive type in the JSON string but got `%s`", jsonObj.get("endCustomerOrderNumber").toString()));
+        throw new IllegalArgumentException(String.format(Locale.ROOT, "Expected the field `endCustomerOrderNumber` to be a primitive type in the JSON string but got `%s`", jsonObj.get("endCustomerOrderNumber").toString()));
       }
       if ((jsonObj.get("orderCreateDate") != null && !jsonObj.get("orderCreateDate").isJsonNull()) && !jsonObj.get("orderCreateDate").isJsonPrimitive()) {
-        throw new IllegalArgumentException(String.format("Expected the field `orderCreateDate` to be a primitive type in the JSON string but got `%s`", jsonObj.get("orderCreateDate").toString()));
+        throw new IllegalArgumentException(String.format(Locale.ROOT, "Expected the field `orderCreateDate` to be a primitive type in the JSON string but got `%s`", jsonObj.get("orderCreateDate").toString()));
       }
       if ((jsonObj.get("gstInvoiceNumber") != null && !jsonObj.get("gstInvoiceNumber").isJsonNull()) && !jsonObj.get("gstInvoiceNumber").isJsonPrimitive()) {
-        throw new IllegalArgumentException(String.format("Expected the field `gstInvoiceNumber` to be a primitive type in the JSON string but got `%s`", jsonObj.get("gstInvoiceNumber").toString()));
+        throw new IllegalArgumentException(String.format(Locale.ROOT, "Expected the field `gstInvoiceNumber` to be a primitive type in the JSON string but got `%s`", jsonObj.get("gstInvoiceNumber").toString()));
       }
   }
 

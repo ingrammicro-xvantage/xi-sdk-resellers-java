@@ -1,6 +1,6 @@
 /*
  * XI Sdk Resellers
- * For Resellers seeking to innovate with Ingram Micro's API solutions, automate your eCommerce experience with our array of API's and webhooks to craft a seamless journey for your customers.
+ * For Resellers seeking to innovate with Ingram Micro API solutions, automate your eCommerce experience with our array of API's and webhooks to craft a seamless journey for your customers.
  *
  * The version of the OpenAPI document: 1.0.0
  * 
@@ -14,6 +14,7 @@
 package xiresellers.client.model;
 
 import java.util.Objects;
+import java.util.Locale;
 import com.google.gson.TypeAdapter;
 import com.google.gson.annotations.JsonAdapter;
 import com.google.gson.annotations.SerializedName;
@@ -46,13 +47,14 @@ import java.util.HashSet;
 import java.util.List;
 import java.util.Map;
 import java.util.Set;
+import java.util.Locale;
 
 import xiresellers.client.JSON;
 
 /**
  * ReturnsDetailsResponse
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2025-10-08T10:03:08.517274592Z[Etc/UTC]", comments = "Generator version: 7.14.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2025-11-19T09:27:17.785927845Z[Etc/UTC]", comments = "Generator version: 7.17.0")
 public class ReturnsDetailsResponse {
   public static final String SERIALIZED_NAME_TYPE_OF_DETAILS = "typeOfDetails";
   @SerializedName(SERIALIZED_NAME_TYPE_OF_DETAILS)
@@ -460,7 +462,7 @@ public class ReturnsDetailsResponse {
   public static void validateJsonElement(JsonElement jsonElement) throws IOException {
       if (jsonElement == null) {
         if (!ReturnsDetailsResponse.openapiRequiredFields.isEmpty()) { // has required fields but JSON element is null
-          throw new IllegalArgumentException(String.format("The required field(s) %s in ReturnsDetailsResponse is not found in the empty JSON string", ReturnsDetailsResponse.openapiRequiredFields.toString()));
+          throw new IllegalArgumentException(String.format(Locale.ROOT, "The required field(s) %s in ReturnsDetailsResponse is not found in the empty JSON string", ReturnsDetailsResponse.openapiRequiredFields.toString()));
         }
       }
 
@@ -468,40 +470,40 @@ public class ReturnsDetailsResponse {
       // check to see if the JSON string contains additional fields
       for (Map.Entry<String, JsonElement> entry : entries) {
         if (!ReturnsDetailsResponse.openapiFields.contains(entry.getKey())) {
-          throw new IllegalArgumentException(String.format("The field `%s` in the JSON string is not defined in the `ReturnsDetailsResponse` properties. JSON: %s", entry.getKey(), jsonElement.toString()));
+          throw new IllegalArgumentException(String.format(Locale.ROOT, "The field `%s` in the JSON string is not defined in the `ReturnsDetailsResponse` properties. JSON: %s", entry.getKey(), jsonElement.toString()));
         }
       }
         JsonObject jsonObj = jsonElement.getAsJsonObject();
       if ((jsonObj.get("typeOfDetails") != null && !jsonObj.get("typeOfDetails").isJsonNull()) && !jsonObj.get("typeOfDetails").isJsonPrimitive()) {
-        throw new IllegalArgumentException(String.format("Expected the field `typeOfDetails` to be a primitive type in the JSON string but got `%s`", jsonObj.get("typeOfDetails").toString()));
+        throw new IllegalArgumentException(String.format(Locale.ROOT, "Expected the field `typeOfDetails` to be a primitive type in the JSON string but got `%s`", jsonObj.get("typeOfDetails").toString()));
       }
       if ((jsonObj.get("rmaClaimId") != null && !jsonObj.get("rmaClaimId").isJsonNull()) && !jsonObj.get("rmaClaimId").isJsonPrimitive()) {
-        throw new IllegalArgumentException(String.format("Expected the field `rmaClaimId` to be a primitive type in the JSON string but got `%s`", jsonObj.get("rmaClaimId").toString()));
+        throw new IllegalArgumentException(String.format(Locale.ROOT, "Expected the field `rmaClaimId` to be a primitive type in the JSON string but got `%s`", jsonObj.get("rmaClaimId").toString()));
       }
       if ((jsonObj.get("caseRequestNumber") != null && !jsonObj.get("caseRequestNumber").isJsonNull()) && !jsonObj.get("caseRequestNumber").isJsonPrimitive()) {
-        throw new IllegalArgumentException(String.format("Expected the field `caseRequestNumber` to be a primitive type in the JSON string but got `%s`", jsonObj.get("caseRequestNumber").toString()));
+        throw new IllegalArgumentException(String.format(Locale.ROOT, "Expected the field `caseRequestNumber` to be a primitive type in the JSON string but got `%s`", jsonObj.get("caseRequestNumber").toString()));
       }
       if ((jsonObj.get("createdOn") != null && !jsonObj.get("createdOn").isJsonNull()) && !jsonObj.get("createdOn").isJsonPrimitive()) {
-        throw new IllegalArgumentException(String.format("Expected the field `createdOn` to be a primitive type in the JSON string but got `%s`", jsonObj.get("createdOn").toString()));
+        throw new IllegalArgumentException(String.format(Locale.ROOT, "Expected the field `createdOn` to be a primitive type in the JSON string but got `%s`", jsonObj.get("createdOn").toString()));
       }
       if ((jsonObj.get("returnReason") != null && !jsonObj.get("returnReason").isJsonNull()) && !jsonObj.get("returnReason").isJsonPrimitive()) {
-        throw new IllegalArgumentException(String.format("Expected the field `returnReason` to be a primitive type in the JSON string but got `%s`", jsonObj.get("returnReason").toString()));
+        throw new IllegalArgumentException(String.format(Locale.ROOT, "Expected the field `returnReason` to be a primitive type in the JSON string but got `%s`", jsonObj.get("returnReason").toString()));
       }
       if ((jsonObj.get("referenceNumber") != null && !jsonObj.get("referenceNumber").isJsonNull()) && !jsonObj.get("referenceNumber").isJsonPrimitive()) {
-        throw new IllegalArgumentException(String.format("Expected the field `referenceNumber` to be a primitive type in the JSON string but got `%s`", jsonObj.get("referenceNumber").toString()));
+        throw new IllegalArgumentException(String.format(Locale.ROOT, "Expected the field `referenceNumber` to be a primitive type in the JSON string but got `%s`", jsonObj.get("referenceNumber").toString()));
       }
       if ((jsonObj.get("status") != null && !jsonObj.get("status").isJsonNull()) && !jsonObj.get("status").isJsonPrimitive()) {
-        throw new IllegalArgumentException(String.format("Expected the field `status` to be a primitive type in the JSON string but got `%s`", jsonObj.get("status").toString()));
+        throw new IllegalArgumentException(String.format(Locale.ROOT, "Expected the field `status` to be a primitive type in the JSON string but got `%s`", jsonObj.get("status").toString()));
       }
       if ((jsonObj.get("returnWarehouseAddress") != null && !jsonObj.get("returnWarehouseAddress").isJsonNull()) && !jsonObj.get("returnWarehouseAddress").isJsonPrimitive()) {
-        throw new IllegalArgumentException(String.format("Expected the field `returnWarehouseAddress` to be a primitive type in the JSON string but got `%s`", jsonObj.get("returnWarehouseAddress").toString()));
+        throw new IllegalArgumentException(String.format(Locale.ROOT, "Expected the field `returnWarehouseAddress` to be a primitive type in the JSON string but got `%s`", jsonObj.get("returnWarehouseAddress").toString()));
       }
       if (jsonObj.get("products") != null && !jsonObj.get("products").isJsonNull()) {
         JsonArray jsonArrayproducts = jsonObj.getAsJsonArray("products");
         if (jsonArrayproducts != null) {
           // ensure the json data is an array
           if (!jsonObj.get("products").isJsonArray()) {
-            throw new IllegalArgumentException(String.format("Expected the field `products` to be an array in the JSON string but got `%s`", jsonObj.get("products").toString()));
+            throw new IllegalArgumentException(String.format(Locale.ROOT, "Expected the field `products` to be an array in the JSON string but got `%s`", jsonObj.get("products").toString()));
           }
 
           // validate the optional field `products` (array)

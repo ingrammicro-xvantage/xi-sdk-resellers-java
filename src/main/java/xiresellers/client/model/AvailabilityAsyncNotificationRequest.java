@@ -1,6 +1,6 @@
 /*
  * XI Sdk Resellers
- * For Resellers seeking to innovate with Ingram Micro's API solutions, automate your eCommerce experience with our array of API's and webhooks to craft a seamless journey for your customers.
+ * For Resellers seeking to innovate with Ingram Micro API solutions, automate your eCommerce experience with our array of API's and webhooks to craft a seamless journey for your customers.
  *
  * The version of the OpenAPI document: 1.0.0
  * 
@@ -14,6 +14,7 @@
 package xiresellers.client.model;
 
 import java.util.Objects;
+import java.util.Locale;
 import com.google.gson.TypeAdapter;
 import com.google.gson.annotations.JsonAdapter;
 import com.google.gson.annotations.SerializedName;
@@ -45,13 +46,14 @@ import java.util.HashSet;
 import java.util.List;
 import java.util.Map;
 import java.util.Set;
+import java.util.Locale;
 
 import xiresellers.client.JSON;
 
 /**
  * AvailabilityAsyncNotificationRequest
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2025-10-08T10:03:08.517274592Z[Etc/UTC]", comments = "Generator version: 7.14.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2025-11-19T09:27:17.785927845Z[Etc/UTC]", comments = "Generator version: 7.17.0")
 public class AvailabilityAsyncNotificationRequest {
   public static final String SERIALIZED_NAME_TOPIC = "topic";
   @SerializedName(SERIALIZED_NAME_TOPIC)
@@ -251,7 +253,7 @@ public class AvailabilityAsyncNotificationRequest {
   public static void validateJsonElement(JsonElement jsonElement) throws IOException {
       if (jsonElement == null) {
         if (!AvailabilityAsyncNotificationRequest.openapiRequiredFields.isEmpty()) { // has required fields but JSON element is null
-          throw new IllegalArgumentException(String.format("The required field(s) %s in AvailabilityAsyncNotificationRequest is not found in the empty JSON string", AvailabilityAsyncNotificationRequest.openapiRequiredFields.toString()));
+          throw new IllegalArgumentException(String.format(Locale.ROOT, "The required field(s) %s in AvailabilityAsyncNotificationRequest is not found in the empty JSON string", AvailabilityAsyncNotificationRequest.openapiRequiredFields.toString()));
         }
       }
 
@@ -259,28 +261,28 @@ public class AvailabilityAsyncNotificationRequest {
       // check to see if the JSON string contains additional fields
       for (Map.Entry<String, JsonElement> entry : entries) {
         if (!AvailabilityAsyncNotificationRequest.openapiFields.contains(entry.getKey())) {
-          throw new IllegalArgumentException(String.format("The field `%s` in the JSON string is not defined in the `AvailabilityAsyncNotificationRequest` properties. JSON: %s", entry.getKey(), jsonElement.toString()));
+          throw new IllegalArgumentException(String.format(Locale.ROOT, "The field `%s` in the JSON string is not defined in the `AvailabilityAsyncNotificationRequest` properties. JSON: %s", entry.getKey(), jsonElement.toString()));
         }
       }
         JsonObject jsonObj = jsonElement.getAsJsonObject();
       if ((jsonObj.get("topic") != null && !jsonObj.get("topic").isJsonNull()) && !jsonObj.get("topic").isJsonPrimitive()) {
-        throw new IllegalArgumentException(String.format("Expected the field `topic` to be a primitive type in the JSON string but got `%s`", jsonObj.get("topic").toString()));
+        throw new IllegalArgumentException(String.format(Locale.ROOT, "Expected the field `topic` to be a primitive type in the JSON string but got `%s`", jsonObj.get("topic").toString()));
       }
       if ((jsonObj.get("event") != null && !jsonObj.get("event").isJsonNull()) && !jsonObj.get("event").isJsonPrimitive()) {
-        throw new IllegalArgumentException(String.format("Expected the field `event` to be a primitive type in the JSON string but got `%s`", jsonObj.get("event").toString()));
+        throw new IllegalArgumentException(String.format(Locale.ROOT, "Expected the field `event` to be a primitive type in the JSON string but got `%s`", jsonObj.get("event").toString()));
       }
       if ((jsonObj.get("eventTimeStamp") != null && !jsonObj.get("eventTimeStamp").isJsonNull()) && !jsonObj.get("eventTimeStamp").isJsonPrimitive()) {
-        throw new IllegalArgumentException(String.format("Expected the field `eventTimeStamp` to be a primitive type in the JSON string but got `%s`", jsonObj.get("eventTimeStamp").toString()));
+        throw new IllegalArgumentException(String.format(Locale.ROOT, "Expected the field `eventTimeStamp` to be a primitive type in the JSON string but got `%s`", jsonObj.get("eventTimeStamp").toString()));
       }
       if ((jsonObj.get("eventId") != null && !jsonObj.get("eventId").isJsonNull()) && !jsonObj.get("eventId").isJsonPrimitive()) {
-        throw new IllegalArgumentException(String.format("Expected the field `eventId` to be a primitive type in the JSON string but got `%s`", jsonObj.get("eventId").toString()));
+        throw new IllegalArgumentException(String.format(Locale.ROOT, "Expected the field `eventId` to be a primitive type in the JSON string but got `%s`", jsonObj.get("eventId").toString()));
       }
       if (jsonObj.get("resource") != null && !jsonObj.get("resource").isJsonNull()) {
         JsonArray jsonArrayresource = jsonObj.getAsJsonArray("resource");
         if (jsonArrayresource != null) {
           // ensure the json data is an array
           if (!jsonObj.get("resource").isJsonArray()) {
-            throw new IllegalArgumentException(String.format("Expected the field `resource` to be an array in the JSON string but got `%s`", jsonObj.get("resource").toString()));
+            throw new IllegalArgumentException(String.format(Locale.ROOT, "Expected the field `resource` to be an array in the JSON string but got `%s`", jsonObj.get("resource").toString()));
           }
 
           // validate the optional field `resource` (array)

@@ -1,6 +1,6 @@
 /*
  * XI Sdk Resellers
- * For Resellers seeking to innovate with Ingram Micro's API solutions, automate your eCommerce experience with our array of API's and webhooks to craft a seamless journey for your customers.
+ * For Resellers seeking to innovate with Ingram Micro API solutions, automate your eCommerce experience with our array of API's and webhooks to craft a seamless journey for your customers.
  *
  * The version of the OpenAPI document: 1.0.0
  * 
@@ -14,6 +14,7 @@
 package xiresellers.client.model;
 
 import java.util.Objects;
+import java.util.Locale;
 import com.google.gson.TypeAdapter;
 import com.google.gson.annotations.JsonAdapter;
 import com.google.gson.annotations.SerializedName;
@@ -45,13 +46,14 @@ import java.util.HashSet;
 import java.util.List;
 import java.util.Map;
 import java.util.Set;
+import java.util.Locale;
 
 import xiresellers.client.JSON;
 
 /**
  * Additional Information related to the product.
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2025-10-08T10:03:08.517274592Z[Etc/UTC]", comments = "Generator version: 7.14.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2025-11-19T09:27:17.785927845Z[Etc/UTC]", comments = "Generator version: 7.17.0")
 public class ProductDetailResponseAdditionalInformation {
   public static final String SERIALIZED_NAME_PRODUCT_WEIGHT = "productWeight";
   @SerializedName(SERIALIZED_NAME_PRODUCT_WEIGHT)
@@ -303,7 +305,7 @@ public class ProductDetailResponseAdditionalInformation {
   public static void validateJsonElement(JsonElement jsonElement) throws IOException {
       if (jsonElement == null) {
         if (!ProductDetailResponseAdditionalInformation.openapiRequiredFields.isEmpty()) { // has required fields but JSON element is null
-          throw new IllegalArgumentException(String.format("The required field(s) %s in ProductDetailResponseAdditionalInformation is not found in the empty JSON string", ProductDetailResponseAdditionalInformation.openapiRequiredFields.toString()));
+          throw new IllegalArgumentException(String.format(Locale.ROOT, "The required field(s) %s in ProductDetailResponseAdditionalInformation is not found in the empty JSON string", ProductDetailResponseAdditionalInformation.openapiRequiredFields.toString()));
         }
       }
 
@@ -311,7 +313,7 @@ public class ProductDetailResponseAdditionalInformation {
       // check to see if the JSON string contains additional fields
       for (Map.Entry<String, JsonElement> entry : entries) {
         if (!ProductDetailResponseAdditionalInformation.openapiFields.contains(entry.getKey())) {
-          throw new IllegalArgumentException(String.format("The field `%s` in the JSON string is not defined in the `ProductDetailResponseAdditionalInformation` properties. JSON: %s", entry.getKey(), jsonElement.toString()));
+          throw new IllegalArgumentException(String.format(Locale.ROOT, "The field `%s` in the JSON string is not defined in the `ProductDetailResponseAdditionalInformation` properties. JSON: %s", entry.getKey(), jsonElement.toString()));
         }
       }
         JsonObject jsonObj = jsonElement.getAsJsonObject();
@@ -320,7 +322,7 @@ public class ProductDetailResponseAdditionalInformation {
         if (jsonArrayproductWeight != null) {
           // ensure the json data is an array
           if (!jsonObj.get("productWeight").isJsonArray()) {
-            throw new IllegalArgumentException(String.format("Expected the field `productWeight` to be an array in the JSON string but got `%s`", jsonObj.get("productWeight").toString()));
+            throw new IllegalArgumentException(String.format(Locale.ROOT, "Expected the field `productWeight` to be an array in the JSON string but got `%s`", jsonObj.get("productWeight").toString()));
           }
 
           // validate the optional field `productWeight` (array)
@@ -330,19 +332,19 @@ public class ProductDetailResponseAdditionalInformation {
         }
       }
       if ((jsonObj.get("height") != null && !jsonObj.get("height").isJsonNull()) && !jsonObj.get("height").isJsonPrimitive()) {
-        throw new IllegalArgumentException(String.format("Expected the field `height` to be a primitive type in the JSON string but got `%s`", jsonObj.get("height").toString()));
+        throw new IllegalArgumentException(String.format(Locale.ROOT, "Expected the field `height` to be a primitive type in the JSON string but got `%s`", jsonObj.get("height").toString()));
       }
       if ((jsonObj.get("width") != null && !jsonObj.get("width").isJsonNull()) && !jsonObj.get("width").isJsonPrimitive()) {
-        throw new IllegalArgumentException(String.format("Expected the field `width` to be a primitive type in the JSON string but got `%s`", jsonObj.get("width").toString()));
+        throw new IllegalArgumentException(String.format(Locale.ROOT, "Expected the field `width` to be a primitive type in the JSON string but got `%s`", jsonObj.get("width").toString()));
       }
       if ((jsonObj.get("length") != null && !jsonObj.get("length").isJsonNull()) && !jsonObj.get("length").isJsonPrimitive()) {
-        throw new IllegalArgumentException(String.format("Expected the field `length` to be a primitive type in the JSON string but got `%s`", jsonObj.get("length").toString()));
+        throw new IllegalArgumentException(String.format(Locale.ROOT, "Expected the field `length` to be a primitive type in the JSON string but got `%s`", jsonObj.get("length").toString()));
       }
       if ((jsonObj.get("netWeight") != null && !jsonObj.get("netWeight").isJsonNull()) && !jsonObj.get("netWeight").isJsonPrimitive()) {
-        throw new IllegalArgumentException(String.format("Expected the field `netWeight` to be a primitive type in the JSON string but got `%s`", jsonObj.get("netWeight").toString()));
+        throw new IllegalArgumentException(String.format(Locale.ROOT, "Expected the field `netWeight` to be a primitive type in the JSON string but got `%s`", jsonObj.get("netWeight").toString()));
       }
       if ((jsonObj.get("dimensionUnit") != null && !jsonObj.get("dimensionUnit").isJsonNull()) && !jsonObj.get("dimensionUnit").isJsonPrimitive()) {
-        throw new IllegalArgumentException(String.format("Expected the field `dimensionUnit` to be a primitive type in the JSON string but got `%s`", jsonObj.get("dimensionUnit").toString()));
+        throw new IllegalArgumentException(String.format(Locale.ROOT, "Expected the field `dimensionUnit` to be a primitive type in the JSON string but got `%s`", jsonObj.get("dimensionUnit").toString()));
       }
   }
 

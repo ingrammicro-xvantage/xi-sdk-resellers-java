@@ -1,6 +1,6 @@
 /*
  * XI Sdk Resellers
- * For Resellers seeking to innovate with Ingram Micro's API solutions, automate your eCommerce experience with our array of API's and webhooks to craft a seamless journey for your customers.
+ * For Resellers seeking to innovate with Ingram Micro API solutions, automate your eCommerce experience with our array of API's and webhooks to craft a seamless journey for your customers.
  *
  * The version of the OpenAPI document: 1.0.0
  * 
@@ -14,6 +14,7 @@
 package xiresellers.client.model;
 
 import java.util.Objects;
+import java.util.Locale;
 import com.google.gson.TypeAdapter;
 import com.google.gson.annotations.JsonAdapter;
 import com.google.gson.annotations.SerializedName;
@@ -48,13 +49,14 @@ import java.util.HashSet;
 import java.util.List;
 import java.util.Map;
 import java.util.Set;
+import java.util.Locale;
 
 import xiresellers.client.JSON;
 
 /**
  * PriceAndAvailabilityRequest
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2025-10-08T10:03:08.517274592Z[Etc/UTC]", comments = "Generator version: 7.14.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2025-11-19T09:27:17.785927845Z[Etc/UTC]", comments = "Generator version: 7.17.0")
 public class PriceAndAvailabilityRequest {
   public static final String SERIALIZED_NAME_SHOW_AVAILABLE_DISCOUNTS = "showAvailableDiscounts";
   @SerializedName(SERIALIZED_NAME_SHOW_AVAILABLE_DISCOUNTS)
@@ -307,7 +309,7 @@ public class PriceAndAvailabilityRequest {
   public static void validateJsonElement(JsonElement jsonElement) throws IOException {
       if (jsonElement == null) {
         if (!PriceAndAvailabilityRequest.openapiRequiredFields.isEmpty()) { // has required fields but JSON element is null
-          throw new IllegalArgumentException(String.format("The required field(s) %s in PriceAndAvailabilityRequest is not found in the empty JSON string", PriceAndAvailabilityRequest.openapiRequiredFields.toString()));
+          throw new IllegalArgumentException(String.format(Locale.ROOT, "The required field(s) %s in PriceAndAvailabilityRequest is not found in the empty JSON string", PriceAndAvailabilityRequest.openapiRequiredFields.toString()));
         }
       }
 
@@ -315,19 +317,19 @@ public class PriceAndAvailabilityRequest {
       // check to see if the JSON string contains additional fields
       for (Map.Entry<String, JsonElement> entry : entries) {
         if (!PriceAndAvailabilityRequest.openapiFields.contains(entry.getKey())) {
-          throw new IllegalArgumentException(String.format("The field `%s` in the JSON string is not defined in the `PriceAndAvailabilityRequest` properties. JSON: %s", entry.getKey(), jsonElement.toString()));
+          throw new IllegalArgumentException(String.format(Locale.ROOT, "The field `%s` in the JSON string is not defined in the `PriceAndAvailabilityRequest` properties. JSON: %s", entry.getKey(), jsonElement.toString()));
         }
       }
         JsonObject jsonObj = jsonElement.getAsJsonObject();
       if ((jsonObj.get("specialBidNumber") != null && !jsonObj.get("specialBidNumber").isJsonNull()) && !jsonObj.get("specialBidNumber").isJsonPrimitive()) {
-        throw new IllegalArgumentException(String.format("Expected the field `specialBidNumber` to be a primitive type in the JSON string but got `%s`", jsonObj.get("specialBidNumber").toString()));
+        throw new IllegalArgumentException(String.format(Locale.ROOT, "Expected the field `specialBidNumber` to be a primitive type in the JSON string but got `%s`", jsonObj.get("specialBidNumber").toString()));
       }
       if (jsonObj.get("availabilityByWarehouse") != null && !jsonObj.get("availabilityByWarehouse").isJsonNull()) {
         JsonArray jsonArrayavailabilityByWarehouse = jsonObj.getAsJsonArray("availabilityByWarehouse");
         if (jsonArrayavailabilityByWarehouse != null) {
           // ensure the json data is an array
           if (!jsonObj.get("availabilityByWarehouse").isJsonArray()) {
-            throw new IllegalArgumentException(String.format("Expected the field `availabilityByWarehouse` to be an array in the JSON string but got `%s`", jsonObj.get("availabilityByWarehouse").toString()));
+            throw new IllegalArgumentException(String.format(Locale.ROOT, "Expected the field `availabilityByWarehouse` to be an array in the JSON string but got `%s`", jsonObj.get("availabilityByWarehouse").toString()));
           }
 
           // validate the optional field `availabilityByWarehouse` (array)
@@ -341,7 +343,7 @@ public class PriceAndAvailabilityRequest {
         if (jsonArrayproducts != null) {
           // ensure the json data is an array
           if (!jsonObj.get("products").isJsonArray()) {
-            throw new IllegalArgumentException(String.format("Expected the field `products` to be an array in the JSON string but got `%s`", jsonObj.get("products").toString()));
+            throw new IllegalArgumentException(String.format(Locale.ROOT, "Expected the field `products` to be an array in the JSON string but got `%s`", jsonObj.get("products").toString()));
           }
 
           // validate the optional field `products` (array)
@@ -355,7 +357,7 @@ public class PriceAndAvailabilityRequest {
         if (jsonArrayadditionalAttributes != null) {
           // ensure the json data is an array
           if (!jsonObj.get("additionalAttributes").isJsonArray()) {
-            throw new IllegalArgumentException(String.format("Expected the field `additionalAttributes` to be an array in the JSON string but got `%s`", jsonObj.get("additionalAttributes").toString()));
+            throw new IllegalArgumentException(String.format(Locale.ROOT, "Expected the field `additionalAttributes` to be an array in the JSON string but got `%s`", jsonObj.get("additionalAttributes").toString()));
           }
 
           // validate the optional field `additionalAttributes` (array)

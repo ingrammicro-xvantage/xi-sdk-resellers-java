@@ -1,6 +1,6 @@
 /*
  * XI Sdk Resellers
- * For Resellers seeking to innovate with Ingram Micro's API solutions, automate your eCommerce experience with our array of API's and webhooks to craft a seamless journey for your customers.
+ * For Resellers seeking to innovate with Ingram Micro API solutions, automate your eCommerce experience with our array of API's and webhooks to craft a seamless journey for your customers.
  *
  * The version of the OpenAPI document: 1.0.0
  * 
@@ -13,45 +13,25 @@
 
 package xiresellers.client;
 
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2025-10-08T10:03:08.517274592Z[Etc/UTC]", comments = "Generator version: 7.14.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2025-11-19T09:27:17.785927845Z[Etc/UTC]", comments = "Generator version: 7.17.0")
 public class Pair {
-    private String name = "";
-    private String value = "";
+  private final String name;
+  private final String value;
 
-    public Pair (String name, String value) {
-        setName(name);
-        setValue(value);
-    }
+  public Pair(String name, String value) {
+    this.name = isValidString(name) ? name : "";
+    this.value = isValidString(value) ? value : "";
+  }
 
-    private void setName(String name) {
-        if (!isValidString(name)) {
-            return;
-        }
+  public String getName() {
+    return this.name;
+  }
 
-        this.name = name;
-    }
+  public String getValue() {
+    return this.value;
+  }
 
-    private void setValue(String value) {
-        if (!isValidString(value)) {
-            return;
-        }
-
-        this.value = value;
-    }
-
-    public String getName() {
-        return this.name;
-    }
-
-    public String getValue() {
-        return this.value;
-    }
-
-    private boolean isValidString(String arg) {
-        if (arg == null) {
-            return false;
-        }
-
-        return true;
-    }
+  private static boolean isValidString(String arg) {
+    return arg != null;
+  }
 }

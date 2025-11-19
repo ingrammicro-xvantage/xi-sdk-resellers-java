@@ -1,6 +1,6 @@
 /*
  * XI Sdk Resellers
- * For Resellers seeking to innovate with Ingram Micro's API solutions, automate your eCommerce experience with our array of API's and webhooks to craft a seamless journey for your customers.
+ * For Resellers seeking to innovate with Ingram Micro API solutions, automate your eCommerce experience with our array of API's and webhooks to craft a seamless journey for your customers.
  *
  * The version of the OpenAPI document: 1.0.0
  * 
@@ -30,6 +30,7 @@ import xiresellers.client.model.OrderCreateV7RequestResellerInfo;
 import xiresellers.client.model.OrderCreateV7RequestShipToInfo;
 import xiresellers.client.model.OrderCreateV7RequestShipmentDetails;
 import xiresellers.client.model.OrderCreateV7RequestVmfAdditionalAttributesInner;
+import xiresellers.client.model.OrderCreateV7RequestVmfVendorAdditionalAttributesInner;
 import org.junit.jupiter.api.Disabled;
 import org.junit.jupiter.api.Test;
 
@@ -157,6 +158,22 @@ public class OrderCreateV7RequestTest {
     @Test
     public void vmfAdditionalAttributesTest() {
         // TODO: test vmfAdditionalAttributes
+    }
+
+    /**
+     * Test the property 'vmfVendorAdditionalAttributes'
+     */
+    @Test
+    public void vmfVendorAdditionalAttributesTest() {
+        // TODO: test vmfVendorAdditionalAttributes
+    }
+
+    /**
+     * Test the property 'vriAdditionalAttributes'
+     */
+    @Test
+    public void vriAdditionalAttributesTest() {
+        // TODO: test vriAdditionalAttributes
     }
 
     /**
