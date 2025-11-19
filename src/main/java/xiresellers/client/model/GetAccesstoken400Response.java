@@ -50,7 +50,7 @@ import xiresellers.client.JSON;
 /**
  * GetAccesstoken400Response
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2025-11-19T09:36:22.217099195Z[Etc/UTC]", comments = "Generator version: 7.17.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2025-11-19T09:38:32.540032837Z[Etc/UTC]", comments = "Generator version: 7.17.0")
 public class GetAccesstoken400Response {
   public static final String SERIALIZED_NAME_MESSAGE = "message";
   @SerializedName(SERIALIZED_NAME_MESSAGE)
