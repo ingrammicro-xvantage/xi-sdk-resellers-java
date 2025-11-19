@@ -51,7 +51,7 @@ import xiresellers.client.JSON;
 /**
  * OrderCreateRequestLinesInnerEndUserInfoInner
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2025-11-19T09:38:32.540032837Z[Etc/UTC]", comments = "Generator version: 7.17.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2025-11-19T09:55:15.223059622Z[Etc/UTC]", comments = "Generator version: 7.17.0")
 public class OrderCreateRequestLinesInnerEndUserInfoInner {
   public static final String SERIALIZED_NAME_END_USER_TYPE = "endUserType";
   @SerializedName(SERIALIZED_NAME_END_USER_TYPE)

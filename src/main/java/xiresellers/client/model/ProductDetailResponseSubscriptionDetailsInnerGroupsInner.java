@@ -50,7 +50,7 @@ import xiresellers.client.JSON;
 /**
  * ProductDetailResponseSubscriptionDetailsInnerGroupsInner
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2025-11-19T09:38:32.540032837Z[Etc/UTC]", comments = "Generator version: 7.17.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2025-11-19T09:55:15.223059622Z[Etc/UTC]", comments = "Generator version: 7.17.0")
 public class ProductDetailResponseSubscriptionDetailsInnerGroupsInner {
   public static final String SERIALIZED_NAME_GROUP_NAME = "groupName";
   @SerializedName(SERIALIZED_NAME_GROUP_NAME)
