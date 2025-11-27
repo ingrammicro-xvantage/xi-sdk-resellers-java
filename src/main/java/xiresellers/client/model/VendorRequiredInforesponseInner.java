@@ -25,8 +25,7 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 import xiresellers.client.model.VendorRequiredInforesponseInnerResponseMessagesInner;
-import xiresellers.client.model.VendorRequiredInforesponseInnerVmfAdditionalAttributesInner;
-import xiresellers.client.model.VendorRequiredInforesponseInnerVmfAdditionalAttributesInnerAdditionalAttributesInner;
+import xiresellers.client.model.VmfVriAdditionalAttributeContainer;
 
 import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
@@ -55,7 +54,7 @@ import xiresellers.client.JSON;
 /**
  * VendorRequiredInforesponseInner
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2025-11-19T10:46:31.399609612Z[Etc/UTC]", comments = "Generator version: 7.17.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2025-11-27T06:21:24.454074920Z[Etc/UTC]", comments = "Generator version: 7.17.0")
 public class VendorRequiredInforesponseInner {
   public static final String SERIALIZED_NAME_QUOTE_NUMBER = "quoteNumber";
   @SerializedName(SERIALIZED_NAME_QUOTE_NUMBER)
@@ -90,12 +89,12 @@ public class VendorRequiredInforesponseInner {
   public static final String SERIALIZED_NAME_VMF_ADDITIONAL_ATTRIBUTES = "vmfAdditionalAttributes";
   @SerializedName(SERIALIZED_NAME_VMF_ADDITIONAL_ATTRIBUTES)
   @javax.annotation.Nullable
-  private List<VendorRequiredInforesponseInnerVmfAdditionalAttributesInner> vmfAdditionalAttributes = new ArrayList<>();
+  private List<VmfVriAdditionalAttributeContainer> vmfAdditionalAttributes = new ArrayList<>();
 
   public static final String SERIALIZED_NAME_VRI_ADDITIONAL_ATTRIBUTES = "vriAdditionalAttributes";
   @SerializedName(SERIALIZED_NAME_VRI_ADDITIONAL_ATTRIBUTES)
   @javax.annotation.Nullable
-  private List<VendorRequiredInforesponseInnerVmfAdditionalAttributesInnerAdditionalAttributesInner> vriAdditionalAttributes = new ArrayList<>();
+  private List<VmfVriAdditionalAttributeContainer> vriAdditionalAttributes = new ArrayList<>();
 
   public VendorRequiredInforesponseInner() {
   }
@@ -222,12 +221,12 @@ public class VendorRequiredInforesponseInner {
   }
 
 
-  public VendorRequiredInforesponseInner vmfAdditionalAttributes(@javax.annotation.Nullable List<VendorRequiredInforesponseInnerVmfAdditionalAttributesInner> vmfAdditionalAttributes) {
+  public VendorRequiredInforesponseInner vmfAdditionalAttributes(@javax.annotation.Nullable List<VmfVriAdditionalAttributeContainer> vmfAdditionalAttributes) {
     this.vmfAdditionalAttributes = vmfAdditionalAttributes;
     return this;
   }
 
-  public VendorRequiredInforesponseInner addVmfAdditionalAttributesItem(VendorRequiredInforesponseInnerVmfAdditionalAttributesInner vmfAdditionalAttributesItem) {
+  public VendorRequiredInforesponseInner addVmfAdditionalAttributesItem(VmfVriAdditionalAttributeContainer vmfAdditionalAttributesItem) {
     if (this.vmfAdditionalAttributes == null) {
       this.vmfAdditionalAttributes = new ArrayList<>();
     }
@@ -240,21 +239,21 @@ public class VendorRequiredInforesponseInner {
    * @return vmfAdditionalAttributes
    */
   @javax.annotation.Nullable
-  public List<VendorRequiredInforesponseInnerVmfAdditionalAttributesInner> getVmfAdditionalAttributes() {
+  public List<VmfVriAdditionalAttributeContainer> getVmfAdditionalAttributes() {
     return vmfAdditionalAttributes;
   }
 
-  public void setVmfAdditionalAttributes(@javax.annotation.Nullable List<VendorRequiredInforesponseInnerVmfAdditionalAttributesInner> vmfAdditionalAttributes) {
+  public void setVmfAdditionalAttributes(@javax.annotation.Nullable List<VmfVriAdditionalAttributeContainer> vmfAdditionalAttributes) {
     this.vmfAdditionalAttributes = vmfAdditionalAttributes;
   }
 
 
-  public VendorRequiredInforesponseInner vriAdditionalAttributes(@javax.annotation.Nullable List<VendorRequiredInforesponseInnerVmfAdditionalAttributesInnerAdditionalAttributesInner> vriAdditionalAttributes) {
+  public VendorRequiredInforesponseInner vriAdditionalAttributes(@javax.annotation.Nullable List<VmfVriAdditionalAttributeContainer> vriAdditionalAttributes) {
     this.vriAdditionalAttributes = vriAdditionalAttributes;
     return this;
   }
 
-  public VendorRequiredInforesponseInner addVriAdditionalAttributesItem(VendorRequiredInforesponseInnerVmfAdditionalAttributesInnerAdditionalAttributesInner vriAdditionalAttributesItem) {
+  public VendorRequiredInforesponseInner addVriAdditionalAttributesItem(VmfVriAdditionalAttributeContainer vriAdditionalAttributesItem) {
     if (this.vriAdditionalAttributes == null) {
       this.vriAdditionalAttributes = new ArrayList<>();
     }
@@ -267,11 +266,11 @@ public class VendorRequiredInforesponseInner {
    * @return vriAdditionalAttributes
    */
   @javax.annotation.Nullable
-  public List<VendorRequiredInforesponseInnerVmfAdditionalAttributesInnerAdditionalAttributesInner> getVriAdditionalAttributes() {
+  public List<VmfVriAdditionalAttributeContainer> getVriAdditionalAttributes() {
     return vriAdditionalAttributes;
   }
 
-  public void setVriAdditionalAttributes(@javax.annotation.Nullable List<VendorRequiredInforesponseInnerVmfAdditionalAttributesInnerAdditionalAttributesInner> vriAdditionalAttributes) {
+  public void setVriAdditionalAttributes(@javax.annotation.Nullable List<VmfVriAdditionalAttributeContainer> vriAdditionalAttributes) {
     this.vriAdditionalAttributes = vriAdditionalAttributes;
   }
 
@@ -400,7 +399,7 @@ public class VendorRequiredInforesponseInner {
 
           // validate the optional field `vmfAdditionalAttributes` (array)
           for (int i = 0; i < jsonArrayvmfAdditionalAttributes.size(); i++) {
-            VendorRequiredInforesponseInnerVmfAdditionalAttributesInner.validateJsonElement(jsonArrayvmfAdditionalAttributes.get(i));
+            VmfVriAdditionalAttributeContainer.validateJsonElement(jsonArrayvmfAdditionalAttributes.get(i));
           };
         }
       }
@@ -414,7 +413,7 @@ public class VendorRequiredInforesponseInner {
 
           // validate the optional field `vriAdditionalAttributes` (array)
           for (int i = 0; i < jsonArrayvriAdditionalAttributes.size(); i++) {
-            VendorRequiredInforesponseInnerVmfAdditionalAttributesInnerAdditionalAttributesInner.validateJsonElement(jsonArrayvriAdditionalAttributes.get(i));
+            VmfVriAdditionalAttributeContainer.validateJsonElement(jsonArrayvriAdditionalAttributes.get(i));
           };
         }
       }

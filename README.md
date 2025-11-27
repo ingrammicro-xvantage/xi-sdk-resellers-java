@@ -2,7 +2,7 @@
 
 XI Sdk Resellers
 - API version: 1.0.0
-  - Build date: 2025-11-19T10:46:31.399609612Z[Etc/UTC]
+  - Build date: 2025-11-27T06:21:24.454074920Z[Etc/UTC]
   - Generator version: 7.17.0
 
 For Resellers seeking to innovate with Ingram Micro API solutions, automate your eCommerce experience with our array of API's and webhooks to craft a seamless journey for your customers.
@@ -149,6 +149,7 @@ Class | Method | HTTP request | Description
 ## Documentation for Models
 
  - [AccesstokenResponse](docs/AccesstokenResponse.md)
+ - [AdditionalAttribute](docs/AdditionalAttribute.md)
  - [AvailabilityAsyncNotificationRequest](docs/AvailabilityAsyncNotificationRequest.md)
  - [AvailabilityAsyncNotificationRequestResourceInner](docs/AvailabilityAsyncNotificationRequestResourceInner.md)
  - [AvailabilityAsyncNotificationRequestResourceInnerLinksInner](docs/AvailabilityAsyncNotificationRequestResourceInnerLinksInner.md)
@@ -378,9 +379,7 @@ Class | Method | HTTP request | Description
  - [VendorRequiredInfoRequestProductsInner](docs/VendorRequiredInfoRequestProductsInner.md)
  - [VendorRequiredInforesponseInner](docs/VendorRequiredInforesponseInner.md)
  - [VendorRequiredInforesponseInnerResponseMessagesInner](docs/VendorRequiredInforesponseInnerResponseMessagesInner.md)
- - [VendorRequiredInforesponseInnerVmfAdditionalAttributesInner](docs/VendorRequiredInforesponseInnerVmfAdditionalAttributesInner.md)
- - [VendorRequiredInforesponseInnerVmfAdditionalAttributesInnerAdditionalAttributesInner](docs/VendorRequiredInforesponseInnerVmfAdditionalAttributesInnerAdditionalAttributesInner.md)
- - [VendorRequiredInforesponseInnerVmfAdditionalAttributesInnerAdditionalAttributesInnerChoicesInner](docs/VendorRequiredInforesponseInnerVmfAdditionalAttributesInnerAdditionalAttributesInnerChoicesInner.md)
+ - [VmfVriAdditionalAttributeContainer](docs/VmfVriAdditionalAttributeContainer.md)
 
 
 <a id="documentation-for-authorization"></a>

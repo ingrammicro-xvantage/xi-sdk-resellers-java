@@ -13,8 +13,8 @@
 |**planId** | **String** | ID of the subscription plan |  [optional] |
 |**planName** | **String** | Name of the subscription plan |  [optional] |
 |**responseMessages** | [**List&lt;VendorRequiredInforesponseInnerResponseMessagesInner&gt;**](VendorRequiredInforesponseInnerResponseMessagesInner.md) |  |  [optional] |
-|**vmfAdditionalAttributes** | [**List&lt;VendorRequiredInforesponseInnerVmfAdditionalAttributesInner&gt;**](VendorRequiredInforesponseInnerVmfAdditionalAttributesInner.md) |  |  [optional] |
-|**vriAdditionalAttributes** | [**List&lt;VendorRequiredInforesponseInnerVmfAdditionalAttributesInnerAdditionalAttributesInner&gt;**](VendorRequiredInforesponseInnerVmfAdditionalAttributesInnerAdditionalAttributesInner.md) |  |  [optional] |
+|**vmfAdditionalAttributes** | [**List&lt;VmfVriAdditionalAttributeContainer&gt;**](VmfVriAdditionalAttributeContainer.md) |  |  [optional] |
+|**vriAdditionalAttributes** | [**List&lt;VmfVriAdditionalAttributeContainer&gt;**](VmfVriAdditionalAttributeContainer.md) |  |  [optional] |
 
 
 

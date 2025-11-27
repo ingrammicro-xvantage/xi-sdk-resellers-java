@@ -24,7 +24,7 @@ import java.io.IOException;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
-import xiresellers.client.model.VendorRequiredInforesponseInnerVmfAdditionalAttributesInnerAdditionalAttributesInner;
+import xiresellers.client.model.AdditionalAttribute;
 
 import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
@@ -51,10 +51,10 @@ import java.util.Locale;
 import xiresellers.client.JSON;
 
 /**
- * VendorRequiredInforesponseInnerVmfAdditionalAttributesInner
+ * VmfVriAdditionalAttributeContainer
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2025-11-19T10:46:31.399609612Z[Etc/UTC]", comments = "Generator version: 7.17.0")
-public class VendorRequiredInforesponseInnerVmfAdditionalAttributesInner {
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2025-11-27T06:21:24.454074920Z[Etc/UTC]", comments = "Generator version: 7.17.0")
+public class VmfVriAdditionalAttributeContainer {
   public static final String SERIALIZED_NAME_VENDOR_NAME = "vendorName";
   @SerializedName(SERIALIZED_NAME_VENDOR_NAME)
   @javax.annotation.Nullable
@@ -68,12 +68,12 @@ public class VendorRequiredInforesponseInnerVmfAdditionalAttributesInner {
   public static final String SERIALIZED_NAME_ADDITIONAL_ATTRIBUTES = "additionalAttributes";
   @SerializedName(SERIALIZED_NAME_ADDITIONAL_ATTRIBUTES)
   @javax.annotation.Nullable
-  private List<VendorRequiredInforesponseInnerVmfAdditionalAttributesInnerAdditionalAttributesInner> additionalAttributes = new ArrayList<>();
+  private List<AdditionalAttribute> additionalAttributes = new ArrayList<>();
 
-  public VendorRequiredInforesponseInnerVmfAdditionalAttributesInner() {
+  public VmfVriAdditionalAttributeContainer() {
   }
 
-  public VendorRequiredInforesponseInnerVmfAdditionalAttributesInner vendorName(@javax.annotation.Nullable String vendorName) {
+  public VmfVriAdditionalAttributeContainer vendorName(@javax.annotation.Nullable String vendorName) {
     this.vendorName = vendorName;
     return this;
   }
@@ -92,7 +92,7 @@ public class VendorRequiredInforesponseInnerVmfAdditionalAttributesInner {
   }
 
 
-  public VendorRequiredInforesponseInnerVmfAdditionalAttributesInner productId(@javax.annotation.Nullable String productId) {
+  public VmfVriAdditionalAttributeContainer productId(@javax.annotation.Nullable String productId) {
     this.productId = productId;
     return this;
   }
@@ -111,12 +111,12 @@ public class VendorRequiredInforesponseInnerVmfAdditionalAttributesInner {
   }
 
 
-  public VendorRequiredInforesponseInnerVmfAdditionalAttributesInner additionalAttributes(@javax.annotation.Nullable List<VendorRequiredInforesponseInnerVmfAdditionalAttributesInnerAdditionalAttributesInner> additionalAttributes) {
+  public VmfVriAdditionalAttributeContainer additionalAttributes(@javax.annotation.Nullable List<AdditionalAttribute> additionalAttributes) {
     this.additionalAttributes = additionalAttributes;
     return this;
   }
 
-  public VendorRequiredInforesponseInnerVmfAdditionalAttributesInner addAdditionalAttributesItem(VendorRequiredInforesponseInnerVmfAdditionalAttributesInnerAdditionalAttributesInner additionalAttributesItem) {
+  public VmfVriAdditionalAttributeContainer addAdditionalAttributesItem(AdditionalAttribute additionalAttributesItem) {
     if (this.additionalAttributes == null) {
       this.additionalAttributes = new ArrayList<>();
     }
@@ -125,15 +125,15 @@ public class VendorRequiredInforesponseInnerVmfAdditionalAttributesInner {
   }
 
   /**
-   * Get additionalAttributes
+   * List of required attributes for the specific product.
    * @return additionalAttributes
    */
   @javax.annotation.Nullable
-  public List<VendorRequiredInforesponseInnerVmfAdditionalAttributesInnerAdditionalAttributesInner> getAdditionalAttributes() {
+  public List<AdditionalAttribute> getAdditionalAttributes() {
     return additionalAttributes;
   }
 
-  public void setAdditionalAttributes(@javax.annotation.Nullable List<VendorRequiredInforesponseInnerVmfAdditionalAttributesInnerAdditionalAttributesInner> additionalAttributes) {
+  public void setAdditionalAttributes(@javax.annotation.Nullable List<AdditionalAttribute> additionalAttributes) {
     this.additionalAttributes = additionalAttributes;
   }
 
@@ -147,10 +147,10 @@ public class VendorRequiredInforesponseInnerVmfAdditionalAttributesInner {
     if (o == null || getClass() != o.getClass()) {
       return false;
     }
-    VendorRequiredInforesponseInnerVmfAdditionalAttributesInner vendorRequiredInforesponseInnerVmfAdditionalAttributesInner = (VendorRequiredInforesponseInnerVmfAdditionalAttributesInner) o;
-    return Objects.equals(this.vendorName, vendorRequiredInforesponseInnerVmfAdditionalAttributesInner.vendorName) &&
-        Objects.equals(this.productId, vendorRequiredInforesponseInnerVmfAdditionalAttributesInner.productId) &&
-        Objects.equals(this.additionalAttributes, vendorRequiredInforesponseInnerVmfAdditionalAttributesInner.additionalAttributes);
+    VmfVriAdditionalAttributeContainer vmfVriAdditionalAttributeContainer = (VmfVriAdditionalAttributeContainer) o;
+    return Objects.equals(this.vendorName, vmfVriAdditionalAttributeContainer.vendorName) &&
+        Objects.equals(this.productId, vmfVriAdditionalAttributeContainer.productId) &&
+        Objects.equals(this.additionalAttributes, vmfVriAdditionalAttributeContainer.additionalAttributes);
   }
 
   @Override
@@ -161,7 +161,7 @@ public class VendorRequiredInforesponseInnerVmfAdditionalAttributesInner {
   @Override
   public String toString() {
     StringBuilder sb = new StringBuilder();
-    sb.append("class VendorRequiredInforesponseInnerVmfAdditionalAttributesInner {\n");
+    sb.append("class VmfVriAdditionalAttributeContainer {\n");
     sb.append("    vendorName: ").append(toIndentedString(vendorName)).append("\n");
     sb.append("    productId: ").append(toIndentedString(productId)).append("\n");
     sb.append("    additionalAttributes: ").append(toIndentedString(additionalAttributes)).append("\n");
@@ -196,20 +196,20 @@ public class VendorRequiredInforesponseInnerVmfAdditionalAttributesInner {
    * Validates the JSON Element and throws an exception if issues found
    *
    * @param jsonElement JSON Element
-   * @throws IOException if the JSON Element is invalid with respect to VendorRequiredInforesponseInnerVmfAdditionalAttributesInner
+   * @throws IOException if the JSON Element is invalid with respect to VmfVriAdditionalAttributeContainer
    */
   public static void validateJsonElement(JsonElement jsonElement) throws IOException {
       if (jsonElement == null) {
-        if (!VendorRequiredInforesponseInnerVmfAdditionalAttributesInner.openapiRequiredFields.isEmpty()) { // has required fields but JSON element is null
-          throw new IllegalArgumentException(String.format(Locale.ROOT, "The required field(s) %s in VendorRequiredInforesponseInnerVmfAdditionalAttributesInner is not found in the empty JSON string", VendorRequiredInforesponseInnerVmfAdditionalAttributesInner.openapiRequiredFields.toString()));
+        if (!VmfVriAdditionalAttributeContainer.openapiRequiredFields.isEmpty()) { // has required fields but JSON element is null
+          throw new IllegalArgumentException(String.format(Locale.ROOT, "The required field(s) %s in VmfVriAdditionalAttributeContainer is not found in the empty JSON string", VmfVriAdditionalAttributeContainer.openapiRequiredFields.toString()));
         }
       }
 
       Set<Map.Entry<String, JsonElement>> entries = jsonElement.getAsJsonObject().entrySet();
       // check to see if the JSON string contains additional fields
       for (Map.Entry<String, JsonElement> entry : entries) {
-        if (!VendorRequiredInforesponseInnerVmfAdditionalAttributesInner.openapiFields.contains(entry.getKey())) {
-          throw new IllegalArgumentException(String.format(Locale.ROOT, "The field `%s` in the JSON string is not defined in the `VendorRequiredInforesponseInnerVmfAdditionalAttributesInner` properties. JSON: %s", entry.getKey(), jsonElement.toString()));
+        if (!VmfVriAdditionalAttributeContainer.openapiFields.contains(entry.getKey())) {
+          throw new IllegalArgumentException(String.format(Locale.ROOT, "The field `%s` in the JSON string is not defined in the `VmfVriAdditionalAttributeContainer` properties. JSON: %s", entry.getKey(), jsonElement.toString()));
         }
       }
         JsonObject jsonObj = jsonElement.getAsJsonObject();
@@ -229,7 +229,7 @@ public class VendorRequiredInforesponseInnerVmfAdditionalAttributesInner {
 
           // validate the optional field `additionalAttributes` (array)
           for (int i = 0; i < jsonArrayadditionalAttributes.size(); i++) {
-            VendorRequiredInforesponseInnerVmfAdditionalAttributesInnerAdditionalAttributesInner.validateJsonElement(jsonArrayadditionalAttributes.get(i));
+            AdditionalAttribute.validateJsonElement(jsonArrayadditionalAttributes.get(i));
           };
         }
       }
@@ -239,22 +239,22 @@ public class VendorRequiredInforesponseInnerVmfAdditionalAttributesInner {
     @SuppressWarnings("unchecked")
     @Override
     public <T> TypeAdapter<T> create(Gson gson, TypeToken<T> type) {
-       if (!VendorRequiredInforesponseInnerVmfAdditionalAttributesInner.class.isAssignableFrom(type.getRawType())) {
-         return null; // this class only serializes 'VendorRequiredInforesponseInnerVmfAdditionalAttributesInner' and its subtypes
+       if (!VmfVriAdditionalAttributeContainer.class.isAssignableFrom(type.getRawType())) {
+         return null; // this class only serializes 'VmfVriAdditionalAttributeContainer' and its subtypes
        }
        final TypeAdapter<JsonElement> elementAdapter = gson.getAdapter(JsonElement.class);
-       final TypeAdapter<VendorRequiredInforesponseInnerVmfAdditionalAttributesInner> thisAdapter
-                        = gson.getDelegateAdapter(this, TypeToken.get(VendorRequiredInforesponseInnerVmfAdditionalAttributesInner.class));
+       final TypeAdapter<VmfVriAdditionalAttributeContainer> thisAdapter
+                        = gson.getDelegateAdapter(this, TypeToken.get(VmfVriAdditionalAttributeContainer.class));
 
-       return (TypeAdapter<T>) new TypeAdapter<VendorRequiredInforesponseInnerVmfAdditionalAttributesInner>() {
+       return (TypeAdapter<T>) new TypeAdapter<VmfVriAdditionalAttributeContainer>() {
            @Override
-           public void write(JsonWriter out, VendorRequiredInforesponseInnerVmfAdditionalAttributesInner value) throws IOException {
+           public void write(JsonWriter out, VmfVriAdditionalAttributeContainer value) throws IOException {
              JsonObject obj = thisAdapter.toJsonTree(value).getAsJsonObject();
              elementAdapter.write(out, obj);
            }
 
            @Override
-           public VendorRequiredInforesponseInnerVmfAdditionalAttributesInner read(JsonReader in) throws IOException {
+           public VmfVriAdditionalAttributeContainer read(JsonReader in) throws IOException {
              JsonElement jsonElement = elementAdapter.read(in);
              validateJsonElement(jsonElement);
              return thisAdapter.fromJsonTree(jsonElement);
@@ -265,18 +265,18 @@ public class VendorRequiredInforesponseInnerVmfAdditionalAttributesInner {
   }
 
   /**
-   * Create an instance of VendorRequiredInforesponseInnerVmfAdditionalAttributesInner given an JSON string
+   * Create an instance of VmfVriAdditionalAttributeContainer given an JSON string
    *
    * @param jsonString JSON string
-   * @return An instance of VendorRequiredInforesponseInnerVmfAdditionalAttributesInner
-   * @throws IOException if the JSON string is invalid with respect to VendorRequiredInforesponseInnerVmfAdditionalAttributesInner
+   * @return An instance of VmfVriAdditionalAttributeContainer
+   * @throws IOException if the JSON string is invalid with respect to VmfVriAdditionalAttributeContainer
    */
-  public static VendorRequiredInforesponseInnerVmfAdditionalAttributesInner fromJson(String jsonString) throws IOException {
-    return JSON.getGson().fromJson(jsonString, VendorRequiredInforesponseInnerVmfAdditionalAttributesInner.class);
+  public static VmfVriAdditionalAttributeContainer fromJson(String jsonString) throws IOException {
+    return JSON.getGson().fromJson(jsonString, VmfVriAdditionalAttributeContainer.class);
   }
 
   /**
-   * Convert an instance of VendorRequiredInforesponseInnerVmfAdditionalAttributesInner to an JSON string
+   * Convert an instance of VmfVriAdditionalAttributeContainer to an JSON string
    *
    * @return JSON string
    */

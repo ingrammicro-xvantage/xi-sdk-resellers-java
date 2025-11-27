@@ -8,6 +8,7 @@ build.gradle
 build.sbt
 docs/AccesstokenApi.md
 docs/AccesstokenResponse.md
+docs/AdditionalAttribute.md
 docs/AvailabilityAsyncNotificationRequest.md
 docs/AvailabilityAsyncNotificationRequestResourceInner.md
 docs/AvailabilityAsyncNotificationRequestResourceInnerLinksInner.md
@@ -247,9 +248,7 @@ docs/VendorRequiredInfoRequest.md
 docs/VendorRequiredInfoRequestProductsInner.md
 docs/VendorRequiredInforesponseInner.md
 docs/VendorRequiredInforesponseInnerResponseMessagesInner.md
-docs/VendorRequiredInforesponseInnerVmfAdditionalAttributesInner.md
-docs/VendorRequiredInforesponseInnerVmfAdditionalAttributesInnerAdditionalAttributesInner.md
-docs/VendorRequiredInforesponseInnerVmfAdditionalAttributesInnerAdditionalAttributesInnerChoicesInner.md
+docs/VmfVriAdditionalAttributeContainer.md
 git_push.sh
 gradle.properties
 gradle/wrapper/gradle-wrapper.jar
@@ -293,6 +292,7 @@ src/main/java/xiresellers/client/auth/OAuthOkHttpClient.java
 src/main/java/xiresellers/client/auth/RetryingOAuth.java
 src/main/java/xiresellers/client/model/AbstractOpenApiSchema.java
 src/main/java/xiresellers/client/model/AccesstokenResponse.java
+src/main/java/xiresellers/client/model/AdditionalAttribute.java
 src/main/java/xiresellers/client/model/AvailabilityAsyncNotificationRequest.java
 src/main/java/xiresellers/client/model/AvailabilityAsyncNotificationRequestResourceInner.java
 src/main/java/xiresellers/client/model/AvailabilityAsyncNotificationRequestResourceInnerLinksInner.java
@@ -522,9 +522,7 @@ src/main/java/xiresellers/client/model/VendorRequiredInfoRequest.java
 src/main/java/xiresellers/client/model/VendorRequiredInfoRequestProductsInner.java
 src/main/java/xiresellers/client/model/VendorRequiredInforesponseInner.java
 src/main/java/xiresellers/client/model/VendorRequiredInforesponseInnerResponseMessagesInner.java
-src/main/java/xiresellers/client/model/VendorRequiredInforesponseInnerVmfAdditionalAttributesInner.java
-src/main/java/xiresellers/client/model/VendorRequiredInforesponseInnerVmfAdditionalAttributesInnerAdditionalAttributesInner.java
-src/main/java/xiresellers/client/model/VendorRequiredInforesponseInnerVmfAdditionalAttributesInnerAdditionalAttributesInnerChoicesInner.java
+src/main/java/xiresellers/client/model/VmfVriAdditionalAttributeContainer.java
 src/test/java/xiresellers/client/api/AccesstokenApiTest.java
 src/test/java/xiresellers/client/api/DealsApiTest.java
 src/test/java/xiresellers/client/api/FreightEstimateApiTest.java
@@ -537,6 +535,7 @@ src/test/java/xiresellers/client/api/RenewalsApiTest.java
 src/test/java/xiresellers/client/api/ReturnsApiTest.java
 src/test/java/xiresellers/client/api/StockUpdateApiTest.java
 src/test/java/xiresellers/client/model/AccesstokenResponseTest.java
+src/test/java/xiresellers/client/model/AdditionalAttributeTest.java
 src/test/java/xiresellers/client/model/AvailabilityAsyncNotificationRequestResourceInnerLinksInnerTest.java
 src/test/java/xiresellers/client/model/AvailabilityAsyncNotificationRequestResourceInnerTest.java
 src/test/java/xiresellers/client/model/AvailabilityAsyncNotificationRequestTest.java
@@ -766,6 +765,4 @@ src/test/java/xiresellers/client/model/VendorRequiredInfoRequestProductsInnerTes
 src/test/java/xiresellers/client/model/VendorRequiredInfoRequestTest.java
 src/test/java/xiresellers/client/model/VendorRequiredInforesponseInnerResponseMessagesInnerTest.java
 src/test/java/xiresellers/client/model/VendorRequiredInforesponseInnerTest.java
-src/test/java/xiresellers/client/model/VendorRequiredInforesponseInnerVmfAdditionalAttributesInnerAdditionalAttributesInnerChoicesInnerTest.java
-src/test/java/xiresellers/client/model/VendorRequiredInforesponseInnerVmfAdditionalAttributesInnerAdditionalAttributesInnerTest.java
-src/test/java/xiresellers/client/model/VendorRequiredInforesponseInnerVmfAdditionalAttributesInnerTest.java
+src/test/java/xiresellers/client/model/VmfVriAdditionalAttributeContainerTest.java

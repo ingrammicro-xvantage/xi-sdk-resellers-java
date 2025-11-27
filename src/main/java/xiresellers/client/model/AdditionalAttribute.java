@@ -24,7 +24,6 @@ import java.io.IOException;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
-import xiresellers.client.model.VendorRequiredInforesponseInnerVmfAdditionalAttributesInnerAdditionalAttributesInnerChoicesInner;
 
 import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
@@ -51,10 +50,10 @@ import java.util.Locale;
 import xiresellers.client.JSON;
 
 /**
- * VendorRequiredInforesponseInnerVmfAdditionalAttributesInnerAdditionalAttributesInner
+ * AdditionalAttribute
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2025-11-19T10:46:31.399609612Z[Etc/UTC]", comments = "Generator version: 7.17.0")
-public class VendorRequiredInforesponseInnerVmfAdditionalAttributesInnerAdditionalAttributesInner {
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2025-11-27T06:21:24.454074920Z[Etc/UTC]", comments = "Generator version: 7.17.0")
+public class AdditionalAttribute {
   public static final String SERIALIZED_NAME_ATTRIBUTE_NAME = "attributeName";
   @SerializedName(SERIALIZED_NAME_ATTRIBUTE_NAME)
   @javax.annotation.Nullable
@@ -75,15 +74,20 @@ public class VendorRequiredInforesponseInnerVmfAdditionalAttributesInnerAddition
   @javax.annotation.Nullable
   private String attributeHint;
 
+  public static final String SERIALIZED_NAME_ATTRIBUTE_REQUIRED = "attributeRequired";
+  @SerializedName(SERIALIZED_NAME_ATTRIBUTE_REQUIRED)
+  @javax.annotation.Nullable
+  private String attributeRequired;
+
   public static final String SERIALIZED_NAME_CHOICES = "choices";
   @SerializedName(SERIALIZED_NAME_CHOICES)
   @javax.annotation.Nullable
-  private List<VendorRequiredInforesponseInnerVmfAdditionalAttributesInnerAdditionalAttributesInnerChoicesInner> choices = new ArrayList<>();
+  private List<AdditionalAttribute> choices = new ArrayList<>();
 
-  public VendorRequiredInforesponseInnerVmfAdditionalAttributesInnerAdditionalAttributesInner() {
+  public AdditionalAttribute() {
   }
 
-  public VendorRequiredInforesponseInnerVmfAdditionalAttributesInnerAdditionalAttributesInner attributeName(@javax.annotation.Nullable String attributeName) {
+  public AdditionalAttribute attributeName(@javax.annotation.Nullable String attributeName) {
     this.attributeName = attributeName;
     return this;
   }
@@ -102,7 +106,7 @@ public class VendorRequiredInforesponseInnerVmfAdditionalAttributesInnerAddition
   }
 
 
-  public VendorRequiredInforesponseInnerVmfAdditionalAttributesInnerAdditionalAttributesInner attributeValue(@javax.annotation.Nullable String attributeValue) {
+  public AdditionalAttribute attributeValue(@javax.annotation.Nullable String attributeValue) {
     this.attributeValue = attributeValue;
     return this;
   }
@@ -121,7 +125,7 @@ public class VendorRequiredInforesponseInnerVmfAdditionalAttributesInnerAddition
   }
 
 
-  public VendorRequiredInforesponseInnerVmfAdditionalAttributesInnerAdditionalAttributesInner attributeDescription(@javax.annotation.Nullable String attributeDescription) {
+  public AdditionalAttribute attributeDescription(@javax.annotation.Nullable String attributeDescription) {
     this.attributeDescription = attributeDescription;
     return this;
   }
@@ -140,7 +144,7 @@ public class VendorRequiredInforesponseInnerVmfAdditionalAttributesInnerAddition
   }
 
 
-  public VendorRequiredInforesponseInnerVmfAdditionalAttributesInnerAdditionalAttributesInner attributeHint(@javax.annotation.Nullable String attributeHint) {
+  public AdditionalAttribute attributeHint(@javax.annotation.Nullable String attributeHint) {
     this.attributeHint = attributeHint;
     return this;
   }
@@ -159,12 +163,31 @@ public class VendorRequiredInforesponseInnerVmfAdditionalAttributesInnerAddition
   }
 
 
-  public VendorRequiredInforesponseInnerVmfAdditionalAttributesInnerAdditionalAttributesInner choices(@javax.annotation.Nullable List<VendorRequiredInforesponseInnerVmfAdditionalAttributesInnerAdditionalAttributesInnerChoicesInner> choices) {
+  public AdditionalAttribute attributeRequired(@javax.annotation.Nullable String attributeRequired) {
+    this.attributeRequired = attributeRequired;
+    return this;
+  }
+
+  /**
+   * Indicates if the attribute is mandatory (Added to align with C#).
+   * @return attributeRequired
+   */
+  @javax.annotation.Nullable
+  public String getAttributeRequired() {
+    return attributeRequired;
+  }
+
+  public void setAttributeRequired(@javax.annotation.Nullable String attributeRequired) {
+    this.attributeRequired = attributeRequired;
+  }
+
+
+  public AdditionalAttribute choices(@javax.annotation.Nullable List<AdditionalAttribute> choices) {
     this.choices = choices;
     return this;
   }
 
-  public VendorRequiredInforesponseInnerVmfAdditionalAttributesInnerAdditionalAttributesInner addChoicesItem(VendorRequiredInforesponseInnerVmfAdditionalAttributesInnerAdditionalAttributesInnerChoicesInner choicesItem) {
+  public AdditionalAttribute addChoicesItem(AdditionalAttribute choicesItem) {
     if (this.choices == null) {
       this.choices = new ArrayList<>();
     }
@@ -173,15 +196,15 @@ public class VendorRequiredInforesponseInnerVmfAdditionalAttributesInnerAddition
   }
 
   /**
-   * Get choices
+   * A list of possible choices for the attribute.
    * @return choices
    */
   @javax.annotation.Nullable
-  public List<VendorRequiredInforesponseInnerVmfAdditionalAttributesInnerAdditionalAttributesInnerChoicesInner> getChoices() {
+  public List<AdditionalAttribute> getChoices() {
     return choices;
   }
 
-  public void setChoices(@javax.annotation.Nullable List<VendorRequiredInforesponseInnerVmfAdditionalAttributesInnerAdditionalAttributesInnerChoicesInner> choices) {
+  public void setChoices(@javax.annotation.Nullable List<AdditionalAttribute> choices) {
     this.choices = choices;
   }
 
@@ -195,27 +218,29 @@ public class VendorRequiredInforesponseInnerVmfAdditionalAttributesInnerAddition
     if (o == null || getClass() != o.getClass()) {
       return false;
     }
-    VendorRequiredInforesponseInnerVmfAdditionalAttributesInnerAdditionalAttributesInner vendorRequiredInforesponseInnerVmfAdditionalAttributesInnerAdditionalAttributesInner = (VendorRequiredInforesponseInnerVmfAdditionalAttributesInnerAdditionalAttributesInner) o;
-    return Objects.equals(this.attributeName, vendorRequiredInforesponseInnerVmfAdditionalAttributesInnerAdditionalAttributesInner.attributeName) &&
-        Objects.equals(this.attributeValue, vendorRequiredInforesponseInnerVmfAdditionalAttributesInnerAdditionalAttributesInner.attributeValue) &&
-        Objects.equals(this.attributeDescription, vendorRequiredInforesponseInnerVmfAdditionalAttributesInnerAdditionalAttributesInner.attributeDescription) &&
-        Objects.equals(this.attributeHint, vendorRequiredInforesponseInnerVmfAdditionalAttributesInnerAdditionalAttributesInner.attributeHint) &&
-        Objects.equals(this.choices, vendorRequiredInforesponseInnerVmfAdditionalAttributesInnerAdditionalAttributesInner.choices);
+    AdditionalAttribute additionalAttribute = (AdditionalAttribute) o;
+    return Objects.equals(this.attributeName, additionalAttribute.attributeName) &&
+        Objects.equals(this.attributeValue, additionalAttribute.attributeValue) &&
+        Objects.equals(this.attributeDescription, additionalAttribute.attributeDescription) &&
+        Objects.equals(this.attributeHint, additionalAttribute.attributeHint) &&
+        Objects.equals(this.attributeRequired, additionalAttribute.attributeRequired) &&
+        Objects.equals(this.choices, additionalAttribute.choices);
   }
 
   @Override
   public int hashCode() {
-    return Objects.hash(attributeName, attributeValue, attributeDescription, attributeHint, choices);
+    return Objects.hash(attributeName, attributeValue, attributeDescription, attributeHint, attributeRequired, choices);
   }
 
   @Override
   public String toString() {
     StringBuilder sb = new StringBuilder();
-    sb.append("class VendorRequiredInforesponseInnerVmfAdditionalAttributesInnerAdditionalAttributesInner {\n");
+    sb.append("class AdditionalAttribute {\n");
     sb.append("    attributeName: ").append(toIndentedString(attributeName)).append("\n");
     sb.append("    attributeValue: ").append(toIndentedString(attributeValue)).append("\n");
     sb.append("    attributeDescription: ").append(toIndentedString(attributeDescription)).append("\n");
     sb.append("    attributeHint: ").append(toIndentedString(attributeHint)).append("\n");
+    sb.append("    attributeRequired: ").append(toIndentedString(attributeRequired)).append("\n");
     sb.append("    choices: ").append(toIndentedString(choices)).append("\n");
     sb.append("}");
     return sb.toString();
@@ -238,7 +263,7 @@ public class VendorRequiredInforesponseInnerVmfAdditionalAttributesInnerAddition
 
   static {
     // a set of all properties/fields (JSON key names)
-    openapiFields = new HashSet<String>(Arrays.asList("attributeName", "attributeValue", "attributeDescription", "attributeHint", "choices"));
+    openapiFields = new HashSet<String>(Arrays.asList("attributeName", "attributeValue", "attributeDescription", "attributeHint", "attributeRequired", "choices"));
 
     // a set of required properties/fields (JSON key names)
     openapiRequiredFields = new HashSet<String>(0);
@@ -248,20 +273,20 @@ public class VendorRequiredInforesponseInnerVmfAdditionalAttributesInnerAddition
    * Validates the JSON Element and throws an exception if issues found
    *
    * @param jsonElement JSON Element
-   * @throws IOException if the JSON Element is invalid with respect to VendorRequiredInforesponseInnerVmfAdditionalAttributesInnerAdditionalAttributesInner
+   * @throws IOException if the JSON Element is invalid with respect to AdditionalAttribute
    */
   public static void validateJsonElement(JsonElement jsonElement) throws IOException {
       if (jsonElement == null) {
-        if (!VendorRequiredInforesponseInnerVmfAdditionalAttributesInnerAdditionalAttributesInner.openapiRequiredFields.isEmpty()) { // has required fields but JSON element is null
-          throw new IllegalArgumentException(String.format(Locale.ROOT, "The required field(s) %s in VendorRequiredInforesponseInnerVmfAdditionalAttributesInnerAdditionalAttributesInner is not found in the empty JSON string", VendorRequiredInforesponseInnerVmfAdditionalAttributesInnerAdditionalAttributesInner.openapiRequiredFields.toString()));
+        if (!AdditionalAttribute.openapiRequiredFields.isEmpty()) { // has required fields but JSON element is null
+          throw new IllegalArgumentException(String.format(Locale.ROOT, "The required field(s) %s in AdditionalAttribute is not found in the empty JSON string", AdditionalAttribute.openapiRequiredFields.toString()));
         }
       }
 
       Set<Map.Entry<String, JsonElement>> entries = jsonElement.getAsJsonObject().entrySet();
       // check to see if the JSON string contains additional fields
       for (Map.Entry<String, JsonElement> entry : entries) {
-        if (!VendorRequiredInforesponseInnerVmfAdditionalAttributesInnerAdditionalAttributesInner.openapiFields.contains(entry.getKey())) {
-          throw new IllegalArgumentException(String.format(Locale.ROOT, "The field `%s` in the JSON string is not defined in the `VendorRequiredInforesponseInnerVmfAdditionalAttributesInnerAdditionalAttributesInner` properties. JSON: %s", entry.getKey(), jsonElement.toString()));
+        if (!AdditionalAttribute.openapiFields.contains(entry.getKey())) {
+          throw new IllegalArgumentException(String.format(Locale.ROOT, "The field `%s` in the JSON string is not defined in the `AdditionalAttribute` properties. JSON: %s", entry.getKey(), jsonElement.toString()));
         }
       }
         JsonObject jsonObj = jsonElement.getAsJsonObject();
@@ -277,6 +302,9 @@ public class VendorRequiredInforesponseInnerVmfAdditionalAttributesInnerAddition
       if ((jsonObj.get("attributeHint") != null && !jsonObj.get("attributeHint").isJsonNull()) && !jsonObj.get("attributeHint").isJsonPrimitive()) {
         throw new IllegalArgumentException(String.format(Locale.ROOT, "Expected the field `attributeHint` to be a primitive type in the JSON string but got `%s`", jsonObj.get("attributeHint").toString()));
       }
+      if ((jsonObj.get("attributeRequired") != null && !jsonObj.get("attributeRequired").isJsonNull()) && !jsonObj.get("attributeRequired").isJsonPrimitive()) {
+        throw new IllegalArgumentException(String.format(Locale.ROOT, "Expected the field `attributeRequired` to be a primitive type in the JSON string but got `%s`", jsonObj.get("attributeRequired").toString()));
+      }
       if (jsonObj.get("choices") != null && !jsonObj.get("choices").isJsonNull()) {
         JsonArray jsonArraychoices = jsonObj.getAsJsonArray("choices");
         if (jsonArraychoices != null) {
@@ -287,7 +315,7 @@ public class VendorRequiredInforesponseInnerVmfAdditionalAttributesInnerAddition
 
           // validate the optional field `choices` (array)
           for (int i = 0; i < jsonArraychoices.size(); i++) {
-            VendorRequiredInforesponseInnerVmfAdditionalAttributesInnerAdditionalAttributesInnerChoicesInner.validateJsonElement(jsonArraychoices.get(i));
+            AdditionalAttribute.validateJsonElement(jsonArraychoices.get(i));
           };
         }
       }
@@ -297,22 +325,22 @@ public class VendorRequiredInforesponseInnerVmfAdditionalAttributesInnerAddition
     @SuppressWarnings("unchecked")
     @Override
     public <T> TypeAdapter<T> create(Gson gson, TypeToken<T> type) {
-       if (!VendorRequiredInforesponseInnerVmfAdditionalAttributesInnerAdditionalAttributesInner.class.isAssignableFrom(type.getRawType())) {
-         return null; // this class only serializes 'VendorRequiredInforesponseInnerVmfAdditionalAttributesInnerAdditionalAttributesInner' and its subtypes
+       if (!AdditionalAttribute.class.isAssignableFrom(type.getRawType())) {
+         return null; // this class only serializes 'AdditionalAttribute' and its subtypes
        }
        final TypeAdapter<JsonElement> elementAdapter = gson.getAdapter(JsonElement.class);
-       final TypeAdapter<VendorRequiredInforesponseInnerVmfAdditionalAttributesInnerAdditionalAttributesInner> thisAdapter
-                        = gson.getDelegateAdapter(this, TypeToken.get(VendorRequiredInforesponseInnerVmfAdditionalAttributesInnerAdditionalAttributesInner.class));
+       final TypeAdapter<AdditionalAttribute> thisAdapter
+                        = gson.getDelegateAdapter(this, TypeToken.get(AdditionalAttribute.class));
 
-       return (TypeAdapter<T>) new TypeAdapter<VendorRequiredInforesponseInnerVmfAdditionalAttributesInnerAdditionalAttributesInner>() {
+       return (TypeAdapter<T>) new TypeAdapter<AdditionalAttribute>() {
            @Override
-           public void write(JsonWriter out, VendorRequiredInforesponseInnerVmfAdditionalAttributesInnerAdditionalAttributesInner value) throws IOException {
+           public void write(JsonWriter out, AdditionalAttribute value) throws IOException {
              JsonObject obj = thisAdapter.toJsonTree(value).getAsJsonObject();
              elementAdapter.write(out, obj);
            }
 
            @Override
-           public VendorRequiredInforesponseInnerVmfAdditionalAttributesInnerAdditionalAttributesInner read(JsonReader in) throws IOException {
+           public AdditionalAttribute read(JsonReader in) throws IOException {
              JsonElement jsonElement = elementAdapter.read(in);
              validateJsonElement(jsonElement);
              return thisAdapter.fromJsonTree(jsonElement);
@@ -323,18 +351,18 @@ public class VendorRequiredInforesponseInnerVmfAdditionalAttributesInnerAddition
   }
 
   /**
-   * Create an instance of VendorRequiredInforesponseInnerVmfAdditionalAttributesInnerAdditionalAttributesInner given an JSON string
+   * Create an instance of AdditionalAttribute given an JSON string
    *
    * @param jsonString JSON string
-   * @return An instance of VendorRequiredInforesponseInnerVmfAdditionalAttributesInnerAdditionalAttributesInner
-   * @throws IOException if the JSON string is invalid with respect to VendorRequiredInforesponseInnerVmfAdditionalAttributesInnerAdditionalAttributesInner
+   * @return An instance of AdditionalAttribute
+   * @throws IOException if the JSON string is invalid with respect to AdditionalAttribute
    */
-  public static VendorRequiredInforesponseInnerVmfAdditionalAttributesInnerAdditionalAttributesInner fromJson(String jsonString) throws IOException {
-    return JSON.getGson().fromJson(jsonString, VendorRequiredInforesponseInnerVmfAdditionalAttributesInnerAdditionalAttributesInner.class);
+  public static AdditionalAttribute fromJson(String jsonString) throws IOException {
+    return JSON.getGson().fromJson(jsonString, AdditionalAttribute.class);
   }
 
   /**
-   * Convert an instance of VendorRequiredInforesponseInnerVmfAdditionalAttributesInnerAdditionalAttributesInner to an JSON string
+   * Convert an instance of AdditionalAttribute to an JSON string
    *
    * @return JSON string
    */

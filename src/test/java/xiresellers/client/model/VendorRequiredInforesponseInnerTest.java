@@ -23,8 +23,7 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 import xiresellers.client.model.VendorRequiredInforesponseInnerResponseMessagesInner;
-import xiresellers.client.model.VendorRequiredInforesponseInnerVmfAdditionalAttributesInner;
-import xiresellers.client.model.VendorRequiredInforesponseInnerVmfAdditionalAttributesInnerAdditionalAttributesInner;
+import xiresellers.client.model.VmfVriAdditionalAttributeContainer;
 import org.junit.jupiter.api.Disabled;
 import org.junit.jupiter.api.Test;
 

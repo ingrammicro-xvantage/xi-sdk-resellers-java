@@ -22,22 +22,21 @@ import java.io.IOException;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
-import xiresellers.client.model.VendorRequiredInforesponseInnerVmfAdditionalAttributesInnerAdditionalAttributesInnerChoicesInner;
 import org.junit.jupiter.api.Disabled;
 import org.junit.jupiter.api.Test;
 
 /**
- * Model tests for VendorRequiredInforesponseInnerVmfAdditionalAttributesInnerAdditionalAttributesInner
+ * Model tests for AdditionalAttribute
  */
-public class VendorRequiredInforesponseInnerVmfAdditionalAttributesInnerAdditionalAttributesInnerTest {
-    private final VendorRequiredInforesponseInnerVmfAdditionalAttributesInnerAdditionalAttributesInner model = new VendorRequiredInforesponseInnerVmfAdditionalAttributesInnerAdditionalAttributesInner();
+public class AdditionalAttributeTest {
+    private final AdditionalAttribute model = new AdditionalAttribute();
 
     /**
-     * Model tests for VendorRequiredInforesponseInnerVmfAdditionalAttributesInnerAdditionalAttributesInner
+     * Model tests for AdditionalAttribute
      */
     @Test
-    public void testVendorRequiredInforesponseInnerVmfAdditionalAttributesInnerAdditionalAttributesInner() {
-        // TODO: test VendorRequiredInforesponseInnerVmfAdditionalAttributesInnerAdditionalAttributesInner
+    public void testAdditionalAttribute() {
+        // TODO: test AdditionalAttribute
     }
 
     /**
@@ -70,6 +69,14 @@ public class VendorRequiredInforesponseInnerVmfAdditionalAttributesInnerAddition
     @Test
     public void attributeHintTest() {
         // TODO: test attributeHint
+    }
+
+    /**
+     * Test the property 'attributeRequired'
+     */
+    @Test
+    public void attributeRequiredTest() {
+        // TODO: test attributeRequired
     }
 
     /**

@@ -52,7 +52,7 @@ import xiresellers.client.JSON;
 /**
  * PriceAndAvailabilityResponseInnerDiscountsInnerQuantityDiscountsInner
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2025-11-19T10:46:31.399609612Z[Etc/UTC]", comments = "Generator version: 7.17.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2025-11-27T06:21:24.454074920Z[Etc/UTC]", comments = "Generator version: 7.17.0")
 public class PriceAndAvailabilityResponseInnerDiscountsInnerQuantityDiscountsInner {
   public static final String SERIALIZED_NAME_CONDITION_TYPE = "conditionType";
   @SerializedName(SERIALIZED_NAME_CONDITION_TYPE)

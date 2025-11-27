@@ -97,6 +97,7 @@ public class JSON {
         gsonBuilder.registerTypeAdapter(LocalDate.class, localDateTypeAdapter);
         gsonBuilder.registerTypeAdapter(byte[].class, byteArrayAdapter);
         gsonBuilder.registerTypeAdapterFactory(new xiresellers.client.model.AccesstokenResponse.CustomTypeAdapterFactory());
+        gsonBuilder.registerTypeAdapterFactory(new xiresellers.client.model.AdditionalAttribute.CustomTypeAdapterFactory());
         gsonBuilder.registerTypeAdapterFactory(new xiresellers.client.model.AvailabilityAsyncNotificationRequest.CustomTypeAdapterFactory());
         gsonBuilder.registerTypeAdapterFactory(new xiresellers.client.model.AvailabilityAsyncNotificationRequestResourceInner.CustomTypeAdapterFactory());
         gsonBuilder.registerTypeAdapterFactory(new xiresellers.client.model.AvailabilityAsyncNotificationRequestResourceInnerLinksInner.CustomTypeAdapterFactory());
@@ -326,9 +327,7 @@ public class JSON {
         gsonBuilder.registerTypeAdapterFactory(new xiresellers.client.model.VendorRequiredInfoRequestProductsInner.CustomTypeAdapterFactory());
         gsonBuilder.registerTypeAdapterFactory(new xiresellers.client.model.VendorRequiredInforesponseInner.CustomTypeAdapterFactory());
         gsonBuilder.registerTypeAdapterFactory(new xiresellers.client.model.VendorRequiredInforesponseInnerResponseMessagesInner.CustomTypeAdapterFactory());
-        gsonBuilder.registerTypeAdapterFactory(new xiresellers.client.model.VendorRequiredInforesponseInnerVmfAdditionalAttributesInner.CustomTypeAdapterFactory());
-        gsonBuilder.registerTypeAdapterFactory(new xiresellers.client.model.VendorRequiredInforesponseInnerVmfAdditionalAttributesInnerAdditionalAttributesInner.CustomTypeAdapterFactory());
-        gsonBuilder.registerTypeAdapterFactory(new xiresellers.client.model.VendorRequiredInforesponseInnerVmfAdditionalAttributesInnerAdditionalAttributesInnerChoicesInner.CustomTypeAdapterFactory());
+        gsonBuilder.registerTypeAdapterFactory(new xiresellers.client.model.VmfVriAdditionalAttributeContainer.CustomTypeAdapterFactory());
         gson = gsonBuilder.create();
     }
 

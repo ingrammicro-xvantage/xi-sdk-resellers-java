@@ -1,6 +1,6 @@
 
 
-# VendorRequiredInforesponseInnerVmfAdditionalAttributesInnerAdditionalAttributesInner
+# AdditionalAttribute
 
 
 ## Properties
@@ -11,7 +11,8 @@
 |**attributeValue** | **String** | The value of the vendor mandatory field. |  [optional] |
 |**attributeDescription** | **String** | The description of the vendor mandatory field. |  [optional] |
 |**attributeHint** | **String** | The hint of the vendor mandatory field. |  [optional] |
-|**choices** | [**List&lt;VendorRequiredInforesponseInnerVmfAdditionalAttributesInnerAdditionalAttributesInnerChoicesInner&gt;**](VendorRequiredInforesponseInnerVmfAdditionalAttributesInnerAdditionalAttributesInnerChoicesInner.md) |  |  [optional] |
+|**attributeRequired** | **String** | Indicates if the attribute is mandatory (Added to align with C#). |  [optional] |
+|**choices** | [**List&lt;AdditionalAttribute&gt;**](AdditionalAttribute.md) | A list of possible choices for the attribute. |  [optional] |
 
 
 
