@@ -24,17 +24,17 @@ import org.junit.jupiter.api.Disabled;
 import org.junit.jupiter.api.Test;
 
 /**
- * Model tests for OrderCreateV7RequestLinesInnerBillingPeriodInner
+ * Model tests for OrderCreateV7RequestLinesInnerBillingPeriod
  */
-public class OrderCreateV7RequestLinesInnerBillingPeriodInnerTest {
-    private final OrderCreateV7RequestLinesInnerBillingPeriodInner model = new OrderCreateV7RequestLinesInnerBillingPeriodInner();
+public class OrderCreateV7RequestLinesInnerBillingPeriodTest {
+    private final OrderCreateV7RequestLinesInnerBillingPeriod model = new OrderCreateV7RequestLinesInnerBillingPeriod();
 
     /**
-     * Model tests for OrderCreateV7RequestLinesInnerBillingPeriodInner
+     * Model tests for OrderCreateV7RequestLinesInnerBillingPeriod
      */
     @Test
-    public void testOrderCreateV7RequestLinesInnerBillingPeriodInner() {
-        // TODO: test OrderCreateV7RequestLinesInnerBillingPeriodInner
+    public void testOrderCreateV7RequestLinesInnerBillingPeriod() {
+        // TODO: test OrderCreateV7RequestLinesInnerBillingPeriod
     }
 
     /**

@@ -14,7 +14,6 @@
 package xiresellers.client.model;
 
 import java.util.Objects;
-import java.util.Locale;
 import com.google.gson.TypeAdapter;
 import com.google.gson.annotations.JsonAdapter;
 import com.google.gson.annotations.SerializedName;
@@ -26,9 +25,9 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 import xiresellers.client.model.OrderCreateV7RequestLinesInnerAdditionalAttributesInner;
-import xiresellers.client.model.OrderCreateV7RequestLinesInnerBillingPeriodInner;
+import xiresellers.client.model.OrderCreateV7RequestLinesInnerBillingPeriod;
 import xiresellers.client.model.OrderCreateV7RequestLinesInnerEndUserInfoInner;
-import xiresellers.client.model.OrderCreateV7RequestLinesInnerSubscriptionPeriodInner;
+import xiresellers.client.model.OrderCreateV7RequestLinesInnerSubscriptionPeriod;
 import xiresellers.client.model.OrderCreateV7RequestLinesInnerVmfAdditionalAttributesLinesInner;
 import xiresellers.client.model.OrderCreateV7RequestLinesInnerWarrantyInfo;
 import xiresellers.client.model.OrderCreateV7RequestVmfVendorAdditionalAttributesInner;
@@ -53,14 +52,13 @@ import java.util.HashSet;
 import java.util.List;
 import java.util.Map;
 import java.util.Set;
-import java.util.Locale;
 
 import xiresellers.client.JSON;
 
 /**
  * OrderCreateV7RequestLinesInner
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2025-11-27T06:21:24.454074920Z[Etc/UTC]", comments = "Generator version: 7.17.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2026-02-18T06:29:45.993196323Z[Etc/UTC]", comments = "Generator version: 7.20.0")
 public class OrderCreateV7RequestLinesInner {
   public static final String SERIALIZED_NAME_CUSTOMER_LINE_NUMBER = "customerLineNumber";
   @SerializedName(SERIALIZED_NAME_CUSTOMER_LINE_NUMBER)
@@ -115,12 +113,12 @@ public class OrderCreateV7RequestLinesInner {
   public static final String SERIALIZED_NAME_SUBSCRIPTION_PERIOD = "subscriptionPeriod";
   @SerializedName(SERIALIZED_NAME_SUBSCRIPTION_PERIOD)
   @javax.annotation.Nullable
-  private List<OrderCreateV7RequestLinesInnerSubscriptionPeriodInner> subscriptionPeriod = new ArrayList<>();
+  private OrderCreateV7RequestLinesInnerSubscriptionPeriod subscriptionPeriod;
 
   public static final String SERIALIZED_NAME_BILLING_PERIOD = "billingPeriod";
   @SerializedName(SERIALIZED_NAME_BILLING_PERIOD)
   @javax.annotation.Nullable
-  private List<OrderCreateV7RequestLinesInnerBillingPeriodInner> billingPeriod = new ArrayList<>();
+  private OrderCreateV7RequestLinesInnerBillingPeriod billingPeriod;
 
   public static final String SERIALIZED_NAME_MARGIN = "margin";
   @SerializedName(SERIALIZED_NAME_MARGIN)
@@ -350,56 +348,40 @@ public class OrderCreateV7RequestLinesInner {
   }
 
 
-  public OrderCreateV7RequestLinesInner subscriptionPeriod(@javax.annotation.Nullable List<OrderCreateV7RequestLinesInnerSubscriptionPeriodInner> subscriptionPeriod) {
+  public OrderCreateV7RequestLinesInner subscriptionPeriod(@javax.annotation.Nullable OrderCreateV7RequestLinesInnerSubscriptionPeriod subscriptionPeriod) {
     this.subscriptionPeriod = subscriptionPeriod;
-    return this;
-  }
-
-  public OrderCreateV7RequestLinesInner addSubscriptionPeriodItem(OrderCreateV7RequestLinesInnerSubscriptionPeriodInner subscriptionPeriodItem) {
-    if (this.subscriptionPeriod == null) {
-      this.subscriptionPeriod = new ArrayList<>();
-    }
-    this.subscriptionPeriod.add(subscriptionPeriodItem);
     return this;
   }
 
   /**
-   * The object containing the list of options related to the subscription period.
+   * Get subscriptionPeriod
    * @return subscriptionPeriod
    */
   @javax.annotation.Nullable
-  public List<OrderCreateV7RequestLinesInnerSubscriptionPeriodInner> getSubscriptionPeriod() {
+  public OrderCreateV7RequestLinesInnerSubscriptionPeriod getSubscriptionPeriod() {
     return subscriptionPeriod;
   }
 
-  public void setSubscriptionPeriod(@javax.annotation.Nullable List<OrderCreateV7RequestLinesInnerSubscriptionPeriodInner> subscriptionPeriod) {
+  public void setSubscriptionPeriod(@javax.annotation.Nullable OrderCreateV7RequestLinesInnerSubscriptionPeriod subscriptionPeriod) {
     this.subscriptionPeriod = subscriptionPeriod;
   }
 
 
-  public OrderCreateV7RequestLinesInner billingPeriod(@javax.annotation.Nullable List<OrderCreateV7RequestLinesInnerBillingPeriodInner> billingPeriod) {
+  public OrderCreateV7RequestLinesInner billingPeriod(@javax.annotation.Nullable OrderCreateV7RequestLinesInnerBillingPeriod billingPeriod) {
     this.billingPeriod = billingPeriod;
     return this;
   }
 
-  public OrderCreateV7RequestLinesInner addBillingPeriodItem(OrderCreateV7RequestLinesInnerBillingPeriodInner billingPeriodItem) {
-    if (this.billingPeriod == null) {
-      this.billingPeriod = new ArrayList<>();
-    }
-    this.billingPeriod.add(billingPeriodItem);
-    return this;
-  }
-
   /**
-   * The object containing the list of options related to the billing period.
+   * Get billingPeriod
    * @return billingPeriod
    */
   @javax.annotation.Nullable
-  public List<OrderCreateV7RequestLinesInnerBillingPeriodInner> getBillingPeriod() {
+  public OrderCreateV7RequestLinesInnerBillingPeriod getBillingPeriod() {
     return billingPeriod;
   }
 
-  public void setBillingPeriod(@javax.annotation.Nullable List<OrderCreateV7RequestLinesInnerBillingPeriodInner> billingPeriod) {
+  public void setBillingPeriod(@javax.annotation.Nullable OrderCreateV7RequestLinesInnerBillingPeriod billingPeriod) {
     this.billingPeriod = billingPeriod;
   }
 
@@ -664,7 +646,7 @@ public class OrderCreateV7RequestLinesInner {
   public static void validateJsonElement(JsonElement jsonElement) throws IOException {
       if (jsonElement == null) {
         if (!OrderCreateV7RequestLinesInner.openapiRequiredFields.isEmpty()) { // has required fields but JSON element is null
-          throw new IllegalArgumentException(String.format(Locale.ROOT, "The required field(s) %s in OrderCreateV7RequestLinesInner is not found in the empty JSON string", OrderCreateV7RequestLinesInner.openapiRequiredFields.toString()));
+          throw new IllegalArgumentException(String.format(java.util.Locale.ROOT, "The required field(s) %s in OrderCreateV7RequestLinesInner is not found in the empty JSON string", OrderCreateV7RequestLinesInner.openapiRequiredFields.toString()));
         }
       }
 
@@ -672,65 +654,45 @@ public class OrderCreateV7RequestLinesInner {
       // check to see if the JSON string contains additional fields
       for (Map.Entry<String, JsonElement> entry : entries) {
         if (!OrderCreateV7RequestLinesInner.openapiFields.contains(entry.getKey())) {
-          throw new IllegalArgumentException(String.format(Locale.ROOT, "The field `%s` in the JSON string is not defined in the `OrderCreateV7RequestLinesInner` properties. JSON: %s", entry.getKey(), jsonElement.toString()));
+          throw new IllegalArgumentException(String.format(java.util.Locale.ROOT, "The field `%s` in the JSON string is not defined in the `OrderCreateV7RequestLinesInner` properties. JSON: %s", entry.getKey(), jsonElement.toString()));
         }
       }
         JsonObject jsonObj = jsonElement.getAsJsonObject();
       if ((jsonObj.get("customerLineNumber") != null && !jsonObj.get("customerLineNumber").isJsonNull()) && !jsonObj.get("customerLineNumber").isJsonPrimitive()) {
-        throw new IllegalArgumentException(String.format(Locale.ROOT, "Expected the field `customerLineNumber` to be a primitive type in the JSON string but got `%s`", jsonObj.get("customerLineNumber").toString()));
+        throw new IllegalArgumentException(String.format(java.util.Locale.ROOT, "Expected the field `customerLineNumber` to be a primitive type in the JSON string but got `%s`", jsonObj.get("customerLineNumber").toString()));
       }
       if ((jsonObj.get("ingramPartNumber") != null && !jsonObj.get("ingramPartNumber").isJsonNull()) && !jsonObj.get("ingramPartNumber").isJsonPrimitive()) {
-        throw new IllegalArgumentException(String.format(Locale.ROOT, "Expected the field `ingramPartNumber` to be a primitive type in the JSON string but got `%s`", jsonObj.get("ingramPartNumber").toString()));
+        throw new IllegalArgumentException(String.format(java.util.Locale.ROOT, "Expected the field `ingramPartNumber` to be a primitive type in the JSON string but got `%s`", jsonObj.get("ingramPartNumber").toString()));
       }
       if ((jsonObj.get("vendorPartNumber") != null && !jsonObj.get("vendorPartNumber").isJsonNull()) && !jsonObj.get("vendorPartNumber").isJsonPrimitive()) {
-        throw new IllegalArgumentException(String.format(Locale.ROOT, "Expected the field `vendorPartNumber` to be a primitive type in the JSON string but got `%s`", jsonObj.get("vendorPartNumber").toString()));
+        throw new IllegalArgumentException(String.format(java.util.Locale.ROOT, "Expected the field `vendorPartNumber` to be a primitive type in the JSON string but got `%s`", jsonObj.get("vendorPartNumber").toString()));
       }
       if ((jsonObj.get("specialBidNumber") != null && !jsonObj.get("specialBidNumber").isJsonNull()) && !jsonObj.get("specialBidNumber").isJsonPrimitive()) {
-        throw new IllegalArgumentException(String.format(Locale.ROOT, "Expected the field `specialBidNumber` to be a primitive type in the JSON string but got `%s`", jsonObj.get("specialBidNumber").toString()));
+        throw new IllegalArgumentException(String.format(java.util.Locale.ROOT, "Expected the field `specialBidNumber` to be a primitive type in the JSON string but got `%s`", jsonObj.get("specialBidNumber").toString()));
       }
       if ((jsonObj.get("notes") != null && !jsonObj.get("notes").isJsonNull()) && !jsonObj.get("notes").isJsonPrimitive()) {
-        throw new IllegalArgumentException(String.format(Locale.ROOT, "Expected the field `notes` to be a primitive type in the JSON string but got `%s`", jsonObj.get("notes").toString()));
+        throw new IllegalArgumentException(String.format(java.util.Locale.ROOT, "Expected the field `notes` to be a primitive type in the JSON string but got `%s`", jsonObj.get("notes").toString()));
       }
       if ((jsonObj.get("resourceId") != null && !jsonObj.get("resourceId").isJsonNull()) && !jsonObj.get("resourceId").isJsonPrimitive()) {
-        throw new IllegalArgumentException(String.format(Locale.ROOT, "Expected the field `resourceId` to be a primitive type in the JSON string but got `%s`", jsonObj.get("resourceId").toString()));
+        throw new IllegalArgumentException(String.format(java.util.Locale.ROOT, "Expected the field `resourceId` to be a primitive type in the JSON string but got `%s`", jsonObj.get("resourceId").toString()));
       }
       if ((jsonObj.get("planid") != null && !jsonObj.get("planid").isJsonNull()) && !jsonObj.get("planid").isJsonPrimitive()) {
-        throw new IllegalArgumentException(String.format(Locale.ROOT, "Expected the field `planid` to be a primitive type in the JSON string but got `%s`", jsonObj.get("planid").toString()));
+        throw new IllegalArgumentException(String.format(java.util.Locale.ROOT, "Expected the field `planid` to be a primitive type in the JSON string but got `%s`", jsonObj.get("planid").toString()));
       }
+      // validate the optional field `subscriptionPeriod`
       if (jsonObj.get("subscriptionPeriod") != null && !jsonObj.get("subscriptionPeriod").isJsonNull()) {
-        JsonArray jsonArraysubscriptionPeriod = jsonObj.getAsJsonArray("subscriptionPeriod");
-        if (jsonArraysubscriptionPeriod != null) {
-          // ensure the json data is an array
-          if (!jsonObj.get("subscriptionPeriod").isJsonArray()) {
-            throw new IllegalArgumentException(String.format(Locale.ROOT, "Expected the field `subscriptionPeriod` to be an array in the JSON string but got `%s`", jsonObj.get("subscriptionPeriod").toString()));
-          }
-
-          // validate the optional field `subscriptionPeriod` (array)
-          for (int i = 0; i < jsonArraysubscriptionPeriod.size(); i++) {
-            OrderCreateV7RequestLinesInnerSubscriptionPeriodInner.validateJsonElement(jsonArraysubscriptionPeriod.get(i));
-          };
-        }
+        OrderCreateV7RequestLinesInnerSubscriptionPeriod.validateJsonElement(jsonObj.get("subscriptionPeriod"));
       }
+      // validate the optional field `billingPeriod`
       if (jsonObj.get("billingPeriod") != null && !jsonObj.get("billingPeriod").isJsonNull()) {
-        JsonArray jsonArraybillingPeriod = jsonObj.getAsJsonArray("billingPeriod");
-        if (jsonArraybillingPeriod != null) {
-          // ensure the json data is an array
-          if (!jsonObj.get("billingPeriod").isJsonArray()) {
-            throw new IllegalArgumentException(String.format(Locale.ROOT, "Expected the field `billingPeriod` to be an array in the JSON string but got `%s`", jsonObj.get("billingPeriod").toString()));
-          }
-
-          // validate the optional field `billingPeriod` (array)
-          for (int i = 0; i < jsonArraybillingPeriod.size(); i++) {
-            OrderCreateV7RequestLinesInnerBillingPeriodInner.validateJsonElement(jsonArraybillingPeriod.get(i));
-          };
-        }
+        OrderCreateV7RequestLinesInnerBillingPeriod.validateJsonElement(jsonObj.get("billingPeriod"));
       }
       if (jsonObj.get("vriAdditionalAttributes") != null && !jsonObj.get("vriAdditionalAttributes").isJsonNull()) {
         JsonArray jsonArrayvriAdditionalAttributes = jsonObj.getAsJsonArray("vriAdditionalAttributes");
         if (jsonArrayvriAdditionalAttributes != null) {
           // ensure the json data is an array
           if (!jsonObj.get("vriAdditionalAttributes").isJsonArray()) {
-            throw new IllegalArgumentException(String.format(Locale.ROOT, "Expected the field `vriAdditionalAttributes` to be an array in the JSON string but got `%s`", jsonObj.get("vriAdditionalAttributes").toString()));
+            throw new IllegalArgumentException(String.format(java.util.Locale.ROOT, "Expected the field `vriAdditionalAttributes` to be an array in the JSON string but got `%s`", jsonObj.get("vriAdditionalAttributes").toString()));
           }
 
           // validate the optional field `vriAdditionalAttributes` (array)
@@ -744,7 +706,7 @@ public class OrderCreateV7RequestLinesInner {
         if (jsonArrayendUserInfo != null) {
           // ensure the json data is an array
           if (!jsonObj.get("endUserInfo").isJsonArray()) {
-            throw new IllegalArgumentException(String.format(Locale.ROOT, "Expected the field `endUserInfo` to be an array in the JSON string but got `%s`", jsonObj.get("endUserInfo").toString()));
+            throw new IllegalArgumentException(String.format(java.util.Locale.ROOT, "Expected the field `endUserInfo` to be an array in the JSON string but got `%s`", jsonObj.get("endUserInfo").toString()));
           }
 
           // validate the optional field `endUserInfo` (array)
@@ -758,7 +720,7 @@ public class OrderCreateV7RequestLinesInner {
         if (jsonArrayadditionalAttributes != null) {
           // ensure the json data is an array
           if (!jsonObj.get("additionalAttributes").isJsonArray()) {
-            throw new IllegalArgumentException(String.format(Locale.ROOT, "Expected the field `additionalAttributes` to be an array in the JSON string but got `%s`", jsonObj.get("additionalAttributes").toString()));
+            throw new IllegalArgumentException(String.format(java.util.Locale.ROOT, "Expected the field `additionalAttributes` to be an array in the JSON string but got `%s`", jsonObj.get("additionalAttributes").toString()));
           }
 
           // validate the optional field `additionalAttributes` (array)
@@ -776,7 +738,7 @@ public class OrderCreateV7RequestLinesInner {
         if (jsonArrayvmfAdditionalAttributesLines != null) {
           // ensure the json data is an array
           if (!jsonObj.get("vmfAdditionalAttributesLines").isJsonArray()) {
-            throw new IllegalArgumentException(String.format(Locale.ROOT, "Expected the field `vmfAdditionalAttributesLines` to be an array in the JSON string but got `%s`", jsonObj.get("vmfAdditionalAttributesLines").toString()));
+            throw new IllegalArgumentException(String.format(java.util.Locale.ROOT, "Expected the field `vmfAdditionalAttributesLines` to be an array in the JSON string but got `%s`", jsonObj.get("vmfAdditionalAttributesLines").toString()));
           }
 
           // validate the optional field `vmfAdditionalAttributesLines` (array)

@@ -210,7 +210,7 @@ public class Example {
     List<String> vendorPartNumber = Arrays.asList(); // List<String> | The vendors part number for the product.
     String acceptLanguage = "en"; // String | Header to the API calls, the content will help us identify the response language.
     String vendorNumber = "vendorNumber_example"; // String | Vendor number of the product
-    List<String> keyword = Arrays.asList(); // List<String> | Keyword search,can be ingram part number or vendor part number or product title or vendor nameKeyword search. Can be Ingram Micro part number, vender part number, product title, or vendor name.
+    String keyword = "keyword_example"; // String | Keyword search,can be ingram part number or vendor part number or product title or vendor nameKeyword search. Can be Ingram Micro part number, vender part number, product title, or vendor name.
     String category = "Accessories"; // String | The category of the product. Example: Displays.
     String skipAuthorisation = "true"; // String | This parameter is True when you want Skip the authorization, so template will work like current B2b template.
     String groupName = "Microsoft Defender for Endpoint P2 (NCE COM MTH)"; // String | Name of the Product Group
@@ -246,7 +246,7 @@ public class Example {
 | **vendorPartNumber** | [**List&lt;String&gt;**](String.md)| The vendors part number for the product. | [optional] |
 | **acceptLanguage** | **String**| Header to the API calls, the content will help us identify the response language. | [optional] [default to en] |
 | **vendorNumber** | **String**| Vendor number of the product | [optional] |
-| **keyword** | [**List&lt;String&gt;**](String.md)| Keyword search,can be ingram part number or vendor part number or product title or vendor nameKeyword search. Can be Ingram Micro part number, vender part number, product title, or vendor name. | [optional] |
+| **keyword** | **String**| Keyword search,can be ingram part number or vendor part number or product title or vendor nameKeyword search. Can be Ingram Micro part number, vender part number, product title, or vendor name. | [optional] |
 | **category** | **String**| The category of the product. Example: Displays. | [optional] |
 | **skipAuthorisation** | **String**| This parameter is True when you want Skip the authorization, so template will work like current B2b template. | [optional] |
 | **groupName** | **String**| Name of the Product Group | [optional] |

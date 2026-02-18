@@ -167,9 +167,9 @@ public class JSON {
         gsonBuilder.registerTypeAdapterFactory(new xiresellers.client.model.OrderCreateV7RequestEndUserInfo.CustomTypeAdapterFactory());
         gsonBuilder.registerTypeAdapterFactory(new xiresellers.client.model.OrderCreateV7RequestLinesInner.CustomTypeAdapterFactory());
         gsonBuilder.registerTypeAdapterFactory(new xiresellers.client.model.OrderCreateV7RequestLinesInnerAdditionalAttributesInner.CustomTypeAdapterFactory());
-        gsonBuilder.registerTypeAdapterFactory(new xiresellers.client.model.OrderCreateV7RequestLinesInnerBillingPeriodInner.CustomTypeAdapterFactory());
+        gsonBuilder.registerTypeAdapterFactory(new xiresellers.client.model.OrderCreateV7RequestLinesInnerBillingPeriod.CustomTypeAdapterFactory());
         gsonBuilder.registerTypeAdapterFactory(new xiresellers.client.model.OrderCreateV7RequestLinesInnerEndUserInfoInner.CustomTypeAdapterFactory());
-        gsonBuilder.registerTypeAdapterFactory(new xiresellers.client.model.OrderCreateV7RequestLinesInnerSubscriptionPeriodInner.CustomTypeAdapterFactory());
+        gsonBuilder.registerTypeAdapterFactory(new xiresellers.client.model.OrderCreateV7RequestLinesInnerSubscriptionPeriod.CustomTypeAdapterFactory());
         gsonBuilder.registerTypeAdapterFactory(new xiresellers.client.model.OrderCreateV7RequestLinesInnerVmfAdditionalAttributesLinesInner.CustomTypeAdapterFactory());
         gsonBuilder.registerTypeAdapterFactory(new xiresellers.client.model.OrderCreateV7RequestLinesInnerWarrantyInfo.CustomTypeAdapterFactory());
         gsonBuilder.registerTypeAdapterFactory(new xiresellers.client.model.OrderCreateV7RequestLinesInnerWarrantyInfoSerialInfoInner.CustomTypeAdapterFactory());

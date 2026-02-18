@@ -161,14 +161,6 @@ public class ProductSearchResponseCatalogInnerTest {
     }
 
     /**
-     * Test the property 'links'
-     */
-    @Test
-    public void linksTest() {
-        // TODO: test links
-    }
-
-    /**
      * Test the property 'extraDescription'
      */
     @Test
@@ -190,6 +182,86 @@ public class ProductSearchResponseCatalogInnerTest {
     @Test
     public void authorizedToPurchaseTest() {
         // TODO: test authorizedToPurchase
+    }
+
+    /**
+     * Test the property 'isMsrpVisible'
+     */
+    @Test
+    public void isMsrpVisibleTest() {
+        // TODO: test isMsrpVisible
+    }
+
+    /**
+     * Test the property 'isPriceVisible'
+     */
+    @Test
+    public void isPriceVisibleTest() {
+        // TODO: test isPriceVisible
+    }
+
+    /**
+     * Test the property 'customerAuthorization'
+     */
+    @Test
+    public void customerAuthorizationTest() {
+        // TODO: test customerAuthorization
+    }
+
+    /**
+     * Test the property 'skuAvailableInFeed'
+     */
+    @Test
+    public void skuAvailableInFeedTest() {
+        // TODO: test skuAvailableInFeed
+    }
+
+    /**
+     * Test the property 'msrpvisibleorg'
+     */
+    @Test
+    public void msrpvisibleorgTest() {
+        // TODO: test msrpvisibleorg
+    }
+
+    /**
+     * Test the property 'pricevisibleorg'
+     */
+    @Test
+    public void pricevisibleorgTest() {
+        // TODO: test pricevisibleorg
+    }
+
+    /**
+     * Test the property 'intorderableorg'
+     */
+    @Test
+    public void intorderableorgTest() {
+        // TODO: test intorderableorg
+    }
+
+    /**
+     * Test the property 'nonintorderableorg'
+     */
+    @Test
+    public void nonintorderableorgTest() {
+        // TODO: test nonintorderableorg
+    }
+
+    /**
+     * Test the property 'webvisibleorg'
+     */
+    @Test
+    public void webvisibleorgTest() {
+        // TODO: test webvisibleorg
+    }
+
+    /**
+     * Test the property 'links'
+     */
+    @Test
+    public void linksTest() {
+        // TODO: test links
     }
 
 }

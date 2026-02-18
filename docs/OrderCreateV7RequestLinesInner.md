@@ -17,8 +17,8 @@
 |**notes** | **String** | The attribute field data. |  [optional] |
 |**resourceId** | **String** | The resource id of the subscription |  [optional] |
 |**planid** | **String** | ID of the subscription plan |  [optional] |
-|**subscriptionPeriod** | [**List&lt;OrderCreateV7RequestLinesInnerSubscriptionPeriodInner&gt;**](OrderCreateV7RequestLinesInnerSubscriptionPeriodInner.md) | The object containing the list of options related to the subscription period. |  [optional] |
-|**billingPeriod** | [**List&lt;OrderCreateV7RequestLinesInnerBillingPeriodInner&gt;**](OrderCreateV7RequestLinesInnerBillingPeriodInner.md) | The object containing the list of options related to the billing period. |  [optional] |
+|**subscriptionPeriod** | [**OrderCreateV7RequestLinesInnerSubscriptionPeriod**](OrderCreateV7RequestLinesInnerSubscriptionPeriod.md) |  |  [optional] |
+|**billingPeriod** | [**OrderCreateV7RequestLinesInnerBillingPeriod**](OrderCreateV7RequestLinesInnerBillingPeriod.md) |  |  [optional] |
 |**margin** | **BigDecimal** | Line-level margin requested by customer |  [optional] |
 |**endCustomerPrice** | **BigDecimal** | Line-level end-customer price requsted by customer |  [optional] |
 |**vriAdditionalAttributes** | [**List&lt;OrderCreateV7RequestVmfVendorAdditionalAttributesInner&gt;**](OrderCreateV7RequestVmfVendorAdditionalAttributesInner.md) | The object containing the list of Vendor Mandatory Fields required by the vendor for the subscription products. |  [optional] |

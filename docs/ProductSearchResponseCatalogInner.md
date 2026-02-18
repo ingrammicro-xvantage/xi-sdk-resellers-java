@@ -22,10 +22,19 @@
 |**newProduct** | **String** | Indicates if the product is new. For digital products, newer than 10 days. For physical products, newer than 150 days. |  [optional] |
 |**directShip** | **String** | Indicates if the product will be shipped directly to the reseller or end user from the vendor/manufacturer. |  [optional] |
 |**hasWarranty** | **String** | Indicates if the product has a warranty. |  [optional] |
-|**links** | [**List&lt;ProductSearchResponseCatalogInnerLinksInner&gt;**](ProductSearchResponseCatalogInnerLinksInner.md) |  |  [optional] |
 |**extraDescription** | **String** | The extended description of the product. |  [optional] |
 |**replacementSku** | **String** | Identifies a SKU that is a comparable subsititution of the current SKU if available. |  [optional] |
 |**authorizedToPurchase** | **String** | It is true when it exists in matched queries field of ealstic search API. |  [optional] |
+|**isMsrpVisible** | **Boolean** |  |  [optional] |
+|**isPriceVisible** | **Boolean** |  |  [optional] |
+|**customerAuthorization** | **Boolean** |  |  [optional] |
+|**skuAvailableInFeed** | **Boolean** |  |  [optional] |
+|**msrpvisibleorg** | **String** |  |  [optional] |
+|**pricevisibleorg** | **String** |  |  [optional] |
+|**intorderableorg** | **String** |  |  [optional] |
+|**nonintorderableorg** | **String** |  |  [optional] |
+|**webvisibleorg** | **String** |  |  [optional] |
+|**links** | [**List&lt;ProductSearchResponseCatalogInnerLinksInner&gt;**](ProductSearchResponseCatalogInnerLinksInner.md) |  |  [optional] |
 
 
 

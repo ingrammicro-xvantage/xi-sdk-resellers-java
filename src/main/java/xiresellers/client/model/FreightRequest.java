@@ -14,7 +14,6 @@
 package xiresellers.client.model;
 
 import java.util.Objects;
-import java.util.Locale;
 import com.google.gson.TypeAdapter;
 import com.google.gson.annotations.JsonAdapter;
 import com.google.gson.annotations.SerializedName;
@@ -48,14 +47,13 @@ import java.util.HashSet;
 import java.util.List;
 import java.util.Map;
 import java.util.Set;
-import java.util.Locale;
 
 import xiresellers.client.JSON;
 
 /**
  * FreightRequest
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2025-11-27T06:21:24.454074920Z[Etc/UTC]", comments = "Generator version: 7.17.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2026-02-18T06:29:45.993196323Z[Etc/UTC]", comments = "Generator version: 7.20.0")
 public class FreightRequest {
   public static final String SERIALIZED_NAME_BILL_TO_ADDRESS_ID = "billToAddressId";
   @SerializedName(SERIALIZED_NAME_BILL_TO_ADDRESS_ID)
@@ -240,7 +238,7 @@ public class FreightRequest {
   public static void validateJsonElement(JsonElement jsonElement) throws IOException {
       if (jsonElement == null) {
         if (!FreightRequest.openapiRequiredFields.isEmpty()) { // has required fields but JSON element is null
-          throw new IllegalArgumentException(String.format(Locale.ROOT, "The required field(s) %s in FreightRequest is not found in the empty JSON string", FreightRequest.openapiRequiredFields.toString()));
+          throw new IllegalArgumentException(String.format(java.util.Locale.ROOT, "The required field(s) %s in FreightRequest is not found in the empty JSON string", FreightRequest.openapiRequiredFields.toString()));
         }
       }
 
@@ -248,12 +246,12 @@ public class FreightRequest {
       // check to see if the JSON string contains additional fields
       for (Map.Entry<String, JsonElement> entry : entries) {
         if (!FreightRequest.openapiFields.contains(entry.getKey())) {
-          throw new IllegalArgumentException(String.format(Locale.ROOT, "The field `%s` in the JSON string is not defined in the `FreightRequest` properties. JSON: %s", entry.getKey(), jsonElement.toString()));
+          throw new IllegalArgumentException(String.format(java.util.Locale.ROOT, "The field `%s` in the JSON string is not defined in the `FreightRequest` properties. JSON: %s", entry.getKey(), jsonElement.toString()));
         }
       }
         JsonObject jsonObj = jsonElement.getAsJsonObject();
       if ((jsonObj.get("shipToAddressId") != null && !jsonObj.get("shipToAddressId").isJsonNull()) && !jsonObj.get("shipToAddressId").isJsonPrimitive()) {
-        throw new IllegalArgumentException(String.format(Locale.ROOT, "Expected the field `shipToAddressId` to be a primitive type in the JSON string but got `%s`", jsonObj.get("shipToAddressId").toString()));
+        throw new IllegalArgumentException(String.format(java.util.Locale.ROOT, "Expected the field `shipToAddressId` to be a primitive type in the JSON string but got `%s`", jsonObj.get("shipToAddressId").toString()));
       }
       // validate the optional field `shipToAddress`
       if (jsonObj.get("shipToAddress") != null && !jsonObj.get("shipToAddress").isJsonNull()) {
@@ -264,7 +262,7 @@ public class FreightRequest {
         if (jsonArraylines != null) {
           // ensure the json data is an array
           if (!jsonObj.get("lines").isJsonArray()) {
-            throw new IllegalArgumentException(String.format(Locale.ROOT, "Expected the field `lines` to be an array in the JSON string but got `%s`", jsonObj.get("lines").toString()));
+            throw new IllegalArgumentException(String.format(java.util.Locale.ROOT, "Expected the field `lines` to be an array in the JSON string but got `%s`", jsonObj.get("lines").toString()));
           }
 
           // validate the optional field `lines` (array)

@@ -1,7 +1,8 @@
 
 
-# OrderCreateV7RequestLinesInnerBillingPeriodInner
+# OrderCreateV7RequestLinesInnerBillingPeriod
 
+The object containing the list of options related to the billing period.
 
 ## Properties
 

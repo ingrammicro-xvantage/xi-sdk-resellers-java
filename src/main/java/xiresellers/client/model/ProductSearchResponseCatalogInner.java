@@ -14,7 +14,6 @@
 package xiresellers.client.model;
 
 import java.util.Objects;
-import java.util.Locale;
 import com.google.gson.TypeAdapter;
 import com.google.gson.annotations.JsonAdapter;
 import com.google.gson.annotations.SerializedName;
@@ -46,14 +45,13 @@ import java.util.HashSet;
 import java.util.List;
 import java.util.Map;
 import java.util.Set;
-import java.util.Locale;
 
 import xiresellers.client.JSON;
 
 /**
  * ProductSearchResponseCatalogInner
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2025-11-27T06:21:24.454074920Z[Etc/UTC]", comments = "Generator version: 7.17.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2026-02-18T06:29:45.993196323Z[Etc/UTC]", comments = "Generator version: 7.20.0")
 public class ProductSearchResponseCatalogInner {
   public static final String SERIALIZED_NAME_DESCRIPTION = "description";
   @SerializedName(SERIALIZED_NAME_DESCRIPTION)
@@ -130,11 +128,6 @@ public class ProductSearchResponseCatalogInner {
   @javax.annotation.Nullable
   private String hasWarranty;
 
-  public static final String SERIALIZED_NAME_LINKS = "links";
-  @SerializedName(SERIALIZED_NAME_LINKS)
-  @javax.annotation.Nullable
-  private List<ProductSearchResponseCatalogInnerLinksInner> links = new ArrayList<>();
-
   public static final String SERIALIZED_NAME_EXTRA_DESCRIPTION = "extraDescription";
   @SerializedName(SERIALIZED_NAME_EXTRA_DESCRIPTION)
   @javax.annotation.Nullable
@@ -149,6 +142,56 @@ public class ProductSearchResponseCatalogInner {
   @SerializedName(SERIALIZED_NAME_AUTHORIZED_TO_PURCHASE)
   @javax.annotation.Nullable
   private String authorizedToPurchase;
+
+  public static final String SERIALIZED_NAME_IS_MSRP_VISIBLE = "isMsrpVisible";
+  @SerializedName(SERIALIZED_NAME_IS_MSRP_VISIBLE)
+  @javax.annotation.Nullable
+  private Boolean isMsrpVisible;
+
+  public static final String SERIALIZED_NAME_IS_PRICE_VISIBLE = "isPriceVisible";
+  @SerializedName(SERIALIZED_NAME_IS_PRICE_VISIBLE)
+  @javax.annotation.Nullable
+  private Boolean isPriceVisible;
+
+  public static final String SERIALIZED_NAME_CUSTOMER_AUTHORIZATION = "customerAuthorization";
+  @SerializedName(SERIALIZED_NAME_CUSTOMER_AUTHORIZATION)
+  @javax.annotation.Nullable
+  private Boolean customerAuthorization;
+
+  public static final String SERIALIZED_NAME_SKU_AVAILABLE_IN_FEED = "skuAvailableInFeed";
+  @SerializedName(SERIALIZED_NAME_SKU_AVAILABLE_IN_FEED)
+  @javax.annotation.Nullable
+  private Boolean skuAvailableInFeed;
+
+  public static final String SERIALIZED_NAME_MSRPVISIBLEORG = "msrpvisibleorg";
+  @SerializedName(SERIALIZED_NAME_MSRPVISIBLEORG)
+  @javax.annotation.Nullable
+  private String msrpvisibleorg;
+
+  public static final String SERIALIZED_NAME_PRICEVISIBLEORG = "pricevisibleorg";
+  @SerializedName(SERIALIZED_NAME_PRICEVISIBLEORG)
+  @javax.annotation.Nullable
+  private String pricevisibleorg;
+
+  public static final String SERIALIZED_NAME_INTORDERABLEORG = "intorderableorg";
+  @SerializedName(SERIALIZED_NAME_INTORDERABLEORG)
+  @javax.annotation.Nullable
+  private String intorderableorg;
+
+  public static final String SERIALIZED_NAME_NONINTORDERABLEORG = "nonintorderableorg";
+  @SerializedName(SERIALIZED_NAME_NONINTORDERABLEORG)
+  @javax.annotation.Nullable
+  private String nonintorderableorg;
+
+  public static final String SERIALIZED_NAME_WEBVISIBLEORG = "webvisibleorg";
+  @SerializedName(SERIALIZED_NAME_WEBVISIBLEORG)
+  @javax.annotation.Nullable
+  private String webvisibleorg;
+
+  public static final String SERIALIZED_NAME_LINKS = "links";
+  @SerializedName(SERIALIZED_NAME_LINKS)
+  @javax.annotation.Nullable
+  private List<ProductSearchResponseCatalogInnerLinksInner> links = new ArrayList<>();
 
   public ProductSearchResponseCatalogInner() {
   }
@@ -438,33 +481,6 @@ public class ProductSearchResponseCatalogInner {
   }
 
 
-  public ProductSearchResponseCatalogInner links(@javax.annotation.Nullable List<ProductSearchResponseCatalogInnerLinksInner> links) {
-    this.links = links;
-    return this;
-  }
-
-  public ProductSearchResponseCatalogInner addLinksItem(ProductSearchResponseCatalogInnerLinksInner linksItem) {
-    if (this.links == null) {
-      this.links = new ArrayList<>();
-    }
-    this.links.add(linksItem);
-    return this;
-  }
-
-  /**
-   * Get links
-   * @return links
-   */
-  @javax.annotation.Nullable
-  public List<ProductSearchResponseCatalogInnerLinksInner> getLinks() {
-    return links;
-  }
-
-  public void setLinks(@javax.annotation.Nullable List<ProductSearchResponseCatalogInnerLinksInner> links) {
-    this.links = links;
-  }
-
-
   public ProductSearchResponseCatalogInner extraDescription(@javax.annotation.Nullable String extraDescription) {
     this.extraDescription = extraDescription;
     return this;
@@ -522,6 +538,204 @@ public class ProductSearchResponseCatalogInner {
   }
 
 
+  public ProductSearchResponseCatalogInner isMsrpVisible(@javax.annotation.Nullable Boolean isMsrpVisible) {
+    this.isMsrpVisible = isMsrpVisible;
+    return this;
+  }
+
+  /**
+   * Get isMsrpVisible
+   * @return isMsrpVisible
+   */
+  @javax.annotation.Nullable
+  public Boolean getIsMsrpVisible() {
+    return isMsrpVisible;
+  }
+
+  public void setIsMsrpVisible(@javax.annotation.Nullable Boolean isMsrpVisible) {
+    this.isMsrpVisible = isMsrpVisible;
+  }
+
+
+  public ProductSearchResponseCatalogInner isPriceVisible(@javax.annotation.Nullable Boolean isPriceVisible) {
+    this.isPriceVisible = isPriceVisible;
+    return this;
+  }
+
+  /**
+   * Get isPriceVisible
+   * @return isPriceVisible
+   */
+  @javax.annotation.Nullable
+  public Boolean getIsPriceVisible() {
+    return isPriceVisible;
+  }
+
+  public void setIsPriceVisible(@javax.annotation.Nullable Boolean isPriceVisible) {
+    this.isPriceVisible = isPriceVisible;
+  }
+
+
+  public ProductSearchResponseCatalogInner customerAuthorization(@javax.annotation.Nullable Boolean customerAuthorization) {
+    this.customerAuthorization = customerAuthorization;
+    return this;
+  }
+
+  /**
+   * Get customerAuthorization
+   * @return customerAuthorization
+   */
+  @javax.annotation.Nullable
+  public Boolean getCustomerAuthorization() {
+    return customerAuthorization;
+  }
+
+  public void setCustomerAuthorization(@javax.annotation.Nullable Boolean customerAuthorization) {
+    this.customerAuthorization = customerAuthorization;
+  }
+
+
+  public ProductSearchResponseCatalogInner skuAvailableInFeed(@javax.annotation.Nullable Boolean skuAvailableInFeed) {
+    this.skuAvailableInFeed = skuAvailableInFeed;
+    return this;
+  }
+
+  /**
+   * Get skuAvailableInFeed
+   * @return skuAvailableInFeed
+   */
+  @javax.annotation.Nullable
+  public Boolean getSkuAvailableInFeed() {
+    return skuAvailableInFeed;
+  }
+
+  public void setSkuAvailableInFeed(@javax.annotation.Nullable Boolean skuAvailableInFeed) {
+    this.skuAvailableInFeed = skuAvailableInFeed;
+  }
+
+
+  public ProductSearchResponseCatalogInner msrpvisibleorg(@javax.annotation.Nullable String msrpvisibleorg) {
+    this.msrpvisibleorg = msrpvisibleorg;
+    return this;
+  }
+
+  /**
+   * Get msrpvisibleorg
+   * @return msrpvisibleorg
+   */
+  @javax.annotation.Nullable
+  public String getMsrpvisibleorg() {
+    return msrpvisibleorg;
+  }
+
+  public void setMsrpvisibleorg(@javax.annotation.Nullable String msrpvisibleorg) {
+    this.msrpvisibleorg = msrpvisibleorg;
+  }
+
+
+  public ProductSearchResponseCatalogInner pricevisibleorg(@javax.annotation.Nullable String pricevisibleorg) {
+    this.pricevisibleorg = pricevisibleorg;
+    return this;
+  }
+
+  /**
+   * Get pricevisibleorg
+   * @return pricevisibleorg
+   */
+  @javax.annotation.Nullable
+  public String getPricevisibleorg() {
+    return pricevisibleorg;
+  }
+
+  public void setPricevisibleorg(@javax.annotation.Nullable String pricevisibleorg) {
+    this.pricevisibleorg = pricevisibleorg;
+  }
+
+
+  public ProductSearchResponseCatalogInner intorderableorg(@javax.annotation.Nullable String intorderableorg) {
+    this.intorderableorg = intorderableorg;
+    return this;
+  }
+
+  /**
+   * Get intorderableorg
+   * @return intorderableorg
+   */
+  @javax.annotation.Nullable
+  public String getIntorderableorg() {
+    return intorderableorg;
+  }
+
+  public void setIntorderableorg(@javax.annotation.Nullable String intorderableorg) {
+    this.intorderableorg = intorderableorg;
+  }
+
+
+  public ProductSearchResponseCatalogInner nonintorderableorg(@javax.annotation.Nullable String nonintorderableorg) {
+    this.nonintorderableorg = nonintorderableorg;
+    return this;
+  }
+
+  /**
+   * Get nonintorderableorg
+   * @return nonintorderableorg
+   */
+  @javax.annotation.Nullable
+  public String getNonintorderableorg() {
+    return nonintorderableorg;
+  }
+
+  public void setNonintorderableorg(@javax.annotation.Nullable String nonintorderableorg) {
+    this.nonintorderableorg = nonintorderableorg;
+  }
+
+
+  public ProductSearchResponseCatalogInner webvisibleorg(@javax.annotation.Nullable String webvisibleorg) {
+    this.webvisibleorg = webvisibleorg;
+    return this;
+  }
+
+  /**
+   * Get webvisibleorg
+   * @return webvisibleorg
+   */
+  @javax.annotation.Nullable
+  public String getWebvisibleorg() {
+    return webvisibleorg;
+  }
+
+  public void setWebvisibleorg(@javax.annotation.Nullable String webvisibleorg) {
+    this.webvisibleorg = webvisibleorg;
+  }
+
+
+  public ProductSearchResponseCatalogInner links(@javax.annotation.Nullable List<ProductSearchResponseCatalogInnerLinksInner> links) {
+    this.links = links;
+    return this;
+  }
+
+  public ProductSearchResponseCatalogInner addLinksItem(ProductSearchResponseCatalogInnerLinksInner linksItem) {
+    if (this.links == null) {
+      this.links = new ArrayList<>();
+    }
+    this.links.add(linksItem);
+    return this;
+  }
+
+  /**
+   * Get links
+   * @return links
+   */
+  @javax.annotation.Nullable
+  public List<ProductSearchResponseCatalogInnerLinksInner> getLinks() {
+    return links;
+  }
+
+  public void setLinks(@javax.annotation.Nullable List<ProductSearchResponseCatalogInnerLinksInner> links) {
+    this.links = links;
+  }
+
+
 
   @Override
   public boolean equals(Object o) {
@@ -547,15 +761,24 @@ public class ProductSearchResponseCatalogInner {
         Objects.equals(this.newProduct, productSearchResponseCatalogInner.newProduct) &&
         Objects.equals(this.directShip, productSearchResponseCatalogInner.directShip) &&
         Objects.equals(this.hasWarranty, productSearchResponseCatalogInner.hasWarranty) &&
-        Objects.equals(this.links, productSearchResponseCatalogInner.links) &&
         Objects.equals(this.extraDescription, productSearchResponseCatalogInner.extraDescription) &&
         Objects.equals(this.replacementSku, productSearchResponseCatalogInner.replacementSku) &&
-        Objects.equals(this.authorizedToPurchase, productSearchResponseCatalogInner.authorizedToPurchase);
+        Objects.equals(this.authorizedToPurchase, productSearchResponseCatalogInner.authorizedToPurchase) &&
+        Objects.equals(this.isMsrpVisible, productSearchResponseCatalogInner.isMsrpVisible) &&
+        Objects.equals(this.isPriceVisible, productSearchResponseCatalogInner.isPriceVisible) &&
+        Objects.equals(this.customerAuthorization, productSearchResponseCatalogInner.customerAuthorization) &&
+        Objects.equals(this.skuAvailableInFeed, productSearchResponseCatalogInner.skuAvailableInFeed) &&
+        Objects.equals(this.msrpvisibleorg, productSearchResponseCatalogInner.msrpvisibleorg) &&
+        Objects.equals(this.pricevisibleorg, productSearchResponseCatalogInner.pricevisibleorg) &&
+        Objects.equals(this.intorderableorg, productSearchResponseCatalogInner.intorderableorg) &&
+        Objects.equals(this.nonintorderableorg, productSearchResponseCatalogInner.nonintorderableorg) &&
+        Objects.equals(this.webvisibleorg, productSearchResponseCatalogInner.webvisibleorg) &&
+        Objects.equals(this.links, productSearchResponseCatalogInner.links);
   }
 
   @Override
   public int hashCode() {
-    return Objects.hash(description, category, subCategory, productType, ingramPartNumber, vendorPartNumber, upcCode, vendorName, endUserRequired, hasDiscounts, type, discontinued, newProduct, directShip, hasWarranty, links, extraDescription, replacementSku, authorizedToPurchase);
+    return Objects.hash(description, category, subCategory, productType, ingramPartNumber, vendorPartNumber, upcCode, vendorName, endUserRequired, hasDiscounts, type, discontinued, newProduct, directShip, hasWarranty, extraDescription, replacementSku, authorizedToPurchase, isMsrpVisible, isPriceVisible, customerAuthorization, skuAvailableInFeed, msrpvisibleorg, pricevisibleorg, intorderableorg, nonintorderableorg, webvisibleorg, links);
   }
 
   @Override
@@ -577,10 +800,19 @@ public class ProductSearchResponseCatalogInner {
     sb.append("    newProduct: ").append(toIndentedString(newProduct)).append("\n");
     sb.append("    directShip: ").append(toIndentedString(directShip)).append("\n");
     sb.append("    hasWarranty: ").append(toIndentedString(hasWarranty)).append("\n");
-    sb.append("    links: ").append(toIndentedString(links)).append("\n");
     sb.append("    extraDescription: ").append(toIndentedString(extraDescription)).append("\n");
     sb.append("    replacementSku: ").append(toIndentedString(replacementSku)).append("\n");
     sb.append("    authorizedToPurchase: ").append(toIndentedString(authorizedToPurchase)).append("\n");
+    sb.append("    isMsrpVisible: ").append(toIndentedString(isMsrpVisible)).append("\n");
+    sb.append("    isPriceVisible: ").append(toIndentedString(isPriceVisible)).append("\n");
+    sb.append("    customerAuthorization: ").append(toIndentedString(customerAuthorization)).append("\n");
+    sb.append("    skuAvailableInFeed: ").append(toIndentedString(skuAvailableInFeed)).append("\n");
+    sb.append("    msrpvisibleorg: ").append(toIndentedString(msrpvisibleorg)).append("\n");
+    sb.append("    pricevisibleorg: ").append(toIndentedString(pricevisibleorg)).append("\n");
+    sb.append("    intorderableorg: ").append(toIndentedString(intorderableorg)).append("\n");
+    sb.append("    nonintorderableorg: ").append(toIndentedString(nonintorderableorg)).append("\n");
+    sb.append("    webvisibleorg: ").append(toIndentedString(webvisibleorg)).append("\n");
+    sb.append("    links: ").append(toIndentedString(links)).append("\n");
     sb.append("}");
     return sb.toString();
   }
@@ -602,7 +834,7 @@ public class ProductSearchResponseCatalogInner {
 
   static {
     // a set of all properties/fields (JSON key names)
-    openapiFields = new HashSet<String>(Arrays.asList("description", "category", "subCategory", "productType", "ingramPartNumber", "vendorPartNumber", "upcCode", "vendorName", "endUserRequired", "hasDiscounts", "type", "discontinued", "newProduct", "directShip", "hasWarranty", "links", "extraDescription", "replacementSku", "authorizedToPurchase"));
+    openapiFields = new HashSet<String>(Arrays.asList("description", "category", "subCategory", "productType", "ingramPartNumber", "vendorPartNumber", "upcCode", "vendorName", "endUserRequired", "hasDiscounts", "type", "discontinued", "newProduct", "directShip", "hasWarranty", "extraDescription", "replacementSku", "authorizedToPurchase", "isMsrpVisible", "isPriceVisible", "customerAuthorization", "skuAvailableInFeed", "msrpvisibleorg", "pricevisibleorg", "intorderableorg", "nonintorderableorg", "webvisibleorg", "links"));
 
     // a set of required properties/fields (JSON key names)
     openapiRequiredFields = new HashSet<String>(0);
@@ -617,7 +849,7 @@ public class ProductSearchResponseCatalogInner {
   public static void validateJsonElement(JsonElement jsonElement) throws IOException {
       if (jsonElement == null) {
         if (!ProductSearchResponseCatalogInner.openapiRequiredFields.isEmpty()) { // has required fields but JSON element is null
-          throw new IllegalArgumentException(String.format(Locale.ROOT, "The required field(s) %s in ProductSearchResponseCatalogInner is not found in the empty JSON string", ProductSearchResponseCatalogInner.openapiRequiredFields.toString()));
+          throw new IllegalArgumentException(String.format(java.util.Locale.ROOT, "The required field(s) %s in ProductSearchResponseCatalogInner is not found in the empty JSON string", ProductSearchResponseCatalogInner.openapiRequiredFields.toString()));
         }
       }
 
@@ -625,61 +857,85 @@ public class ProductSearchResponseCatalogInner {
       // check to see if the JSON string contains additional fields
       for (Map.Entry<String, JsonElement> entry : entries) {
         if (!ProductSearchResponseCatalogInner.openapiFields.contains(entry.getKey())) {
-          throw new IllegalArgumentException(String.format(Locale.ROOT, "The field `%s` in the JSON string is not defined in the `ProductSearchResponseCatalogInner` properties. JSON: %s", entry.getKey(), jsonElement.toString()));
+          throw new IllegalArgumentException(String.format(java.util.Locale.ROOT, "The field `%s` in the JSON string is not defined in the `ProductSearchResponseCatalogInner` properties. JSON: %s", entry.getKey(), jsonElement.toString()));
         }
       }
         JsonObject jsonObj = jsonElement.getAsJsonObject();
       if ((jsonObj.get("description") != null && !jsonObj.get("description").isJsonNull()) && !jsonObj.get("description").isJsonPrimitive()) {
-        throw new IllegalArgumentException(String.format(Locale.ROOT, "Expected the field `description` to be a primitive type in the JSON string but got `%s`", jsonObj.get("description").toString()));
+        throw new IllegalArgumentException(String.format(java.util.Locale.ROOT, "Expected the field `description` to be a primitive type in the JSON string but got `%s`", jsonObj.get("description").toString()));
       }
       if ((jsonObj.get("category") != null && !jsonObj.get("category").isJsonNull()) && !jsonObj.get("category").isJsonPrimitive()) {
-        throw new IllegalArgumentException(String.format(Locale.ROOT, "Expected the field `category` to be a primitive type in the JSON string but got `%s`", jsonObj.get("category").toString()));
+        throw new IllegalArgumentException(String.format(java.util.Locale.ROOT, "Expected the field `category` to be a primitive type in the JSON string but got `%s`", jsonObj.get("category").toString()));
       }
       if ((jsonObj.get("subCategory") != null && !jsonObj.get("subCategory").isJsonNull()) && !jsonObj.get("subCategory").isJsonPrimitive()) {
-        throw new IllegalArgumentException(String.format(Locale.ROOT, "Expected the field `subCategory` to be a primitive type in the JSON string but got `%s`", jsonObj.get("subCategory").toString()));
+        throw new IllegalArgumentException(String.format(java.util.Locale.ROOT, "Expected the field `subCategory` to be a primitive type in the JSON string but got `%s`", jsonObj.get("subCategory").toString()));
       }
       if ((jsonObj.get("productType") != null && !jsonObj.get("productType").isJsonNull()) && !jsonObj.get("productType").isJsonPrimitive()) {
-        throw new IllegalArgumentException(String.format(Locale.ROOT, "Expected the field `productType` to be a primitive type in the JSON string but got `%s`", jsonObj.get("productType").toString()));
+        throw new IllegalArgumentException(String.format(java.util.Locale.ROOT, "Expected the field `productType` to be a primitive type in the JSON string but got `%s`", jsonObj.get("productType").toString()));
       }
       if ((jsonObj.get("ingramPartNumber") != null && !jsonObj.get("ingramPartNumber").isJsonNull()) && !jsonObj.get("ingramPartNumber").isJsonPrimitive()) {
-        throw new IllegalArgumentException(String.format(Locale.ROOT, "Expected the field `ingramPartNumber` to be a primitive type in the JSON string but got `%s`", jsonObj.get("ingramPartNumber").toString()));
+        throw new IllegalArgumentException(String.format(java.util.Locale.ROOT, "Expected the field `ingramPartNumber` to be a primitive type in the JSON string but got `%s`", jsonObj.get("ingramPartNumber").toString()));
       }
       if ((jsonObj.get("vendorPartNumber") != null && !jsonObj.get("vendorPartNumber").isJsonNull()) && !jsonObj.get("vendorPartNumber").isJsonPrimitive()) {
-        throw new IllegalArgumentException(String.format(Locale.ROOT, "Expected the field `vendorPartNumber` to be a primitive type in the JSON string but got `%s`", jsonObj.get("vendorPartNumber").toString()));
+        throw new IllegalArgumentException(String.format(java.util.Locale.ROOT, "Expected the field `vendorPartNumber` to be a primitive type in the JSON string but got `%s`", jsonObj.get("vendorPartNumber").toString()));
       }
       if ((jsonObj.get("upcCode") != null && !jsonObj.get("upcCode").isJsonNull()) && !jsonObj.get("upcCode").isJsonPrimitive()) {
-        throw new IllegalArgumentException(String.format(Locale.ROOT, "Expected the field `upcCode` to be a primitive type in the JSON string but got `%s`", jsonObj.get("upcCode").toString()));
+        throw new IllegalArgumentException(String.format(java.util.Locale.ROOT, "Expected the field `upcCode` to be a primitive type in the JSON string but got `%s`", jsonObj.get("upcCode").toString()));
       }
       if ((jsonObj.get("vendorName") != null && !jsonObj.get("vendorName").isJsonNull()) && !jsonObj.get("vendorName").isJsonPrimitive()) {
-        throw new IllegalArgumentException(String.format(Locale.ROOT, "Expected the field `vendorName` to be a primitive type in the JSON string but got `%s`", jsonObj.get("vendorName").toString()));
+        throw new IllegalArgumentException(String.format(java.util.Locale.ROOT, "Expected the field `vendorName` to be a primitive type in the JSON string but got `%s`", jsonObj.get("vendorName").toString()));
       }
       if ((jsonObj.get("endUserRequired") != null && !jsonObj.get("endUserRequired").isJsonNull()) && !jsonObj.get("endUserRequired").isJsonPrimitive()) {
-        throw new IllegalArgumentException(String.format(Locale.ROOT, "Expected the field `endUserRequired` to be a primitive type in the JSON string but got `%s`", jsonObj.get("endUserRequired").toString()));
+        throw new IllegalArgumentException(String.format(java.util.Locale.ROOT, "Expected the field `endUserRequired` to be a primitive type in the JSON string but got `%s`", jsonObj.get("endUserRequired").toString()));
       }
       if ((jsonObj.get("hasDiscounts") != null && !jsonObj.get("hasDiscounts").isJsonNull()) && !jsonObj.get("hasDiscounts").isJsonPrimitive()) {
-        throw new IllegalArgumentException(String.format(Locale.ROOT, "Expected the field `hasDiscounts` to be a primitive type in the JSON string but got `%s`", jsonObj.get("hasDiscounts").toString()));
+        throw new IllegalArgumentException(String.format(java.util.Locale.ROOT, "Expected the field `hasDiscounts` to be a primitive type in the JSON string but got `%s`", jsonObj.get("hasDiscounts").toString()));
       }
       if ((jsonObj.get("type") != null && !jsonObj.get("type").isJsonNull()) && !jsonObj.get("type").isJsonPrimitive()) {
-        throw new IllegalArgumentException(String.format(Locale.ROOT, "Expected the field `type` to be a primitive type in the JSON string but got `%s`", jsonObj.get("type").toString()));
+        throw new IllegalArgumentException(String.format(java.util.Locale.ROOT, "Expected the field `type` to be a primitive type in the JSON string but got `%s`", jsonObj.get("type").toString()));
       }
       if ((jsonObj.get("discontinued") != null && !jsonObj.get("discontinued").isJsonNull()) && !jsonObj.get("discontinued").isJsonPrimitive()) {
-        throw new IllegalArgumentException(String.format(Locale.ROOT, "Expected the field `discontinued` to be a primitive type in the JSON string but got `%s`", jsonObj.get("discontinued").toString()));
+        throw new IllegalArgumentException(String.format(java.util.Locale.ROOT, "Expected the field `discontinued` to be a primitive type in the JSON string but got `%s`", jsonObj.get("discontinued").toString()));
       }
       if ((jsonObj.get("newProduct") != null && !jsonObj.get("newProduct").isJsonNull()) && !jsonObj.get("newProduct").isJsonPrimitive()) {
-        throw new IllegalArgumentException(String.format(Locale.ROOT, "Expected the field `newProduct` to be a primitive type in the JSON string but got `%s`", jsonObj.get("newProduct").toString()));
+        throw new IllegalArgumentException(String.format(java.util.Locale.ROOT, "Expected the field `newProduct` to be a primitive type in the JSON string but got `%s`", jsonObj.get("newProduct").toString()));
       }
       if ((jsonObj.get("directShip") != null && !jsonObj.get("directShip").isJsonNull()) && !jsonObj.get("directShip").isJsonPrimitive()) {
-        throw new IllegalArgumentException(String.format(Locale.ROOT, "Expected the field `directShip` to be a primitive type in the JSON string but got `%s`", jsonObj.get("directShip").toString()));
+        throw new IllegalArgumentException(String.format(java.util.Locale.ROOT, "Expected the field `directShip` to be a primitive type in the JSON string but got `%s`", jsonObj.get("directShip").toString()));
       }
       if ((jsonObj.get("hasWarranty") != null && !jsonObj.get("hasWarranty").isJsonNull()) && !jsonObj.get("hasWarranty").isJsonPrimitive()) {
-        throw new IllegalArgumentException(String.format(Locale.ROOT, "Expected the field `hasWarranty` to be a primitive type in the JSON string but got `%s`", jsonObj.get("hasWarranty").toString()));
+        throw new IllegalArgumentException(String.format(java.util.Locale.ROOT, "Expected the field `hasWarranty` to be a primitive type in the JSON string but got `%s`", jsonObj.get("hasWarranty").toString()));
+      }
+      if ((jsonObj.get("extraDescription") != null && !jsonObj.get("extraDescription").isJsonNull()) && !jsonObj.get("extraDescription").isJsonPrimitive()) {
+        throw new IllegalArgumentException(String.format(java.util.Locale.ROOT, "Expected the field `extraDescription` to be a primitive type in the JSON string but got `%s`", jsonObj.get("extraDescription").toString()));
+      }
+      if ((jsonObj.get("replacementSku") != null && !jsonObj.get("replacementSku").isJsonNull()) && !jsonObj.get("replacementSku").isJsonPrimitive()) {
+        throw new IllegalArgumentException(String.format(java.util.Locale.ROOT, "Expected the field `replacementSku` to be a primitive type in the JSON string but got `%s`", jsonObj.get("replacementSku").toString()));
+      }
+      if ((jsonObj.get("authorizedToPurchase") != null && !jsonObj.get("authorizedToPurchase").isJsonNull()) && !jsonObj.get("authorizedToPurchase").isJsonPrimitive()) {
+        throw new IllegalArgumentException(String.format(java.util.Locale.ROOT, "Expected the field `authorizedToPurchase` to be a primitive type in the JSON string but got `%s`", jsonObj.get("authorizedToPurchase").toString()));
+      }
+      if ((jsonObj.get("msrpvisibleorg") != null && !jsonObj.get("msrpvisibleorg").isJsonNull()) && !jsonObj.get("msrpvisibleorg").isJsonPrimitive()) {
+        throw new IllegalArgumentException(String.format(java.util.Locale.ROOT, "Expected the field `msrpvisibleorg` to be a primitive type in the JSON string but got `%s`", jsonObj.get("msrpvisibleorg").toString()));
+      }
+      if ((jsonObj.get("pricevisibleorg") != null && !jsonObj.get("pricevisibleorg").isJsonNull()) && !jsonObj.get("pricevisibleorg").isJsonPrimitive()) {
+        throw new IllegalArgumentException(String.format(java.util.Locale.ROOT, "Expected the field `pricevisibleorg` to be a primitive type in the JSON string but got `%s`", jsonObj.get("pricevisibleorg").toString()));
+      }
+      if ((jsonObj.get("intorderableorg") != null && !jsonObj.get("intorderableorg").isJsonNull()) && !jsonObj.get("intorderableorg").isJsonPrimitive()) {
+        throw new IllegalArgumentException(String.format(java.util.Locale.ROOT, "Expected the field `intorderableorg` to be a primitive type in the JSON string but got `%s`", jsonObj.get("intorderableorg").toString()));
+      }
+      if ((jsonObj.get("nonintorderableorg") != null && !jsonObj.get("nonintorderableorg").isJsonNull()) && !jsonObj.get("nonintorderableorg").isJsonPrimitive()) {
+        throw new IllegalArgumentException(String.format(java.util.Locale.ROOT, "Expected the field `nonintorderableorg` to be a primitive type in the JSON string but got `%s`", jsonObj.get("nonintorderableorg").toString()));
+      }
+      if ((jsonObj.get("webvisibleorg") != null && !jsonObj.get("webvisibleorg").isJsonNull()) && !jsonObj.get("webvisibleorg").isJsonPrimitive()) {
+        throw new IllegalArgumentException(String.format(java.util.Locale.ROOT, "Expected the field `webvisibleorg` to be a primitive type in the JSON string but got `%s`", jsonObj.get("webvisibleorg").toString()));
       }
       if (jsonObj.get("links") != null && !jsonObj.get("links").isJsonNull()) {
         JsonArray jsonArraylinks = jsonObj.getAsJsonArray("links");
         if (jsonArraylinks != null) {
           // ensure the json data is an array
           if (!jsonObj.get("links").isJsonArray()) {
-            throw new IllegalArgumentException(String.format(Locale.ROOT, "Expected the field `links` to be an array in the JSON string but got `%s`", jsonObj.get("links").toString()));
+            throw new IllegalArgumentException(String.format(java.util.Locale.ROOT, "Expected the field `links` to be an array in the JSON string but got `%s`", jsonObj.get("links").toString()));
           }
 
           // validate the optional field `links` (array)
@@ -687,15 +943,6 @@ public class ProductSearchResponseCatalogInner {
             ProductSearchResponseCatalogInnerLinksInner.validateJsonElement(jsonArraylinks.get(i));
           };
         }
-      }
-      if ((jsonObj.get("extraDescription") != null && !jsonObj.get("extraDescription").isJsonNull()) && !jsonObj.get("extraDescription").isJsonPrimitive()) {
-        throw new IllegalArgumentException(String.format(Locale.ROOT, "Expected the field `extraDescription` to be a primitive type in the JSON string but got `%s`", jsonObj.get("extraDescription").toString()));
-      }
-      if ((jsonObj.get("replacementSku") != null && !jsonObj.get("replacementSku").isJsonNull()) && !jsonObj.get("replacementSku").isJsonPrimitive()) {
-        throw new IllegalArgumentException(String.format(Locale.ROOT, "Expected the field `replacementSku` to be a primitive type in the JSON string but got `%s`", jsonObj.get("replacementSku").toString()));
-      }
-      if ((jsonObj.get("authorizedToPurchase") != null && !jsonObj.get("authorizedToPurchase").isJsonNull()) && !jsonObj.get("authorizedToPurchase").isJsonPrimitive()) {
-        throw new IllegalArgumentException(String.format(Locale.ROOT, "Expected the field `authorizedToPurchase` to be a primitive type in the JSON string but got `%s`", jsonObj.get("authorizedToPurchase").toString()));
       }
   }
 

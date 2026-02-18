@@ -14,7 +14,6 @@
 package xiresellers.client.model;
 
 import java.util.Objects;
-import java.util.Locale;
 import com.google.gson.TypeAdapter;
 import com.google.gson.annotations.JsonAdapter;
 import com.google.gson.annotations.SerializedName;
@@ -43,14 +42,13 @@ import java.util.HashSet;
 import java.util.List;
 import java.util.Map;
 import java.util.Set;
-import java.util.Locale;
 
 import xiresellers.client.JSON;
 
 /**
  * FreightResponseFreightEstimateResponseDistributionInnerCarrierListInner
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2025-11-27T06:21:24.454074920Z[Etc/UTC]", comments = "Generator version: 7.17.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2026-02-18T06:29:45.993196323Z[Etc/UTC]", comments = "Generator version: 7.20.0")
 public class FreightResponseFreightEstimateResponseDistributionInnerCarrierListInner {
   public static final String SERIALIZED_NAME_CARRIER_CODE = "carrierCode";
   @SerializedName(SERIALIZED_NAME_CARRIER_CODE)
@@ -242,7 +240,7 @@ public class FreightResponseFreightEstimateResponseDistributionInnerCarrierListI
   public static void validateJsonElement(JsonElement jsonElement) throws IOException {
       if (jsonElement == null) {
         if (!FreightResponseFreightEstimateResponseDistributionInnerCarrierListInner.openapiRequiredFields.isEmpty()) { // has required fields but JSON element is null
-          throw new IllegalArgumentException(String.format(Locale.ROOT, "The required field(s) %s in FreightResponseFreightEstimateResponseDistributionInnerCarrierListInner is not found in the empty JSON string", FreightResponseFreightEstimateResponseDistributionInnerCarrierListInner.openapiRequiredFields.toString()));
+          throw new IllegalArgumentException(String.format(java.util.Locale.ROOT, "The required field(s) %s in FreightResponseFreightEstimateResponseDistributionInnerCarrierListInner is not found in the empty JSON string", FreightResponseFreightEstimateResponseDistributionInnerCarrierListInner.openapiRequiredFields.toString()));
         }
       }
 
@@ -250,24 +248,24 @@ public class FreightResponseFreightEstimateResponseDistributionInnerCarrierListI
       // check to see if the JSON string contains additional fields
       for (Map.Entry<String, JsonElement> entry : entries) {
         if (!FreightResponseFreightEstimateResponseDistributionInnerCarrierListInner.openapiFields.contains(entry.getKey())) {
-          throw new IllegalArgumentException(String.format(Locale.ROOT, "The field `%s` in the JSON string is not defined in the `FreightResponseFreightEstimateResponseDistributionInnerCarrierListInner` properties. JSON: %s", entry.getKey(), jsonElement.toString()));
+          throw new IllegalArgumentException(String.format(java.util.Locale.ROOT, "The field `%s` in the JSON string is not defined in the `FreightResponseFreightEstimateResponseDistributionInnerCarrierListInner` properties. JSON: %s", entry.getKey(), jsonElement.toString()));
         }
       }
         JsonObject jsonObj = jsonElement.getAsJsonObject();
       if ((jsonObj.get("carrierCode") != null && !jsonObj.get("carrierCode").isJsonNull()) && !jsonObj.get("carrierCode").isJsonPrimitive()) {
-        throw new IllegalArgumentException(String.format(Locale.ROOT, "Expected the field `carrierCode` to be a primitive type in the JSON string but got `%s`", jsonObj.get("carrierCode").toString()));
+        throw new IllegalArgumentException(String.format(java.util.Locale.ROOT, "Expected the field `carrierCode` to be a primitive type in the JSON string but got `%s`", jsonObj.get("carrierCode").toString()));
       }
       if ((jsonObj.get("shipVia") != null && !jsonObj.get("shipVia").isJsonNull()) && !jsonObj.get("shipVia").isJsonPrimitive()) {
-        throw new IllegalArgumentException(String.format(Locale.ROOT, "Expected the field `shipVia` to be a primitive type in the JSON string but got `%s`", jsonObj.get("shipVia").toString()));
+        throw new IllegalArgumentException(String.format(java.util.Locale.ROOT, "Expected the field `shipVia` to be a primitive type in the JSON string but got `%s`", jsonObj.get("shipVia").toString()));
       }
       if ((jsonObj.get("carrierMode") != null && !jsonObj.get("carrierMode").isJsonNull()) && !jsonObj.get("carrierMode").isJsonPrimitive()) {
-        throw new IllegalArgumentException(String.format(Locale.ROOT, "Expected the field `carrierMode` to be a primitive type in the JSON string but got `%s`", jsonObj.get("carrierMode").toString()));
+        throw new IllegalArgumentException(String.format(java.util.Locale.ROOT, "Expected the field `carrierMode` to be a primitive type in the JSON string but got `%s`", jsonObj.get("carrierMode").toString()));
       }
       if ((jsonObj.get("estimatedFreightCharge") != null && !jsonObj.get("estimatedFreightCharge").isJsonNull()) && !jsonObj.get("estimatedFreightCharge").isJsonPrimitive()) {
-        throw new IllegalArgumentException(String.format(Locale.ROOT, "Expected the field `estimatedFreightCharge` to be a primitive type in the JSON string but got `%s`", jsonObj.get("estimatedFreightCharge").toString()));
+        throw new IllegalArgumentException(String.format(java.util.Locale.ROOT, "Expected the field `estimatedFreightCharge` to be a primitive type in the JSON string but got `%s`", jsonObj.get("estimatedFreightCharge").toString()));
       }
       if ((jsonObj.get("daysInTransit") != null && !jsonObj.get("daysInTransit").isJsonNull()) && !jsonObj.get("daysInTransit").isJsonPrimitive()) {
-        throw new IllegalArgumentException(String.format(Locale.ROOT, "Expected the field `daysInTransit` to be a primitive type in the JSON string but got `%s`", jsonObj.get("daysInTransit").toString()));
+        throw new IllegalArgumentException(String.format(java.util.Locale.ROOT, "Expected the field `daysInTransit` to be a primitive type in the JSON string but got `%s`", jsonObj.get("daysInTransit").toString()));
       }
   }
 

@@ -2,8 +2,8 @@
 
 XI Sdk Resellers
 - API version: 1.0.0
-  - Build date: 2025-11-27T06:21:24.454074920Z[Etc/UTC]
-  - Generator version: 7.17.0
+  - Build date: 2026-02-18T06:29:45.993196323Z[Etc/UTC]
+  - Generator version: 7.20.0
 
 For Resellers seeking to innovate with Ingram Micro API solutions, automate your eCommerce experience with our array of API's and webhooks to craft a seamless journey for your customers.
 
@@ -219,9 +219,9 @@ Class | Method | HTTP request | Description
  - [OrderCreateV7RequestEndUserInfo](docs/OrderCreateV7RequestEndUserInfo.md)
  - [OrderCreateV7RequestLinesInner](docs/OrderCreateV7RequestLinesInner.md)
  - [OrderCreateV7RequestLinesInnerAdditionalAttributesInner](docs/OrderCreateV7RequestLinesInnerAdditionalAttributesInner.md)
- - [OrderCreateV7RequestLinesInnerBillingPeriodInner](docs/OrderCreateV7RequestLinesInnerBillingPeriodInner.md)
+ - [OrderCreateV7RequestLinesInnerBillingPeriod](docs/OrderCreateV7RequestLinesInnerBillingPeriod.md)
  - [OrderCreateV7RequestLinesInnerEndUserInfoInner](docs/OrderCreateV7RequestLinesInnerEndUserInfoInner.md)
- - [OrderCreateV7RequestLinesInnerSubscriptionPeriodInner](docs/OrderCreateV7RequestLinesInnerSubscriptionPeriodInner.md)
+ - [OrderCreateV7RequestLinesInnerSubscriptionPeriod](docs/OrderCreateV7RequestLinesInnerSubscriptionPeriod.md)
  - [OrderCreateV7RequestLinesInnerVmfAdditionalAttributesLinesInner](docs/OrderCreateV7RequestLinesInnerVmfAdditionalAttributesLinesInner.md)
  - [OrderCreateV7RequestLinesInnerWarrantyInfo](docs/OrderCreateV7RequestLinesInnerWarrantyInfo.md)
  - [OrderCreateV7RequestLinesInnerWarrantyInfoSerialInfoInner](docs/OrderCreateV7RequestLinesInnerWarrantyInfoSerialInfoInner.md)

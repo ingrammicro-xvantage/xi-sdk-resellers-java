@@ -14,7 +14,6 @@
 package xiresellers.client.model;
 
 import java.util.Objects;
-import java.util.Locale;
 import com.google.gson.TypeAdapter;
 import com.google.gson.annotations.JsonAdapter;
 import com.google.gson.annotations.SerializedName;
@@ -46,14 +45,13 @@ import java.util.HashSet;
 import java.util.List;
 import java.util.Map;
 import java.util.Set;
-import java.util.Locale;
 
 import xiresellers.client.JSON;
 
 /**
  * OrderStatusAsyncNotificationRequestResourceInnerLinesInnerShipmentDetailsInner
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2025-11-27T06:21:24.454074920Z[Etc/UTC]", comments = "Generator version: 7.17.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2026-02-18T06:29:45.993196323Z[Etc/UTC]", comments = "Generator version: 7.20.0")
 public class OrderStatusAsyncNotificationRequestResourceInnerLinesInnerShipmentDetailsInner {
   public static final String SERIALIZED_NAME_SHIPMENT_DATE = "shipmentDate";
   @SerializedName(SERIALIZED_NAME_SHIPMENT_DATE)
@@ -279,7 +277,7 @@ public class OrderStatusAsyncNotificationRequestResourceInnerLinesInnerShipmentD
   public static void validateJsonElement(JsonElement jsonElement) throws IOException {
       if (jsonElement == null) {
         if (!OrderStatusAsyncNotificationRequestResourceInnerLinesInnerShipmentDetailsInner.openapiRequiredFields.isEmpty()) { // has required fields but JSON element is null
-          throw new IllegalArgumentException(String.format(Locale.ROOT, "The required field(s) %s in OrderStatusAsyncNotificationRequestResourceInnerLinesInnerShipmentDetailsInner is not found in the empty JSON string", OrderStatusAsyncNotificationRequestResourceInnerLinesInnerShipmentDetailsInner.openapiRequiredFields.toString()));
+          throw new IllegalArgumentException(String.format(java.util.Locale.ROOT, "The required field(s) %s in OrderStatusAsyncNotificationRequestResourceInnerLinesInnerShipmentDetailsInner is not found in the empty JSON string", OrderStatusAsyncNotificationRequestResourceInnerLinesInnerShipmentDetailsInner.openapiRequiredFields.toString()));
         }
       }
 
@@ -287,31 +285,31 @@ public class OrderStatusAsyncNotificationRequestResourceInnerLinesInnerShipmentD
       // check to see if the JSON string contains additional fields
       for (Map.Entry<String, JsonElement> entry : entries) {
         if (!OrderStatusAsyncNotificationRequestResourceInnerLinesInnerShipmentDetailsInner.openapiFields.contains(entry.getKey())) {
-          throw new IllegalArgumentException(String.format(Locale.ROOT, "The field `%s` in the JSON string is not defined in the `OrderStatusAsyncNotificationRequestResourceInnerLinesInnerShipmentDetailsInner` properties. JSON: %s", entry.getKey(), jsonElement.toString()));
+          throw new IllegalArgumentException(String.format(java.util.Locale.ROOT, "The field `%s` in the JSON string is not defined in the `OrderStatusAsyncNotificationRequestResourceInnerLinesInnerShipmentDetailsInner` properties. JSON: %s", entry.getKey(), jsonElement.toString()));
         }
       }
         JsonObject jsonObj = jsonElement.getAsJsonObject();
       if ((jsonObj.get("shipmentDate") != null && !jsonObj.get("shipmentDate").isJsonNull()) && !jsonObj.get("shipmentDate").isJsonPrimitive()) {
-        throw new IllegalArgumentException(String.format(Locale.ROOT, "Expected the field `shipmentDate` to be a primitive type in the JSON string but got `%s`", jsonObj.get("shipmentDate").toString()));
+        throw new IllegalArgumentException(String.format(java.util.Locale.ROOT, "Expected the field `shipmentDate` to be a primitive type in the JSON string but got `%s`", jsonObj.get("shipmentDate").toString()));
       }
       if ((jsonObj.get("shipFromWarehouseId") != null && !jsonObj.get("shipFromWarehouseId").isJsonNull()) && !jsonObj.get("shipFromWarehouseId").isJsonPrimitive()) {
-        throw new IllegalArgumentException(String.format(Locale.ROOT, "Expected the field `shipFromWarehouseId` to be a primitive type in the JSON string but got `%s`", jsonObj.get("shipFromWarehouseId").toString()));
+        throw new IllegalArgumentException(String.format(java.util.Locale.ROOT, "Expected the field `shipFromWarehouseId` to be a primitive type in the JSON string but got `%s`", jsonObj.get("shipFromWarehouseId").toString()));
       }
       if ((jsonObj.get("warehouseName") != null && !jsonObj.get("warehouseName").isJsonNull()) && !jsonObj.get("warehouseName").isJsonPrimitive()) {
-        throw new IllegalArgumentException(String.format(Locale.ROOT, "Expected the field `warehouseName` to be a primitive type in the JSON string but got `%s`", jsonObj.get("warehouseName").toString()));
+        throw new IllegalArgumentException(String.format(java.util.Locale.ROOT, "Expected the field `warehouseName` to be a primitive type in the JSON string but got `%s`", jsonObj.get("warehouseName").toString()));
       }
       if ((jsonObj.get("carrierCode") != null && !jsonObj.get("carrierCode").isJsonNull()) && !jsonObj.get("carrierCode").isJsonPrimitive()) {
-        throw new IllegalArgumentException(String.format(Locale.ROOT, "Expected the field `carrierCode` to be a primitive type in the JSON string but got `%s`", jsonObj.get("carrierCode").toString()));
+        throw new IllegalArgumentException(String.format(java.util.Locale.ROOT, "Expected the field `carrierCode` to be a primitive type in the JSON string but got `%s`", jsonObj.get("carrierCode").toString()));
       }
       if ((jsonObj.get("carrierName") != null && !jsonObj.get("carrierName").isJsonNull()) && !jsonObj.get("carrierName").isJsonPrimitive()) {
-        throw new IllegalArgumentException(String.format(Locale.ROOT, "Expected the field `carrierName` to be a primitive type in the JSON string but got `%s`", jsonObj.get("carrierName").toString()));
+        throw new IllegalArgumentException(String.format(java.util.Locale.ROOT, "Expected the field `carrierName` to be a primitive type in the JSON string but got `%s`", jsonObj.get("carrierName").toString()));
       }
       if (jsonObj.get("packageDetails") != null && !jsonObj.get("packageDetails").isJsonNull()) {
         JsonArray jsonArraypackageDetails = jsonObj.getAsJsonArray("packageDetails");
         if (jsonArraypackageDetails != null) {
           // ensure the json data is an array
           if (!jsonObj.get("packageDetails").isJsonArray()) {
-            throw new IllegalArgumentException(String.format(Locale.ROOT, "Expected the field `packageDetails` to be an array in the JSON string but got `%s`", jsonObj.get("packageDetails").toString()));
+            throw new IllegalArgumentException(String.format(java.util.Locale.ROOT, "Expected the field `packageDetails` to be an array in the JSON string but got `%s`", jsonObj.get("packageDetails").toString()));
           }
 
           // validate the optional field `packageDetails` (array)

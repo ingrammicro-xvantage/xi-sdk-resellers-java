@@ -14,7 +14,6 @@
 package xiresellers.client.model;
 
 import java.util.Objects;
-import java.util.Locale;
 import com.google.gson.TypeAdapter;
 import com.google.gson.annotations.JsonAdapter;
 import com.google.gson.annotations.SerializedName;
@@ -43,15 +42,14 @@ import java.util.HashSet;
 import java.util.List;
 import java.util.Map;
 import java.util.Set;
-import java.util.Locale;
 
 import xiresellers.client.JSON;
 
 /**
- * OrderCreateV7RequestLinesInnerBillingPeriodInner
+ * The object containing the list of options related to the billing period.
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2025-11-27T06:21:24.454074920Z[Etc/UTC]", comments = "Generator version: 7.17.0")
-public class OrderCreateV7RequestLinesInnerBillingPeriodInner {
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2026-02-18T06:29:45.993196323Z[Etc/UTC]", comments = "Generator version: 7.20.0")
+public class OrderCreateV7RequestLinesInnerBillingPeriod {
   public static final String SERIALIZED_NAME_TYPE = "type";
   @SerializedName(SERIALIZED_NAME_TYPE)
   @javax.annotation.Nullable
@@ -62,10 +60,10 @@ public class OrderCreateV7RequestLinesInnerBillingPeriodInner {
   @javax.annotation.Nullable
   private Integer duration;
 
-  public OrderCreateV7RequestLinesInnerBillingPeriodInner() {
+  public OrderCreateV7RequestLinesInnerBillingPeriod() {
   }
 
-  public OrderCreateV7RequestLinesInnerBillingPeriodInner type(@javax.annotation.Nullable String type) {
+  public OrderCreateV7RequestLinesInnerBillingPeriod type(@javax.annotation.Nullable String type) {
     this.type = type;
     return this;
   }
@@ -84,7 +82,7 @@ public class OrderCreateV7RequestLinesInnerBillingPeriodInner {
   }
 
 
-  public OrderCreateV7RequestLinesInnerBillingPeriodInner duration(@javax.annotation.Nullable Integer duration) {
+  public OrderCreateV7RequestLinesInnerBillingPeriod duration(@javax.annotation.Nullable Integer duration) {
     this.duration = duration;
     return this;
   }
@@ -112,9 +110,9 @@ public class OrderCreateV7RequestLinesInnerBillingPeriodInner {
     if (o == null || getClass() != o.getClass()) {
       return false;
     }
-    OrderCreateV7RequestLinesInnerBillingPeriodInner orderCreateV7RequestLinesInnerBillingPeriodInner = (OrderCreateV7RequestLinesInnerBillingPeriodInner) o;
-    return Objects.equals(this.type, orderCreateV7RequestLinesInnerBillingPeriodInner.type) &&
-        Objects.equals(this.duration, orderCreateV7RequestLinesInnerBillingPeriodInner.duration);
+    OrderCreateV7RequestLinesInnerBillingPeriod orderCreateV7RequestLinesInnerBillingPeriod = (OrderCreateV7RequestLinesInnerBillingPeriod) o;
+    return Objects.equals(this.type, orderCreateV7RequestLinesInnerBillingPeriod.type) &&
+        Objects.equals(this.duration, orderCreateV7RequestLinesInnerBillingPeriod.duration);
   }
 
   @Override
@@ -125,7 +123,7 @@ public class OrderCreateV7RequestLinesInnerBillingPeriodInner {
   @Override
   public String toString() {
     StringBuilder sb = new StringBuilder();
-    sb.append("class OrderCreateV7RequestLinesInnerBillingPeriodInner {\n");
+    sb.append("class OrderCreateV7RequestLinesInnerBillingPeriod {\n");
     sb.append("    type: ").append(toIndentedString(type)).append("\n");
     sb.append("    duration: ").append(toIndentedString(duration)).append("\n");
     sb.append("}");
@@ -159,25 +157,25 @@ public class OrderCreateV7RequestLinesInnerBillingPeriodInner {
    * Validates the JSON Element and throws an exception if issues found
    *
    * @param jsonElement JSON Element
-   * @throws IOException if the JSON Element is invalid with respect to OrderCreateV7RequestLinesInnerBillingPeriodInner
+   * @throws IOException if the JSON Element is invalid with respect to OrderCreateV7RequestLinesInnerBillingPeriod
    */
   public static void validateJsonElement(JsonElement jsonElement) throws IOException {
       if (jsonElement == null) {
-        if (!OrderCreateV7RequestLinesInnerBillingPeriodInner.openapiRequiredFields.isEmpty()) { // has required fields but JSON element is null
-          throw new IllegalArgumentException(String.format(Locale.ROOT, "The required field(s) %s in OrderCreateV7RequestLinesInnerBillingPeriodInner is not found in the empty JSON string", OrderCreateV7RequestLinesInnerBillingPeriodInner.openapiRequiredFields.toString()));
+        if (!OrderCreateV7RequestLinesInnerBillingPeriod.openapiRequiredFields.isEmpty()) { // has required fields but JSON element is null
+          throw new IllegalArgumentException(String.format(java.util.Locale.ROOT, "The required field(s) %s in OrderCreateV7RequestLinesInnerBillingPeriod is not found in the empty JSON string", OrderCreateV7RequestLinesInnerBillingPeriod.openapiRequiredFields.toString()));
         }
       }
 
       Set<Map.Entry<String, JsonElement>> entries = jsonElement.getAsJsonObject().entrySet();
       // check to see if the JSON string contains additional fields
       for (Map.Entry<String, JsonElement> entry : entries) {
-        if (!OrderCreateV7RequestLinesInnerBillingPeriodInner.openapiFields.contains(entry.getKey())) {
-          throw new IllegalArgumentException(String.format(Locale.ROOT, "The field `%s` in the JSON string is not defined in the `OrderCreateV7RequestLinesInnerBillingPeriodInner` properties. JSON: %s", entry.getKey(), jsonElement.toString()));
+        if (!OrderCreateV7RequestLinesInnerBillingPeriod.openapiFields.contains(entry.getKey())) {
+          throw new IllegalArgumentException(String.format(java.util.Locale.ROOT, "The field `%s` in the JSON string is not defined in the `OrderCreateV7RequestLinesInnerBillingPeriod` properties. JSON: %s", entry.getKey(), jsonElement.toString()));
         }
       }
         JsonObject jsonObj = jsonElement.getAsJsonObject();
       if ((jsonObj.get("type") != null && !jsonObj.get("type").isJsonNull()) && !jsonObj.get("type").isJsonPrimitive()) {
-        throw new IllegalArgumentException(String.format(Locale.ROOT, "Expected the field `type` to be a primitive type in the JSON string but got `%s`", jsonObj.get("type").toString()));
+        throw new IllegalArgumentException(String.format(java.util.Locale.ROOT, "Expected the field `type` to be a primitive type in the JSON string but got `%s`", jsonObj.get("type").toString()));
       }
   }
 
@@ -185,22 +183,22 @@ public class OrderCreateV7RequestLinesInnerBillingPeriodInner {
     @SuppressWarnings("unchecked")
     @Override
     public <T> TypeAdapter<T> create(Gson gson, TypeToken<T> type) {
-       if (!OrderCreateV7RequestLinesInnerBillingPeriodInner.class.isAssignableFrom(type.getRawType())) {
-         return null; // this class only serializes 'OrderCreateV7RequestLinesInnerBillingPeriodInner' and its subtypes
+       if (!OrderCreateV7RequestLinesInnerBillingPeriod.class.isAssignableFrom(type.getRawType())) {
+         return null; // this class only serializes 'OrderCreateV7RequestLinesInnerBillingPeriod' and its subtypes
        }
        final TypeAdapter<JsonElement> elementAdapter = gson.getAdapter(JsonElement.class);
-       final TypeAdapter<OrderCreateV7RequestLinesInnerBillingPeriodInner> thisAdapter
-                        = gson.getDelegateAdapter(this, TypeToken.get(OrderCreateV7RequestLinesInnerBillingPeriodInner.class));
+       final TypeAdapter<OrderCreateV7RequestLinesInnerBillingPeriod> thisAdapter
+                        = gson.getDelegateAdapter(this, TypeToken.get(OrderCreateV7RequestLinesInnerBillingPeriod.class));
 
-       return (TypeAdapter<T>) new TypeAdapter<OrderCreateV7RequestLinesInnerBillingPeriodInner>() {
+       return (TypeAdapter<T>) new TypeAdapter<OrderCreateV7RequestLinesInnerBillingPeriod>() {
            @Override
-           public void write(JsonWriter out, OrderCreateV7RequestLinesInnerBillingPeriodInner value) throws IOException {
+           public void write(JsonWriter out, OrderCreateV7RequestLinesInnerBillingPeriod value) throws IOException {
              JsonObject obj = thisAdapter.toJsonTree(value).getAsJsonObject();
              elementAdapter.write(out, obj);
            }
 
            @Override
-           public OrderCreateV7RequestLinesInnerBillingPeriodInner read(JsonReader in) throws IOException {
+           public OrderCreateV7RequestLinesInnerBillingPeriod read(JsonReader in) throws IOException {
              JsonElement jsonElement = elementAdapter.read(in);
              validateJsonElement(jsonElement);
              return thisAdapter.fromJsonTree(jsonElement);
@@ -211,18 +209,18 @@ public class OrderCreateV7RequestLinesInnerBillingPeriodInner {
   }
 
   /**
-   * Create an instance of OrderCreateV7RequestLinesInnerBillingPeriodInner given an JSON string
+   * Create an instance of OrderCreateV7RequestLinesInnerBillingPeriod given an JSON string
    *
    * @param jsonString JSON string
-   * @return An instance of OrderCreateV7RequestLinesInnerBillingPeriodInner
-   * @throws IOException if the JSON string is invalid with respect to OrderCreateV7RequestLinesInnerBillingPeriodInner
+   * @return An instance of OrderCreateV7RequestLinesInnerBillingPeriod
+   * @throws IOException if the JSON string is invalid with respect to OrderCreateV7RequestLinesInnerBillingPeriod
    */
-  public static OrderCreateV7RequestLinesInnerBillingPeriodInner fromJson(String jsonString) throws IOException {
-    return JSON.getGson().fromJson(jsonString, OrderCreateV7RequestLinesInnerBillingPeriodInner.class);
+  public static OrderCreateV7RequestLinesInnerBillingPeriod fromJson(String jsonString) throws IOException {
+    return JSON.getGson().fromJson(jsonString, OrderCreateV7RequestLinesInnerBillingPeriod.class);
   }
 
   /**
-   * Convert an instance of OrderCreateV7RequestLinesInnerBillingPeriodInner to an JSON string
+   * Convert an instance of OrderCreateV7RequestLinesInnerBillingPeriod to an JSON string
    *
    * @return JSON string
    */

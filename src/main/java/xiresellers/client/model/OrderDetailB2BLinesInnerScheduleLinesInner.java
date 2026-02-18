@@ -14,7 +14,6 @@
 package xiresellers.client.model;
 
 import java.util.Objects;
-import java.util.Locale;
 import com.google.gson.TypeAdapter;
 import com.google.gson.annotations.JsonAdapter;
 import com.google.gson.annotations.SerializedName;
@@ -43,14 +42,13 @@ import java.util.HashSet;
 import java.util.List;
 import java.util.Map;
 import java.util.Set;
-import java.util.Locale;
 
 import xiresellers.client.JSON;
 
 /**
  * OrderDetailB2BLinesInnerScheduleLinesInner
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2025-11-27T06:21:24.454074920Z[Etc/UTC]", comments = "Generator version: 7.17.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2026-02-18T06:29:45.993196323Z[Etc/UTC]", comments = "Generator version: 7.20.0")
 public class OrderDetailB2BLinesInnerScheduleLinesInner {
   public static final String SERIALIZED_NAME_LINE_NUMBER = "lineNumber";
   @SerializedName(SERIALIZED_NAME_LINE_NUMBER)
@@ -242,7 +240,7 @@ public class OrderDetailB2BLinesInnerScheduleLinesInner {
   public static void validateJsonElement(JsonElement jsonElement) throws IOException {
       if (jsonElement == null) {
         if (!OrderDetailB2BLinesInnerScheduleLinesInner.openapiRequiredFields.isEmpty()) { // has required fields but JSON element is null
-          throw new IllegalArgumentException(String.format(Locale.ROOT, "The required field(s) %s in OrderDetailB2BLinesInnerScheduleLinesInner is not found in the empty JSON string", OrderDetailB2BLinesInnerScheduleLinesInner.openapiRequiredFields.toString()));
+          throw new IllegalArgumentException(String.format(java.util.Locale.ROOT, "The required field(s) %s in OrderDetailB2BLinesInnerScheduleLinesInner is not found in the empty JSON string", OrderDetailB2BLinesInnerScheduleLinesInner.openapiRequiredFields.toString()));
         }
       }
 
@@ -250,24 +248,24 @@ public class OrderDetailB2BLinesInnerScheduleLinesInner {
       // check to see if the JSON string contains additional fields
       for (Map.Entry<String, JsonElement> entry : entries) {
         if (!OrderDetailB2BLinesInnerScheduleLinesInner.openapiFields.contains(entry.getKey())) {
-          throw new IllegalArgumentException(String.format(Locale.ROOT, "The field `%s` in the JSON string is not defined in the `OrderDetailB2BLinesInnerScheduleLinesInner` properties. JSON: %s", entry.getKey(), jsonElement.toString()));
+          throw new IllegalArgumentException(String.format(java.util.Locale.ROOT, "The field `%s` in the JSON string is not defined in the `OrderDetailB2BLinesInnerScheduleLinesInner` properties. JSON: %s", entry.getKey(), jsonElement.toString()));
         }
       }
         JsonObject jsonObj = jsonElement.getAsJsonObject();
       if ((jsonObj.get("lineNumber") != null && !jsonObj.get("lineNumber").isJsonNull()) && !jsonObj.get("lineNumber").isJsonPrimitive()) {
-        throw new IllegalArgumentException(String.format(Locale.ROOT, "Expected the field `lineNumber` to be a primitive type in the JSON string but got `%s`", jsonObj.get("lineNumber").toString()));
+        throw new IllegalArgumentException(String.format(java.util.Locale.ROOT, "Expected the field `lineNumber` to be a primitive type in the JSON string but got `%s`", jsonObj.get("lineNumber").toString()));
       }
       if ((jsonObj.get("scheduleLineDate") != null && !jsonObj.get("scheduleLineDate").isJsonNull()) && !jsonObj.get("scheduleLineDate").isJsonPrimitive()) {
-        throw new IllegalArgumentException(String.format(Locale.ROOT, "Expected the field `scheduleLineDate` to be a primitive type in the JSON string but got `%s`", jsonObj.get("scheduleLineDate").toString()));
+        throw new IllegalArgumentException(String.format(java.util.Locale.ROOT, "Expected the field `scheduleLineDate` to be a primitive type in the JSON string but got `%s`", jsonObj.get("scheduleLineDate").toString()));
       }
       if ((jsonObj.get("requestedQuantity") != null && !jsonObj.get("requestedQuantity").isJsonNull()) && !jsonObj.get("requestedQuantity").isJsonPrimitive()) {
-        throw new IllegalArgumentException(String.format(Locale.ROOT, "Expected the field `requestedQuantity` to be a primitive type in the JSON string but got `%s`", jsonObj.get("requestedQuantity").toString()));
+        throw new IllegalArgumentException(String.format(java.util.Locale.ROOT, "Expected the field `requestedQuantity` to be a primitive type in the JSON string but got `%s`", jsonObj.get("requestedQuantity").toString()));
       }
       if ((jsonObj.get("confirmedQuantity") != null && !jsonObj.get("confirmedQuantity").isJsonNull()) && !jsonObj.get("confirmedQuantity").isJsonPrimitive()) {
-        throw new IllegalArgumentException(String.format(Locale.ROOT, "Expected the field `confirmedQuantity` to be a primitive type in the JSON string but got `%s`", jsonObj.get("confirmedQuantity").toString()));
+        throw new IllegalArgumentException(String.format(java.util.Locale.ROOT, "Expected the field `confirmedQuantity` to be a primitive type in the JSON string but got `%s`", jsonObj.get("confirmedQuantity").toString()));
       }
       if ((jsonObj.get("goodsIssueDate") != null && !jsonObj.get("goodsIssueDate").isJsonNull()) && !jsonObj.get("goodsIssueDate").isJsonPrimitive()) {
-        throw new IllegalArgumentException(String.format(Locale.ROOT, "Expected the field `goodsIssueDate` to be a primitive type in the JSON string but got `%s`", jsonObj.get("goodsIssueDate").toString()));
+        throw new IllegalArgumentException(String.format(java.util.Locale.ROOT, "Expected the field `goodsIssueDate` to be a primitive type in the JSON string but got `%s`", jsonObj.get("goodsIssueDate").toString()));
       }
   }
 

@@ -94,7 +94,7 @@ public class ProductCatalogApiTest {
         List<String> vendorPartNumber = null;
         String acceptLanguage = null;
         String vendorNumber = null;
-        List<String> keyword = null;
+        String keyword = null;
         String category = null;
         String skipAuthorisation = null;
         String groupName = null;

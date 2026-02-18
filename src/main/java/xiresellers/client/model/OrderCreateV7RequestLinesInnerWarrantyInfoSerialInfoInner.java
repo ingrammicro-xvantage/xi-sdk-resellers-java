@@ -14,7 +14,6 @@
 package xiresellers.client.model;
 
 import java.util.Objects;
-import java.util.Locale;
 import com.google.gson.TypeAdapter;
 import com.google.gson.annotations.JsonAdapter;
 import com.google.gson.annotations.SerializedName;
@@ -43,14 +42,13 @@ import java.util.HashSet;
 import java.util.List;
 import java.util.Map;
 import java.util.Set;
-import java.util.Locale;
 
 import xiresellers.client.JSON;
 
 /**
  * Serial information of the hardware to be associated with the warranty, applicable on post sale orders.
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2025-11-27T06:21:24.454074920Z[Etc/UTC]", comments = "Generator version: 7.17.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2026-02-18T06:29:45.993196323Z[Etc/UTC]", comments = "Generator version: 7.20.0")
 public class OrderCreateV7RequestLinesInnerWarrantyInfoSerialInfoInner {
   public static final String SERIALIZED_NAME_DATE_OF_PURCHASE = "dateOfPurchase";
   @SerializedName(SERIALIZED_NAME_DATE_OF_PURCHASE)
@@ -216,7 +214,7 @@ public class OrderCreateV7RequestLinesInnerWarrantyInfoSerialInfoInner {
   public static void validateJsonElement(JsonElement jsonElement) throws IOException {
       if (jsonElement == null) {
         if (!OrderCreateV7RequestLinesInnerWarrantyInfoSerialInfoInner.openapiRequiredFields.isEmpty()) { // has required fields but JSON element is null
-          throw new IllegalArgumentException(String.format(Locale.ROOT, "The required field(s) %s in OrderCreateV7RequestLinesInnerWarrantyInfoSerialInfoInner is not found in the empty JSON string", OrderCreateV7RequestLinesInnerWarrantyInfoSerialInfoInner.openapiRequiredFields.toString()));
+          throw new IllegalArgumentException(String.format(java.util.Locale.ROOT, "The required field(s) %s in OrderCreateV7RequestLinesInnerWarrantyInfoSerialInfoInner is not found in the empty JSON string", OrderCreateV7RequestLinesInnerWarrantyInfoSerialInfoInner.openapiRequiredFields.toString()));
         }
       }
 
@@ -224,21 +222,21 @@ public class OrderCreateV7RequestLinesInnerWarrantyInfoSerialInfoInner {
       // check to see if the JSON string contains additional fields
       for (Map.Entry<String, JsonElement> entry : entries) {
         if (!OrderCreateV7RequestLinesInnerWarrantyInfoSerialInfoInner.openapiFields.contains(entry.getKey())) {
-          throw new IllegalArgumentException(String.format(Locale.ROOT, "The field `%s` in the JSON string is not defined in the `OrderCreateV7RequestLinesInnerWarrantyInfoSerialInfoInner` properties. JSON: %s", entry.getKey(), jsonElement.toString()));
+          throw new IllegalArgumentException(String.format(java.util.Locale.ROOT, "The field `%s` in the JSON string is not defined in the `OrderCreateV7RequestLinesInnerWarrantyInfoSerialInfoInner` properties. JSON: %s", entry.getKey(), jsonElement.toString()));
         }
       }
         JsonObject jsonObj = jsonElement.getAsJsonObject();
       if ((jsonObj.get("dateOfPurchase") != null && !jsonObj.get("dateOfPurchase").isJsonNull()) && !jsonObj.get("dateOfPurchase").isJsonPrimitive()) {
-        throw new IllegalArgumentException(String.format(Locale.ROOT, "Expected the field `dateOfPurchase` to be a primitive type in the JSON string but got `%s`", jsonObj.get("dateOfPurchase").toString()));
+        throw new IllegalArgumentException(String.format(java.util.Locale.ROOT, "Expected the field `dateOfPurchase` to be a primitive type in the JSON string but got `%s`", jsonObj.get("dateOfPurchase").toString()));
       }
       if ((jsonObj.get("shipDate") != null && !jsonObj.get("shipDate").isJsonNull()) && !jsonObj.get("shipDate").isJsonPrimitive()) {
-        throw new IllegalArgumentException(String.format(Locale.ROOT, "Expected the field `shipDate` to be a primitive type in the JSON string but got `%s`", jsonObj.get("shipDate").toString()));
+        throw new IllegalArgumentException(String.format(java.util.Locale.ROOT, "Expected the field `shipDate` to be a primitive type in the JSON string but got `%s`", jsonObj.get("shipDate").toString()));
       }
       if ((jsonObj.get("primarySerialNumber") != null && !jsonObj.get("primarySerialNumber").isJsonNull()) && !jsonObj.get("primarySerialNumber").isJsonPrimitive()) {
-        throw new IllegalArgumentException(String.format(Locale.ROOT, "Expected the field `primarySerialNumber` to be a primitive type in the JSON string but got `%s`", jsonObj.get("primarySerialNumber").toString()));
+        throw new IllegalArgumentException(String.format(java.util.Locale.ROOT, "Expected the field `primarySerialNumber` to be a primitive type in the JSON string but got `%s`", jsonObj.get("primarySerialNumber").toString()));
       }
       if ((jsonObj.get("secondarySerialNumber") != null && !jsonObj.get("secondarySerialNumber").isJsonNull()) && !jsonObj.get("secondarySerialNumber").isJsonPrimitive()) {
-        throw new IllegalArgumentException(String.format(Locale.ROOT, "Expected the field `secondarySerialNumber` to be a primitive type in the JSON string but got `%s`", jsonObj.get("secondarySerialNumber").toString()));
+        throw new IllegalArgumentException(String.format(java.util.Locale.ROOT, "Expected the field `secondarySerialNumber` to be a primitive type in the JSON string but got `%s`", jsonObj.get("secondarySerialNumber").toString()));
       }
   }
 

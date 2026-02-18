@@ -1,7 +1,8 @@
 
 
-# OrderCreateV7RequestLinesInnerSubscriptionPeriodInner
+# OrderCreateV7RequestLinesInnerSubscriptionPeriod
 
+The object containing the list of options related to the subscription period.
 
 ## Properties
 
